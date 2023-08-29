@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Defining Metadata</h1>
+        <p>The data from the created view will need to be referenced by field in order for the filtering machinery to recognize and return it. This reference exists in <span class="code_sample">tbl_Common_Filter_MetaViewData</span> and should be populated by the initialization (INIT) procedure which was created to accompany the view. </p>
+        <ul>
+            <li>
+                <b>FilterTypeID – </b>Primary key referenced on <span class="code_sample">tbl_FilterType</span>. </li>
+            <li>
+                <b>ViewColumn –</b> The column name as it appears in the referenced table or view within <span class="code_sample">tbl_FilterType</span>. </li>
+            <li>
+                <b>TableName –</b> The name of the table or view which contains the data.</li>
+            <li>
+                <b>TableColumn –</b> The column name as it appears in the referenced table or view within the TableName field.</li>
+            <li>
+                <b>FriendlyName –</b> The friendly name as it appears within the user interface of the application, before any translations. This will be the name referenced within all standard product documentation. </li>
+            <li>
+                <b>VisibleFlag –</b> Determines if the field will be visible within the user interface. May be set to “0” and used by filtering only. </li>
+            <li>
+                <b>Updateable –</b> If set to “1”, the field will be write enabled for users. </li>
+            <li>
+                <b>LookupField – </b>If the field is a lookup field, the string value must be entered in this column. Can be used to refer an ID column to a description column. </li>
+            <li>
+                <b>Aggregatable –</b> The aggregation type for the field. </li>
+        </ul>
+        <ul>
+            <li>
+                <b>0 –</b> None</li>
+            <li>
+                <b>1 –</b> Sum</li>
+            <li>
+                <b>2 –</b> Average </li>
+            <li>
+                <b>3 –</b> Max</li>
+            <li>
+                <b>4 –</b> Min</li>
+            <li>
+                <b>5 –</b> Count</li>
+            <li>
+                <b>6 –</b> Custom</li>
+            <li>
+                <b>7 –</b> Custom Distinct Sum</li>
+            <li>
+                <b>8 –</b> Custom Distinct Average</li>
+            <li>
+                <b>9 –</b> Custom Distinct Count</li>
+        </ul>
+        <ul>
+            <li>
+                <b>Priority –</b> The inherited priority for the field. If more than one priority should be applied, separate row entries must be made. Priority 1 will inherit priority 0 abilities. </li>
+        </ul>
+        <ul>
+            <li>
+                <b>0 –</b> Filtering</li>
+            <li>
+                <b>1 –</b> User Interface</li>
+        </ul>
+        <ul>
+            <li>
+                <b>UpdateTableName – </b>If the value may be updated, the name of the write-back destination must be specified. </li>
+            <li>
+                <b>ExpressionColumnFlag –</b> If the column is an expression column, set to “1”.</li>
+            <li>
+                <b>ExpressionColumnString –</b> The expression to be used. </li>
+            <li>
+                <b>ColumnFormatStringFlag –</b> If active, will adhere to standard format string for user interface presentation. </li>
+            <li>
+                <b>ColumnFormatString -</b> Standard format string for user interface presentation.</li>
+            <li>
+                <b>ParentTableColumn –</b> Used to assist with lookup data related to trees. </li>
+            <li>
+                <b>;"&gt;AplyUserItemAssignOnLookupDataFlag –</b> If selected, will apply user assign logic to lookups. </li>
+            <li>
+                <b>LookupFlag –</b> If selected, will identify a lookup. </li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="155" MadCap:lastWidth="624">
+    <head>
+        <!--The social media links in the footer use Font Awesome. The script on line 7 calls the Font Awesome script. The <i> tags in the list items call the Font Awesome characters at page load time.-->
+    </head>
+    <body>
+        <script src="https://use.fontawesome.com/6fd8c5ba33.js">
+        </script>
+        <div class="fusion-footer">
+            <p>© Copyright <MadCap:variable name="Variables.Current_Year" /> Mi9 Retail | All Rights Reserved</p>
+            <ul>
+                <li><a href="https://www.facebook.com/mi9retail1" target="_blank" title="Facebook" alt="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://twitter.com/mi9retail" target="_blank" title="Twitter" alt="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/company/mi9-retail" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/PrintCover.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="pageLayout" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Price Planning/Price Planning Overview.htm"
+    BreakType="pageLayout"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Default.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Price Planning/Price Planning Configuration.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/System Policies/Module - Price Planning.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Price Manager User Rights.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Rounding Rules.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Create a Rounding Rule Standard Price Ending.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Create Rounding Rule Criteria Standard.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Create Rounding Rule Criteria Price Ending.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Modify a Rounding Rule or Rounding Rule Criteria.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Delete a Rounding Rule or Rounding Rule Criteria.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Variables.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Create a Variable.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Modify a Variable.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Delete a Variable.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Strategy Calculation Rules.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Create a Calculation.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Modify a Calculation.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Delete a Calculation.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Strategy Validation Rules.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Create a Validation.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Modify a Validation.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Delete a Validation.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Price Strategies.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Create a Price Strategy.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Topics/Price Planning/Add a Price Strategy Rule.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Topics/Price Planning/Modify a Price Strategy Rule.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Topics/Price Planning/Delete a Price Strategy Rule.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Topics/Price Planning/Set defaults Price Strategy Variables.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Topics/Price Planning/Set Variables for integration.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Modify a Price Strategy.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Delete a Price Strategy.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Workflow.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Price Planning/Price Planning Home Screen.htm"
+    StartSection="false"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Price Planning/Capturing new products price cost changes.htm"
+    conditions="General.Temp Exclude">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Product Change panel.htm"
+      conditions="General.Temp Exclude" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Add to Existing Price Action.htm"
+      conditions="General.Temp Exclude" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Create New Price Action.htm"
+      conditions="General.Temp Exclude" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Price Planning/Pricing Plans.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Open a Pricing Plan.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Create a Pricing Plan.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Add Products to the Pricing Plan.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Including or Excluding Sites.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Adding new site clusters to a Pricing Plan.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Adding sites to a Pricing Plan.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Delete a Pricing Plan.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Price Planning/Create Pricing Plans and Actions.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Open a Pricing Action.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Create a Price Action.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Clone a Price Action.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/View Price Action product s inventory.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Modify a Price Action.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Select a new Pricing Strategy for the Price Action.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Modify Pricing at lower levels.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Exclude Products from the Price Action.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Exclude Sites from the Price Action.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Exclude individual products from the Price Action.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Price Planning/Exclude a specific Site product from the Price Action.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Delete a Price Action.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Calculate a Price Action.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Modify a Price Action Status.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/Price Action Validation Log and Overriding Validation Errors.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Price Planning/View Price Action Status Changes and Messages.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Price Planning/Price Planning Help.htm" />
+</CatapultToc>

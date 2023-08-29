@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="2698" MadCap:lastWidth="1149">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Creating View collection sets using an SQL script</h1>
+        <p>View collection set data are stored in the database in the “<span class="code_sample">tbl_VW</span>” namespace. While it is typical to create a view collection set in the user interface using the method described in the practical application section, they may also be created with a SQL script as follows (example is for merchandise financial planning):</p>
+        <div class="code_block">
+            <p>-- Create View Collection Set</p>
+            <p>IFNOTEXISTS(SELECT 1</p>
+            <p>FROMdbo.tbl_VW_ViewCollectionSet</p>
+            <p>WHEREname='Merchandise Financial Planning')</p>
+            <p>BEGIN</p>
+            <p>&#160;</p>
+            <p>DECLARE@iViewCollectionSetIDINT</p>
+            <p>INSERTINTOdbo.tbl_VW_ViewCollectionSet</p>
+            <p>(Name</p>
+            <p>,Description</p>
+            <p>)</p>
+            <p>VALUES</p>
+            <p>(N'Merchandise Financial Planning'</p>
+            <p>,N'Merchandise Financial Planning View Collection'</p>
+            <p>&#160;&#160; )</p>
+            <p>&#160;</p>
+            <p>SET@iViewCollectionSetID=SCOPE_IDENTITY()</p>
+            <p>END</p>
+            <p>ELSE</p>
+            <p>BEGIN&#160; </p>
+            <p>&#160;</p>
+            <p>SET@iViewCollectionSetID=(SELECTViewCollectionSetID</p>
+            <p>FROMtbl_VW_ViewCollectionSet</p>
+            <p>WHEREName='Merchandise Financial Planning')</p>
+            <p>&#160;</p>
+            <p>END</p>
+        </div>
+        <p>This will create and name the view collection set. </p>
+        <p>The view collection set will need to be parented by a group. A group for the above example may be created using the following script:</p>
+        <div class="code_block">
+            <p>-- Create View Goup</p>
+            <p>IFNOTEXISTS(SELECT 1</p>
+            <p>FROMtbl_VW_ViewGroup</p>
+            <p>WHEREViewGroupName='Merchandise Financial Planning')</p>
+            <p>BEGIN</p>
+            <p>&#160;</p>
+            <p>DECLARE@iViewGroupIDINT</p>
+            <p>INSERTINTOdbo.tbl_VW_ViewGroup</p>
+            <p>(ViewGroupName</p>
+            <p>,ViewGroupDescription</p>
+            <p>)</p>
+            <p>VALUES</p>
+            <p>(N'Merchandise Financial Planning'</p>
+            <p>,N'Merchandise Financial Planning View Group'  </p>
+            <p>)</p>
+            <p>&#160;</p>
+            <p>SET@iViewGroupID=SCOPE_IDENTITY()</p>
+            <p>&#160;</p>
+            <p>END</p>
+            <p>ELSE</p>
+            <p>BEGIN</p>
+            <p>SELECT@iViewGroupID=ViewGroupID</p>
+            <p>FROMtbl_VW_ViewGroup</p>
+            <p>WHEREViewGroupName='Merchandise Financial Planning'</p>
+            <p>END</p>
+        </div>
+        <p>The view collection may be parented by the group using the following script:</p>
+        <div class="code_block">
+            <p>-- Link View Collection set to View Collection Set Group</p>
+            <p>IFNOTEXISTS(SELECT 1</p>
+            <p>FROMdbo.tbl_VW_ViewCollectionSetRelationshipToViewCollectionSetGroup</p>
+            <p>WHEREViewCollectionSetID=@iViewCollectionSetID</p>
+            <p>ANDViewCollectionSetGroupID= 5 )</p>
+            <p>BEGIN</p>
+            <p>INSERTINTOdbo.tbl_VW_ViewCollectionSetRelationshipToViewCollectionSetGroup</p>
+            <p>(ViewCollectionSetID</p>
+            <p>,ViewCollectionSetGroupID</p>
+            <p>)</p>
+            <p>VALUES</p>
+            <p>(@iViewCollectionSetID</p>
+            <p>, 5</p>
+            <p>)</p>
+            <p>END</p>
+        </div>
+        <p>“5” is the specific ViewCollectionSetID for this example.</p>
+    </body>
+</html>

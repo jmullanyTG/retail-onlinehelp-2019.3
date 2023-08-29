@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+         
+    </head>
+    <body>
+        <h1>Cell Lock Example</h1>
+        <p>The simplest locking scenario is when we lock a single period of sales to keep its sales values intact when changes are made at aggregate levels above it</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Low Level Locks.png" />
+        </p>
+        <p>In the above example, Sales has been locked for 2017_wk32, also locking Sales Units and AUR in the view</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Low Level Locks_1.png" />
+        </p>
+        <p>When Sales is changed to $25,000 at the month level, the system subtracts the locked quantity of $5,044 from $25,000, and distributes the remaining $19,956 across the 3 unlocked periods by taking their percent contribution to the old Sales total, rebalancing them to equal 100%, then multiplying by $19,956</p>
+    </body>
+</html>

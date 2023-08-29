@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Configuring Normal Stocked Settings</h1>
+        <p>The Normal Stocked policy type indicates that the item is  a regular everyday selling item that must be continually stocked and replenished when its ordering criteria are met. Normal stocked items are replenished using a fixed-period ordering methodology. This classification is best suited to items where demand is not intermittent (having periods of no demand interspersed with periods of low demand) and forecasting for future demand is reasonably achievable. </p>
+        <p><b>To Configure Normal Stocked Settings</b>
+        </p>
+        <ol>
+            <li>From the Execute tab, click <b>Policy</b>. The Policy Task screen displays.</li>
+            <li>Click <b>Edit</b>. The Update Policy task screen displays.</li>
+            <li>From the Order Policy Type drop-down menu on the Policy section, select <b>Normal Stocked</b>.</li>
+            <li>Make the necessary changes according to the table at the end of this topic.</li>
+            <li>When finished, click <b>OK</b>.</li>
+        </ol>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Review Period Days</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Indicates how often the inventory will be reviewed for re-ordering. The more frequently the inventory is reviewed, the higher service levels will be as corrective action can be taken on unusual demands or when lead times are inaccurate.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Replenishment Cycle Days</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Indicates how often the inventory must be ordered. The replenishment cycle is always a factor of review period and must be more or equal that value. To reduce stockholding, replenishment cycles must be kept as low as possible. However, constraints that typically prohibit very low replenishment cycles are:</p>
+                        <ul>
+                            <li><b>Supplier Constraints:</b> the supplier may not be able to deliver as frequently or may require a minimum amount of inventory to be ordered before making a delivery.</li>
+                            <li><b>Administration Cost: </b>the cost associated with processing an order may make placing small orders economically unfeasible.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Back Order Ratio</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The percentage of lost sales that are expected from returned items from  customers.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Safety Stock Days</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The safety stock for an item is the minimum planned inventory level. Safety stock is insurance stock and is held for two reasons: </p>
+                        <ul>
+                            <li>To compensate for variances in supplier lead times</li>
+                            <li>To o compensate for variances in forecasts. </li>
+                        </ul>
+                        <p>Keeping safety stock ensures that, in spite of lead time and forecast variances, stock will still be available to meet demand in proportion to the service level specified. Safety stock days refer to the period over which the demand can be met with the current stock level. Safety stock typically accounts for 40-80% of the total inventory holding. Because this is  a significant portion, it is recommended to drop the safety stock as low as possible to reduce the overall investment in inventory. To do this appropriately, forecasts and supplier lead times must  be accurate.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Target Service Level</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Safety stock may be set as safety stock days, or service level. A high service level requires a higher volume of units in the safety stock (and higher stockholding costs). Safety stock is held to ensure customer service levels. Demand Management service levels can be specified, and then converted to safety stock values. The higher service levels translate to higher safety stocks; however, when approaching 100%, increased service levels are only achieved through a substantial increase in safety stock investment to account for all lead time and forecasting variances. When evaluated over time, the cost of carrying this additional safety stock can outweigh the profit made by these additional sales. Demand Management has the option to set safety stock based on what is most profitable. This option takes into account the balance of profit margins, forecasted demand and carrying cost into account.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Minimum Safety Stock Units</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The minimum number of units maintained in stock in addition to the bin level (e.g. presentation minimums). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Return Rate</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The percentage of items that are expected to be returned to the store. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Days Before Return</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The expected number of days between the sale of an item and the return of that item to the store.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Reuse Rate</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The percentage of items that have been returned and may be considered as saleable stock again. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Days Before Reuse</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The expected number of days between the return date of an item and it being considered as regular saleable stock again. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Order Multiple</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The multiple of units in which the stock must be ordered. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Order Multiple Rounding</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The rounding rules used to determine how order quantities that do not precisely align with the order multiple should be rounded up or down. </p>
+                        <ul>
+                            <li><b>Up: </b>rounds up to the nearest order multiple.</li>
+                            <li><b>Down:</b> rounds down to the nearest order multiple.</li>
+                            <li><b>Nearest:&#160;</b>rounds to the nearest order multiple (round natural). </li>
+                            <li><b>Down Protected:&#160;</b>rounds down, unless the action of rounding creates a projected lost sale, in which case it will round up. </li>
+                            <li><b>Nearest Protected: </b>rounds nearest (natural), unless the action of rounding creates a projected lost sale, in which case it will round up. This is the recommended setting. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Excess for Redistribution Days</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The number of days of excess that should be considered to be protected from a redistribution action. As a day value, the calculated unit value will be a resolved function of projected demand. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Expedite Freeze Days</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The forward looking days in which orders should not be considered eligible for an expedite action. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Surplus Freeze Days</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>The forward looking days in which orders should not be considered eligible for a surplus action.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

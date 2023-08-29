@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Linking a Widget to a View in SQL</h1>
+        <p>While it is typical to link a widget to a view in the user interface using the method described in the practical application section, they may also be linked with a SQL script as follows (example is for merchandise financial planning):</p>
+        <div class="code_block">
+            <p>
+                <p>&#160; -- LINK VIEW AND WIDGET</p>
+                <p>IF @iViewID IS NOT NULL</p>
+                <p>AND @iWidgetID IS NOT NULL</p>
+                <p>AND NOT EXISTS ( SELECT 1</p>
+                <p>FROM dbo.tbl_VW_ViewWidget</p>
+                <p>WHERE ViewID = @iViewID</p>
+                <p>AND WidgetID = @iWidgetID )</p>
+                <p>BEGIN</p>
+                <p>INSERT INTO dbo.tbl_VW_ViewWidget</p>
+                <p>( ViewID, WidgetID, WidgetOrder )</p>
+                <p>VALUES ( @iViewID, @iWidgetID, 0 )</p>
+                <p>END</p>
+            </p>
+        </div>
+    </body>
+</html>

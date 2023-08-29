@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Workload Queue Active Statuses</h1>
+        <p>The following Statuses will be seen in the Workload Queue Active list</p>
+        <ul>
+            <li><b>Unknown</b> - The system includes a default Status Type which is only used if the system is experiencing an issue and Demand Management Support should be contacted.</li>
+            <li><b>Preparing (a.k.a. Batching)</b> - The system is evaluating the Items in the submitted Batch and estimated workload.</li>
+            <li><b>Coalescing</b> - The system is marking Items in the submitted Batch to reduce processing time by removing duplicate items. Last Batch submission, with like Items, will be processed first. Prior Batches will complete the non-coalesced Items and then be placed into a Status of ‘purgatory’ until the last Batch, with ‘like’ Items, has been completed.</li>
+            <li><b>Ready</b> - The system has completed preparation and coalescing the Batch making it ready to be executed by the Workload Queue Marshall.</li>
+            <li><b>Executing</b> - The system is executing the submitted Batch.</li>
+            <li><b>Purgatory</b> - The Batch is waiting for a following Batch, with like Items, to be completed.</li>
+        </ul>
+    </body>
+</html>

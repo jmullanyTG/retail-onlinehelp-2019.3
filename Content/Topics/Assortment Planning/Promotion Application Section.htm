@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="1961" MadCap:lastWidth="1246">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Promotion Application Section </h1>
+        <p>This section displays information for promotion applications already created for the promotion selected in the <b>Defined Promotions</b> section. Users can create new applications and delete or change existing applications.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Promotion Application Details Section.png" />
+        </p>
+        <ul>
+            <li><b>New</b>: Creates a new Promotion Application line for the promotion selected in the <b>Defined Promotions</b> section.</li>
+            <li>
+                <p><![CDATA[
+]]><b>Delete</b>: Removes the selected item from the list of promotion applications.</p>
+                <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">
+
+    Users are not asked to confirm deletion of promotion applications so be certain you want to remove them before clicking <b>Delete</b>.</p>
+            </li>
+            <li><b>Fields</b>: Opens the <b>Customization</b> dialog. Users can drag fields to or from the tab’s header area and this dialog to customize the view. Custom layouts can be saved or restored by right-clicking in the grid and selecting <b>Save Layout</b> or <b>Restore Layout</b>, respectively.</li>
+            <li><b>Save</b>: Saves all newly created promotion applications and changes or deletions of existing promotion applications made since the last save. For promotions marked as Active, this applies the promotion as per the specifics in the <b>Promotion Application Detail</b> section.</li>
+            <li><b>Cancel</b>: Removes all newly created promotion applications and undoes deletions or change of existing promotion applications made since the last save.</li>
+        </ul>
+        <h2>Grid Fields</h2>
+        <p><b>Product Filter</b>: Clicking in this field displays the Items dialog allowing users to select a product filter of placeholders to include in the promotion application. </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/AP Items filter dialog.png" />
+        </p>
+        <p>Selecting the drop down arrow in the Filter field displays a list of filters. </p>
+        <p>The <img src="../../Resources/Images/Assortment Planning/Defined Promotions Section_4.png" /> icon launches the <b>Maintain Filters</b> dialog where users can create new product filters, edit, delete, or export existing product filters, and import product filter files.</p>
+        <p MadCap:autonum="">Choosing a product filter with products that are not included in Product selection of the Parameters area may cause promotion applications to disappear from the view when the screen is refreshed. To view them again, simply adjust the Product selection to include the Product Filter you chose for the application.</p>
+        <p><b>Cluster Sets</b>: The cluster sets for the promotion application. </p>
+        <p MadCap:autonum="">Any cluster sets related to the <b>Site Hierarchy</b> parameter are available for selection here. However, if the cluster sets chosen are not included in the <b>Cluster Sets</b> parameter, then the promotion application may disappear from the view when the screen is refreshed.</p>
+        <p><b>Start Date</b>: The start date (as a period) for promotion application Defaults to the Eligibility Start Date for the promotion or the nearest non-actualized period. This date cannot be set prior to the Eligibility Start Date for the promotion. Start Dates at the Promotion Application Details level cannot be set prior to this date&#160;</p>
+        <p><b>End Date</b>: The end date (as a period) for promotion application. Defaults to the Eligibility End Date for the promotion. This date cannot be set after the Eligibility End Date for the promotion. End Dates at the Promotion Application Details level cannot be set after this date</p>
+        <p><b>Final Index</b>: The Promotional Index for this specific application of the promotion. Defaults to the Final Index of the selected promotion. Changing the Final Index at this level pushes down and overwrites all placeholder/cluster Final Indices on Apply for the promotion application in the <b>Promotion Application Details</b> section.</p>
+        <p><b>Apply to Markdown Periods?</b>: When checked, prevents promotions from being applied to any markdown periods.</p>
+        <p><b>Hold Sales</b>: Whether the promotion application has the ability to increase total sales of the placeholder/clusters it affects. If:<ul><li><p><b>Checked</b>: (Enabled) the total sales of affected placeholder/clusters remains the same as before the promotion was applied and only magnitude of sales in each period is adjusted.</p><MadCap:snippetBlock src="../../Resources/Snippets/AP Hold Sales Enabled.flsnp" /></li><li><b>Unchecked</b>: the total sales of the affected placeholder/clusters can increase above the magnitude prior to promotion application. This is effected through recalculation of the placeholder/cluster rates of sale.</li></ul><p><img src="../../Resources/Images/Assortment Planning/Promotion Application Section_1.png" />: Indicates that only some of the placeholder/clusters included in the promotion application have the Hold Sales option checked.</p><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Checking or unchecking this option at the Promotion Application level pushes the change down to all placeholder/clusters included in the application.</p></p>
+        <p><b># Placeholders</b>: The number of placeholders to which the application is actually being applied per the <b>Promotion Application Details</b> section.</p>
+        <p><b>Location Exceptions</b>: Whether site level exclusions have been made to the promotion application</p>
+        <p><b>Location Exceptions</b> Clicking in this field launches the <b>Assortment Promotion Locations</b> dialog. For more information, see <MadCap:xref href="Assortment Promotions Locations dialog.htm">Assortment Promotions Locations dialog</MadCap:xref>.</p>
+        <p><b>Approximation</b>: Launches the <b>Assortment Promotion Approximation</b> dialog. For more information, see <MadCap:xref href="Assortment Promotion Approximation dialog.htm">Assortment Promotion Approximation dialog</MadCap:xref>.</p>
+        <p><b>Status</b>: The status of the promotion application. Options are:<ul><li><b>Active</b>: The application is applied to the placeholder/clusters as per the <b>Promotion Application Details</b> section with all related sales plans being effected accordingly.</li><li><b>Inactive</b>: Default setting. The application is still saved and ready for application but has not yet be actually applied. It is visible in the Promotions supporting view of Line Visualization but it will not have an effect on the sales plans of the placeholder/clusters shown in the <b>Promotion Application Details</b> section.</li></ul></p>
+    </body>
+</html>

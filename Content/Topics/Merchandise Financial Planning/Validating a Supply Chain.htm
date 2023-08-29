@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1580" MadCap:lastWidth="1120">
+    <head>
+    </head>
+    <body>
+        <h1>Validating a Supply Chain</h1>
+        <p>A valid supply chain can be used to split inventory among DCs. For a supply chain to be valid, the sites and DCs in the supply chain must match the sites and DCs in the plan, and all sites in the supply chain must have a DC as their primary source. </p>
+        <p>You can only select and validate supply chains for master plans. To see whether or not the supply chain defined for a master plan is valid, you can validate it from the Maintain Financial Plan window. For convenience, the result is passed down to its branch plans.</p>
+        <p>To validate a supply chain:</p>
+        <ol>
+            <li>From the Financial Planning toolbar, click <b>Manage</b>.</li>
+            <li>In the Financial Plan Maintenance window, select a master plan and click <b>Edit</b>.</li>
+            <li>
+                <p>In the Maintain Financial Plan window, find the <b>Supply Chain Status</b> field on the General tab.</p>
+                <p>
+                    <img src="../../Resources/Images/MFP/General.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click the check mark on the right-side of the <b>Supply Chain Status</b> field to validate the supply chain.</p>
+                <p>
+                    <img src="../../Resources/Images/MFP/status validate.png" />
+                </p>
+                <p>The result of the validation appears in the Supply Chain Status field.</p>
+            </li>
+        </ol>
+        <h2>Results</h2>
+        <ul>
+            <li>If the Supply Chain Status value is Valid, the supply chain will be used to split inventory among your DCs.</li>
+            <li>
+                <p>If the Supply Chain Status value is <span style="color: #ff0000;">Unknown </span>or <span style="color: #ff0000;">Invalid</span>, inventory will instead be split generically  among your DCs.</p>
+                <ul>
+                    <li>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> The Supply Chain Errors tab shows what errors were detected during validation. In the example below, the "Has non-DC source" error was detected for several sites (Anaheim, Las Vegas, Los Angeles, and others). To fix the error, edit the supply chain to make the primary source of these sites a DC. Then, re-validate the supply chain. </p>
+                        <p>
+                            <img src="../../Resources/Images/MFP/Supply Chain Errors.png" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1114" MadCap:lastWidth="1142">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Curve Details section field reference</h1>
+        <p>The curve details section will provide a graphical representation of the curve series values and a grid view. </p>
+        <p>Series values in the curve details will be presented both in a graphical format and in a grid. </p>
+        <ul>
+            <li><b>Bucket</b> – Associated time period (buckets) for the x-axis of the line graph will be displayed in the grid. </li>
+            <li><b>Calculated</b> – The system generated value for each period within the curve. </li>
+            <li><b>Effective</b> – If manual adjustments are made to the curve, they will be represented as a value in the “effective” series. This may then be compared to the static “calculated” series. </li>
+            <li><b>Build</b> – The build value will represent a multiplier for the period value’s relationship to the previous period value. This lets users see how drastically the curve values change. This is not applicable to the first period point in the curve (anchor point).</li>
+            <li><b>Contribution %</b> - The contribution % will be a percentage for each period of the representative value of the effective value when compared to the whole (e.g. a flat line curve with 10 periods would have a contribution of 10% for each period).</li>
+            <li><b>Period to Mean</b> – The period to mean y-axis shows a graphical representation of the “distance” to the mean by period. </li>
+        </ul>
+        <h3>Details</h3>
+        <p>The details button will toggle the build and period to mean y-axes.</p>
+        <h2>Interaction with curve values</h2>
+        <p>Interaction with curve values in the curve detail section is limited to two actions: manipulation of the effective series and the build series values. </p>
+        <p>
+            <img src="../../Resources/Images/Curves/Curve Details.png" />
+        </p>
+        <p>Curve are graphically represented using an interactive line graph. Values may be manipulated by dragging one of the “dots” up or down. The curve values are re-calculated simultaneously. </p>
+        <p>
+            <img src="../../Resources/Images/Curves/Curve Details_1.png" />
+        </p>
+        <p>Grid values will also change dynamically if manual adjustments are made to the curve.</p>
+        <p>
+            <img src="../../Resources/Images/Curves/Curve Details_2.png" />
+        </p>
+    </body>
+</html>

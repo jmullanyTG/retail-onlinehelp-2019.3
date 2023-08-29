@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2160" MadCap:lastWidth="1116">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Price Planning System Policies</h1>
+        <p>The following system policies influence the behaviour of various functionalities within the Price Manager module.</p>
+        <table class="TableStyle-standard" cellspacing="0" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <col class="TableStyle-standard-Column-Column1" style="width: 10%;" />
+            <col class="TableStyle-standard-Column-Column2" style="width: 30%;" />
+            <col class="TableStyle-standard-Column-Column1" style="width: 60%;" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">
+                        <p style="font-weight: bold;">Display Name</p>
+                    </th>
+                    <th class="TableStyle-standard-HeadE-Column2-Header1">System Name</th>
+                    <th class="TableStyle-standard-HeadD-Column1-Header1">
+                        <p style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Advanced Validation Log</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.AdvancedValidationLog</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">When this policy is set to 'False', the system will display failed Validations at the Inventory level. When the policy is set to 'True', the system will group Inventory failed Validations up to the Variant level and Site (i.e. suppressing Item Master). The system will also allow overrides to be acted upon at the Variant level if configured.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Auto update Price Action on import changes</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.AutoUpdatePriceActionsOnImportChanges</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Controls the system to implement automatic updates for imported product changes. By default, the system is set to ‘False’ requiring you to review changes before updating the Price Action with the new information from the user interface. <br /><br />If set to ‘True’ the system will automatically update Price Actions with imported changes that affect Pricing Actions with the same Product and Site combination.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p> Config View Collection Set </p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.ViewCollectionSetForPriceManagerConfig</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>This policy determines the user interface to be used for the Price Manager’s Configuration.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Data Initialize Batch Size</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.DataInitializeBatchSize</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>This policy determines the number of records to return, at one time for performance reasons, when initializing a Price Action. The system default is 1000 Item Masters records. This will need to be modified based on the available server configuration.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1" MadCap:conditions="General.Temp Exclude">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Inventory Meta Data View</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">&#160;</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>This policy determines the default fields to be used when displaying Inventory Manager from Price Planning.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Inventory Meta Data View</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.InventoryMetaDataViewID</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Sets ViewID for Price Manager inventory view meta data</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Plan Start Date Number Of Days Out</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.PlanStartDateNumberOfDaysOut</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Set default number of days out from current for start date field in Price Manager. This can only be overridden (i.e. backdated) by users with the ‘Emergency Pricing’ <a href="../Users/Price Manager.htm">user right</a>, which will allow a date to be selected as early as tomorrow.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Price Action Calendar View Collection Set</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.ViewCollectionSetForPriceActionCalendar</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>This policy determines the user interface to be used for the Price Manager’s Calendar.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Price Action View Collection Set</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.ViewCollectionSetForPriceAction</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>A View Collection Set that may be configured to display information in context of a Price Action (e.g. reports).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Price Planning View Collection Set</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.ViewCollectionSet</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">A View Collection Set that may be configured to display product information pertinent to Price Planning.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Pricing Plan View Collection Set</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">PriceManager.ViewCollectionSetForPricingPlan</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Sets whether or not to display a pricing plan view collection set as a tab in the Price Manager's pricing plan screen.</p>
+                        <p>Value = 0 does not display a view collection set tab.</p>
+                        <p style="font-style: normal;">Value = <i>n </i>(where "n" = a view collection set ID) displays the corresponding  view collection set as a tab in a pricing plan screen. The tab name is the name of the selected view collection set.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1" MadCap:conditions="General.Temp Exclude">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Product Pricing Level</td>
+                    <td class="TableStyle-standard-BodyB-Column2-Body1">PriceManager.ProductPricingLevel</td>
+                    <td class="TableStyle-standard-BodyA-Column1-Body1">
+                        <p>Determines the level at which the system will allow generation of pricing (execution of calculations and validations) within the solution. </p>
+                        <p>Setting the value to Variant\Site and Item\Site Pricing allows users to manipulate the generation of pricing at a high level (Variant\Site) and have greater control and degree of manipulation of pricing at a lower level (Item\Site). </p>
+                        <p>All Price Actions within a Pricing Plan will be limited to either Variant\Site or Item\Site pricing.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

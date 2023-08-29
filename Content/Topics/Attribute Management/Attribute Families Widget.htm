@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Attribute Families Widget</h1>
+        <p>The attribute families widget allows for the creation and maintenance of attribute families. Each attribute family contains attribute that pertain to that family and can be imported from host systems if available.</p>
+        <p>
+            <img src="../../Resources/Images/Attribute Management/Attribute Families Widget.png" />
+        </p>
+        <p>The attribute families widget returns a number of columns that define how attributes can be assigned and which families are available in the appropriate sets.</p>
+        <ul>
+            <li><b>Family Name</b> – Provides a descriptive name for the family of attributes</li>
+            <li><b>Family Description</b> – provides a description of the attribute family and the attributes it contains</li>
+            <li><b>Entity types</b> – the entity types selection restricts the data entities to which the attributes within the family can be applied.<ul><li><p class="important" MadCap:autonum="&lt;b&gt;IMPORTANT: &lt;/b&gt;">the Variant type must be assigned for an attribute family to be definable on variants within Demand Management; the Variant Placeholder entity type must be assigned for an attribute family to be definable for placeholders within Assortment Planning</p></li><li><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">by only assigning the Variant Placeholder entity type to a family, that family will not be assignable to variants and will be exclusively used within Assortment Planning; this can be useful in organizations where a master data team defines the primary attributes but there are others that users within the merchandising team wish to assign while planning</p></li></ul></li>
+        </ul>
+        <ul>
+            <li><b>Allow Multiple Values</b> – This check box defines whether a user will be able to select multiple attributes from a family to assign to an entity.</li>
+            <li><b>AP Updates Variants</b> – This check box defines whether changes will be allowed in Assortment Planning to attributes attached to assigned variants<ul><li>Checked means the corresponding attribute families will be editable in Assortment Planning for placeholders with assigned variants, and any changes made to them will update the assigned variant’s attributes</li><li>Unchecked means the corresponding attribute families will be grayed out and uneditable in Assortment Planning for placeholders with assigned variants</li></ul></li>
+            <p>
+                <img src="../../Resources/Images/Attribute Management/Attribute Families Widget_1.png" />
+                <ul>
+                    <li>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> this setting only appears when the system policy Update Variant Attribute Values In Assortment Planning is set to TRUE and is only valid for attribute families with the Variant Entity Type assigned; see Demand Management Assortment Planning Standard Documentation &gt; Line Visualization &gt; Supporting Views &gt; Attributes View for more information</p>
+                    </li>
+                </ul>
+            </p>
+        </ul>
+        <ul>
+            <li><b>Attribute Set Assignment</b> – The attribute sets selected in the filter described above will dynamically form columns which users can check to specify whether an attribute family is available for that set.</li>
+        </ul>
+        <p>Attribute Values</p>
+        <p>On selecting the attribute family from the widget above, the attribute values widget will update. </p>
+        <p>
+            <img src="../../Resources/Images/Attribute Management/Attribute Families Widget_2.png" />
+        </p>
+        <p>The attribute values widget allows users to create new widgets that have not been imported from a host system.</p>
+        <ul>
+            <li><b>Value Code</b> – The value code is a distinct code that identifies the attribute value</li>
+            <li><b>Value Description</b> – The value description describes the attribute value</li>
+            <li><b>Value External ID</b> – This identifier is read only and will only be populated on attribute values populated from external systems. Users may not edit attribute values on imported data.</li>
+            <li><b>Behavior</b> – For each attribute set to which the attribute value may be assigned, there are three behaviors for the value<ul><li>“<b>Blank/None</b>” – This will mean the users cannot select this attribute value to assign to a product associated with the attribute set.</li><li><b>Allowed</b> – This means the attribute value is allowed to be set against a product associated with the attribute set.</li><li><b>Default</b> – This indicates the attribute value or values (depending on if multi values are allowed) that will be defaulted against any product associated with the attribute set.</li></ul></li>
+        </ul>
+    </body>
+</html>

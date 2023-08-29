@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Cluster Set  Screen</h1>
+        <p style="font-size: 12pt;">From the Cluster Set screen in the Management solution, you can calculate and view specific cluster sets in both detail and chart modes, make manual modifications to site cluster assignments, and arrange multiple cluster sets in the view for easy comparison.</p>
+        <p>Cluster sets that you select to display appear as tabs with the cluster set name just below the toolbar.</p>
+        <p style="font-size: 12pt;">
+            <img src="../../Resources/Images/Cluster Site Manager/Cluster Set view.PNG" />
+        </p>
+        <p><b>To Access the Cluster Set Screen</b>
+        </p>
+        <ol>
+            <li>From the Management tab, click <b>Site Clustering</b>. The Cluster Set Management window displays.</li>
+            <li>To view a cluster set document for a given cluster set, select the cluster site in the grid and click <b>OK</b>.The Cluster Set screen displays.</li>
+        </ol>
+        <h2>Cluster Set Management  Screen Toolbar, Buttons, and Header Fields</h2>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Button</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Manage</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Launches the Cluster Set Management screen.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Save </b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Saves changes made to the user cluster and apply user value fields since the last time the work was saved. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Undo</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Undoes changes made to the user cluster and apply user value fields since the last time the work was saved. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Calculate</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Calculates the cluster assignments for all stores included in the cluster set (based on the parameters and criteria specified during cluster set configuration) and populates the Cluster field with these assignments.</p>
+                        <div class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">You can calculate multiple cluster sets at once from the <a href="Cluster Set Management Window.htm">Cluster Set Management</a> screen. From there, click <b>Allow Multiple</b> and select the desired cluster sets and/or cluster set partitions.</div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Configuration</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Launches the cluster set Configuration window.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Refresh</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Refreshes the current view.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Header Fields</h3>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Name</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The name of the cluster set being viewed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Description</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The description of the cluster set being viewed.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Type</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The cluster set type. For more information on cluster set types, see <MadCap:xref href="Cluster Set Configuration Screen.htm">Cluster Set Configuration</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Last Computed</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Displays the date the cluster set was last calculated.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Tab Header Right-Click Menu Options</h2>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Close</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Closes the cluster set document opened.
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Close All But This</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Closes all open cluster set documents except the one you opened; only available when multiple documents are open.
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Float</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Converts the document tab to a window that can be sized and positioned on the screen (or other screens, in multiple monitor configurations)
+.                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">You can also click and drag the document header to reposition it on the screen. After floating, click the document header and drag the document to the desired location. <span style="font-size: 12pt;">Right click the document header and click </span><span style="font-weight: bold;font-size: 12pt;">Dock as Tabbed Document</span><span style="font-size: 12pt;"> to return the document to its tabbed position</span>. You can also hover over the directional buttons of the positioning reticle that appears while dragging to see possible docked locations for the floated window.</div>
+        <p>
+            <img src="../../Resources/Images/Cluster Site Manager/Cluster Set Floating Tab.PNG" />
+        </p>
+        <ul>
+            <li>
+                <p><span style="font-weight: bold;font-size: 12pt;">New Vertical Tab Group:</span> <span style="font-size: 12pt;">arranges all open documents vertically side by side. After selecting this option, right-click the document header again and select </span><span style="font-weight: bold;font-size: 12pt;">Move to Previous Tab Group</span><span style="font-size: 12pt;"> to return to the last screen configuration</span></p>
+                <p>
+                    <img src="../../Resources/Images/Cluster Site Manager/New Vertical Tab Group.PNG" />
+                </p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><span style="font-weight: bold;font-size: 12pt;">New Horizontal Tab Group:</span> <span style="font-size: 12pt;">arranges all open documents  horizontally stacked. After selecting this option, right-click the document header again and select </span><span style="font-weight: bold;font-size: 12pt;">Move to Previous Tab Group</span><span style="font-size: 12pt;"> to return to the last screen configuration</span></p>
+                <p>
+                    <img src="../../Resources/Images/Cluster Site Manager/New Horizontal Tab Group.PNG" />
+                </p>
+            </li>
+        </ul>
+        <h2>Detail Tab</h2>
+        <p>The Detail tab displays the site codes and descriptions of all stores in the cluster set and their cluster assignments. </p>
+        <p>
+            <img src="../../Resources/Images/Cluster Site Manager/Cluster Set screen Detail tab.PNG" />
+        </p>
+        <h3>Tab Header Fields</h3>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Name</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The site name and number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Description</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The site description.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Type</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The system calculated cluster assignment for the site.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>User Cluster</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Editable drop-down field. Displays/sets the user override cluster assignment for the store. Not required.
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Apply User Value</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Editable check box. Indicated if the system uses User Cluster in place of Cluster as the Effective Cluster or not. Default is checked. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Effective Cluster</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">The effective cluster assignment for the store.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Grid Options</h3>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Select All</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Selects and highlights all site records in the Site Cluster Detail grid.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Deselect All</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Deselects and un-highlights all site records in the Site Cluster Detail grid.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Select from Clipboard</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Selects and highlights all matching site records in the Site Cluster Detail grid.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Deselect from Clipboard</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Deselects and un-highlights all matching site records in the Site Cluster Detail grid.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Chart Tab</p>
+        <p>The Chart tab displays all stores in the cluster set as data points against X and Y axes for all Attributes defined in Cluster Set Configuration. </p>
+        <p style="font-size: 12pt;">
+            <img src="../../Resources/Images/Cluster Site Manager/Cluster Set screen Chart tab.PNG" />
+        </p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>X-Axis Attribute</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Selects an attribute from those defined in Cluster Set Configuration to plot on the X (horizontal) axis of the graph.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Y-Axis Attribute</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Selects an attribute from those defined in Cluster Set Configuration to plot on the Y (vertical) axis of the graph.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Legend</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Displays one color-coded checkbox per cluster, corresponding to the colored data points that are assigned to that cluster on the chart. If unckecked, hides the related data points.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Data Points</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Colored dots and stars in the chart area: dots correspond to clusters of the same color in the legend, stars represent the centroids (K-Means types) or medoids (K-Medoids types) for the distance calculations used to assign stores to clusters. Align the cross hairs on the chart to a specific data point  to display a pop-up of the store associated with that point, as well as the specific values associated with the X and Y axes at the left and bottom of the chart, respectively.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <img src="../../Resources/Images/Cluster Site Manager/3.6.2 Cluster Site Manager_7.png" style="visibility: visible;width: 634px;height: 317px;" />
+        </p>
+        <ul>
+            <li>
+                <p>Show Labels: Toggles the display of data point labels for all points on the chart. Default is unchecked.</p>
+                <p>
+                    <img src="../../Resources/Images/Cluster Site Manager/3.6.2 Cluster Site Manager_8.png" style="visibility: visible;width: 634px;height: 330px;" />
+                </p>
+            </li>
+        </ul>
+    </body>
+</html>

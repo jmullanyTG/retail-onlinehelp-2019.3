@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Files utility</h1>
+        <p>The <b>Files</b> utility is a system operations utility within the Demand Management user interface which is the main import mechanism for .dll files and plugins which the application needs to function. It is an important utility which may be used to check file versions and update Demand Management.</p>
+        <p>The <b>Files</b> utility is most commonly used by Mi9 consultants, support engineers, developers, or customer IT and power users. The files listing is a data grid, and as is the case with other data grids throughout Demand Management, users may type in the top bar to filter the entries for ease of navigation. </p>
+        <p>The only screen within the <b>Files</b> utility lists the currently loaded files and their pertinent information. The files listed in the files utility will typically be dynamic link library (.dll) and program database (.pdb) files. Other file types (.txt, .chm, etc.) may be included as well.</p>
+        <ul>
+            <li>
+                <b>File Name</b> – The full name of the file, including the file extension.</li>
+            <li>
+                <b>File Description</b> – An optional description of the file.</li>
+            <li>
+                <b>File Path</b> – Most file paths will represent the root folder of an appdata folder for Demand Management. This is represented by \ (backslash). File action types will determine the actual root location for the file path. <ul><li><b>\Demand Management.UIL.SHELL\3.2.0.0</b> – Any file action types of “Copy File To Local User App Data Path” will exist in this root. This will change with the version number.</li><li><b>\Demand Management.UIL.SHELL.STUB\3.2.0.0</b> – Any file action types of “Copy File to Executable Path” will exist in this root. This will change with the version number. </li></ul></li>
+        </ul>
+        <ul>
+            <li>
+                <b>File Version</b> – The version number for the specific file. All .dll files in the Demand Management namespace will follow the naming convention for Demand Management releases. Other namespaced (DevExpress, Microsoft) files will follow their respective release version numbers, as drawn from their file metadata properties. Any files without version metadata will be given a version number of “1”.</li>
+            <li>
+                <b>File Check Sum</b> – This is an informational field displaying the check sum on the file version. This ensures that the correct file is the one that has been loaded.</li>
+            <li>
+                <b>File Action Type</b> – There are three file action types. They are determined by the type of file and their respective location in the file structure. These are important as setting the wrong file action type may cause the application to crash. <ul><li><b>Copy File To Local User App Data Path</b> – This is the file action type for plugins. When adding a file, to determine if a file is a plugin, check the filepath as any plugins will exist in the “plugins” folder. Files of this action type may be reloaded without closing and reopening the Demand Management shell.</li><li><b>Copy File To Executable Path</b> – This is the file action type for all other .dll files. All files which exist within the root “SHELL.STUB\version” folder will need to be of this action type. Any files which exist in both the plugins folder and the root folder (such as Demand Management.Common.dll) will need to be of this file action type.</li><li><b>No Action</b> – Marking a file as no action will result in the deletion of the file. It is intended to me a mechanism to recall deprecated files.</li></ul></li>
+        </ul>
+        <ul>
+            <li>
+                <b>File Date Time</b> – The date of upload to the application.</li>
+            <li>
+                <b>File Audit Name</b> – The name of the file as it exists in the file audit path (original source). This is for audit purposes.</li>
+            <li>
+                <b>File Audit Source Path</b> – The original source from which the file was uploaded. This will ensure that the file may be traced to a certain point of origin. This is for audit purposes.</li>
+        </ul>
+    </body>
+</html>

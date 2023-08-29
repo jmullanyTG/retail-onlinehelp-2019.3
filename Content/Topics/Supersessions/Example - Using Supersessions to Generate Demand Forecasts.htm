@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="General.How-To Guides">
+    <head>
+        <link href="../../Resources/TableStyles/Video Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Example - Forecasting Supersession</h1>
+        <p>In this example, you will use Demand Management's supersessions feature to create a demand forecast for a new item, <b>High Collar Angelina Jacket</b>, using the sales history of an old item,<b> Leather Moto Jacket</b>. This example shows how to create a supersession and demand forecast for a single color/size combination of the new item. In practice, you will need to repeat these steps for each color/size combination your new items possess.</p>
+        <p style="font-weight: bold;" MadCap:conditions="General.Temp Exclude">
+            <MadCap:snippetText src="../../Resources/Snippets/Example database text.flsnp" />
+        </p>
+        <h2 MadCap:conditions="General.Temp Exclude">Workflow</h2>
+        <p MadCap:conditions="General.Temp Exclude">Click to open the Creating Supersessions workflow.</p>
+        <p MadCap:conditions="General.Temp Exclude"><a href="../../Resources/PDFs/Demand Management Workflows.pdf#page=12" title="Click to open workflow" alt="Click to open workflow"><img src="../../Resources/PDFs/Demand Management Workflows.pdf#12" class="workflow" /></a>
+        </p>
+        <MadCap:dropDown MadCap:conditions="General.Exclude from Print">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Related videos</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table class="TableStyle-Video_Table" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Video Table.css');">
+                    <col class="TableStyle-Video_Table-Column-Column1" />
+                    <col class="TableStyle-Video_Table-Column-Column1" />
+                    <tbody>
+                        <tr class="TableStyle-Video_Table-Body-Body1">
+                            <td class="TableStyle-Video_Table-BodyE-Column1-Body1">
+                                <p>
+                                    <p>
+                                        <object MadCap:HTML5Video="true" class="video" MadCap:Param_autoplay="false" MadCap:Param_loop="false" MadCap:Param_muted="false" src="../../Resources/Videos/BC-3 Item Supersession Creation_E.mp4" MadCap:Param_controls="true">
+                                        </object>
+                                    </p>
+                                </p>
+                            </td>
+                            <td class="TableStyle-Video_Table-BodyD-Column1-Body1">
+                                <p>
+                                    <p>&#160;</p>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Video_Table-Body-Body1">
+                            <td class="TableStyle-Video_Table-BodyB-Column1-Body1">
+                                <p>Item Supersessions</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="TableStyle-Video_Table-BodyA-Column1-Body1">&#160;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Instructions</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>1. Create the Supersession</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the <b>Execute</b> tab, click <b>Supersession</b>. The Superssession Grid displays.</li>
+                    <li>From the toolbar, click <b>New</b> The Items window displays.</li>
+                    <li>From the Filter drop-down menu, select the filter you want to use for the supersession. In this example, select <b>Supersession Model Management (by Dep)</b>.</li>
+                    <li>Add the condition condition  ItemMaster Group 3 Description is One of the Following: <b>Coats &amp; Jackets.</b></li>
+                    <p>
+                        <img src="../../Resources/Images/Supersessions/Example_Supersessions_Filter_Condition.png" />
+                    </p>
+                    <li>From the Add Supersession Wizard, select the following old item to supersede: </li>
+                </ol>
+                <ul>
+                    <li>Item Master Code: <b>543</b></li>
+                    <li>Item Master Description: <b>Leather Moto Jacket_Dark Navy-L</b></li>
+                </ul>
+                <ul>
+                    <p>
+                        <img src="../../Resources/Images/Supersessions/Example_Supersessions_Select_old.png" />
+                    </p>
+                </ul>
+                <ol start="6">
+                    <li>Click <b>Next</b> , and select the following new item to supersede the Leather Moto Jacket_Dark Navy-L: </li>
+                </ol>
+                <ul>
+                    <li>Item Master Code: <b>708</b></li>
+                    <li>Item Master Description: <b>High Collar Angelina Jacket_Grey - L</b></li>
+                    <p>
+                        <img src="../../Resources/Images/Supersessions/Example_Supersessions_Select_new.png" />
+                    </p>
+                </ul>
+                <ol start="7">
+                    <li>Click <b>Next</b>, and select he following supersession parameters:</li>
+                </ol>
+                <ul>
+                    <li>Old Item Replenishment Strategy: <b>No change</b>.</li>
+                    <li>Supersession Type: <b>Forecasting only</b>.</li>
+                    <p>
+                        <img src="../../Resources/Images/Supersessions/Example_Supersessions_Parameters.png" />
+                    </p>
+                </ul>
+                <ol start="8">
+                    <li>Click <b>Next</b>, and select the sites where you want to apply the supersession. In this example, all sites are selected.</li>
+                    <p>
+                        <img src="../../Resources/Images/Supersessions/Example_Supersessions_Sites.png" />
+                    </p>
+                    <li>Click <b>Next </b>to continue.</li>
+                    <li>Click <b>Finish</b>. The superssession is created.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>2. Generate the Demand Forecast</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Execute tab, click <b>Inventory Forecast</b>. The Item - Level View window displays.</li>
+                    <li>From the Filter drop-down menu, select <b>Supersession Model Management (by Dep)</b>.</li>
+                    <li>Add the condition ItemMaster Group 3 Description is One of the Following: <b>Coats &amp; Jackets.</b></li>
+                    <li>Select the <b>Supersession Model Management (by Dep)</b> filter.</li>
+                    <li>Add condition: ItemMaster Group 3 Description is One of the Following: <b>Coats &amp; Jackets.</b></li>
+                    <li>From the Forecasts panel, select the new item <b>High Collar Angelina Jacket</b>.</li>
+                    <li>Create a demand forecast for the new item:</li>
+                </ol>
+                <ul>
+                    <li>In the Forecast toolbar, click <b>Forecast</b>.</li>
+                    <li>In the Forecast Task window, click <b>OK</b> to star the forecast tournament.</li>
+                </ul>
+                <ol start="8">
+                    <li>After the forecast is complete, it displays on the Forecast screen.</li>
+                    <p>
+                        <img src="../../Resources/Images/Supersessions/Example_Supersessions_Forecast_Results.png" />
+                    </p>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

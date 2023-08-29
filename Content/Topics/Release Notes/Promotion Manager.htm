@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="572" MadCap:lastWidth="1225">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Promotion Manager</h1>
+        <p>The following Promotion-related enhancements are now available.</p>
+        <p>The Promotion List screen’s grid now includes three new columns to better filter Promotions by Site Cluster Set as well by whether the Promotion occurred in the past, occurs in the future or is currently being executed. The new columns are:</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Column</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Lifecycle</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        Indicates if the Promotion occurred in the past, occurs in the future, or is currently being executed. The field displays:
+                        <ul><li><b>PAST</b> - ‘Now’ is after the Promotion’s Sale End Date Time</li><li><b>LIVE</b> - ‘Now’ is between the Promotion’s Sale Start Date Time and the Sale End Date Time</li><li><b>FUTURE</b> - ‘Now’ is before the Promotion’s Sale Start Date Time</li></ul><p><b>NOTE</b>: This column does not display if system policy <b>Allow Multiple Dates</b> is set to <b>True</b>.</p></td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Price Cluster Set Name</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The Site Cluster Set Name that was used during creation. Modification of the Price Clusters and Cluster Sites after creation does not modify this value.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Price Cluster Set ID</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">The Site Cluster Set ID that was used during creation. This is the actual Site Cluster Set, not its Snapshot ID.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

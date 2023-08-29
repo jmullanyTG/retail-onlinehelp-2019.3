@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2178" MadCap:lastWidth="1143">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Understanding the interconnectivity of the calculation toggles</h1>
+        <p>When using the calc toggle system, it’s important to understand the interconnectivity of the calculation toggles of related metrics to make your workflow as efficient as possible. Below is an example of using the Target Receipt metric toggles in a typical use case:</p>
+        <ul>
+            <li>Building a Receipt Plan: in the scope of the planning process, it is common practice to plan sales first then plan receipts to support those sales. Assuming sales have already been planned, let’s begin in the TY Receipt Flow – Detailed standard layout</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_3.png" />
+        </p>
+        <p>In the above example, there are 5,880 total sales units planned for 2017_m08 and a BOP Units of 1,666 to start the month. The first step in planning receipts to ensure those sales are covered is planning Target Receipt Units</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_3_1.png" />
+        </p>
+        <p>Along with the 1,666 BOP Units, planning another 5,000 units in 2017_wk31 provides a reasonable surplus to accommodate sales fluctuations. When planning Target Receipt Units before the other receipt metrics, the calc toggle used does not matter, as the dependent metrics will all be zero, and thus, calculate to zero when units are entered</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_3_2.png" />
+        </p>
+        <p>Switching to the TY Receipt Planning layout, we now see the Target Receipt Units we just planned and the other Target Receipt metrics – all still at zero as mentioned above. Now that we have units planned, we are free to plan both Target Receipt AUC and AUT using the default calc toggles for each, which hold Target Receipt Units</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_3_3.png" />
+        </p>
+        <p>By entering a Target Receipt AUC of $5.00 and a Target Receipt AUT of $20.00, we now also have a Target Receipt Cost of $25,000 and a Target Receipt Retail of $100,000. We also get a Target Receipt IMU % of 75% and our initial receipt plan for the period is complete and ready for further manipulation. Now let’s look at what could have happened had we not taken this path</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_3_4.png" />
+        </p>
+        <p>If we had instead, entered Target Receipt AUC using the alternate calc toggle, which holds Target Receipt Cost and calculates Units, we would have gotten a much different result</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_3_5.png" />
+        </p>
+        <p>Notice how not only did the Target Receipt AUC we just entered revert to zero but so did the Target Receipt Units we entered previously. This happens because, to calculate Target Receipt Units, as the calc toggle we selected specifies, it divides Target Receipt Cost, which is zero, by the $5.00 AUC we entered, thus yielding zero. As Target Receipt Cost and Target Receipt Units are now zero also, Target Receipt AUC defaults to zero as well.</p>
+        <p>Though this is a simple example, the learnings we can take away are important to maximizing productivity as we plan. When setting up initial plan values, it’s important to consider the path we take. Once the first metric is entered, ensuring we enter subsequent metrics using calc toggles which hold the value of the first ensures we don’t run ourselves in a circle. Once your initial values are entered, fine tuning can be easy if we are mindful of the metrics the toggles we use are holding and calcing. Becoming familiar with the available toggles before beginning planning will ensure a smooth planning process. </p>
+    </body>
+</html>

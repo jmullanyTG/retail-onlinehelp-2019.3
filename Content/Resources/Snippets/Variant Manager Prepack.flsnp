@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1984" MadCap:lastWidth="1364">
+    <head>
+    </head>
+    <body>
+        <p>Before any prepack analysis can be done within Order Manager, prepack configurations must be defined for all variants you wish to prepack. To define prepack configurations, click <b>Management &gt; Variant Manager</b></p>
+        <p>
+            <img src="../Images/Order Manager/Variant Manager Prepack.png" />
+        </p>
+        <p>When prompted, select or define a product filter that includes the variants you want to define prepacks for and click <b>Ok</b></p>
+        <p>
+            <img src="../Images/Order Manager/Variant Manager Prepack_1.png" />
+        </p>
+        <p>Once the document is visible on the screen, select the variant you want to create prepack configurations for and click the Details button in the upper right of the screen</p>
+        <p>
+            <img src="../Images/Order Manager/Variant Manager Prepack_2.png" />
+        </p>
+        <p>This will show the Details area of Variant Manager. Click the <b>Prepack</b> tab to show the prepack configurations work area</p>
+        <p>
+            <img src="../Images/Order Manager/Variant Manager Prepack_3.png" style="visibility: visible;width: 634px;height: 192px;" />
+        </p>
+        <h2>Header Area Controls</h2>
+        <ul>
+            <li><b>Save</b>: saves all changes made to the currently selected prepack configuration or template since the last time it was saved</li>
+            <li><b>Undo</b>: undoes all changes made to the currently selected prepack configuration or template since the last time it was saved</li>
+            <li><b>Delete</b>: deletes the selected prepack configuration or template. Prior to deletion, the system prompts you with a warning message asking for confirmation to delete</li>
+            <li><b>Add Prepack</b>: creates a new blank prepack configuration in the Prepack &gt; Manual folder at the left of the screen</li>
+            <li><b>Add Prepack Template</b>: creates a new blank prepack template in the Template &gt; Manual folder at the left of the screen</li>
+        </ul>
+        <h2>Prepack Folders (Left side)</h2>
+        <ul>
+            <li>Prepack<ul><li><b>Import</b>: prepacks configurations that have been imported into Demand Management from external sources will appear in this folder</li><li><b>Manual</b>: prepack configurations created by clicking the Add Prepack button will appear in this folder</li><li><b>Process</b>: future functionality; prepack configurations created by the prepack optimization engine will appear in this folder</li></ul></li>
+            <li>Prepack/Template<ul><li><b>Code</b>: user editable alpha-numeric; displays/sets the prepack configuration/template name to be used in reference throughout the system</li><li><b>Size Range (templates only)</b>: user editable drop down; selects the range of sizes to be used in the prepack template</li><li><b>Description</b>: user editable alpha-numeric; displays/sets a description for the prepack configuration/template</li></ul></li>
+        </ul>
+        <h2>Prepack/Template Details (Right Side)</h2>
+        <p>With a prepack configuration selected:</p>
+        <ul>
+            <li><b>Add</b>: launches the Add Variant dialog<ul><li><b>Variant</b>: user editable drop down; selects a variant to add to the prepack configuration</li><li><b>Size Curve</b>: user editable drop down; selects a size curve to apply to the variant being added</li><li><b>Template</b>: user editable drop down; selects a prepack template, instead of a size curve, to apply to the variant being added</li><li><b>Included</b>: user editable check box; sets whether a given size will be included in the prepack configuration</li><li><b>Size</b>: non-editable alpha-numeric; displays the size codes contained in the selected size curve or template</li><li><b>Unit Count</b>: user editable integer; displays/sets the number of units per size to include in the prepack configuration</li><li><b>Cancel</b>: closes the Add Variant dialog without adding a variant to the selected prepack configuration</li><li><b>OK</b>: adds the variant, size, and unit count information defined in the Add Variant dialog to the prepack details area</li></ul></li>
+            <li><b>Remove</b>: removes the selected variant or size from the prepack configuration details<br /><p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">The system will not ask for confirmation prior to removing variants/sizes, however, prior to being saved, these changes can be reversed with the Undo button.</p><ul><li><b>Variant</b>:The variant codes of those present in the selected prepack configuration</li><li><b>Size</b>: The size codes included in the selected prepack configuration for the corresponding variant</li><li><b>Unit Count</b>: Displays/sets the number of units per size for the corresponding variant to be included in the prepack configuration</li></ul></li>
+        </ul>
+        <p>With a prepack template selected:</p>
+        <ul>
+            <li><b>Size Range</b>: non-editable alpha-numeric; displays the size range set for the selected prepack template</li>
+            <li><b>Size</b>: non-editable alpha-numeric; displays the size codes included in the selected prepack template</li>
+            <li><b>Unit Count</b>: user editable integer; displays/sets the number of units per size for the corresponding variant to be included in the prepack configuration</li>
+        </ul>
+    </body>
+</html>

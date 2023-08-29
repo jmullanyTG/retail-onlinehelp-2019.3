@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1100" MadCap:lastWidth="1326">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Curve Selection Screen</h1>
+        <p>Click the ellipsis (<img src="../../Resources/Images/Assortment Planning/Main Planning View_9.png" />) in the <b>Seasonality Curve</b> field  to launch the <b>Curve Selection</b> screen. The Seasonality Curve field is found in the Main Planning View and in the <b>Cluster Sets</b> supporting view.</p>
+        <img src="../../Resources/Images/Assortment Planning/Cluster Set View_2.png">
+        </img>
+        <p>The <b>Tags</b> section is used to display or set the tags used to filter the curves returned for selection. This makes it easier for the user to find the desired one.</p>
+        <p>Assigning meaningful tags to curves upon generation will help avoid situations where the desired curve may be truncated from the list returned for selection.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">The maximum number of curves returned based on the selected tags is set by the system policy <b>Max Selectable Lookup Curves</b> (Maintenance &gt; Policies &gt; Module: Curves). This is to prevent slowdown in the user interface.</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Name</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> The name of the corresponding curve.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Curve Generation Type</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> The method used to generate the corresponding curve: <b>Manual</b> or <b>Specified Conditions Using Enhanced Filtering</b>.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Bucket Type</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> The bucket type for the curve, usually weekly or monthly.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Bucket Start Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The start date of the first bucket within the curve Start Date and End Date of the corresponding curve.
+		<p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Technically, this can be before Start Date if Start Date falls in the middle or at the end of the first bucket.</p></td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Start Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The start date of the corresponding curve.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>End Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The end date of the corresponding curve.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Number of Periods</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> The number of time periods (buckets) encompassed by the curve.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Existing</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Indicates that the corresponding curve is already assigned to one or more placeholders in the current view. This is provided for ease of assignment of curves that have already been used for other existing placeholders.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Tags</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1"> Indicates that the corresponding curve has one or more of the selected Tags attached to it.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

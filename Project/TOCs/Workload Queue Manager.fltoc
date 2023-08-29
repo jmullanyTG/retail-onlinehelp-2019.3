@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/PrintCover.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    PageType="title" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="pageLayout" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false" />
+  <TocEntry
+    Title="Workload Queue Overview"
+    Link="/Content/Topics/Workload Queue Manager/Workload Queue Overview.htm"
+    BreakType="pageLayout"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Default.flpgl"></TocEntry>
+  <TocEntry
+    Title="Workload Queue Configuration"
+    Link="/Content/Topics/Workload Queue Manager/Workload Queue Configuration.htm">
+    <TocEntry
+      Title="Workload Queue Global Policies"
+      Link="/Content/Topics/Workload Queue Manager/Workload Queue Manager.htm">
+      <TocEntry
+        Title="General Policies" />
+      <TocEntry
+        Title="Expiration Policies" />
+      <TocEntry
+        Title="Retention Policies" />
+    </TocEntry>
+    <TocEntry
+      Title="Workload Queue User Rights"
+      Link="/Content/Topics/Users/Workload Queue User Rights.htm" />
+    <TocEntry
+      Title="Standardized Jobs"
+      Link="/Content/Topics/Workload Queue Manager/Standardized Jobs.htm">
+      <TocEntry
+        Title="Cleanup"
+        Link="/Content/Topics/Workload Queue Manager/Cleanup.htm" />
+      <TocEntry
+        Title="Optimization Tuning"
+        Link="/Content/Topics/Workload Queue Manager/Optimization Tuning.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Workload Queue Home Screen"
+    Link="/Content/Topics/Workload Queue Manager/Workload Queue Home Screen.htm">
+    <TocEntry
+      Title="Workload Queue Active List"
+      Link="/Content/Topics/Workload Queue Manager/Workload Queue Manager_1.htm">
+      <TocEntry
+        Title="Workload Queue Priorities"
+        Link="/Content/Topics/Workload Queue Manager/Workload Queue Manager_2.htm" />
+      <TocEntry
+        Title="Workload Queue Active Statuses"
+        Link="/Content/Topics/Workload Queue Manager/Workload Queue Active Statuses.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Modify a Batch priority"
+      Link="/Content/Topics/Workload Queue Manager/Modify a Batch priority.htm" />
+    <TocEntry
+      Title="Remove a Batch to be processed"
+      Link="/Content/Topics/Workload Queue Manager/Remove a Batch to be processed.htm" />
+    <TocEntry
+      Title="Workload Queue History List"
+      Link="/Content/Topics/Workload Queue Manager/Workload Queue History List.htm">
+      <TocEntry
+        Title="Workload Queue Historical Statuses"
+        Link="/Content/Topics/Workload Queue Manager/Workload Queue Manager_3.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Workload Queue Configuration">
+      <TocEntry
+        Title="Customizing workload queue priority thresholds"
+        Link="/Content/Topics/Workload Queue Manager/Customizing workload queue priority thresholds.htm" />
+      <TocEntry
+        Title="Restoring default workload queue threshold values"
+        Link="/Content/Topics/Workload Queue Manager/Restoring default workload queue threshold values.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Workload Queue Help"
+    Link="/Content/Topics/Workload Queue Manager/Workload Queue Help.htm" />
+</CatapultToc>

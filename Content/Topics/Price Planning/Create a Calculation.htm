@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Create a Calculation</h1>
+        <p>Within the Price Manager Configuration Calculation screen, click <b>New</b> to create a new Calculation or Calculation Rule, enter the required fields and click <b>Save</b>.</p>
+        <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Name (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter a descriptive label to summarize the purpose of the Calculation or Rule.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Description (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter a summary of the Calculation or Rule.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Method (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select from a list of preconfigured database stored procedure for more complex mathematical formulas or validations. Selection in the ‘method’ field will override any entry in the ‘formula’ field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Formula (Required/Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter the mathematical expression for the system to evaluate. Configured variables can be found in the right panel. Selection in the ‘method’ field will override any entry in the ‘formula’ field.</p>
+                        <p>Calculation Example:</p>
+                        <pre>Retail Sales Price is % Above Cost1</pre>
+                        <pre>Variable1 = (1+Variable2)* Variable3</pre>
+                        <pre>Variable1= [RSP]</pre>
+                        <pre>Variable2 = [PercentAbove]</pre>
+                        <pre>Variable3 = [Cost1]</pre>
+                        <pre>[RSP] = (1+[PercentAbove])*[Cost1]</pre>
+                        <pre>$5.988 = (1+.20)*$4.99</pre>
+                        <p>The system will populate [RSP] to the ‘targeted output field’ and the system will continue validation and calculation of the Price Action Strategy.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Targeted Output Field (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select from the list of configured Variables (i.e. user input only) that the configured mathematical formula will populate. Output fields cannot be specified for ‘validation’ types.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Rounding Rule (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select from the list of configured Rounding Rules for the system to apply to the Calculation. Rounding Rules cannot be applied to ‘validation’ types.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p>Calculation Active (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Unmarking the check box, will remove the ability to configure the Calculation in any new Price Strategies.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

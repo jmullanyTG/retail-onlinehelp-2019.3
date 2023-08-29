@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Custom Notification Implementation Examples</h1>
+        <p>Examples are provided below to provide a better understanding of how Notifications parameters should be passed into Notification initiation.</p>
+        <p><b>Simple Notification Message</b>:</p>
+        <p>In the example below, SQL is used to calculate a future date that will be passed into the token ‘DueDate’.</p>
+        <p>Please review product category's *[Allocation]* for next season and submit for approval by [%DueDate%]</p>
+        <div class="code_block">
+            <p>DECLARE @nMessageToken nvarchar(max);</p>
+            <p>SET @nMessageToken ='&lt;tokens&gt;</p>
+            <p>&lt;token key="DueDate"&gt;'+CONVERT(varchar(10),GETDATE()+ 30, 120)+'&lt;/token&gt;</p>
+            <p>&#160;&#160;&#160;&#160; &lt;/tokens&gt;';</p>
+            <p>&#160;</p>
+            <p>EXEC notification.Notification_Add </p>
+            <p>&#160; @iMessageUUID ='d67d48de-313f-44d2-9a28-7f0eebc7ab41'</p>
+            <p>, @iSenderUserID = 1</p>
+            <p>, @nRecipientUserIDList ='2,3,4,5'</p>
+            <p>, @nMessageToken = @nMessageToken</p>
+            <p>, @cTokenIdentifier =NULL</p>
+            <p>, @bDebug = 0;</p>
+        </div>
+        <p><b>Intermediate &gt;Notification Message</b>
+        </p>
+        <p>In the example below, multiple tokens are passed in as static values.</p>
+        <p>*[[%ORDER_HEADER_NAME%]]* [%GROUP_IDENTIFIER%] prepack calculation submitted. [%JOB_POSITION%] of [%TOTAL_JOBS%] in queue ([%QUEUE_PRIORITY%])</p>
+        <div class="code_block">
+            <p>DECLARE @nMessageToken nvarchar(max);</p>
+            <p>SET @nMessageToken ='</p>
+            <p>&lt;tokens&gt;</p>
+            <p>&#160;&#160;&#160; &lt;token key="ORDER_HEADER_NAME"&gt;Assortment Plan : P0517-000028 (2017-12-11)&lt;/token&gt;</p>
+            <p>&#160;&#160;&#160; &lt;token key="GROUP_IDENTIFIER"&gt;Auto generated for MFP Level:169&lt;/token&gt;</p>
+            <p>&#160;&#160;&#160; &lt;token key="JOB_POSITION"&gt;1&lt;/token&gt;</p>
+            <p>&#160;&#160;&#160; &lt;token key="TOTAL_JOBS"&gt;1&lt;/token&gt;</p>
+            <p>&#160;&#160;&#160; &lt;token key="QUEUE_PRIORITY"&gt;Synchronous&lt;/token&gt;</p>
+            <p>&lt;/tokens&gt;';</p>
+            <p>&#160;</p>
+            <p>EXECnotification.Notification_Add </p>
+            <p>&#160; @iMessageUUID ='bdff6c58-37cd-4272-99dc-3dcd37b66b68'</p>
+            <p>, @iSenderUserID = 1</p>
+            <p>, @nRecipientUserIDList ='2,3,4,5'</p>
+            <p>, @nMessageToken = @nMessageToken</p>
+            <p>, @cTokenIdentifier =NULL</p>
+            <p>, @bDebug = 0;</p>
+        </div>
+        <p><b>Complex Notification Message</b>:</p>
+        <p>In the example below multiple tokens are passed in from a #MessageToken table that could be built up dynamically. </p>
+        <p>*[[%ORDER_HEADER_NAME%]]* [%GROUP_IDENTIFIER%] prepack calculation submitted. [%JOB_POSITION%] of [%TOTAL_JOBS%] in queue ([%QUEUE_PRIORITY%])</p>
+        <div class="code_block">
+            <p>DECLARE @nMessageToken nvarchar(max);</p>
+            <p>CREATETABLE #MessageToken( </p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [Key]&#160;&#160; nvarchar(1000)</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; , [Value] nvarchar(1000));</p>
+            <p>&#160;</p>
+            <p>INSERTINTO #MessageToken </p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160; ( [Key]</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160; , [Value]</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160; ) </p>
+            <p>VALUES</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160; ('ORDER_HEADER_NAME','Assortment Plan : P0517-000028 (2017-12-11)'),</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160; ('GROUP_IDENTIFIER','Auto generated for MFP Level:169'),</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160; ('JOB_POSITION','1'),</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160; ('TOTAL_JOBS','1'),</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160; ('QUEUE_PRIORITY','Synchronous');</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>SET @nMessageToken =CONVERT(nvarchar(max), </p>
+            <p>&#160;&#160;&#160; (SELECT [Key] AS'@key'</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; , [Value] '*'</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; FROM #MessageToken</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; FORXMLPATH('token'),ROOT('tokens'),TYPE</p>
+            <p>&#160;&#160;&#160; ));</p>
+            <p>&#160;</p>
+            <p>EXECnotification.Notification_Add </p>
+            <p>&#160; @iMessageUUID ='bdff6c58-37cd-4272-99dc-3dcd37b66b68'</p>
+            <p>, @iSenderUserID = 1</p>
+            <p>, @nRecipientUserIDList ='2,3,4,5'</p>
+            <p>, @nMessageToken = @nMessageToken</p>
+            <p>, @cTokenIdentifier =NULL</p>
+            <p>, @bDebug = 0;</p>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

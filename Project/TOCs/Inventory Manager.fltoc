@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/PrintCover.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="pageLayout" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Item Manager Overview.htm"
+    BreakType="pageLayout"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Default.flpgl"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Choosing the information to display in Inventory Manager.htm"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Demand Transfer/Setting the Consider Demand.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Demand Transfer/Demand Transfer Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Demand Transfer/Split Factor Method Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Demand Transfer/Demand Transfer Configuration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Calculated Columns.htm" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Reviewing inventory-related information using a Pivot Grid.htm" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Viewing Item Site details.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Inventory Information.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Inventory Groups.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Forecast Viewer.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Inbound and Outbound Orders.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Inter site Projected Demand.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Policy Information.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Effective Policy Information.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Status Information.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Multi Site Inventory.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Stock Holding Projection.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Supply Chain.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Demand Transfer/Forecast Fulfillment Split Factors.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Saving and Restoring Grid Layouts.htm" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Defining Item Life Cycle Dates.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Example - Defining Item Lifec Cycle Dates.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      conditions="General.Temp Exclude"
+      StartSection="false" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Task Example Identifying Surplus Orders.htm"
+    conditions="General.Temp Exclude" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Item Manager Fields.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Default Inventory Manager Document fields.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Demand Planning.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Inventory Classification.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Inventory Planning.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Inventory Status.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Replenishment.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Safety Stock Information.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Supply Planning.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Inventory Manager/Inventory Manager Configuration.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Creating Filter Metadata.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Creating a View.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Inventory Manager/Initialization.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Adding Entries to Filter Type.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Inventory Manager/Defining Metadata.htm" />
+  </TocEntry>
+</CatapultToc>

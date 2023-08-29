@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3298" MadCap:lastWidth="1348">
+    <head>
+    </head>
+    <body>
+        <h1>Adding Placeholders</h1>
+        <p>To add new collections, use the <b>New</b> button in Placeholder mode or in Variant view of Collection mode to display the <b>Add Placeholders</b> dialog:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes_NEW.png">
+            </img>
+        </p>
+        <p>If the check box <b>Current Collection</b> is checked, then when Generate is clicked <b>Coll Code</b> and <b>Coll Desc</b> are set to the values for the collection of the placeholder that was selected when the <b>Add Placeholders</b> dialog was launched.</p>
+        <h2>Manually selecting a collection</h2>
+        <p>To manually select a collection:</p>
+        <ol>
+            <li>Ensure <b>Current Collection</b> is unchecked.</li>
+            <li>Click in the <b>Coll Code</b> column to display a collection selector.</li>
+            <li>
+                <p>Double-click a collection from the drop down list.</p>
+                <p>You can filter the results by typing in the <b>Collection Desc</b> field. </p>
+            </li>
+        </ol>
+        <h2>Creating a new collection</h2>
+        <p>New collections can be created dynamically if you don’t wish to assign the placeholder to an existing one.</p>
+        <ol>
+            <li>Click in the <b>Coll Code</b> column to display a collection selector.</li>
+            <li>Enter a description for the collection in the <b>Collection Desc</b> field.</li>
+            <li>Click <b>New</b>.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes_2.png">
+            </img>
+        </p>
+        <h2>Field Descriptions</h2>
+        <ul>
+            <li><b>New</b>: Adds a single placeholder line.</li>
+            <li><b>Delete</b>: Deletes the selected placeholder line.</li>
+            <li><b># of Placeholders</b>: The number of new placeholder lines to add when <b>Generate</b> is clicked.</li>
+            <li>
+                <p><b>Mirror Options</b>: When checked, copies the selections made for the topmost placeholder line to any beneath it. It is not necessary to uncheck this option if you want to deviate from the selections made in the topmost placeholder line Simply edit as you would normally and the box unchecks automatically.</p>
+            </li>
+            <li><b>Current Collection</b>: When checked, automatically sets <b>Coll Code</b> and <b>Coll Desc</b> to the values for the collection of the placeholder that was selected when the <b>Add Placeholders</b> dialog was launched.</li>
+            <li>
+                <p><b>Generate</b>: Creates the number of new placeholder lines specified in <b># of Placeholder</b>s. If the number of Placeholders is omitted or zero, then the following displays:</p>
+                <p>
+                    <img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes_1.png" />
+                </p>
+            </li>
+        </ul>
+        <h2>Grid columns</h2>
+        <ul>
+            <li><b>Coll Code</b>: The collection code to which the placeholder line is assigned.</li>
+            <li><b>Coll Desc</b>: The corresponding description for Coll Code for the placeholder line.</li>
+            <li><b>PH Code</b>: A unique system generated code for the placeholder line.</li>
+            <li><b>PH Desc</b>: The description for the placeholder line.</li>
+            <li><b>Product Hierarchy</b>: The product hierarchy level to which the placeholder line will be assigned. This defaults to the lowest common product hierarchy level present in the Product filter in the data selection parameters for Placeholder Mode.</li>
+            <li><b>Cluster Set</b>: The cluster sets to which the placeholder line will be assigned. Defaults to any cluster sets assigned to the Product Hierarchy level in Assortment Plan Defaults.
+			<p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">New placeholders are assorted to all clusters within the assigned cluster sets by default.</p></li>
+            <li><b>Phase In:</b> The phase in date for the placeholder. Selections are limited to periods prior to Phase Out, if set. Defaults to the earliest non-actualized period within the Window of Time in the data selection parameters.</li>
+            <li><b>Markdown:</b> The markdown date for the placeholder/collection.</li>
+            <li><b>Phase Out</b>: The phase out date for the placeholder.
+			<p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Defaults to the last period within the Window of Time in the data selection parameters.</p></li>
+            <li><b>Mkdn No Periods</b>: The time frame for the markdown date to phase out date. Determines what the phase out date should be from the markdown date, once a user enters a markdown date during Placeholder creation (i.e. default is 4, markdown date is 4/29, phase out date will be 5/27, four weeks post markdown.) The default is ignored if the markdown falls outside of the phase in/out window or in the past. 
+				<ul><li>If Phase Out is set first and a markdown default is set, then Markdown date will auto-set to N default periods before the user's chosen Phase Out.</li><li>If Phase Out is set first but there is no markdown default for the selected hierarchy level, then markdown date is left empty. If Markdown Date is set first and a markdown default is set, the Phase Out will auto-populate with the N default periods after the user's chosen Markdown Date.</li><li>If Markdown Date is set first and there is no markdown default, Phase Out will need to be manually entered by the user before saving, or standard phase out logic applies.</li><li>Any change to either Markdown Date or Phase Out Date after initial value is set does not preserve the default.</li></ul></li>
+            <li><b>Markdown Offset Locked</b>: Links the markdown and phase out dates to each other, so they work dependently on each other, which helps users accurately plan the entire life of the item including markdowns. The standard default mode keeps the markdown and phase out dates independent of each other. Locked mode cannot be enabled on an item with infinite phase out.
+				<p>The new mode is set at the Placeholder Instance level.</p><ul><li>If Markdown date changes, Phase Out also changes to keep the specified number of periods between them.</li><li>If Phase Out changes, then Markdown date also changes to keep the specified number of periods between them.</li><li>If markdown falls outside of phase in/out window, or in the past, then the default is ignored and the lock-step mode is disabled. Date selectors will take into account the lock step / default range so that the user cannot select themselves into a contradictory state.</li></ul></li>
+            <li><b>AUT</b>: The home currency average unit ticket (AUT) for the placeholder line.</li>
+            <li><b>Map From Variant</b>: (Optional) Another placeholder item to use as a Like Style from which the system can seed a sales plan. Populates with placeholder items that exist within the selected Product Hierarchy for the line. Type in the relevant field to filter the results.
+				<p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">If set, this copies the Like PH’s Size Option, Curve Mode, Seasonality Curve, and AUT (unless specified in Ticket Price) can calculate a sales plan based on sales present for the selected Like PH between the Comp Start and End dates specified.<br></br><img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes_3.png"></img></p> <![CDATA[ ]]></li>
+            <li><b>Attrib Copy</b>: Only valid if <b>Map From Variant</b> is set. Defines whether any product attributes assigned to the Like PH are copied to the new placeholder line or if any defined attribute defaults for the Product Hierarchy level are assigned instead. <MadCap:conditionalText MadCap:conditions="General.Online Help">For more information, see <MadCap:xref href="../Attribute Management/Attribute Management Module.htm">Attribute Management solution</MadCap:xref>.</MadCap:conditionalText> <MadCap:conditionalText MadCap:conditions="General.Printed Manuals">For more information, refer to the Attribute Management User Guide.</MadCap:conditionalText></li>
+            <li><b>Mod Factor</b>: defaults to 1.0. Only valid if <b>Map From Variant</b> is set. Defines a factor to multiply the sales history of the <b>Map From Variant</b> by.</li>
+            <li>
+                <p><b>Comp Start</b>: Only valid if <b>Map From Variant</b> is set. Defines the start date for the desired window of time from which to capture sales for the Like PH.</p>
+                <ul>
+                    <li>Selections are limited to periods prior to Comp End, if set</li>
+                    <li>Defaults to the Phase In of the <b>Map From Variant</b></li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Comp End</b>: Only valid if <b>Map From Variant</b> is set. Defines the end date for the desired window of time from which to capture sales for the Like PH.</p>
+                <ul>
+                    <li>Selections are limited to periods after Comp Start, if set</li>
+                    <li>Defaults to the Phase Out of the <b>Map From Variant</b>.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

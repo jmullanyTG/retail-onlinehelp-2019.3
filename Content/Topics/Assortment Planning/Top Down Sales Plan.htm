@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2987" MadCap:lastWidth="1099">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Top Down Sales Planning</h1>
+        <p> The Top Down Sales Plan view within the Visualize section of the Assortment Planning module gives users the ability to manage Assortments top down. This view allows users to:</p>
+        <ul>
+            <li>change one or many items at a time in one place</li>
+            <li>modify values at a total level which then spreads proportionate to sales</li>
+            <li>see how sales changes affect stock/receipts</li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Changes that are saved are then updated to the individual item plan.</p>
+        <p>The comparison options are selected as a parameter. </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Top Down Sales Plan.PNG" />
+        </p>
+        <p>Changes made in the Top Down Sales plan view are seen as overrides in the Main Planning View and Sales Plan View.</p>
+        <h2>Cell locking</h2>
+        <p>Locking is done at individual cell level. Only editable cells can be locked.</p>
+        <p>When a lock is in place, the entire row is colored to indicate lock status overriding any other formatting in place. When the lock is removed, the original formatting returns. Locks in the Top Down Sales Plan view do not carryover into other views. </p>
+        <h2>Parameters</h2>
+        <p>The following parameters are available:</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Parameter </th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Product</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Selects a product filter for the current view.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Hierarchy</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Selects the levels of the current Plan’s Site Hierarchy to include in the current view.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Sets</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Selects the cluster sets to include in the current view. The cluster sets listed include all default and "additionally available" cluster sets for the product level selected in the Product parameter. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Window of Time</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Returns the entire range between the minimum and maximum date selection and not just specified values. This is due to the BOP and STS rolling logic. </p>
+                        <p>For example, if we selected [week 3 of August, weeks 2 and 3 of September, and all of November] - we should see August to November in its entirety. </p>
+                        <p>Otherwise the values for August and September on the totals level would be different than the values for the selected weeks, and may cause confusion. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Comparison Type</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The following options are available:</p>
+                        <ul>
+                            <li>None</li>
+                            <li>System Sales</li>
+                            <li>User Sales</li>
+                            <li>Snapshot options</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Comparison Time</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p> Comparison Types <b>None</b>, <b>System Sales</b>, and <b>User Sales</b> have the full set of dates mirroring the Window of Time parameter. </p>
+                        <p>Snapshots will have the dates specified within the snapshot only. This option behaves like the <b>Window of Time</b> parameter where selecting a few weeks may bring back extra rows because of the BOP and STS rolling logic. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Display Currency</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Sets the currency to display for all revenue based fields in the view; defaults to the Home Currency for the active Assortment Plan.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For additional information, refer to <MadCap:xref href="View Parameters.htm">Placeholder and Collection mode parameters</MadCap:xref>.</p>
+        <h2>Metrics notes</h2>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>AUR</p>
+                        <p>Stock To Sales</p>
+                        <p>BOP Units</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Always locked and shaded gray to indicate it's not editable</p>
+                        <p>Stock To Sales updates in relation to sales changes, and is flagged when above or below default thresholds.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Sales, Sales Units</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>When Sales changes Sales Units updates and vice versa</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">When change to Sales or Sales Units are made to subtotals, totals, and grand totals, then data is spread proportionately and applicable PH sales Sales and Sales Units adjust.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1" MadCap:conditions="General.Temp Exclude">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1" MadCap:conditions="General.Temp Exclude">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1" MadCap:conditions="General.Temp Exclude">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Grid color scheme</h2>
+        <p>The cells in the grid follow the color scheme indicated below:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Color</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Red text</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The STS value is lower than the lower threshold or greater than the upper threshold</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Red</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Locked cell</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Orange</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Partially locked cell, shown only on the aggregate level</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Yellow</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Markdown sales</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Green</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Promotion sales</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Blue</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Regular sales</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Example of the grid color scheme</h3>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Top Down Sales Plan grid color scheme.PNG" />
+        </p>
+    </body>
+</html>

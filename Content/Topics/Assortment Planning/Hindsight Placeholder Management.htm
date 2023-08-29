@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="5574" MadCap:lastWidth="1220">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Hindsight Placeholder Management</h1>
+        <p>The <b>Hindsight Placeholder Management</b> screen can be used to create new placeholders and manage <b>Like Style</b> mappings for new and existing placeholders within your plan. </p>
+        <p>To launch this screen, select <b>Placeholder &gt; Hindsight</b> in the Main Planning View (this is not available in Collection view). </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Hindsight Placeholder Management.png" />
+        </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Hindsight Placeholder Management_1.png" />
+        </p>
+        <h2>Drag and drop capability</h2>
+        <p>Regardless of the view configuration (with Current on the left and Historical on the right or vice versa) users can drag and drop items from both sections to the other to set Map From Variants/Map To PHs (see below for details on these fields).</p>
+        <h2>Toolbar functionality</h2>
+        <ul>
+            <li><b># Placeholders</b>: The number of new placeholder lines to add when <b>New</b> is clicked.</li>
+            <li><b>New</b>: Adds the number of new placeholder lines specified in <b># Placeholders</b> to the bottom of the <b>Current</b> grid.</li>
+            <li><b>Clear</b>: Removes mapped <b>Like Styles</b> (Map From Variant) for selected placeholders</li>
+            <li><b>Delete</b>: Deletes selected placeholders. Only valid for new placeholders. Existing placeholders are deleted in the Main Planning View.</li>
+            <li>
+                <p><b>Mirror Options</b>: When highlighted, copies the selections made for the topmost new placeholder line to any beneath it. It is not necessary to un-highlight this option if you want to deviate from the selections made in the topmost placeholder line. Simply edit as you would normally and the button un-highlights automatically.</p>
+            </li>
+            <li><b>Current Collection</b>: When highlighted, automatically sets the <b>Coll Code</b> and <b>Coll Desc</b> columns for newly created placeholders to the values for the collection of the placeholder that was selected when the <b>Hindsight Placeholder Management</b> screen was launched.</li>
+            <li>
+                <p><b>Historical</b>: Flips the <b>Current</b> and <b>Historical</b> sections in the view.</p>
+                <p>The dynamic of assigning historical variants to placeholders is essentially the same regardless of the layout, but be aware that while a single historical variant can be assigned to many current placeholders, when assigning in reverse, only one variant can be mapped to a current placeholder (if a blend of multiple variants is desired to seed rate of sale for a placeholder, the <b>Rate of Sale Calculator</b> can be used. </p>
+                <p>Placeholders that are Inactive or in Committed status will not be shown in the Current section of the view.</p>
+                <p>For more information, see <MadCap:xref href="Rate of Sale Calculator.htm">Rate of Sale Calculator View</MadCap:xref>. </p>
+            </li>
+            <li><b>Parameters</b>: shows/hides the data selection parameters for the view.</li>
+        </ul>
+        <p>Parameter options are the same as in the Main Planning View defaulting to the same product, site, and cluster set selections as in the main view. <b>Window of Time</b> defaults to the <b>LY</b> equivalent of the time selected in the main view.</p>
+        <p>Data selection parameters only determine the variants/placeholders that will populate in the <b>Historical</b> section of the view. Current placeholders are populated based on those shown in the Main Planning View.</p>
+        <h2>Current section</h2>
+        <ul>
+            <li>
+                <p><b>Coll Code</b>: Only editable drop down for new placeholders. Double-click in the drop down list to select a collection code to which the placeholder is assigned.</p>
+                <p>Type in the space below Code or Desc of the drop down to filter the results returned; this acts as a “starts with” filter by default, but can accept “%” as a wildcard to do “contains” type filtering instead.</p>
+                <p>To create a new collection,  enter a description for the collection in the space provided and click <b>New</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes_2.png" />
+                </p>
+            </li>
+        </ul>
+        <ul>
+            <li><b>Coll Desc</b>: The corresponding description for Coll Code for the placeholder</li>
+            <li><b>PH Code</b>: Unique system generated code for the placeholder</li>
+            <li><b>PH Desc</b>: The description for the placeholder</li>
+            <li><b>Image</b>: The primary image associated with the placeholder. If no primary image exists, then <b>No image data</b> displays</li>
+            <li>
+                <p><b>Product Level</b>: The product hierarchy level to which the placeholder is assigned. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">This defaults to the lowest common product hierarchy level present in the Product filter in the data selection parameters for Placeholder Mode.</p>
+            </li>
+            <li><b>Cluster Sets</b>: The cluster sets to which the placeholder ise assigned. The cluster sets listed include all default and additionally available cluster sets for the product level selected in the <b>Product</b> parameter.</li>
+            <li>
+                <p><b>Phase In</b>: The phase in date for the placeholder. If set, selections limit to periods prior to Phase Out. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Defaults to the earliest non-actualized period within the time frame selected.</p>
+            </li>
+            <li><b>Markdown</b>: The markdown date for the placeholder.</li>
+            <li>
+                <p><b>Phase Out</b>: The phase out date for the placeholder. If set, selections limit to periods after Phase In. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Defaults to the last period within the Window of Time in the data selection parameters.</p>
+            </li>
+            <li><b>Mkdn Offset Locked</b>: Links the markdown and phase out dates to each other so they work dependently on each other. This helps users accurately plan the entire life of the item including markdowns. The standard default mode keeps the markdown and phase out dates independent of each other. Locked mode cannot be enabled on an item with infinite phase out.</li>
+            <li>
+                <p><b>Mkdn No Periods</b>: The time frame for the markdown date to phase out date. Determines what the phase out date should be from the markdown date, once a user enters a markdown date during Placeholder creation (i.e. default is 4, markdown date is 4/29, phase out date will be 5/27, four weeks post markdown.) The default is ignored if the markdown falls outside of the phase in/out window or in the past. </p>
+                <ul>
+                    <li>If Phase Out is set first and a markdown default is set, then Markdown date will auto-set to N default periods before the user's chosen Phase Out.
+</li>
+                    <li>If Phase Out is set first but there is no markdown default for the selected hierarchy level, then markdown date is left empty.
+If Markdown Date is set first and a markdown default is set, the Phase Out will auto-populate with the N default periods after the user's chosen Markdown Date.
+</li>
+                    <li>If Markdown Date is set first and there is no markdown default, Phase Out will need to be manually entered by the user before saving, or standard phase out logic applies.
+</li>
+                    <li>Any change to either Markdown Date or Phase Out Date after initial value is set does not preserve the default.</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>AUT</b>: Currency ($10.01) Sets the home currency average unit ticket (AUT) for the placeholder.  AUT is set to that of the selected variant if a Map From Variant is specified. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">AUT is assumed to be VAT inclusive for the purpose of all calculations within Assortment Planning. For companies in which VAT is not in play for the home currency assigned to the active assortment plan, no special actions are required as long as the associated VAT % is set to zero. </p>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="General.Online Help">For more information, see <MadCap:xref href="../Currency and VAT Management/Currency and VAT Management Overview.htm">Currency and VAT Management Overview</MadCap:xref>.</MadCap:conditionalText> <MadCap:conditionalText MadCap:conditions="General.Printed Manuals">For more information, refer to the Currency and VAT Management User Guide.</MadCap:conditionalText> <![CDATA[ ]]></p>
+            </li>
+            <li><b>AUR</b>:  Currency ($10.01) Displays the average unit retail (AUR) price for the placeholder.</li>
+            <li><b>Margin</b>: Percentage (10.01%) Gross margin percentage for the placeholder.<ul><li><b>Calculation</b>: ((AUR ex VAT / (1 + VAT %)) – AUC) / (AUR ex VAT / 1 + VAT %)</li></ul></li>
+            <li><b>ROS $</b>: Currency ($10.01) Displays the current ROS $ for the placeholder. Blank for new placeholders.</li>
+            <li><b>ROS U</b>: Decimal (1.01) Displays the current ROS U for the placeholder. Blank for new placeholders.</li>
+            <li><b>Ttl Sls $:</b> Currency ($10.01) Displays the current total sales revenue planned for the placeholder. Blank for new placeholders.</li>
+            <li><b>Ttl Sls U</b>: Displays the current total sales units planned for the placeholder. Blank for new placeholders.</li>
+            <li><b>S/T %:</b> Percentage (10.1%) Displays the target sell-through percentage for the placeholder.<ul><li><b>Calculation</b>: (Ttl Sls U / Ttl Buy U)</li></ul></li>
+            <li><b>Promo?</b>: Whether the placeholder has any active promotions applied to it.</li>
+            <li>
+                <p><b>Map From Variant</b>: (Optional) Selects a placeholder item to use as a <b>Like Style</b> from which the system can seed a sales plan and other information. </p>
+                <p><b>Like Styles</b> can also be dragged from the <b>Historical</b> section onto the target placeholders in the <b>Current</b> section. Dragging a <b>Like Style</b> onto a placeholder that already has a <b>Like Style</b> assigned will replace the previous assigned style with the new one.</p>
+                <p>Populates with placeholders and/or variants shown in the Historical section that exist within the selected Product Hierarchy for the line.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">If set, this copies the selected item’s Size Option, Curve Mode, Seasonality Curve, AUT (unless specified in Ticket Price), Min Pres, Location Exceptions, and receipt plan constraints (Receipt Variant Min, Receipt Size Min, Variant Order Multiple, Periods of Supply, Periods Before Phase In, Flow Period Frequency, Min Stock to Sales, Shrink % of Sales, Recalc Buy, and Hold Receipt Units) and calculates a sales plan based on sales present for the selected Like PH between the Comp Start and End dates specified.</p>
+                <p>Typing in the field below Code, Desc, Phase In, or Phase Out of the drop down to filters the results returned. This acts as a “starts with” filter by default but can accept “%” as a wildcard to do “contains” type filtering instead.</p>
+                <p>
+                    <img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes_3.png" />
+                </p>
+            </li>
+            <li>
+                <p><b>Attrib Copy</b>: Only valid if Map From Variant is set. Defines whether any product attributes assigned to the Map From Variant are copied to the new placeholder line or if any defined attribute defaults for the Product Hierarchy level will be assigned instead.</p>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="General.Online Help"> For more information, see <MadCap:xref href="../Attribute Management/Attribute Management Module.htm">Attribute Management solution</MadCap:xref>.</MadCap:conditionalText> <MadCap:conditionalText MadCap:conditions="General.Printed Manuals">For more information, refer to the Attribute Management User Guide. </MadCap:conditionalText></p>
+            </li>
+            <li>
+                <p><b>Cluster Copy</b>: Only valid if Map From Variant is set. Defines whether the placeholder copies the cluster assignments of the selected Map From Variant or use those set by the user on the placeholder line.</p>
+                <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">Existing cluster assignments are overwritten when Map From Variants are assigned and their cluster assignments are copied for placeholders that existed prior to launching the <b>Hindsight Placeholder Management</b> screen.</p>
+                <p>When Map From Variants are assigned but their cluster assignments are NOT copied for placeholders that existed prior to the launching of the Hindsight dialog, it is possible that some of the pre-assigned clusters will not have rates of sale if there were no sales in those clusters between the Comp Start and Comp End dates for the Map From Variant selected.</p>
+            </li>
+            <li>
+                <p><b>Cluster Set Message</b>: Displays system messages regarding the copying of cluster assignments from a Map From Variant for the specified placeholder.</p>
+                <h3>An example of a scenario that would generate a message:</h3>
+                <p>Scenario: Placeholders X and Y are both assigned to Variant A.&#160; Placeholder X is assorted to Cluster Set 1 and Placeholder Y is assorted to Cluster Set 2. Placeholder X in the <b>Hindsight</b> view is to be changed.</p>
+                <p> If a Map From Variant that is assorted to Cluster Set 2 is selected, then cluster sets cannot be copied because it would cause both Placeholders X and Y to be assorted to Cluster Set 2 for the same variant.</p>
+                <h3>Cluster Set mesages</h3>
+                <ul>
+                    <li>The <b>Like Style</b> is assorted to more cluster sets than are visible: (&lt;list of cluster sets if the length of list is less than 512 characters OR the text "x cluster sets"&gt;), If applied with Cluster Assortment Copy checked, these assortments will also be created for this placeholder</li>
+                    <li>The Placeholder to be altered is assorted to more cluster sets than are visible: (&lt;list of cluster sets if the length of list is less than 512 characters OR the text "x cluster sets"&gt;). If applied with Cluster Assortment Copy checked, these assortments will also be removed from this placeholder</li>
+                    <li>The Placeholder to be altered is assorted to cluster sets to which you do not have access: Assortments to this placeholder cannot be altered using this method</li>
+                    <li>Changing assortments for this variant would cause overlapping cluster sets to exist over the same time ranges: This is when the placeholder to be altered is assorted to a variant, that variant is also assigned to other placeholders in the plan, and those other placeholders' combined cluster set / cluster / date assignments would be in conflict if the change was made.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><b>Mod Factor</b>: Defaults to 1.0. Only valid if <b>Map From Variant</b> is set. Defines a factor to multiply the sales history of the Map From Variant.</li>
+            <li><b>Comp Start</b>: Defaults to the Phase In of the Map From Variant. Only valid if <b>Map From Variant</b> is set. Defines the start date for the desired window of time from which to capture sales for the Map From Variant. </li>
+            <li><b>Comp End</b>: Defaults to the Phase Out of the Map From Variant. Only valid if <b>Map From Variant</b> is set; defines the end date for the desired window of time from which to capture sales for the Map From Variant. If set, selections are limited to periods prior to Comp Start.</li>
+            <li>
+                <p><b>Adj ROS $</b>: Currency ($10.01). Blank unless <b>Map From Variant</b> is set. Displays the placeholder level ROS $ calculated from the Map From Variant based on the Comp Start and Comp End Dates and any Mod Factor specified that will be assigned to the placeholder.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">As rates of sale are calculated and assigned at the cluster level, actual rates of sale assigned to individual clusters may vary from the value shown here, just as differences can exist between the ROS $ shown in Placeholder view versus those in Cluster Set view.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Adj ROS U</b>: Decimal (10.01) Blank unless <b>Map From Variant</b> is set. Displays the placeholder level ROS U calculated from the Map From Variant based on the Comp Start and Comp End Dates and any Mod Factor specified that will be assigned to the placeholder.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">As rates of sale are calculated and assigned at the cluster level, actual rates of sale assigned to individual clusters may vary from the value shown here, just as differences can exist between the ROS U shown in Placeholder view versus those in Cluster Set view.</p>
+            </li>
+        </ul>
+        <h2>Historical section</h2>
+        <p>This section displays the placeholders and/or variants contained within the Product, Site Hierarchy, Cluster Set, and Window of Time parameters of the <b>Hindsight Placeholder Management</b> screen. This section functions similarly to the <b>Style Bank</b> in that items listed here can be dragged onto placeholders in the <b>Current</b> section.</p>
+        <p>The label <b>Historical</b> is a generic term; based on the parameter selections the user makes. Placeholders/variants from any time frame can be displayed here.</p>
+        <p>All metrics in this section are essentially the same as their Current section counterparts except that none are editable when the standard view configuration is engaged (meaning the Current section on the left and the Historical section is on the right).</p>
+        <h3>When the Historical Section is on the left</h3>
+        <p>This is achieved by clicking the <b>Historical</b>. When this is done, Map to Variant is changed to Map to PH, and the Attrib Copy, Mod Factor, Comp Start, Comp End, Adj ROS $, and Adju ROS U fields become part of the Historical section.</p>
+        <li>
+            <p><b>Map to PH</b>: Selects a placeholder from those in the <b>Current</b> section with compatible product levels to map the item to as a <b>Like Style</b>.</p>
+            <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">This field functions very similarly to the <b>Map From Variant</b> field except that each placeholder in the Current section can only be selected as a Map to PH once in the Historical section, as this view is not capable of mapping multiple items to a single placeholder. To blend multiple items together for the purpose of seeding rates of sale, users must use the Rate of Sale Calculator supporting view. For more information, see <MadCap:xref href="Rate of Sale Calculator.htm">Rate of Sale Calculator View</MadCap:xref>.</p>
+            <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Users can also drag and drop placeholders from the <b>Current</b> section to set the Map to PH. If the placeholder being dropped is already selected as the Map To PH for another line in the <b>Historical</b> section, it is removed from that line and set as the Map To PH for the new line.</p>
+        </li>
+        <h2>Buttons</h2>
+        <ul>
+            <li><b>Cancel</b>: closes the <b>Hindsight Placeholder Management</b> screen without committing any of the changes made.</li>
+            <li><b>Save</b>: Adds all new placeholders created and commits all Map From Variant/Map To PH changes made. Also, this initiates recalculation of placeholder sales plans based on changes made.</li>
+        </ul>
+    </body>
+</html>

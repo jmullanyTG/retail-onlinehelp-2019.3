@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Re-including or excluding Sites and Site Clusters in a Pricing Plan</h1>
+        <p>To re-include or exclude Sites or Site Clusters in a Pricing Plan, navigate to the <b>Sites</b> pane on the <b>Pricing Plan Information</b> tab. </p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Site Clusters Add_Remove.PNG" />
+        </p>
+        <p>The <b>Include</b> and <b>Exclude</b> buttons are disabled by default if:</p>
+        <ul>
+            <li>any Price Actions exist as the Pricing Plan is the main template of Sites and Site Clusters for Price Actions that needs to be retained.</li>
+            <li>no Sites or Site Clusters are selected.</li>
+        </ul>
+        <p>The <b>Include</b> button is enabled if an excluded Site or Site Cluster (indicated by a strikethrough) is selected. The <b>Exclude</b> button is enabled if an included Site or Site Cluster is selected.</p>
+        <p>Once you click either button, the system evaluates the Pricing Plan Start Date (displayed in the <b>Start Date</b> field) and determines if a new Site Cluster Set Snapshot exists. If a new Site Cluster Set Snapshot does not exist, then any inclusions or exclusions of Sites and Site Clusters are saved to the Pricing Plan.</p>
+        <p>If a new Site Cluster Set Snapshot does exist, then a message dialog displays to inform you that an updated Site Cluster Set exists and will be loaded. Once you click <b>OK</b>, the Site Cluster grid is refreshed with the Site Cluster Set Snapshot applicable to the Pricing Plan’s Start Date and exclusions and re-inclusions must be re-selected.</p>
+        <p MadCap:conditions="General.Online Help">For more information on Snapshots, see <MadCap:xref href="../Merchandise Financial Planning/Plan Creation Management.htm">Creating and Managing Financial Plans</MadCap:xref>.</p>
+        <p MadCap:conditions="General.Printed Manuals">For more information on Snapshots, refer to the online help.</p>
+        <h2>Excluding Sites and Site Clusters</h2>
+        <p>In the <b>Sites</b> grid:</p>
+        <ol>
+            <li>
+                <p>Select the check box by the name of the Site Cluster to be excluded or select check boxes within a Site Cluster to exclude particular Sites. </p>
+                <p>The <b>Exclude</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>Click <b>Exclude</b>. </p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Site Clusters Remove.png" />
+                </p>
+                <p>The screen automatically refreshes and the names of excluded Site Clusters and Sites are denoted by a strikethrough.</p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Site Clusters Excluded.PNG" />
+                </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> The system enforces that there be at least one Site Cluster and Site included in a Pricing Plan. Therefore, the following message displays if you attempt to exclude all Site Clusters.</p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Site Cluster Exclusion Dialog.PNG" />
+                </p>
+                <p>Clicking <b>OK</b> closes the dialog and refreshes the screen allowing you to continue your modifications.</p>
+            </li>
+        </ol>
+        <h2>Re-including Sites and Site Clusters</h2>
+        <p>In the <b>Sites</b> grid:</p>
+        <ol>
+            <li>
+                <p>Select the check box by the name of the excluded Site Clusters (indicated by a strikethrough) to be re-included or select check boxes within a Site Cluster to re-include particular Sites. </p>
+                <p>The <b>Include</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>Click <b>Include</b>.</p>
+                <p>The screen automatically refreshes and the names of the re-included Site Clusters and Sites are no longer denoted by a strikethrough.</p>
+            </li>
+        </ol>
+    </body>
+</html>

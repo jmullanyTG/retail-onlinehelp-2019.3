@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="2"
+  SkinType="Component"
+  Comment="HTML5 Menu skin"
+  ComponentType="Menu"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Menu">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#f5f5f5</Property>
+          <Property
+            Name="Width">100%</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Menu Item">
+        <Properties>
+          <Property
+            Name="MarginTop">7px</Property>
+          <Property
+            Name="MarginBottom">7px</Property>
+          <Property
+            Name="PaddingTop">4px</Property>
+          <Property
+            Name="PaddingBottom">4px</Property>
+        </Properties>
+      </Style>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="Menu">
+          <Properties>
+            <Property
+              Name="Display">none</Property>
+          </Properties>
+        </Style>
+      </Medium>
+    </Styles>
+    <Stylesheet></Stylesheet>
+  </Stylesheet>
+  <Strings />
+</CatapultSkin>

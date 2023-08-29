@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Site Manager Widgets</h1>
+        <h2>Site Modeling</h2>
+        <p>The hierarchy used to populate the product dimension in the Site Modeling widget is determined by the <b>Site Modeling: Product Hierarchy</b> system policy.</p>
+        <p><b>Sales History</b>
+        </p>
+        <p>Site modeling creates entries in <b>tbl_SalesHistoryByType</b> as supersession sales history. In order to process the site modeling data, <b>usp_Site_Model_ProcessModelData</b> must be run. It is recommended to add this procedure as a task in the daily job, or as frequently as sales history is updated in Demand Management. </p>
+        <p><b>Site Opening Date</b>
+        </p>
+        <p>The site opening date is read from <b>tbl_Site_Status_Temporal</b>. It is the minimum of start dates where site status is <b>1</b> (open).</p>
+        <h2>DC Source Priority</h2>
+        <p>The supply chain used to populate the widget is determined by the <b>SiteManager.DCSourcePrioritySupplyChain</b> system policy.</p>
+        <h2>Site Source Priority </h2>
+        <p>The supply chain used to populate the widget is determined by the <b>SiteManager.SiteSourcePrioritySupplyChain</b>  system policy.</p>
+    </body>
+</html>

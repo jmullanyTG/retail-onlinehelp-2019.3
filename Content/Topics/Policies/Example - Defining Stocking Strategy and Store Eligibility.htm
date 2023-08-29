@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="General.How-To Guides">
+    <head>
+    </head>
+    <body>
+        <h1>Example - Defining Stocking Strategy and Store Eligibility</h1>
+        <p>Policy tasks apply replenishment and stocking strategy-related settings to the items contained in the task's filter. </p>
+        <p>In this example, you will create the following policy tasks to support the introduction of the new item <b>High Collar Angelina Jacket</b> to stores:</p>
+        <ul>
+            <li>A policy task that sets the default distribution&#160;center stocking strategy for the new item.</li>
+            <li>A policy task that sets the default store stocking strategy for the new item.</li>
+            <li>A policy task that excludes stores outside of the USA and Canada from receiving this item.</li>
+        </ul>
+        <p MadCap:conditions="General.Temp Exclude">
+            <MadCap:snippetText src="../../Resources/Snippets/Example database text.flsnp" />
+        </p>
+        <h2 MadCap:conditions="General.Printed Manuals,General.Temp Exclude">Workflow</h2>
+        <p MadCap:conditions="General.Printed Manuals,General.Temp Exclude">Click to view the Managing Stocking Strategies workflow.</p>
+        <p MadCap:conditions="General.Printed Manuals,General.Temp Exclude"><a href="../../Resources/PDFs/Demand Management Workflows.pdf#page=14" title="Click to open the workflow" alt="Click to open the workflow"><img src="../../Resources/PDFs/Demand Management Workflows.pdf#14" class="workflow" /></a>
+        </p>
+        <h2>Instructions</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>1. Create a Policy Task for DCs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Execute tab, click <b>Policy</b>. The Policy Task grid displays.</li>
+                    <li>From the Policy Task toolbar, click <b>New</b>. The Add Policy Task screen displays.</li>
+                    <li>
+                        <p>In the Name field on the Global tab, enter <b>New Items (to DC)</b>. </p>
+                        <p>
+                            <img src="../../Resources/Images/Policies/Policy_Add_Task.png">
+                            </img>
+                        </p>
+                    </li>
+                    <li>
+                        <p>From the Filter field, click <b>Change</b> and select the <b>DC&#160;All Items - Stocking Strategy</b> filter.</p>
+                    </li>
+                    <li>
+                        <p>On the Policy tab, enter the following values:</p>
+                        <ul>
+                            <li>Order Policy Type: <b>Normal Stocked</b></li>
+                            <li>Review Period Days: <b>1</b></li>
+                            <li>Replenishment Cycle Days:<b> 30</b></li>
+                            <li>Safety Stock Days: <b>21</b></li>
+                        </ul>
+                    </li>
+                    <li>Click <b>OK</b>. The policy task is created and the displays on the Policy Task grid.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>2. Create a Policy Task for Stores</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Execute tab, click <b>Policy</b>. The Policy Task grid displays.</li>
+                    <li>From the Policy Task toolbar, click <b>New</b>. The Add Policy Task screen displays.</li>
+                    <li>
+                        <p>In the Name field on the Global tab, enter <b>New Management Store</b>.</p>
+                    </li>
+                    <li>
+                        <p>From the Filter field, click <b>Change</b> and select the <b>New Item Policy Management: Stores</b> filter.</p>
+                    </li>
+                    <li>
+                        <p>On the Policy tab, enter the following values:</p>
+                        <ul>
+                            <li>Order Policy Type: <b>Normal Stocked</b></li>
+                            <li>Review Period Days: <b>1</b></li>
+                            <li>Replenishment Cycle Days: <b>7</b></li>
+                            <li>Safety Stock Days: <b>14</b></li>
+                            <li>Minimum Safety Stock Units: <b>2</b></li>
+                        </ul>
+                    </li>
+                    <li>Click <b>OK</b>. The policy task is created and the displays on the Policy Task grid.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>3. Create a Store Eligibility Policy Task</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Execute tab, click <b>Policy</b>. The Policy Task grid displays.</li>
+                    <li>
+                        <p>From the Policy Task toolbar, click <b>New</b>. The Add Policy Task screen displays.</p>
+                    </li>
+                    <li>
+                        <p>In the Name field on the Global tab, enter <b>Store Eligibility: High Collar Angelina Jacket Only Active for Canada and USA</b>.</p>
+                    </li>
+                    <li>
+                        <p>From the Filter field, click <b>Change</b> and select the <b>High Collar Angelina Jacket Store Eligibility</b> filter. </p>
+                    </li>
+                    <li>
+                        <p>In the Order Policy Type field on the Policy tab, enter <b>Redundant</b>.</p>
+                    </li>
+                    <li>Click <b>OK</b>. The policy task is created and the displays on the Policy Task grid.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

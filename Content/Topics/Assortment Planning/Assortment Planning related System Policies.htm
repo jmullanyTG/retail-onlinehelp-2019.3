@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="5375" MadCap:lastWidth="1301">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Assortment Planning Related System Policies</h1>
+        <p>The following table describes the available Assortment Planning related system policies.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');margin-left: auto;margin-right: auto;" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" MadCap:conditions="General.Temp Exclude" style="width: 605px;" />
+            <col class="TableStyle-standard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">System Policy</th>
+                    <th class="TableStyle-standard-HeadE-Column2-Header1">System Name</th>
+                    <th class="TableStyle-standard-HeadD-Column1-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Active Variant Threshold Factor</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Target.ActiveVariantThresholdFactor</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Target Creation - Calculation and Rationalization Processes.  Percentage of a variant's deseasonalized average sales that must be met for that period to be considered "Active".  Formatted as a decimal (e.g. 0.3 = 30%).</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Active Variant Time On Offer Minimum</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Target.ActiveVariantTimeOnOfferMinimum</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Target Creation - Rationalization Process.  Percentage of the scenario time frame that an item must have been on offer for to considered "Active".  Formatted as a decimal (e.g. 0.31 = 31%).</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Allow DCs as Home Site</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Config.AllowDCAsHomeSite</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Determines whether sites of type DC are allowed to be selected as the Home Site (used in determining Home VAT %) in Assortment Planning.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Allow Strict Site Exclusion</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Placeholder.AllowStrictSiteExclusion</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Site Exclusion is controlled at either Placeholder [True] or PlaceholderInstance [False]</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Allow supplemental commitments</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.OrderManagerAddAssortmentPlanCommit.AllowSupplementalCommits</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Allow for supplemental commitment orders for a period which already contains a confirmed commitment order.  0 = Do Not Allow.  1 = Allow Supplemental Commits and Enforce Constraints on Supplemental Commits.  2 = Allow Supplemental Commits and Do Not Enforce Constraints on Supplemental Commits. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Assortment days history to actualize</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Maintenance.DaysHistoryToActualize</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">The number of days back to go when actualizing sales, receipts and stock on hand for assortment planning.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Assortment days history to maintain</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Maintenance.DaysHistoryToKeep</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">The number of days back maintain in a live assortment plan.  Detail data older than this date will be summarized and then deleted.  Entering the value "0" will keep all history.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Assortment Order Type</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Report.APOrderType</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Variant Orders created from assortment planning are reconciled to the cluster when coming back as confirmed orders from the host system. Inventory Orders uses a calculated split factor to reconcile inbound order quantities to clusters.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Assortment sales types to actualize</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Maintenance.SalesTypesToActualize</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">The sales types, as defined in tbl_SalesType, to use when computed actualized sales numbers.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Average Inclusion Threshold</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Target.LowSellingWeeksRemove</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Target Creation - Calculation and Rationalization Processes.  Percentage of a variant's maximum sales that must be met for a period to be considered in the deseasonalization process.  Periods of sales for the variant below the threshold will be removed before deseasonalization.  Formatted as a decimal (e.g. 0.03 = 3%).</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Batch size used in Assortment Actualization.</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Maintenance.ActualizationBatchSize</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">The number of PlaceholderIDs processed in a single batch during Actualization.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Days To Keep Deleted Data</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Maintenance.DaysToKeepDeletedData</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">The maximum number of days that deleted data will be held (hidden) in the database.  Set a lower number for more aggressive deleting and more space conservation.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">DC Stock Splits future number of periods</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Maintenance.DCSplitCalcFuturePeriods</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Number of periods forward from the current period to determine % DC stock splits by cluster set / cluster.  Default is 8.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Default Commitment Merge</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.OrderManagerAddAssortmentPlanCommit.DefaultMergeType</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Default Merge OrderLines when commitments are created - 0 = None, 1 = Merge by Variant</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Editable Elements on Line Visualization when Replen</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.LineVisualization.EditableObjectsWhenReplenStatus</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Editable Fields / Objects when Placeholder Status has been set to Replen.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Image View Maximum number SQL Data Rows</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.ImageGrid.Maximum.SQL.DataRows</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">The maximum number of SQL data rows that can be queried in a view that returns images.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Line Visualization Allow Price Exceptions</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.LineVisualization.AllowViewPriceExceptions</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Allow View / Edit of Price Exceptions in Line Visualization</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Line Visualization Maximum number SQL Data Rows</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.LineViz.Maximum.SQL.DataRows</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">The maximum number of SQL data rows that can be queried in a Line Visualization view.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Marginal Return Curve Extrapolation</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Target.MarginalReturnCurveExtrap</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Target Creation - Rationalization Process.  Integer representing the minimum number of data points required in a given period for the system to use the original calculated intra-style marginal return curve in determining the number of recommended choices to assign to each recommended collection. If this minimum is not met, the system will calculate a weighted curve based on the original intra-style marginal return curve and a curve calculated at a higher level of the product hierarchy to provide a more accurate recommendation.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Median Period Total Threshold</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Target.PercentOfMedianPeriodTotal</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Target Creation - Calculation and Rationalization Processes.  Percentage of a periods's median sales that must be met for a period total to be considered in the deseasonalization process.  Periods with total sales below the threshold will be overwritten with the percentage of the median.  Formatted as a decimal (e.g. 0.5 = 50%).</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Multi Value Attribute Inheritance</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Attributes.MultiValueOverwrite</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Defines the inheritance of multi-value attribute families attached to variants by the placeholders those variants are assigned to within Assortment Planning. Value of 1 indicates placeholder values will be entirely overwritten by the variant attributes on assignment of the variant. Value of 0 indicates unique values attached to the variant will be added to the existing placeholder values on assignment of the variant.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Max Overage Percent Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.MaxOveragePercent</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Max Overage Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.MaxOverage</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Max Pack Configs Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.MaxPackConfigs</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Max Pack Per Location Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.MaxPacksPerLocation</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Max Pack Percent Total Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.MaxPackPercentTotal</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Max Units Per Pack Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.MaxUnitsPerPack</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Min Pack Configs Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.MinPackConfigs</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Min Units Per Pack Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.MinUnitsPerPack</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Overage Weight Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.OverageWeight</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Pack Tolerance Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.PackTolerance</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Pack Weighting Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.PackWeighting</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Prepack Underage Weight Resolution</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.DefaultResolution.UnderageWeight</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Aggregation Function to resolve default collisions</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Promotion Planning Time Periods</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Promo.PromotionPlanningTimePeriods</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Promotions - Approximation.  Integer representing the number of time periods before and after a promotion's application period that will be shown in Promotion Planning.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Promotions Applied to Markdown Default</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Promo.ApplyPromosOnMarkdownsDefault</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Determines default property of whether promotions can be applied to a markdown period for an item.  This can be overwritten at a promotion and promotion application level.  If True, the default is that promotions can be applied to markdown periods.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Receipt Cluster Merge All</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Receipt.MergeClustersTogetherByDefault</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">When commitments are generated, whether to group receipts for variants together across clusters by default, or whether to keep them separate by default.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Require display Primary Image</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.ImageManagement.RequirePrimaryImageClassification</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Require usage of Primary Image Classification in Assortment Planning</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Style Bank Line Visualization Maximum number SQL Data Rows</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.LineViz.StyleBank.Maximum.SQL.DataRows</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">The maximum number of SQL data rows that can be queried in the Style Bank in the Line Visualization view.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Update Variant Attributes in Assortment Planning</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.Attributes.ChangeAttributesOnAssigned</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Defines the ability to make attribute changes on assigned placeholders.  Value of 1 indicates that placeholder attribute changes are allowed on assigned placeholders. Value of 0 indicates attribute changes cannot be made to assigned placeholders.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Variant Primary Image Classification Update</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">Assortment.ImageManagement.AllowUpdateVariantPrimaryImage</td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">Allow Update of Primary Image Classification if Variant Present - Assortment Planning / Variant Manager</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">VAT Rounding Digits</td>
+                    <td class="TableStyle-standard-BodyB-Column2-Body1">Assortment.Maintenance.RoundVATDigits</td>
+                    <td class="TableStyle-standard-BodyA-Column1-Body1">The number of digits to round to when calculating historical VAT.  A number 4 here means that the VAT value will be rounded to 0.xxxx, or xx.xx%.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

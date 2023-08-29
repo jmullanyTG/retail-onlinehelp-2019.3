@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/PrintCover.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    PageType="title" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="pageLayout" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false" />
+  <TocEntry
+    Title="Ordering Constraints Overview"
+    Link="/Content/Topics/Ordering Constraints/Ordering Constraints Overview.htm"
+    BreakType="pageLayout"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Default.flpgl"></TocEntry>
+  <TocEntry
+    Title="Constraint Sets"
+    Link="/Content/Topics/Ordering Constraints/Constraint Sets.htm">
+    <TocEntry
+      Title="Essential Business Concepts">
+      <TocEntry
+        Title="Constraint Set Header"
+        Link="/Content/Topics/Ordering Constraints/Constraint Set Header.htm" />
+      <TocEntry
+        Title="Constraint Set Detail"
+        Link="/Content/Topics/Ordering Constraints/Constraint Set Detail.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Practical Application">
+      <TocEntry
+        Title="Creating and Editing a Constraint Set"
+        Link="/Content/Topics/Ordering Constraints/Creating and Editing a Constraint Set.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Technical Execution"
+      Link="/Content/Topics/Ordering Constraints/Cost Types.htm">
+      <TocEntry
+        Title="Constraint Groups"
+        Link="/Content/Topics/Ordering Constraints/Constraint Groups.htm">
+        <TocEntry
+          Title="Order Line Priority and Locking"
+          Link="/Content/Topics/Ordering Constraints/Order Line Priority and Locking.htm">
+          <TocEntry
+            Title="If constraining up:"
+            Link="/Content/Topics/Ordering Constraints/If constraining up.htm" />
+          <TocEntry
+            Title="If constraining down:"
+            Link="/Content/Topics/Ordering Constraints/If constraining down.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Constraint Logic"
+          Link="/Content/Topics/Ordering Constraints/Constraint Logic.htm" />
+        <TocEntry
+          Title="Application of Constraint Sets to Scheduled Replenishment Tasks"
+          Link="/Content/Topics/Ordering Constraints/Application of Constraint Sets to Scheduled Replenishment.htm" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

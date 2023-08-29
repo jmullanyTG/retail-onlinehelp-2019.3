@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Maintenance</h1>
+        <p>Clean up maintenance related to the archived forecast data may be run periodically to save space on the database server. </p>
+        <p>Running usp_Forecast_Maintenance_PerformCleanupGUIDTables will delete all of the “<span class="code_sample">tbl_FCTemp</span>” tables. It is extremely important that this procedure is run just prior to a nightly forecasting job. It cannot be run during or after the forecasting task as it will break many things.</p>
+    </body>
+</html>

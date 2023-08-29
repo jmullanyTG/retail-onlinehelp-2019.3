@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="936" MadCap:lastWidth="1348">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>System Policies</h1>
+        <p>The following system policies have been added. </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Display Name</th>
+                    <th class="TableStyle-standard-HeadE-Column2-Header1" colspan="2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Allow Receipts After Markdown</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1" colspan="2">
+                        When set to <b>False</b>, this policy  prevents the system from ordering additional stock past the planned markdown date. The default is <b>False</b>. 
+                        <p>Set the system policy to <b>True</b> if additional stock should be ordered beyond the planned markdown date.</p><p><b>System Name</b>: Assortment.Engine.AllowReceiptsAfterMarkdown</p></td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Allow supplemental commitments</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1" colspan="2">
+                       Allows for supplemental commitment orders for a period which already contains a confirmed commitment order. The possible settings are:
+                        <ul><li> 0 = Do Not Allow.  </li><li>1 = Allow Supplemental Commits and Enforce Constraints on Supplemental Commits. </li><li> 2 = Allow Supplemental Commits and Do Not Enforce Constraints on Supplemental Commits.</li></ul><p><b>System Name</b>: Assortment.OrderManagerAddAssortmentPlanCommit.AllowSupplementalCommits</p></td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Promotions Applied to Markdown Default</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1" colspan="2">Determines default property of whether promotions can be applied to a markdown period for an item.  This can be overwritten at a promotion and promotion application level.  If True, the default is that promotions can be applied to markdown periods.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">SqlServerPivotGrid Maximum number SQL Data Rows</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1" colspan="2">The maximum number of rows returned for any SQL Server Pivot Grid, if exceeded, an error will be displayd in the UI. Default(60000).</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Style Bank Line Vizualization Maximum number SQL Data Rows</td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1" colspan="2">The maximum number of SQL data rows that can be queried in the Style Bank in the Line Visualization view.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Variable Numeric Precision</td>
+                    <td class="TableStyle-standard-BodyB-Column2-Body1" colspan="2">
+                    A new system policy labeled <b>Variable Numeric Precision</b> addresses the need at the time of implementation to configure Pricing Variables to have different numeric precision for different geographic locations to be inline with local currencies. This system policy is hidden and is only set once at the time of implementation. This system policy is not changed after initial implementation. <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62594</MadCap:conditionalText><p><b>Variable Numeric Precision</b> sets the database field precision to ensure efficient updates and selects and maintenance of database growth for configured Pricing Variables and their assignment to Pricing Strategies. Further refinement of each Pricing Variable's formatting is implemented via the <b>Price Manager Configuration</b> screen.</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

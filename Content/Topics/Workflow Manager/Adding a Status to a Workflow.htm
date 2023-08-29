@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Adding a Status to a Workflow</h1>
+        <ol>
+            <li>From the <b>Maintenance</b> tab, click <b>Workflow</b>.</li>
+            <li>In the <b>Workflows</b> list, select the workflow you want to add a new status to.</li>
+            <li>
+                <p>Click <b>New</b> in the Status toolbar.</p>
+                <p>
+                    <img src="../../Resources/Images/Workflow Manager/Status toolbar.png" />
+                </p>
+            </li>
+            <li>
+                <p>A new status box appears in the workflow diagram.</p>
+                <p><b>TIP</b>: If you select an existing status box in the workflow diagram before clicking <b>New</b>, a transition will automatically be created from the selected status box to the new status box.</p>
+            </li>
+            <li>
+                <p>In the Information pane, edit the following status information properties:</p>
+                <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+                    <col class="TableStyle-standard-Column-Column1" />
+                    <col class="TableStyle-standard-Column-Column2" />
+                    <thead>
+                        <tr class="TableStyle-standard-Head-Header1">
+                            <th class="TableStyle-standard-HeadE-Column1-Header1"><a name="StatusProperties"></a>Property</th>
+                            <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-standard-Body-Body1">
+                            <td class="TableStyle-standard-BodyE-Column1-Body1">Name</td>
+                            <td class="TableStyle-standard-BodyD-Column2-Body1">The status name appears in the status box in the Design pane.</td>
+                        </tr>
+                        <tr class="TableStyle-standard-Body-Body1">
+                            <td class="TableStyle-standard-BodyE-Column1-Body1">Completion Days Out</td>
+                            <td class="TableStyle-standard-BodyD-Column2-Body1">
+                                <p>The number of days before or after the workflow object's goal date that the status is due. See Trigger Method below. (Optional) </p>
+                                <p>A positive number indicates the status is due before the goal date. A negative number indicates the status is due after the goal date.</p>
+                                <p>For example, a workflow's goal date is typically the object's start date (promotion goal date = the sale/promotion start date; event goal date = the ad start date; price action oal date = the price action start date, etc.). So if you want this status to be due 30 days before the start date, enter the value "30". If you want this status to be due 14 days after the start date, enter the value "-14". </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-standard-Body-Body1">
+                            <td class="TableStyle-standard-BodyE-Column1-Body1">Prefix Method</td>
+                            <td class="TableStyle-standard-BodyD-Column2-Body1">
+                                <p>The method Demand Management should execute before applying this status. (Optional) </p>
+                                <p>A method is an advanced process applied at the database level (such as the execution of a SQL script). This list is empty unless methods are configured to appear in it.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-standard-Body-Body1">
+                            <td class="TableStyle-standard-BodyE-Column1-Body1">Post Fix Method</td>
+                            <td class="TableStyle-standard-BodyD-Column2-Body1">
+                                <p>The method Demand Management should execute after applying this status. (Optional)</p>
+                                <p>A method is an advanced process applied at the database level (such as the execution of a SQL script). This list is empty unless methods are configured to appear in it.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-standard-Body-Body1">
+                            <td class="TableStyle-standard-BodyE-Column1-Body1">Trigger Method</td>
+                            <td class="TableStyle-standard-BodyD-Column2-Body1">
+                                <p>The method Demand Management should execute once the completion day specified in the Completion Days Out property arrives.(Optional) </p>
+                                <p>This list includes the method "Auto Advance Node Status by&#160;Completion Days Out for Workflow Triggers", which automatically advances the workflow to its "next" status once the completion day is reached. If there is more than one possible "next" status (for example, "Approve" or "Change Needed"), the workflow will advance to the status with the highest <a href="Adding a Transition to a Workflow.htm">transition weight</a>.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> Completion Days Out are tracked using the Workflow Heartbeat task, which is in the <a href="../Workload Queue Manager/Standardized Jobs.htm">daily job</a> run by the   Demand Management Job Manager. This task stops tracking days out in a workflow on the furthest "negative" day out specified in the workflow. If the heartbeat task does not run on that specific day, the trigger method will never automatically execute.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-standard-Body-Body1">
+                            <td class="TableStyle-standard-BodyB-Column1-Body1">Status Permission Blacklist</td>
+                            <td class="TableStyle-standard-BodyA-Column2-Body1">
+                                <p>The <a href="Status Permission Blacklist.htm">state-based permission sets</a> to enforce in Demand Management while the workflow is in this status. The list includes a row for each user right controlled by the workflow and a column for each possible object state. A black user icon indicates the user right is granted to all users when an object governed by the workflow is in that state. A&#160;blue user icon indicates the user right is denied to one or more users when an object governed by the workflow is in that state. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Click <b>Save</b> on the Workflow toolbar to save the change to the workflow.</li>
+        </ol>
+        <h2>Next steps</h2>
+        <p>Once a status is created, you can start making the following changes:</p>
+        <ul>
+            <li>Edit its status information and <a href="Status Permission Blacklist.htm">permission blacklist</a>.</li>
+            <li>Add or <a href="Adding a Transition to a Workflow.htm">edit</a> transitions to the new status.</li>
+        </ul>
+    </body>
+</html>

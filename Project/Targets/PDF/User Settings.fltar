@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="For Printed Manuals"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/User Settings.fltoc"
+  PatchHeadingLevels="true"
+  InjectBookHeadings="true"
+  RemoveImagesFromHeadings="true"
+  EmbedImages="true"
+  ConditionTagExpression="include[&quot;General.Online Help&quot; or &quot;General.Printed Manuals&quot;] exclude[&quot;General.Temp Exclude&quot;] "
+  conditions="">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    ExpandingTextConversion="expand"
+    PopupConversion="expand"
+    GeneratePDF="false"
+    DisableMasterPageUsage="true" />
+  <Variables> <Variable
+      Name="Variables/BookVersion">2019.3</Variable> <Variable
+      Name="Variables/BookSubTitle">User Guide</Variable> <Variable
+      Name="Variables/BookVersion">2019.3</Variable> <Variable
+      Name="Variables/BookSubTitle">User Guide</Variable><Variable
+      Name="JustEnough Variables/Printed Manual Title">Settings</Variable><Variable
+      Name="Variables/BookTitle">Settings</Variable></Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF Output.fldes"
+      Publish="true" />
+  </Destinations>
+  <PDF
+    ConvertBookmarks="true"
+    InitialMagnification="Fit"
+    PageLayout="OneColumn" />
+</CatapultTarget>

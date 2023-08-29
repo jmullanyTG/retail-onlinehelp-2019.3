@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Example - Creating a New Sites Filter</h1>
+        <p>In this example, we will create a filter that identifies all sites created within the past 60 days. Of course, you are free to change the number of days to any value that best suits your purpose.</p>
+        <h2>Example</h2>
+        <p>The Demand Management Standard Demo database includes an example filter, <b>Identify New Stores</b>, based on the instructions provided below.</p>
+        <h2>Instructions</h2>
+        <ol>
+            <li>In the <b>Management</b> tab, click <b>Filters</b>.</li>
+            <li>In the <b>Maintain Filters</b> dialog box, select <b>Create a New Filter</b> and click <b>OK</b>.</li>
+            <li>In the <b>Select Filter Entity</b> type list, select <b>Site</b> and click <b>OK</b>.</li>
+            <li>In the Maintain Filter dialog box, enter the following information:<ul><li><b>Filter Name</b>: <code>New Sites(Creation &lt; 60 days)</code>.</li><li><b>Filter Notes</b>; Add a note.</li><li><b>Filter Group</b>: select a filter group.</li><li><b>Share this File</b>: select a sharing option.</li></ul></li>
+            <li>In the <b>Criteria</b> section, click <b>New</b>.</li>
+            <li>In the <b>Setup Filter Criteria</b> form, select <b>Criteria</b> where all of the following conditions must be met.</li>
+            <li>
+                <p>In the <b>Condition</b> section, click <b>New</b>.</p>
+            </li>
+            <li>
+                <p>In the <b>Filter Condition</b> dialog box, enter the following:</p>
+                <ul>
+                    <li><b>Field Select</b>: Days From Creation </li>
+                    <li><b>Condition</b>: Select Smaller or Equal To</li>
+                    <li>
+                        <p><b>Days From Creation Smaller or Equal To</b>: Enter 60</p>
+                        <p>
+                            <img src="../../Resources/Images/Inventory Manager/Create New Sites Filter conditions.png" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>The new filter is ready to use.</p>
+                <p>
+                    <img src="../../Resources/Images/Inventory Manager/Create New Sites Filter.png" />
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

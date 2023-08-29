@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="645" MadCap:lastWidth="1314">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Importing and Exporting Views</h1>
+        <p>Views may be exported from an instance of Demand Management and imported into a separate instance. This may be used to upgrade standard versions, or to transport work between development, QA, and production environments. </p>
+        <p>A new view may be imported using the “Import New” function. </p>
+        <p>
+            <img src="../../Resources/Images/Views/Import New.png">
+            </img>
+        </p>
+        <p>Importing a view as new will create the view with a new universally unique identifier (UUID) within not just the current instance of Demand Management, but across any version. Views imported as new will not replace existing views and the feature should not be used to “upgrade in place”. When customizing or extending an existing standard view, it should first be exported, then re-imported as new to give the view a fresh UUID (and thus not be overwritten when upgrading). </p>
+        <p>Import Existing</p>
+        <p>An upgraded version of an existing view may be imported using the “Import Existing” function. </p>
+        <p>
+            <img src="../../Resources/Images/Views/Import New.png">
+            </img>
+        </p>
+        <p>Import existing will search for and replace an existing view with the same universally unique identifier (UUID) within the system. This should be used to upgrade standard views in place.</p>
+    </body>
+</html>

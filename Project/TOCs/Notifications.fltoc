@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/PrintCover.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    PageType="title" />
+  <TocEntry
+    Title="Initiate Custom Notification Configuration"
+    Link="/Content/Topics/Notifications/Initiate Custom Notification Configuration.htm" />
+  <TocEntry
+    Title="Custom Notification Implementation Examples"
+    Link="/Content/Topics/Notifications/Custom Notification Implementation Examples.htm" />
+</CatapultToc>

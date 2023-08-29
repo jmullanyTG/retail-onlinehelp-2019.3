@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2579" MadCap:lastWidth="1195">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Assortment Buy Sheet Report</h1>
+        <p>The <b>Assortment Buy Sheet Report</b> is intended to provide users the ability to view and evaluate planned items within an assortment for a defined time frame.&#160; The report contains key measures for placeholders/variants/collections related to what those entities are, where they are planned to sell, and when they are planned to sell.&#160; Additionally, users have visibility to sales, pricing, margin, and receipts and on order for all items contained within the report.&#160; </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Assortment Buy Sheet Report.png" />
+        </p>
+        <p>Once the values have populated upon hitting execute, users can use this report to slice and dice their assortment for a defined time frame.&#160; This view can be utilized to pass key information to users that do not have access to the system.&#160; For example, merchandise planners can export this report as a PDF or spreadsheet to share with merchants or buyers.&#160; </p>
+        <p>Additionally, this report is intended to provide insight to how an assortment is planned and how items fit into the assortment in terms of their selling behavior.&#160; For example, by using a product attribute filter, a denim planner could look at how skinny jeans that have a certain wash are planned and how much presence in the assortment these attributes will have as they are merchandised across the selling channels of the organization.</p>
+        <h2>Parameters</h2>
+        <p>The <b>Assortment Buy Sheet Report</b> is controlled by five parameters:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Assortment Buy Sheet Report_1.png" />
+        </p>
+        <ul>
+            <li>
+                <p><b>Product</b>: Selects a product filter for the current view</p>
+                <ul>
+                    <li>
+                        <img src="../../Resources/Images/Assortment Planning/View Parameters.png" />&#160; Launches the Filter Conditions dialog, allowing the user to dynamically edit the criteria for the selected filter prior to executing it. The option also exists to create a new filter from the adjusted criteria dynamically.</li>
+                    <li>
+                        <img src="../../Resources/Images/Assortment Planning/View Parameters_1.png" />&#160; Launches the Maintain Filter dialog, allowing the user to create or import a new filter, or update, delete, or export an existing filter.</li>
+                </ul>
+            </li>
+            <li><b>Site Hierarchy</b>: Selects the levels of the current plan’s Site Hierarchy to include in the current view.</li>
+            <li>
+                <p><b>Cluster Sets</b>:&#160;&#160; Selects the cluster sets to include in the current view. The cluster sets listed include all default and "additionally available" cluster sets for the product level selected in the Product parameter.</p>
+            </li>
+        </ul>
+        <p>While cluster sets are not explicitly part of the Site Hierarchy, they are directly related, in that cluster sets in a given assortment plan must be contained within a single lowest level of that hierarchy; because of this, the Cluster Set drop down will populate with the cluster sets contained beneath the selected Site Hierarchy levels</p>
+        <ul>
+            <li>
+                <p><b>Window of Time</b>: Selects the window of time to display in the current view. </p>
+                <p>Any placeholder whose life cycle intersects with any part of the selected Window of Time displays in the view. This allows users to view placeholders holistically as displaying subdivisions of their life cycle might alter the decisions made by users if they have forgotten or are unaware of the full length of time a placeholder is for sale.</p>
+                <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">The selected time frame must be a contiguous range of periods otherwise the system still uses the window of time defined by the first and last selected periods.</p>
+            </li>
+            <li><b>Display Currency</b>: Sets the currency to display for all revenue based fields in the view. This defaults to the Home Currency for the active Assortment Plan.</li>
+        </ul>
+        <h2>Report fields</h2>
+        <p>Clicking <b>Execute</b> returns the following columns in the <b>Assortment Buy Sheet Report</b> once the parameters have been set:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Fields</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Image</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">  Displays a thumbnail of the primary image for the placeholder or attached variant.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>PH/PLM Code</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Unique system generated code for the placeholder or if a variant is assigned in Line Visualization, displays the PLM code associated with the assigned variant.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>PH/PLM Description</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Description for the placeholder or if a variant is assigned in Line visualization, displays the PLM description associated with the assigned variant.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Placeholder Status</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Displays the placeholder status: Open, Created, Assigned, Committed, or Replen.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Avg. Unit Ticket</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Average unit ticket (AUT) price for the placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Avg. Unit Retail</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Average unit retail  (AUR) price for the placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Avg. Unit Cost</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">  Average unit cost  (AUC) price for the placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Margin %</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Margin percentage for the placeholder. 
+						<p><b>Calculation</b>: (AUR – AUC) / AUR<br /></p></td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Phase In</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The phase in date for the placeholder, first period of planned sales.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Phase Out</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The phase out date for the placeholder, last period of planned sales.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b># Weeks</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Total number of weeks the placeholder is on offer to the customer.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Rate of Sale $</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Average sales per site per period in revenue for the placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Rate of Sale U</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Average sales per site per period in units for the placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Total Sales $</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Total sales revenue for the item from Phase in through Phase out.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Total Sales U</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Total sales units for the item from Phase in through Phase out.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Promo</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">If checked a promotion exists for the placeholder, if unchecked, then no promotion exists.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Plan Receipt $</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Total cost of planned receipts for an placeholder from Phase in through Phase out.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Plan Receipt U</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Total units of planned receipts for an placeholder from Phase in through Phase out.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b># of Flows</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Total number of periods that receipts are planned to deliver for an placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Count</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Total number of sites that an placeholder is assorted to.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Avg. Units</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Average amount of planned receipts per site.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>On Order U</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Total number of committed units planned to deliver for an placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>% Commit</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> % of total planned receipts that have been committed to for an placeholder.
+						<p><b>Calculation</b>: (On Order U + prior actual receipts) / Planned Receipt U</p></td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Cluster Sets</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Displays the cluster sets assigned to the placeholder.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

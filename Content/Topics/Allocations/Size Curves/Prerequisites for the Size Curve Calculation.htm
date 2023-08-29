@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Prerequisites for the Size Curve Calculation</h1>
+        <p>The following are prerequisites that must be met for the size curve calculation to run:</p>
+        <p><b>Stock On-hand Data by Site/Size</b>: the size curve calculation makes use of stock on-hand data to qualify whether the sales that occurred for a given variant/period should be included when calculating a size curve for a given site. If this data is not present for the items included in the product Filter selected for the size curve, the enhanced calculation method cannot be employed and the old sales-only calculation method will be used instead</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">the specific check done to qualify this requirement is that <span class="code_sample">tbl_inventory.InventoryLevelArchive</span> is checked for any entries for the inventories in the Filter between the dates specified (Start Date to End Date or Last X Days). The presence of a single inventory record will qualify the check to proceed with the enhanced calculation method</p>
+        <p><b>Data Cleansing Thresholds</b>: at least one of the two data cleansing threshold fields must be set to a positive value. For more information, see <MadCap:xref href="Data Cleansing Thresholds.htm">Data Cleansing Thresholds</MadCap:xref>.</p>
+    </body>
+</html>

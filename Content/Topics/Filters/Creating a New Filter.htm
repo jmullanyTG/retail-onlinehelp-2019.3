@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Creating a New Filter</h1>
+        <p>You can create new filters from the Filters screen and from wherever filters can be selected within Demand Management. The process is the same either way, except that when creating filters in the Filters screen you will be asked to select an <a href="Selecting a Filter.htm#_Entity_Types">entity type</a>. (When creating filter in another area of Demand Management, the entity type is pre-defined based on the current context. For example, when creating a new filter in the Supplier screen, the entity type is pre-defined as “Supplier”.)</p>
+        <h2>Creating a filter from the Filters screen</h2>
+        <ol>
+            <li>From the <b>Management</b> tab, click <b>Filters</b>.</li>
+            <li>In the <b>Maintain Filters</b> dialog box, select <b>Create a New Filter</b>.</li>
+            <li>If you want to base the new filter on an existing filter, select <b>Clone from Existing Filter</b> and choose the filter to clone from the Filter list below.</li>
+            <li>
+                <p>Click <b>Ok</b>.</p>
+                <ul>
+                    <li>If you did not select <b>Clone from Existing Filter</b>, choose the <a href="#About">entity type</a> for the new filter. Otherwise, the new filter’s entity type will be the same as the filter you chose to clone.</li>
+                </ul>
+            </li>
+            <li><a href="Editing a Filter.htm#_Editing_Filters">Edit</a> the filter’s details, criteria, and conditions.</li>
+            <li>Click <b>OK</b> to save the new filter.</li>
+        </ol>
+        <h2>Creating a filter from within another area of Demand Management</h2>
+        <p>For convenience, whenever you are asked to select a filter in Demand Management, you have the option of creating a new filter  without having to switch to the Filters screen.</p>
+        <ol>
+            <li>
+                <p>Click the <b>Maintain</b> (<img src="../../Resources/Images/Filters/Maintain Filters Dialog Box_1.png" />) button next to the filter list to open the Maintain Filters dialog box.</p>
+                <p>
+                    <img src="../../Resources/Images/Filters/Creating a New Filter.png" />
+                </p>
+            </li>
+            <li>In the Maintain Filters dialog box, select <b>Create a New Filter</b>.</li>
+            <li>If you want to base the new filter on an existing filter, select <b>Clone from Existing Filter</b> and choose the filter to clone from the Filter list. </li>
+            <li>Click <b>OK</b>.</li>
+            <li><a href="Editing a Filter.htm">Edit</a> the filter details.</li>
+            <li>Click <b>OK</b> to save the new filter.</li>
+        </ol>
+        <h2>About cloned filters</h2>
+        <p>Cloned filters have the default name: <code>Cloned From: &lt;cloned filter name&gt;</code>. You can edit this name as desired. Cloned filters inherit the entity type of the filter they are cloned from.</p>
+        <h2><a name="About"></a>About entity types </h2>
+        <p>Filters are distinguished by the type of “entity” they support (inventory, site, supplier, etc.). As different entity types are used for different functionality and analysis throughout the system, the filters that support this functionality and analysis are also based on entity type. </p>
+        <p>When selecting filters in a Demand Management screen, only the filters created for the applicable entity type will be available for selection. For example, when choosing a site filter in the Site Manager screen, users will see only site filters listed—not site filters and inventory filters and supplier filters, etc. This keeps things simple and makes it easier to find relevant filters.  </p>
+        <p>When creating filters in the Filters screen, you can manually select the entity type of the filter you are creating. In all other locations, the entity type is pre-defined based on the context of the location. For example, when creating a new filter in a site filter selection screen, the entity type of the new filter is pre-defined as Site. </p>
+        <p>The following filter entity types are available in Demand Management:</p>
+        <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Entity Type</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Inventory</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Item-Site combination. A common filter which will drill down to the lowest level in most instances of Demand Management. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">ItemMaster</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The item across all sites. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Site </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Any location which is capable of holding inventory. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Supplier </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Outside entities which supply the business with inventory. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Customer </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Any outside entity which is buying or receiving inventory. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Promotion </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Promotions as created and maintained within the Promotions module.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">KeyItem </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">To be deprecated. Do not use.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Event </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Events as created and maintained within the Events module.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">KeyItem Variant</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">To be deprecated. Do not use.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">File </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Used for repository files. Not to be confused with assembly files used to operate the Demand Management client.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">ItemMaster Group </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Used in Content Manager to filter ItemMaster groups.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">CustomerInventory </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p> Do not use.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Variant </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Used in Allocations and Assortment Planning</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">VariantGroup </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Used in Content Manager to filter variant groups.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">VariantPlaceholder</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Used in Assortment Planning.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2868" MadCap:lastWidth="1333">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Assortment Plan Defaults By Time tab</h1>
+        <p>This tab is used to make adjustments to Minimum Presentation defaults across time by product hierarchy level to account for seasonal fluctuations in store inventory needs; values entered in this tab will override the Minimum Presentation value set in the Assortment Plan Defaults tab for the corresponding level of the product hierarchy for the periods in which overrides are made.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Header Area Controls_9.png" />
+        </p>
+        <p>This tab features standard Pivot Grid functionality, allowing the user to manipulate the field layout by dragging and dropping fields in the Filter, Row, Column, and Data areas of the grid.</p>
+        <h3>Aggregation</h3>
+        <p>Time based fields (Year, Half, Quarter, Month, Week) can be removed from the grid to allow entry of Minimum Presentation for larger time frames at once.
+        When viewing Minimum Presentation at aggregate time levels, the system will display the average across all periods beneath the level being viewed.</p>
+        <h3>Entering Minimum Presentation at aggregate time levels </h3>
+        <p>When entering Minimum Presentation at aggregate time levels, the system will push down the entered value to all periods beneath.</p>
+        <h3>Tab parameters</h3>
+        <p><b>Window of Time</b>: Sets the time range to display in the <b>Assortment Plan Defaults By Time</b> tab.</p>
+        <h3>Toolbar options</h3>
+        <p><b>Graph</b>: activates the standard Pivot Grid graph, which graphs any data series selected by the user</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Header Area Controls_10.png" />
+        </p>
+        <p><b>Fields</b>: launches the Pivot Grid <b>Fields Customization</b> dialog with two tabs, <b>Simple</b> and <b>Advanced</b>. Each tab contains a search bar in which you can enter text to more quickly locate the fields you wish to manipulate. The fields shown in the view will be limited to only those containing the text you have entered.</p>
+        <p><b>Simple</b>: fields can be dragged and dropped between Filter, Row, Column, and Data areas of the Pivot Grid to manipulate the current layout</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Dragging fields to the <b>None Area</b> hides them in the layout.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Header Area Controls_11.png" />
+        </p>
+        <p><b>Advanced</b>: Manipulate the layout here by selecting the desired location of each field from the Pivot Area drop downs next to each; within each area, an Index can be specified to define the order in which the fields display.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Header Area Controls_12.png" />
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Custom Layouts: changes made to the Assortment Plan Defaults By Time layout can be saved for future use. After making changes and clicking <b>Ok</b> in the <b>Fields Customization dialog</b>, right click anywhere in the Pivot Grid and choose <b>Save Layout</b>.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Header Area Controls_13.png" /> </p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Name</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Enter a name for a new layout, or select an existing layout using the drop down menu</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Description</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Enter a description for the layout; not required</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Default</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Check this to make the layout you are saving the default layout that loads when you launch the <b>Manage Assortment Defaults</b> dialog</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Private/Public/Shared</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Whether the current layout is only available for the current user, for all users, or for specified users only. </p>
+                        <p>When selecting <b>Shared</b>, click the ellipsis (...) button to select the desired users</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>OK</b>: saves the current layout with the settings you have specified
+                    </p>
+        <p><b>Cancel</b>: cancels saving the layout without applying any changes to Description, Default, or Privacy settings.  </p>
+        <p> Restore a custom layout by right-clicking anywhere in the Pivot Grid, choosing Restore Layout, and selecting the layout to restore. </p>
+    </body>
+</html>

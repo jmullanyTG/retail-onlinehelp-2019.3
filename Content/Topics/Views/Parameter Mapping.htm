@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Parameter Mapping</h1>
+        <p>The parameter mapping section will allow users to build in parameters to the URL, such as username and passwords. </p>
+        <p>Browser parameters may be configured using code similar to this example:</p>
+        <div class="code_block">
+            <p>
+                <p>IF EXISTS(SELECT TOP 1 * FROM sysobjects WHERE name='cusp_Browser_SelectURLParameters')</p>
+                <p>DROP PROCEDURE cusp_Browser_SelectURLParameters</p>
+                <p>GO</p>
+                <p>&#160;</p>
+                <p>CREATE PROCEDURE cusp_Browser_SelectURLParameters</p>
+                <p>(</p>
+                <p>@iUserID INTEGER = NULL,</p>
+                <p>@iInputID INTEGER = NULL</p>
+                <p>)</p>
+                <p>&#160;</p>
+                <p>AS </p>
+                <p>BEGIN</p>
+                <p>&#160;</p>
+                <p>CREATE TABLE #URLParameters (Color NVARCHAR(10), Size NVARCHAR(5), Code INTEGER)</p>
+                <p>IF @iInputID = 1</p>
+                <p>BEGIN</p>
+                <p>INSERT INTO #URLParameters (Color, Size, Code)</p>
+                <p>VALUES ('Red', 'L', 101)</p>
+                <p>END</p>
+                <p>ELSE IF @iInputID = 2</p>
+                <p>BEGIN</p>
+                <p>INSERT INTO #URLParameters (Color, Size, Code)</p>
+                <p>VALUES ('Green', 'XL', 102)</p>
+                <p>END</p>
+                <p>ELSE</p>
+                <p>BEGIN</p>
+                <p>INSERT INTO #URLParameters (Color, Size, Code)</p>
+                <p>VALUES ('Blue', 'M', 103)</p>
+                <p>END</p>
+                <p>&#160;</p>
+                <p>SELECT * FROM #URLParameters</p>
+                <p>END</p>
+                <p>GO</p>
+                <p>&#160;</p>
+                <p>EXEC usp_Common_AddUpdate_StoredProcedureLookup 'Browser_SelectURLParameters','cusp_Browser_SelectURLParameters','Select URL Parameters for Browser Widget'</p>
+                <p>GO</p>
+            </p>
+        </div>
+    </body>
+</html>

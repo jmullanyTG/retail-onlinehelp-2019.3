@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="2476" MadCap:lastWidth="1316">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Seasonality Curve View</h1>
+        <p>The <b>Seasonality Curve</b> view within Assortment Planning is a scaled down version of the full Curves module found in <b>Execute &gt; Curves</b>. Using the <b>Seasonality Curve</b> view, users can select and apply seasonality curves to the entire selected placeholder/collection or only to selected cluster sets/clusters it is assorted to. </p>
+        <p>Creation of new curves is still done within the full <b>Curves</b> module.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Seasonality Curve Generator.png" />
+        </p>
+        <h2>Seasonality Curve</h2>
+        <ul>
+            <li><b>Filter Tags</b>: Selects tags to be used in filtering the curves available for selection in Saved Curves. Tags can be attached to curves within the <b>Curves</b> module. The list of tags can be filtered by typing in the blank field above above the list. Use <b>%</b> at the beginning to do a “Contains” type filter instead of a “Begins With” type.
+				<p><img src="../../Resources/Images/Assortment Planning/Seasonality Curve Generator_1.png" /></p></li>
+            <li><b>Saved Curves</b>: A curve generated within the <b>Curves</b> module to apply to the selected placeholder/collection. Only curves of the Manual or Specified Conditions Using Enhanced Filtering types are available for selection within Assortment Planning.</li>
+            <li><b>Curve Mode</b>: The mode of the selected curve:</li>
+            <ul>
+                <li><b>Static</b>: The selected curve is applied exactly as it exists at the time of application and the placeholder/collection’s curve will not change if changes are made to the curve, whether manually in the Curves module or through dynamic recalculation. Think of this as making a copy of the applied curve.</li>
+                <li><b>Dynamic</b>: Changes made to the curve are pushed down to the placeholder/collection via automated system processes and the dependent sales plans recalculate when those changes are pushed.</li>
+            </ul>
+            <li><b>Apply To Cluster</b>: The cluster sets/clusters to apply the selected curve to from those assorted to the selected placeholder/collection</li>
+            <li><b>Apply Lowest Level Curve</b>: The level of curve to be applied:</li>
+            <ul>
+                <li><b>Unchecked</b>: Applies the curve exactly as shown to all selected cluster sets/clusters.</li>
+                <li><b>Checked</b>: Looks for related lower level curves to apply at the cluster set/cluster level and applies them instead of applying the higher level curve as shown.
+					<ul><li>During implementation, a system process is configured to auto-generate curves at levels of the product/site hierarchies on a specified schedule. If desired, this process can be configured to generate these curves at multiple levels.</li><li>“Related lower level curves” refers to these auto-generated curves – created using the same criteria</li></ul></li>
+            </ul>
+        </ul>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">You choose an auto-generated channel level curve from the Saved Curves drop down and check the Apply Lowest Level Curve option; the selected placeholder has 2 cluster sets, each with 3 clusters, assorted to it, and curves were also auto-generated using the same criteria for each of those 6 clusters; the system will apply the cluster-level curves to each cluster in a single action, saving you the effort of applying the lower level curves individually.</p>
+        <h2>Curve Details section</h2>
+        <ul>
+            <li><b>Generation Type</b>: The generation type for the selected curve. Only curves of the Manual or Specified Conditions Using Enhanced Filtering types are available for selection within Assortment Planning.</li>
+            <li><b>Bucket Type</b>: The bucket type for the selected curve. For the purposes of Assortment Planning, bucket type is the same as period type. </li>
+            <li><b>Time Range</b>: The time range used to generate the selected curve.</li>
+            <li><b>Forecasted Demand</b>: If configured, generates curves based on projected future demand from the Forecasts module.</li>
+            <li><b>Curve Source</b>: The curve source for the selected curve. <b>Historical Demand By Sales Type Using Sales History</b> generates curves based on historical sales by type</li>
+            <li><b>Generate By</b>: The generation type for the selected curve. This is essentially the metric used to calculate the seasonal indices. <ul><li><b>Volume Contribution (Units)</b> – sales units</li></ul><ul><li><b>Cost of Sales Contribution</b> – COGS (cost of goods sold)</li></ul><ul><li><b>Revenue Contribution</b> – sales $</li></ul><ul><li><b>Profit Contribution</b> – gross margin $ (sales $ - COGS)</li></ul></li>
+            <li><b>Sales Types</b>: The sales types used in generation of the selected curve. Not applicable for Forecasted Demand Curve Source.</li>
+            <li><b>Includes Returns</b>: Whether returns (negative sales) were included in the calculation of the selected curve.</li>
+            <li><b>Inactive Items</b>: Whether inactive items were considered in the calculation of the selected curve.</li>
+        </ul>
+        <h2>Product Filtering section</h2>
+        <p>The fields shown depends on the options used to generate the selected curve.</p>
+        <ul>
+            <li><b>Hierarchy</b>: The product hierarchy used in generation of the selected curve.</li>
+            <li><b>Hierarchy Items</b>: The product hierarchy levels used in generation of the selected curve.</li>
+            <li><b>Filter</b>: The product filter used in generation of the selected curve.</li>
+        </ul>
+        <h2>Site Filtering section</h2>
+        <p>The fields shown depends on the options used to generate the selected curve.</p>
+        <ul>
+            <li><b>Hierarchy</b>: The site hierarchy used in generation of the selected curve.</li>
+            <li><b>Hierarchy Site</b>: The product hierarchy levels used in generation of the selected curve.</li>
+            <li><b>Filter</b>: The site filter used in generation of the selected curve.</li>
+            <li><b>Cluster Sets</b>:The cluster sets used in generation of the selected curve.</li>
+            <li><b>Cluster</b>: The clusters used in generation of the selected curve.</li>
+        </ul>
+    </body>
+</html>

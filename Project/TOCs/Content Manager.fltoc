@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/PrintCover.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    PageType="title" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="pageLayout" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false" />
+  <TocEntry
+    Title="Content Manager Overview"
+    Link="/Content/Topics/Content Manager/Content Manager Overview.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Default.flpgl"
+    AutoEndOnLeftPage="disabled">
+    <TocEntry
+      Title="Concepts &amp; terminology"
+      Link="/Content/Topics/Content Manager/Concepts terminology.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Content Manager/Content Manager Global Policies.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Content Manager User Rights"
+      Link="/Content/Topics/Users/Content Manager User Rights.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Content Manager/Content Manager Configuration Window.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <TocEntry
+      Title="Content Versions"
+      Link="/Content/Topics/Content Manager/Content Versions.htm">
+      <TocEntry
+        Title="Create a Content Version"
+        Link="/Content/Topics/Content Manager/Creating a New Content Version.htm" />
+      <TocEntry
+        Title="Modify a Content Version"
+        Link="/Content/Topics/Content Manager/Modifying a Content Version.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Content Fields"
+      Link="/Content/Topics/Content Manager/Content Fields.htm">
+      <TocEntry
+        Title="Modify a Content Field"
+        Link="/Content/Topics/Content Manager/Modify a Content Field.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Content Manager Home Screen"
+    Link="/Content/Topics/Content Manager/Content Manager Home Screen.htm">
+    <TocEntry
+      Title="Content details"
+      Link="/Content/Topics/Content Manager/Content details.htm">
+      <TocEntry
+        Title="Text"
+        Link="/Content/Topics/Content Manager/Text.htm" />
+      <TocEntry
+        Title="Images"
+        Link="/Content/Topics/Content Manager/Images.htm">
+        <TocEntry
+          Title="View an image"
+          Link="/Content/Topics/Content Manager/View an image.htm" />
+        <TocEntry
+          Title="Add an image"
+          Link="/Content/Topics/Content Manager/Add an image.htm">
+          <TocEntry
+            Title="Add existing"
+            Link="/Content/Topics/Content Manager/Add existing.htm"></TocEntry>
+          <TocEntry
+            Title="Add"
+            Link="/Content/Topics/Content Manager/Add.htm" />
+          <TocEntry
+            Title="New (image request)"
+            Link="/Content/Topics/Content Manager/New image request.htm"></TocEntry>
+          <TocEntry
+            Title="Modify new image request"
+            Link="/Content/Topics/Content Manager/Modify new image request.htm" />
+          <TocEntry
+            Title="Associate a view type"
+            Link="/Content/Topics/Content Manager/Associate a view type.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Remove an image"
+          Link="/Content/Topics/Content Manager/Remove an image.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Content Update window"
+        Link="/Content/Topics/Content Manager/Content Update window.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Product groups"
+      Link="/Content/Topics/Content Manager/Product groups.htm">
+      <TocEntry
+        Title="Create a product group"
+        Link="/Content/Topics/Content Manager/Create a product group.htm">
+        <TocEntry
+          Title="Template filter"
+          Link="/Content/Topics/Content Manager/Template filter.htm" />
+        <TocEntry
+          Title="Product filter"
+          Link="/Content/Topics/Content Manager/Product filter.htm" />
+        <TocEntry
+          Title="Child groups"
+          Link="/Content/Topics/Content Manager/Child groups.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Clone a product group"
+        Link="/Content/Topics/Content Manager/Clone a product group.htm">
+        <TocEntry
+          Title="Clone a template filter product group"
+          Link="/Content/Topics/Content Manager/Clone a template filter product group.htm">
+          <TocEntry
+            Title="Clone a filter product group"
+            Link="/Content/Topics/Content Manager/Clone a filter product group.htm" />
+          <TocEntry
+            Title="Clone a child product group"
+            Link="/Content/Topics/Content Manager/Clone a child product group.htm" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Delete a product group"
+        Link="/Content/Topics/Content Manager/Delete a product group.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Product group details"
+      Link="/Content/Topics/Content Manager/Product group details.htm">
+      <TocEntry
+        Title="View child products"
+        Link="/Content/Topics/Content Manager/View child products.htm" />
+      <TocEntry
+        Title="Edit child products"
+        Link="/Content/Topics/Content Manager/Edit child products.htm">
+        <TocEntry
+          Title="Edit a template filter product group"
+          Link="/Content/Topics/Content Manager/Edit a template filter product group.htm" />
+        <TocEntry
+          Title="Edit a filter product group"
+          Link="/Content/Topics/Content Manager/Edit a filter product group.htm" />
+        <TocEntry
+          Title="Edit a child products group"
+          Link="/Content/Topics/Content Manager/Edit a child products group.htm" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Content Manager Help"
+    Link="/Content/Topics/Content Manager/Content Manager Help.htm" />
+</CatapultToc>

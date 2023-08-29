@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:conditions="General.Temp Exclude" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Creating a View</h1>
+        <p>In order to reference metadata, it must either be contained in a specific view, or referenced within an existing table. An initialization procedure (INIT) should also be created to populate this newly created view. A primary key must be included within the view in order for functions in the <b>tbl_Common_Filter_MetaViewData </b>table to work. </p>
+        <h2>Example</h2>
+        <p>Example for uvw_Site_SiteCapacity:</p>
+        <div class="code_block">
+            <p>SETANSI_NULLSON</p>
+            <p>GO</p>
+            <p>&#160;</p>
+            <p>SETQUOTED_IDENTIFIERON</p>
+            <p>GO</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>CREATEVIEW [dbo].[uvw_Site_SiteCapacity]</p>
+            <p>AS</p>
+            <p>SELECT </p>
+            <p>si.SiteID</p>
+            <p>,SUM(c.SellingCapacity)AS TotalSellingCapacity</p>
+            <p>,SUM(c.StockroomCapacity)AS TotalStockroomCapacity</p>
+            <p>FROM tbl_Site si </p>
+            <p>LEFTOUTERJOIN tbl_Site_Capacity c</p>
+            <p>ON c.SiteID = si.SiteID</p>
+            <p>GROUPBY si.SiteID;</p>
+            <p>&#160;</p>
+            <p>GO</p>
+        </div>
+        <p>After you create and populate the view, it can be referenced in the <b>tbl_FilterType</b> table. </p>
+        <h2>Initialization</h2>
+        <p>Initialization procedures must be created and/or run to populate the <b>tbl_Common_Filter_MetaViewData</b> table. </p>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <a name="Creating">
+            </a>Creating a Master Plan</h1>
+        <p>When working in the financial plan maintenance view, the first action our clients need to take is to create a master plan.&#160; A master plan is a Financial Plan that is created in the MFP module and is not editable.&#160; This plan is considered the “single” version of the truth.&#160; Master plans should be used as approved plans within the planning process.&#160; Master plans contain historic and plan periods.&#160; Historic periods represent “what actually happened” within the business and plan periods are the approved plans for future periods.&#160; In managing a Master plan it is recommended that a super user or system administrator has control over this feature within the system.&#160; To create a master plan see the below example.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_8.png" />
+        </p>
+        <p>To create a master plan within the financial plan maintenance view, click on the “New” icon located in the top left portion of this view.&#160; Once the user has clicked on the “New” icon, the maintain financial plan window will appear on screen.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_9.png" />
+        </p>
+        <p>The first tab a user works with in this view is the General tab.&#160; The general tab is where the user will give the master plan a name and description, define the plan type, the currency to work with, how the plan will be seeded, the calendar to plan with, the level of the calendar, and finally the start period.&#160; These general setting form the basis of the structure of the master plan.&#160; </p>
+        <p>
+            <img src="../../Resources/Images/MFP/general tab.png" />
+        </p>
+        <p>
+            <b>Name</b>:&#160; This is free form text and describes the name of the plan</p>
+        <p>
+            <b>Description</b>:&#160; This is free form text and provides the opportunity to describe what the plan is and any other important information about the plan that may be important to the user group.</p>
+        <p>
+            <b>Plan Type</b>:&#160;The plan type defines the metric set and calculations that will make up the master plan.&#160; There are three main plan types to choose from.</p>
+        <p>
+            <b>Location Plan</b>: This plan provides the ability to plan by location at defined levels of the product hierarchy.&#160; This plan contains the ability to plan sales, margin and Open to Ship to support the location planning process.</p>
+        <p>
+            <b>Hybrid Cost-Based Plan</b>: This plan provides the ability to plan by Channel/location groups at defined levels of the product hierarchy.&#160; This plan contains the ability to plan sales, cost of sales, margin, inventory, receipts, and open to buy to support the budgeting process.&#160; This plan is for clients who value their inventory at cost.</p>
+        <p>
+            <b>Hybrid Retail-Based Plan</b>: This plan provides the ability to plan by Channel/location groups at defined levels of the product hierarchy.&#160; This plan contains the ability to plan sales, cost of sales, margin, inventory, receipts and open to buy to support the budgeting process.&#160; This plan is for clients who value their inventory at retail.</p>
+        <p>
+            <b>Hybrid Cost Dual-Markdown Plan</b>: This plan type is for organizations who wish to plan their permanent and promotional markdowns separately. Promotional markdowns are tied directly to Promotional Sales and reduce AUR for periods in which they are realized, impacting margin through that reduction. Conversely, because markdown sales do not necessarily occur in the same period in which the actual markdowns are taken, Permanent Markdowns are managed strictly as a percentage of sales, and are subtracted directly from the Maintained Margin value for the period in which they occur. In this plan type, average unit cost (AUC) and average unit ticket (AUT) do not typically change from period to period because of changes to the sales plan. AUC will change as a result of incoming receipts or other changes to the inventory mix. AUT will only change if the user changes it directly or indirectly, through a change in IMU %.</p>
+        <p>
+            <b>Plan Currency</b>:&#160; This selection defines the base currency in which the users will be working with, all currencies are supported in this version.</p>
+        <p>
+            <b>Management Type</b>: determines whether a plan will be created within <b>Demand Management</b> (Manual type) or data for the plan will be imported via API (Import type); set to <b>Manual</b> by default</p>
+        <p class="error" MadCap:autonum="&lt;b&gt;ERROR: &lt;/b&gt;">if an import post runs for a plan of type Manual, the plan will not be affected and an error will be raised</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">when import posts run for plans of type Import, hierarchy levels will automatically be added to the plan based on the import data; if desired, the API can be run in “Window” mode, deleting all existing data in a plan and re-loading it from the import data</p>
+        <p>
+            <b>Seed Type</b>:&#160; This selection defines how future periods in the plan will be seeded for the metrics offered within the plan type that has been selected.&#160; There are three standard seeding options to choose from.&#160; Seed Types in our standard offering cannot be combined to seed future periods when creating the plan.</p>
+        <p>
+            <b>Historic Sales LY</b>:Selecting this option will seed future periods with sales, sales units, and average unit retail from last year’s comparable periods.</p>
+        <p>
+            <b>Historic Sales LLY</b>:&#160;Selecting this option will seed future periods with sales, sales units, and average unit retail from two years ago comparable periods.</p>
+        <p>
+            <b>Forecasted Sales</b>: Selecting this option will seed future periods with sales units that are coming from the forecast module.&#160; Sales are derived by multiplying the forecasted sales units times the average unit retail from last year’s comparable periods.</p>
+        <p>
+            <b>Important</b> :regardless of the selected Seed Type, metrics that would be seeded with negative values based on the available data indicated by that type will be seeded with zeroes instead</p>
+        <p>
+            <b>Calendar:&#160;&#160; </b>This selection defines the calendar that users will be working with in the master plan.&#160; We offer two standard selections based on a retail planning calendar.&#160; Users can select a <b>4-4-5</b> calendar or <b>4-5-4</b> calendar.&#160; These calendars are NRF retail planning calendars.&#160; It is possible to import custom calendars during implementation of this module if necessary.</p>
+        <p>
+            <b>Calendar Level</b>:&#160; This selection defines the lowest level of time that users will be working with in the master plan.&#160; There are three standard options a user can select.&#160; (Year, Month, Week)&#160; Most plans created in this module go to the Month or Week level.</p>
+        <p>
+            <b>Start Period</b>:&#160; This selection defines the first period contained within the plan.&#160; This can be a historical period or future period. </p>
+        <p>
+            <b>Stock Split Supply Chain</b>: The supply chain used to determine how inventory is split among DCs. (The Supply Chain Status field indicates whether the supply chain is valid for use with this plan.)</p>
+        <p>
+            <b>Stock Split Sales Types</b>: The sales types to consider when apportioning stock to DCs.</p>
+        <p>
+            <b>Supply Chain Status</b>: This read-only field indicates whether or not the supply chain is valid. (See <a href="Validating a Supply Chain.htm">Validating a Supply Chain</a> for more information.)</p>
+        <p>
+            <b>Owner</b>:&#160;&#160; This will be greyed out until the plan is created.&#160; Once the plan is created the system will display the name of the user who created the plan.</p>
+        <p>
+            <b>Creation Date</b>:&#160; This will be greyed out until the plan is created.&#160; Once the plan is created the system will display the date the plan was created.</p>
+        <p>
+            <b>Status</b>:&#160;&#160; This will be greyed out until the plan is created.&#160; Once the plan is created the system will display the status the plan is in.&#160; Plan status will be covered in the Plan approval section of this document.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_11.png" />
+        </p>
+        <p>The second tab a user works with in this view is the Product tab.&#160; The Product tab is where the user will define the product hierarchical structure contained within the plan.&#160; The product hierarchy levels selected define the levels in which users can work with.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_12.png" />
+        </p>
+        <p>The top window of the screen is where the plan levels are selected.&#160; In the example above, the lowest level of this master plan will be category.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_13.png" />
+        </p>
+        <p>The bottom window of the screen is where the user will determine which categories will be contained within the master plan. </p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_14.png" />&#160; </p>
+        <p>The third tab a user works with in this view is the Channel tab.&#160; The Channel tab is where the user will define the location hierarchical structure contained within the plan.&#160; The location hierarchy levels selected define the levels in which users can work with.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_15.png" />
+        </p>
+        <p>The top window of the screen is where the plan levels are selected.&#160; In the example above, the lowest level of this master plan will be channel.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_16.png" />
+        </p>
+        <p>The bottom window of the screen is where the user will determine which channels will be contained within the master plan. </p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_17.png" />
+        </p>
+        <p>The fourth tab a user works with in this view is the User Access tab.&#160; The User Access tab is where the user will define the user/role access permissions within the plan.&#160; Access permissions can be defined by role within the organization or by User.&#160; In the bottom window of this view, setting up the permissions requires that the user navigate through three tabs.&#160; (Product, Channel, Merge Measure Set).&#160; In the example above the highlighted user has read and write access to Women’s Denim.&#160; This means that the user can view and edit Women’s Denim for any branch created that is connected to this master plan.&#160; For the master plan, the user will have read and merge rights for Women’s Denim.&#160; </p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_18.png" />
+        </p>
+        <p>Access Permissions are also defined by channel.&#160; The user can click on the channel tab and define the level of the location hierarchy roles and users have for read and write access.&#160; In the example above the highlighted user has read and write access to US Retail and E-Com channels.&#160; This means that the user can view and edit Women’s Denim for the US Retail and E-Com for any branch that is connected to this master plan.&#160; For the master plan, the user will have read and merge rights for Women’s Denim.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_19.png" />
+        </p>
+        <p>Access Permissions control which measure sets can be merged into the master plan from a branch that belongs to that master plan.&#160; Measure sets are defined in the Header Area controls section.&#160; In the example above the highlighted user has permission to merge all measures within the Hybrid Cost-Based Plan type into the master from the branch or branches they are working with.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_20.png" />
+        </p>
+        <p>The last tab a user works with in this view is the View Collection tab. The View Collection tab defines the collection of metrics that are contained within the plan as well as the collection of metrics that are contained within any snapshot taken of the plan.&#160; View collections are set up by clicking add for both the top and bottom window in the view.&#160; Upon clicking add, the user will select the Plan Type and View Collection set that is to be associated with this plan.&#160; Once this screen is completed, the user will click OK and that will trigger the system to create the plan based on all the criteria that was defined in the five tabs contained in the maintain financial plan window.&#160; Upon clicking OK, the system will return the user back to the Financial Plan Maintenance view and will display the plan that has been created.</p>
+        <ul>
+            <li>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">plan view collection sets defined in this tab are inherited by default by any Branch plans created from a Master plan. If the same view collection sets assigned to a Master plan are desired for use in Branch plans beneath it, this section can be left blank. Only if different view collection sets are desired must the user make changes to this section.</p>
+            </li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_21.png" />
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">The Master Financial Plan that has been created will update to “Created” state.&#160; This means the plan is ready to be initialized.&#160; Initializing the master plan basically populates all the measures defined for historical and future periods.&#160; A plan must be initialized to view and work with the Master Plan.&#160; To initialize a plan the user will simply click the Initialize icon in the header of the Financial Plan Maintenance view.&#160; Once the user clicks initialize a process will run and return the user back to the Financial Plan Maintenance view and the Master Financial Plan will be assigned the status of Initialized.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 523/Essential Business Concepts_22.png" />
+        </p>
+    </body>
+</html>

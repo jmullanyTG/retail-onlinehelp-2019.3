@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="12783" MadCap:lastWidth="916">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Working with Order Documents </h1>
+        <p>The majority of work in Order Manager occurs in the order document viewing area to the right of the Navigation pane. When you access Order Manager, this area displays blank, unless you have created an order using the Create Commitments function from the Receipt Plan view and opted to open the order, or clicked a link to a specific order in the Assortment Upcoming Commitments Dashboard</p>
+        <h2>Viewing an Order Document</h2>
+        <p>If you display an Order Document, it appears  as a tab with the order name below the top toolbar</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_1.png" />
+        </p>
+        <h2>Document Options</h2>
+        <p>Right-click anywhere on a document tab to:</p>
+        <ul>
+            <li><b>Close</b>: closes the order document you right-clicked</li>
+            <li><b>Close All But This</b>: closes all open order documents except the one you right-clicked; only available when multiple documents are open</li>
+            <li><b>Float</b>: converts the document tab to a window that can be sized and positioned on the screen (or other screens, in multiple monitor configurations)</li>
+            <li><b>Viewing Order Documents</b>
+            </li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Floating can also be achieved by clicking and dragging the document header without right-clicking and selecting Float. After floating, click the document header and drag the document to the desired location. Right click the document header and click Dock as Tabbed Document to return the document to its tabbed position. You can also hover over the directional buttons of the positioning reticle that appears while dragging to see possible docked locations for the floated window.</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_2.png" />
+        </p>
+        <p><b>New Vertical Tab Group</b>: configures all documents currently being viewed vertically side by side; after clicking this option, right click the document header again and select Move to Previous Tab Group to return to the last screen configuration</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_3.png" />
+        </p>
+        <p><b>New Horizontal Tab Group</b>: configures all documents currently being viewed horizontally stacked; after clicking this option, right click the document header again and select Move to Previous Tab Group to return to the last screen configuration</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_4.png" />
+        </p>
+        <h2>Order Document Toolbar Functionality</h2>
+        <h3>Order Header</h3>
+        <p><b>Edit</b>: launches the Update Order Header dialog, in which users can change the Workflow (given sufficient permissions), Name, Description, and Security settings for an order document</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_5.png" />
+        </p>
+        <p><b>Delete</b>: launches a dialog asking the user for confirmation to delete the active order document</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Navigation_12.png" />
+            <ul>
+                <li><b>Yes</b>: permanently deletes the order document</li>
+                <li><b>No</b>: closes the delete confirmation dialog without deleting the order document</li>
+            </ul>
+        </p>
+        <h3>Workflow</h3>
+        <p><b>Narrative</b>: launches the Narrative dialog displaying the history of document status changes for the order document. The user right <b>Allow user visibility of order manager document when participating in order narrative stack</b> is required to view order manager documents within the narrative.</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Narrative dialog.png" />
+            <ul>
+                <li><b>Order</b>: Indicates the order in which the status changes in the narrative occurred</li>
+            </ul>
+            <ul>
+                <li><b>Status Date</b>: (mm ddd yyyy); displays the date the order document moved to the status indicated</li>
+            </ul>
+            <ul>
+                <li><b>Status Description</b>:The description of the status the document moved to on the specified Status Date</li>
+            </ul>
+            <ul>
+                <li><b>Status Owner</b>: The user ID of the user owning the document after the status change occurred</li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> When a note is attached to the selected entry in the narrativethe note text displays</p>
+                </li>
+            </ul>
+            <ul>
+                <li><b>Modified User</b>: When a note is attached to the selected entry in the narrative, displays the UserID of the user who added the note</li>
+            </ul>
+            <ul>
+                <li><b>Redacted</b>: When a note is attached to the selected entry in the narrative, allows the user who added the note to redact it from viewing for other users. Read-only when viewed by users other than the one who added the note</li>
+            </ul>
+        </p>
+        <p><b>Add Note</b>: Launches the Add Order Note dialog, allowing users to add standalone note entries to the order document narrative</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_7.png" />
+        </p>
+        <ul>
+            <li>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Sets the text for the note to include in the narrative entry</p>
+            </li>
+            <li><b>Cancel</b>: closes the dialog without adding a note to the order document narrative</li>
+            <li><b>OK</b>: adds a new note entry to the order document narrative</li>
+        </ul>
+        <p><b>Pre-Authorize</b>: Launches the Pre-Authorize Order dialog, given doing so is allowed by the workflow permissions assigned to the order document; otherwise disabled or hidden</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_8.png" />
+        </p>
+        <ul>
+            <li><b>Cancel</b>: closes the dialog without Pre-Authorizing the order document</li>
+            <li><b>OK</b>: updates the document status to Pre-Authorized, locking it for editing, and adds a corresponding entry to the order document narrative</li>
+        </ul>
+        <p><b>Authorize</b>: Launches the Authorize Order dialog, given doing so is allowed by the workflow permissions assigned to the order document; otherwise disabled or hidden. Same as Pre-Authorize dialog above, except clicking OK updates the document status to Authorized. </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Authorized orders are uploaded to external systems per the upload schedule defined during software implementation</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_9.png" />
+        </p>
+        <ul>
+            <li><b>Forward To</b>:&#160; Selects the UserID of the person to whom the order document will be forwarded</li>
+            <li>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Sets the text for an optional note to include in the narrative entry</p>
+            </li>
+            <li><b>Cancel</b>: closes the dialog without forwarding the order document</li>
+            <li><b>OK</b>: updates the document status to Forwarded, and adds a corresponding entry to the order document narrative</li>
+        </ul>
+        <p><b>Retract</b>: Launches the Retract Order dialog, given doing so is allowed by the workflow permissions assigned to the order document; otherwise disabled or hidden</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_10.png" />
+        </p>
+        <ul>
+            <p>
+                <ul>
+                    <li>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Sets the text for an optional note to include in the narrative entry</p>
+                    </li>
+                    <li><b>Cancel</b>: closes the dialog without retracting the order document</li>
+                    <li><b>OK</b>: updates the document status to what it was prior to being forwarded, and adds a corresponding entry to the order document narrative</li>
+                </ul>
+            </p>
+        </ul>
+        <p><b>Reject</b>: Launches the Reject Order dialog, given doing so is allowed by the workflow permissions assigned to the order document; otherwise disabled or hidden.</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_11.png" />
+        </p>
+        <ul>
+            <li>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">user editable alpha-numeric; sets the text for an optional note to include in the narrative entry</p>
+            </li>
+            <li><b>Cancel</b>: closes the dialog without rejecting the order document</li>
+            <li><b>OK</b>: updates the document status to what it was prior to being forwarded, and adds a corresponding entry to the order document narrative</li>
+        </ul>
+        <p><b>Status</b>: Edit: launches the Commitment Status dialog</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_12.png" />
+        </p>
+        <ul>
+            <li><b>Current Status</b>: non-editable drop down; displays the current workflow status of the order document</li>
+            <li><b>Status Options</b>: user editable drop down; sets the workflow status to transition the order document to from the available options as defined in the workflow assigned to the order document</li>
+            <li><b>Cancel</b>: closes the Commitment Status dialog without changing the workflow status of the order document</li>
+            <li><b>OK</b>: transitions the order document to the selected workflow status</li>
+        </ul>
+        <h2>Grid Button</h2>
+        <p>Shows or hides the Grid view (order lines view) in the order document viewing area; defaults to show</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Grid view is locked to show unless the Details view is also showing, in which case it can be hidden.</p>
+        <h2>Details Button</h2>
+        <p>Shows or hides the Details view in the order document viewing area; defaults to hide</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_13.png" />
+        </p>
+        <p>The Details view contains the Break By Size and Prepack views for enriching order lines with sizing and prepack details prior to being uploaded to external systems. The visibility of these views and their necessity in the ordering process is also defined by the workflow assigned to the order document.</p>
+        <h2>Refresh Button</h2>
+        <p>Refreshes the order document Grid view.</p>
+        <h2>Grid Parameters</h2>
+        <p><b>Name</b>: Displays the order document name.</p>
+        <p><b>Description</b>: When clicked, displays a text box with the order document description.</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_14.png" /> indicates there is a description present for the order document</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_15.png" /> indicates no description is present for the order document</p>
+        <p><b>Workflow</b>: non-editable alpha numeric; displays the workflow currently assigned to the order document</p>
+        <p><b>Status</b>: non-editable alpha numeric; displays the current workflow status for the order document </p>
+        <p><b>Source</b>: non-editable alpha numeric; displays the order document type; will always be Assortment Plan Commitment for order documents created from assortment plans</p>
+        <p><b>Owner</b>: non-editable alpha numeric; displays the UserID of the user who created the order document</p>
+        <p><b>Security</b>: non-editable alpha numeric; displays the security setting for the order document</p>
+        <h2>Grid Functionality</h2>
+        <p><b>Save</b>: saves manual changes made to the order document in the Grid view since the last time it was saved; disabled if no changes have been made</p>
+        <p><b>Undo</b>: undoes any manual changes made to the order document in Grid view since the last time it was saved; disabled if no changes have been made</p>
+        <p><b>Columns</b>: Launches the Choose Fields Dialog, in which users can select additional columns to include in the order document view to provide more information on the items in a given order</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Navigation_10.png" />
+        </p>
+        <ul>
+            <li><b>Cancel</b>: closes the Item Selection dialog without selecting any items</li>
+            <li><b>OK</b>: refreshes the order document view to include/exclude columns as specified in the Choose Fields dialog</li>
+        </ul>
+        <p><b>Calculated</b>: Launches the Create Calculated Column dialog</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_16.png" />
+        </p>
+        <ul>
+            <li><b>Column Name</b>: user editable alpha-numeric; sets a name for the new calculated column</li>
+            <li><b>Column Type</b>: user editable drop down; selects the data type for the new calculated column<ul><li><b>Integer</b>: use for data that will consist only of whole numbers</li><li><b>Decimal</b>: use for data that requires decimal precision</li><li><b>DateTime</b>: use for data that specifies, dates, times, or both</li><li><b>String</b>: use for data that will be formatted and treated as text only</li><li><b>Boolean</b>: use for binary (true/false) data</li></ul></li>
+            <li>
+                <p><b>Format String</b>: user editable alpha-numeric; specifies the way data in the new calculated field is to be formatted. </p>
+                <p>For example, entering #,###.00 would yield numeric values with commas every three places to the left of the decimal and round to a static two decimal places to the right of the decimal; “1000.9” would be formatted “1,000.90” and “10.891” would be formatted “10.89”; a format string of 0,000.00 would instead yield “0010.89”. </p>
+                <p>Entering mm/dd/yyyy would yield date values with two digits for month and day and four digits for year, with month, day, and year separated by slashes (11/19/2017 for example).</p>
+                <p>
+                    <img src="../../Resources/Images/Order Manager/Working with Order Documents_17.png" />
+                </p>
+            </li>
+        </ul>
+        <p>The Expression Editor allows users to write custom expressions with which to populate new calculated columns; for more information on using the expression editor, visit the following URL: <a href="https://documentation.devexpress.com/%23WindowsForms/CustomDocument6212">https://documentation.devexpress.com/#WindowsForms/CustomDocument6212.</a></p>
+        <p><b>Order Line</b>: </p>
+        <p><b>Copy</b>: launches the Copy dialog, allowing users to copy the selected order line(s) to another order document</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_18.png" />
+        </p>
+        <p><b>Copy To</b>: user editable drop down; selects the order document the copied order line(s) will be copied into; defaults to &lt;Create New Ad Hoc Order&gt;, which creates a new order document with the copied line(s)</p>
+        <p><b>Move</b>: launches the Move dialog, allowing users to move the selected order line(s) from the current order document to another order document</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_19.png" />
+        </p>
+        <p><b>Move To</b>: user editable drop down; selects the order document to move the selected order line(s) to; defaults to &lt;Create New Ad Hoc Order&gt;, which creates a new order document with the selected line(s)</p>
+        <p><b>Delete</b>: deletes the selected order line(s)</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">The system does not ask for confirmation prior to deleting the order lines, however, this action can be reversed with the Undo button.</p>
+        <p><b>Merge</b>: merges two or more order lines that share the same variant into a single line</p>
+        <p><b>Unmerge</b>: separates previously merged order lines into their original counterparts</p>
+        <h3>Grid right-click menu options</h3>
+        <p>The grid right-click menu options include:</p>
+        <p><b>Export</b>: Exports grid data to a file in the selected format.</p>
+        <p><b>Export Options</b>: Sets text export options (Value or Display Text).</p>
+        <p><b>Import Excel Data</b>: Allows users to import data directly from MS&#160;Excel spreadsheets. A confirmation dialog indicates how many rows were updated. For more information, see <MadCap:xref href="Importing data.htm">Importing data from spreadsheets</MadCap:xref>.</p>
+        <h2>Grid Fields</h2>
+        <ul>
+            <li><b>Variant Code</b>: non-editable alpha-numeric; displays the variant code for the order line</li>
+            <li><b>Variant Description</b>: non-editable alpha-numeric; displays the variant description for the order line</li>
+            <li><b>Color Code</b>: non-editable alpha-numeric; displays the color code for the variant</li>
+            <li><b>Color Description</b>: non-editable alpha-numeric; displays the color description for the variant</li>
+            <li><b>Cluster Name</b>: non-editable alpha-numeric; displays the cluster name the order line was generated for. Only applicable for commitment orders generated from Receipt Plan view in Assortment Planning.</li>
+            <li><b>Cluster Description</b>: non-editable alpha-numeric; displays the cluster description the order line was generated for. Only applicable for commitment orders generated from Receipt Plan view in Assortment Planning.</li>
+            <li><b>Cluster Set Name</b>: displays the Cluster Set Name</li>
+            <li><b>Cluster Name</b>: displays the Cluster Name</li>
+            <li><b>Grouping Identifier</b>: user editable alpha-numeric; allows the user to enter text to create ad hoc pre-pack groups for variants contained in order lines, thus allowing for prepacks that span more than one variant to be created; used only in the Prepack tab of the Details view</li>
+            <li><b>User Order Date</b>: user-editable calendar control; displays/sets the order date for the line; defaults to the date the order was generated</li>
+            <li><b>User Ship Date</b>: user-editable calendar control; provided to allow the user to manually enter shipping dates communicated from suppliers if systemic transfer of shipping dates is not possible; defaults to the User Order Date</li>
+            <li><b>User Delivery Date</b>: user-editable calendar control; displays/sets the target receipt date for the order line; defaults to the Sunday of the receipt period defined in Assortment Planning</li>
+            <li>
+                <p><b>User Order Quantity</b>: user-editable integer; displays/sets the total order quantity in units for the order line; defaults to the receipt units quantity for the corresponding receipt period in Assortment Planning.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Orders generated from Receipt Plan view will have order lines by Cluster, in which case the order quantities will be specific to the corresponding receipt units quantity for the cluster specified by the order line; orders generated from within Order Manager are consolidated by variant by default but can be unmerged into their cluster/order line counterparts.</p>
+            </li>
+            <li>
+                <p><b>User Cost Price</b>: user editable currency ($5.00); displays/sets the cost price per unit for the order line; defaults to the receipt AUC for the corresponding receipt quantity and period in Assortment Planning. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Orders generated from within Order Manager that represent multiple cluster level orders with differing AUC values will display a weighted average in this field.</p>
+            </li>
+            <li><b>User Order Cost Value</b>: non-editable currency ($5,000,00); displays the total cost for the order line, calculated as User Order Quantity * User Cost Price</li>
+            <li><b>Effective Order Date</b>: non-editable calendar control; displays the date the order is confirmed received by external systems, or the User Order Date if no confirmation has been received</li>
+            <li><b>Effective Ship Date</b>: non-editable calendar control; displays the most current ship date information sent by external systems</li>
+            <li><b>Effective Delivery Date</b>: non-editable calendar control; displays the most current delivery date information sent by external systems</li>
+            <li><b>Effective Order Quantity</b>: non-editable integer; displays the most current order quantity information sent by external systems</li>
+            <li><b>Effective Cost Price</b>: non-editable currency ($5.00); displays the most current order cost per unit information sent by external systems</li>
+            <li><b>Effective Order Cost Value</b>: non-editable currency ($5,000.00); displays the most current total cost for the order line, calculated as Effective Order Quantity * Effective Cost Price</li>
+        </ul>
+        <h2>Working in Grid View</h2>
+        <p><b>Grouping By Columns</b>: to group by any column in the order document Grid view, simply click and drag the desired column to the area above the column headers as shown</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_20.png" />
+        </p>
+        <p>When grouping by columns, the order lines below are arranged into expandable sections for easier viewing:</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_21.png" />
+        </p>
+        <p><b>Adding/Removing Columns</b>: to add or remove columns from the Grid view area, right click any of the columns and select Column Chooser from the context menu:</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_22.png" />
+        </p>
+        <p>This will launch the Customization dialog:</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_23.png" />
+        </p>
+        <p>Simply drag and drop the column headers from the dialog to the desired locations in the grid to add them to the view:</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Working with Order Documents_24.png" />
+        </p>
+        <p>To remove columns, simply drag the column headers to the Customization dialog; alternatively, you can right-click the column header and select Hide Column</p>
+        <p>Columns can also be reordered within the grid by dragging them to the desired location</p>
+        <p>
+            <p><b>Pivot</b>: changes the Grid view for the order document to a Pivot Grid, allowing the user to configure the view for further analysis by dragging and dropping fields into Filter, Column, Row, and Data areas</p>
+            <p>
+                <img src="../../Resources/Images/Order Manager/Working with Order Documents_25.png" />
+            </p>
+        </p>
+    </body>
+</html>

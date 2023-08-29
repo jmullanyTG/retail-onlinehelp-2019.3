@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3280" MadCap:lastWidth="1096">
+    <head>
+    </head>
+    <body>
+        <h1>Creating Commitment Orders </h1>
+        <p>To facilitate a centralized approach to the creation and processing of outgoing product orders from all Demand Management modules, commitment orders for receipts planned in Assortment Planning are handled through the Order Manager module. Order Manager is located under the <b>Execute</b> tab on the main ribbon.</p>
+        <p>
+            <img src="../Images/Order Manager/Commitment Orders in Order Manager.png" />
+        </p>
+        <p>Within Order Manager, users can create, review, approve, and submit product orders to external systems through the integration established during implementation of the Assortment Planning software.</p>
+        <p>
+            <img src="../Images/Order Manager/Commitment Orders in Order Manager_1.png" />
+        </p>
+        <p>Clicking the <b>Commitment</b> button launches the <b>Add Assortment Plan Order</b> dialog, as shown below:</p>
+        <p>
+            <img src="../Images/Order Manager/Add Assortment Plan Order dialog.png" />
+        </p>
+        <ul>
+            <li><b>Source</b>: The type of order being created; always sets to Assortment Plan Commitment when clicking the Commitment button</li>
+            <li>
+                <p><b>Workflow</b>: The active workflow for the order documents created upon clicking <b>Ok</b></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Available workflows are based on user permissions set in the Workflow module.</p>
+            </li>
+            <li>
+                <p><b>Name</b>: The name for the order or group of orders created. The system also appends the values from the Assortment Plan, Product, and Owner fields, as well as the receipt date, to the end of the name specified for ease of identification.</p>
+            </li>
+            <li><b>Description</b>: An optional description for the orders created</li>
+            <li><b>Owner</b>: The UserID of the user who will initially own the created orders. Defaults to the current user.</li>
+            <li>
+                <p><b>Security</b>: Which users will have access to view/change the created orders</p>
+                <ul>
+                    <li>Public: all users with sufficient permissions can view/edit</li>
+                    <li>Private: only the owner of the created order(s) can view/edit</li>
+                    <li>Shared: only specified users have access to view/edit</li>
+                </ul>
+            </li>
+            <li>
+                <p>Change: (only active when Security is set to Shared) Launches the <b>Maintain Users and Roles</b> dialog.</p>
+                <p>
+                    <img src="../Images/Order Manager/AP Maintain Users and Roles dialog.png" />
+                </p>
+            </li>
+            <ul>
+                <li><b>Filter Field</b>: type in this field to filter the list of Roles and Users below. Filters using a “Contains” type filter by default.</li>
+                <li>Orientation Button (<img src="../Images/Assortment Planning/Orientation button.png" />): changes the orientation of the Roles and Users selection area from a standard multi-select to a tree style multi-select.</li>
+            </ul>
+            <li><b>Assortment Plan</b>:The assortment plan from which to create commitment orders</li>
+            <li>
+                <p><b>Product</b>: A product filter to create commitment orders for</p>
+                <ul>
+                    <li>
+                        <img src="../Images/Assortment Planning/View Parameters.png" />&#160; Launches the <b>Filter Conditions</b> dialog allowing users to dynamically edit the criteria for the selected filter prior to executing it (the option also exists to create a new filter from the adjusted criteria)</li>
+                    <li>
+                        <img src="../Images/Assortment Planning/View Parameters_1.png" />&#160; Launches the <b>Maintain Filter</b> dialog allowing users to create or import a new filter, or update, delete, or export an existing filter</li>
+                </ul>
+            </li>
+            <li><b>Site Hierarchy</b>: The levels of the Assortment Plan’s Site Hierarchy to create commitment orders for</li>
+            <li>
+                <p><b>Cluster Set</b>: The cluster sets to create commitment orders for</p>
+            </li>
+            <p>While cluster sets are not explicitly part of the Site Hierarchy, they are directly related, in that cluster sets in a given assortment plan must be contained within a single lowest level of that hierarchy. Therefore, the Cluster Set drop down populates with the cluster sets contained beneath the selected Site Hierarchy levels.</p>
+            <li>
+                <p><b>Window of Time</b>: The window of time to create commitment orders for. Only receipts planned within the specific window of time selected will be captured in the created orders.</p>
+                <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">The selected time frame must be a contiguous range of periods. If not, the system still uses the window of time defined by the first and last selected periods</p>
+            </li>
+        </ul>
+        <h2>Buttons</h2>
+        <p><b>Cancel</b>: Closes the Add Assortment Plan Order dialog without creating any orders</p>
+        <p><b>Ok</b>: Creates one order document per receipt date for all planned receipts captured by the specified criteria</p>
+        <p>Since orders for placeholders/collections in Replen status are generated in the Forecasts module, it is not necessary to create commitment orders for them through this process, thus no commitment orders will be generated for such items</p>
+        <p class="error" MadCap:autonum="&lt;b&gt;ERROR: &lt;/b&gt;">The following displays if no receipts are captured by the criteria you specify:</p>
+        <p>
+            <img src="../Images/Order Manager/General Functionality_1_5.png" />
+        </p>
+        <p>This may occur because the receipts you are trying to capture do not have the Commit flag checked in Receipt Plan view, because the placeholders in question do not have size curves assigned, or because you have already created commitment orders for them. If you wish to re-create a commitment order, you must delete the already existing commitment order within Order Manager.</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">If any orders the system attempts to create through this process are in violation of the Rec Order Min or Rec Size Min constraints set in Receipt Plan view, the system will raise the following warning:</p>
+        <p>
+            <img src="../Images/Order Manager/General Functionality_1_6.png" />
+        </p>
+    </body>
+</html>

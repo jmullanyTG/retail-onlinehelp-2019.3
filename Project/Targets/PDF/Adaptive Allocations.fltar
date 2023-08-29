@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="For Printed Manuals"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Adaptive Allocations.fltoc"
+  PatchHeadingLevels="true"
+  InjectBookHeadings="true"
+  RemoveImagesFromHeadings="true"
+  EmbedImages="true"
+  ConditionTagExpression="exclude[&quot;General.Exclude from Print&quot; or &quot;General.How-To Guides&quot; or &quot;General.Printed Manuals&quot; or &quot;General.Temp Exclude&quot;] "
+  GetLatestBeforeCompile="false"
+  conditions="General.Printed Manuals"
+  MasterStylesheet="/Content/Resources/Stylesheets/mi9styles.css"
+  MasterPageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    ExpandingTextConversion="expand"
+    PopupConversion="expand"
+    GeneratePDF="false"
+    DisableMasterPageUsage="true" />
+  <Variables> <Variable Name="Variables/BookVersion">2019.3</Variable> <Variable Name="Variables/BookSubTitle">User Guide</Variable> <Variable Name="Variables/BookVersion">2019.3</Variable> <Variable Name="Variables/BookSubTitle">User Guide</Variable>
+    <Variable
+      Name="JustEnough Variables/Printed Manual Title">Adaptive Allocations</Variable>
+    <Variable
+      Name="Variables/BookSubTitle">User Guide</Variable>
+    <Variable
+      Name="Variables/BookTitle">Adaptive Allocations</Variable>
+    <Variable
+      Name="Variables/BookVersion">2019.3</Variable>
+  </Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF Output.fldes"
+      Publish="true" />
+  </Destinations>
+  <PDF
+    Tagged="true"
+    InitialMagnification="Fit"
+    PageLayout="OneColumn"
+    CollapsedBookmarks="true"
+    ConvertBookmarks="true" />
+</CatapultTarget>

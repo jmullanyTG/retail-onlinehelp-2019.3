@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="5333" MadCap:lastWidth="1252">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Modify Pricing at lower levels</h1>
+        <p>Data entered in the Price Strategy Variable grid populates to all Price Action Variants and Sites included in the Price Action (except excluded). To specify different values, from what is configured at the Price Action level (i.e. Price Strategy Variable grid), modifications may be made at three lower levels: Action Summary, Item Detail and Location.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">&#160;The following grids each have a column labeled <b>Validation</b>. This column uses icons to denote Validation failures and whether the Validation failures have been reviewed or not. For more information, see <MadCap:xref href="Price Planning Home Screen.htm">Price Planning Home Screen</MadCap:xref>.</p>
+        <h2>Modifying values in the Action Summary grid</h2>
+        <p>Values are populated down from the Price Action Variable grid down to the Action Summary in which you have the ability to modify those values. Enter a new value for the applicable Variant variables within the <b>Action Summary</b> grid. Modifying a value for a specific Variant will apply the modified entry to all lower levels (i.e. Item and Item Location Detail). The system will also denote any differences within a level by shading the cell. Lower level differences will be noted by a marked <b>Exception</b> check box. <br /><img src="../../Resources/Images/Price Planning/Modify Pricing at lower levels.png" /></p>
+        <h2>Excluding or re-including products at the Variant, Item Master, and Inventory levels</h2>
+        <p>You can exclude products at the Variant, Item Master, and Inventory levels using the <b>Advanced Product Exclusions</b> dialog. Multiple selections at a product parent level displays the summary of children at the lower levels for modification.</p>
+        <p>To display the <b>Advanced Product Exclusions</b> dialog, click the <b>Advanced Exclusions</b> button.</p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Advanced Product Exclusion.PNG" />
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> The <b>Variant</b> grid and <b>Item</b> grid display by default. Click <b>View Location</b> to display the <b>Item Location</b> grid which lists all Price Action inventories associated to the selected Site Cluster. Select <b>View Items</b> to hide or display the <b>Items</b> grid.</p>
+        <h3>Excluding Variants</h3>
+        <ol>
+            <li>
+                <p>Open the <b>Advanced Product Exclusions</b> dialog.</p>
+            </li>
+            <li>
+                <p>In the <b>Variant</b> grid, select Variants to be excluded.</p>
+                <p>The <b>Exclude</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>Click the <b>Exclude</b> button.</p>
+                <p>The screen automatically refreshes and the names of excluded Variants are denoted by a strikethrough. </p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Variants excluded strikethrough.PNG" />
+                </p>
+                <p>Also, the system saves excluded Variants, associated Item Masters, and Inventory records.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> The system will not exclude all Variants. Therefore, the following message displays if you attempt to exclude all Variants:</p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Cannot Exclude All Variants message.PNG" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Ok</b>.</p>
+            </li>
+        </ol>
+        <h3>Re-including Variants</h3>
+        <ol>
+            <li>Open the <b>Advanced Product Exclusions</b> dialog.</li>
+            <li>
+                <p>In the <b>Variant</b> grid, select excluded Variants to be re-included.</p>
+                <p>The <b>Include</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>Click the <b>Include</b> button.</p>
+                <p>The screen automatically refreshes and the names of re-included Variants are no longer denoted by a strikethrough. </p>
+            </li>
+            <li>
+                <p>Click <b>Ok</b>.</p>
+            </li>
+        </ol>
+        <p>When you re-include a Variant back to the Price Action it needs to be calculated, which also means:</p>
+        <ul>
+            <li>
+                The Variant's lower levels need to be calculated (Item Master and Inventory)
+            </li>
+            <li>The Site Cluster needs to display the worst-case State, of its associated Variants, which is now Calculation Required</li>
+            <li>The Price Action needs to display the wost-case State, of its associated Site Clusters, which is now Calculation Required</li>
+            <li>The Pricing Plan needs to display the worst-case State, of its associated Price Actions, which is now Calculation Required</li>
+        </ul>
+        <h3>Excluding Item Masters </h3>
+        <ol>
+            <li>
+                <p>Open the <b>Advanced Product Exclusions</b> dialog.</p>
+            </li>
+            <li>
+                <p>In the Items grid, select the Item Master to be excluded.</p>
+                <p>The <b>Exclude</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>Click the <b>Exclude</b> button.</p>
+                <p>The screen automatically refreshes and the names of excluded Item Masters are denoted by a strikethrough. </p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Item Masters excluded strikethrough.PNG" />
+                </p>
+                <p>Also, the system saves excluded Item Masters.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> The system will not exclude all Item Masters associated with a Variant. Therefore, the following message displays if you attempt to exclude all Item Masters associated with a Variant:</p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Cannot Exclude All Items message.PNG" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Ok</b>.</p>
+            </li>
+        </ol>
+        <h3>Re-including Item Masters</h3>
+        <ol>
+            <li>Open the <b>Advanced Product Exclusions</b> dialog.</li>
+            <li>
+                <p>In the <b>Items</b> grid, select excluded Item Masters to be re-included.</p>
+                <p>The <b>Include</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>Click the <b>Include</b> button.</p>
+                <p>The screen automatically refreshes and the names of re-included Item Masters are no longer denoted by a strikethrough. </p>
+            </li>
+            <li>
+                <p>Click <b>Ok</b>.</p>
+            </li>
+        </ol>
+        <p>When you re-include an Item Master back to the Price Action it needs to be calculated, which also means:</p>
+        <ul>
+            <li>
+                The Item Master's lower level need to be calculated (Inventory)
+            </li>
+            <li>The Variant needs to display the worst-case State, of its associated Item Masters, which is now Calculation Required</li>
+            <li>The Site Cluster needs to display the worst-case State, of its associated Variants, which is now Calculation Required</li>
+            <li>The Price Action needs to display the wost-case State, of its associated Site Clusters, which is now Calculation Required</li>
+            <li>The Pricing Plan needs to display the worst-case State, of its associated Price Actions, which is now Calculation Required</li>
+        </ul>
+        <h3>Excluding Inventory</h3>
+        <ol>
+            <li>
+                <p>Open the <b>Advanced Product Exclusions</b> dialog.</p>
+            </li>
+            <li>
+                <p>In the <b>Items</b> grid, Click the <b>View Locations</b> button to display the <b>Item Locations</b> grid.</p>
+            </li>
+            <li>
+                <p>Select the inventory to be excluded.</p>
+                <p>The <b>Exclude</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>Click the <b>Exclude</b> button.</p>
+                <p>The screen automatically refreshes and the names of excluded inventory is denoted by a strikethrough. </p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Inventory excluded strikethrough.PNG" />
+                </p>
+                <p>Also, the system saves excluded Inventory.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> The system will not exclude all inventory per Item Master. Therefore, the following message displays if you attempt to exclude all inventory associated with an Item Master:</p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Cannot Exclude All Inventory message.PNG" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Ok</b>.</p>
+            </li>
+        </ol>
+        <h3>Re-including Inventory</h3>
+        <ol>
+            <li>Open the <b>Advanced Product Exclusions</b> dialog.</li>
+            <li>
+                <p>In the <b>Items</b> grid, click the <b>View Locations</b> button to display the <b>Item Locations</b> grid.</p>
+            </li>
+            <li>
+                <p>Select the inventory to be excluded.</p>
+                <p>The <b>Include</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>In the <b>Items</b> grid, select excluded inventory to be re-included.</p>
+                <p>The <b>Include</b> button is enabled.</p>
+            </li>
+            <li>
+                <p>Click the <b>Include</b> button.</p>
+                <p>The screen automatically refreshes and the names of re-included Inventory are no longer denoted by a strikethrough. </p>
+            </li>
+            <li>
+                <p>Click <b>Ok</b>.</p>
+            </li>
+        </ol>
+        <p>When you re-include inventory back to the Price Action it needs to be calculated:</p>
+        <ul>
+            <li>
+                The Item Master needs to display the worst-case State, of its associated Inventory, which is now Calculation Required
+            </li>
+            <li>The Variant needs to display the worst-case State, of its associated Item Masters, which is now Calculation Required</li>
+            <li>The Site Cluster needs to display the worst-case State, of its associated Variants, which is now Calculation Required</li>
+            <li>The Price Action needs to display the wost-case State, of its associated Site Clusters, which is now Calculation Required</li>
+            <li>The Pricing Plan needs to display the worst-case State, of its associated Price Actions, which is now Calculation Required</li>
+        </ul>
+        <h2>Revising Variant details using the Variant Details screen</h2>
+        <p>For a specific Variant, click the field in the <b>Detail</b> column in the <b>Action Summary</b> grid to display the <b>Variant Details</b> screen. The <b>Variant Details</b> screen displays values at the Item and Item Location levels. </p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Modify Pricing at lower levels_Item Detail.PNG" />
+        </p>
+        <p>The <b>Items</b> grid (top) displays the individual products across all valid Sites. Modifying a value causes the system to shade the cell and to apply the modification to all sites. Site modifications can be viewed in the <b>Item Locations</b>  grid (bottom). Modifications may  affect calculated results which will be aggregated in the <b>Action Summary</b> grid as well as marking the <b>Exception</b> check box for ease of filtering.
+</p>
+        <p>The <b>Item Locations</b> grid (bottom) displays the individual products by each Site. Modifications may affect calculated results which will be aggregated in the <b>Variants</b> and <b>Sites</b> tabs of the <b>Action Summary</b> grid as well as marking the <b>Exception</b> check boxes for ease of filtering.<br /></p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Modify Pricing at lower levels_Item Location.PNG" />
+        </p>
+        <p><b>Note:</b> The <b>Validation</b> column only displays at the Item Master or Inventory levels if the <b>Advanced Validation Log</b> system policy is set to True.</p>
+    </body>
+</html>

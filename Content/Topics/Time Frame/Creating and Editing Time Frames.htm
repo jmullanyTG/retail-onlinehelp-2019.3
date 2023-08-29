@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="2821" MadCap:lastWidth="1141">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Creating and Editing Time Frames</h1>
+        <p>Time frames are managed from the <a href="Time Frame Maintenance Window.htm">Time Frame Maintenance</a> window, which you can get to in the following ways;</p>
+        <ul>
+            <li>From the Maintenance tab, click <b>Time Frame</b>; or</li>
+            <li>From a Time Frames selection dialog box, click <img src="../../Resources/Images/Filters/Maintain Filters Dialog Box_1.png" /> (<b>Maintain Time Frames</b>).</li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>To create a new time frame:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Time Frame Maintenance window, click <b>Add</b> in the Time Frame toolbar to open the Time Frame Editor.</li>
+                    <li>Follow the instructions below to edit the details of the new time frame.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>To edit a time frame:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>If you want to edit an existing time frame, select it in the Time Frame Maintenance grid and click <b>Edit</b> to open the Time Frame Editor.</p>
+                        <p>
+                            <img src="../../Resources/Images/Time Frame/Time Frame Editor.png" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In the Security field, choose one of the following access options:</p>
+                        <ul>
+                            <li><b>Private</b> - only you can see and use this time frame.</li>
+                            <li><b>Public </b>- all users can see and use this time frame.</li>
+                            <li>
+                                <p><b>Shared</b> - only the users or roles you select can see and use this time frame.</p>
+                                <ul>
+                                    <li>If you select <b>Shared</b>, click <b>Edit Users</b> next to choose the users and/or roles you want to share this time frame with.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>In the Time Frame Definition Details area, select a Time Frame Definition Type:</p>
+                        <ul>
+                            <li><b>Static</b> - Choose static if you want to define specific calendar dates for your time frame. For example, June 1 - June 30, 2018.</li>
+                            <li><b>Dynamic</b> - Choose dynamic if you want to define rolling days for your time frame. For example, "last 365 days" or "next 90 days".</li>
+                            <li><b>Schedule</b> - Choose schedule if you want to use a schedule from the Schedules module as your time frame.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>If the time frame will include more than one defined time period (such as "last three Novembers"), select <b>Allow Multi-Definition</b>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Once a time frame is created, this option cannot be changed.</p>
+                    </li>
+                    <li>In the Time Frame Definition toolbar, click <b>Add</b> to add a time frame definition. </li>
+                    <li>
+                        <p>Click in each time frame definition field to enter the values for the time frame definition.</p>
+                        <p>
+                            <img src="../../Resources/Images/Time Frame/Time Frame definition details.png" />
+                        </p>
+                        <p>The fields displayed depend on the time frame definition type selected:</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Time Frame Definition Fields.flsnp" />
+                    </li>
+                    <li>If you selected <b>Allow Multi-Definition</b> above, click <b>Add</b> to create additional time frame definitions. Each definition appears as a new row in the editor.</li>
+                    <li>Click <b>OK</b> to save the time frame. If new, it appears as a new row in the grid of the Time Frame Maintenance window.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>For an example, see <MadCap:xref href="#">Creating and Editing Time Frames</MadCap:xref>.</p>
+    </body>
+</html>

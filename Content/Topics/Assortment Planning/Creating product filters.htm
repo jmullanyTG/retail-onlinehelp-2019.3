@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="3167" MadCap:lastWidth="1144">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Creating filters for items to which a promotion or promotion application has been applied</h1>
+        <p>Information about promotions created within Assortment Planning can be used as a quick way to create product filters for the items to which a particular promotion or promotion application has been applied. </p>
+        <h2>To create a product filter</h2>
+        <ol>
+            <li>Navigate to the <b>Promotion Application</b> section on the <b>Promotion Definition</b> tab.</li>
+            <li>Click on the <b>Product Filter</b> field to display the <b>Items</b> dialog.</li>
+            <li>Click the <img src="../../Resources/Images/Assortment Planning/View Parameters_1.png" /> icon to display the <b>Maintain Filters</b> dialog. </li>
+            <li>Select <b>Create A New Filter</b> and click <b>Ok</b>.</li>
+            <li>Complete the fields in the <b>Maintain Filter</b> dialog as required.</li>
+            <li>In the <b>Criteria</b> section, click <b>New</b> and configure the criteria in the <b>Filter Condition</b> dialog as required.</li>
+            <li>Click <b>Ok</b>.</li>
+        </ol>
+        <h2>Filter onditions</h2>
+        <p>Various filter conditions are available under the Assortment Promotions heading.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Practical Application_4_8.png">
+            </img>
+        </p>
+        <h3>Promotion Application</h3>
+        <p>Defines the filter based on the variants included in specific  promotion applications:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Condition</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Equals</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to select one from the&#160; promotion applications in the current assortment plan</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Contains the Phrase</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to specify text contained anywhere within the desired promotion application description</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Contains the Phrase at the Beginning</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to specify text contained at the beginning of the desired promotion application description</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Contains the Phrase at the End</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to specify text contained at the end of the desired promotion application description</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Is One of the Following</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">allows the user to select many from the&#160; promotion applications in the current assortment plan</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">promotion application descriptions are system generated in the following format: (Promo Name): (Product Filter Name) / (Cluster Set Name(s)) / (Promo Application Start Date) – (Promo Application End Date). For example, <b>My Test Promo: Mens Graphic Tees / North America Clusters / 2017/03/01 – 2017/06/01</b>.</p>
+        <h3>Promotion Name: </h3>
+        <p>Defines the filter based on all variants included in any promotion application of the selected promotion. The conditions are the same as <b>Promotion Application</b> but with Promotions and not Promotion Applications.</p>
+        <h3>Product Filter</h3>
+        <p>Defines the filter based on all variants contained in the selected product filter for which there are promotion applications. The conditions are the same as <b>Promotion Application</b> but with Product Filters and not Promotion Applications.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Selectable Product Filters are only those that have promotion applications against them.</p>
+        <h3>Cluster Sets</h3>
+        <p>Defines the filter based on all variants assorted to the selected Cluster Set for which there are promotion applications.</p>
+        <h3>Start Date</h3>
+        <p>Defines the filter based on all variants having promotion applications that begin relative to a selected start date.</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Condition</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Equals</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to specify a single Start Date for promotion applications to include</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Is After</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to specify a single date as a starting point; all promotion applications beginning after the date selected will be included</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Is After or On</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to specify a single date as a starting point; all promotion applications beginning on or after the date selected will be included</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Is Before</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to specify a single date as an ending point; all promotion applications beginning before the date selected will be included</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Is Before or On</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user to specify a single date as an ending point; all promotion applications beginning on or before the date selected will be included</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Is Between</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">allows the user the specify a start and end date as a range; all promotion applications beginning between the start and end dates specified will be included</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Is One of the Following</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">allows the user to specify multiple Start Dates for&#160; promotion applications to include</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>End Date </h3>
+        <p>Defines the filter based on all variants having promotion applications that end relative to the selected end date. The conditions are same as for <b>Start Date</b> but with end dates instead of start dates.</p>
+        <h3>Placeholder is on Active Promotion</h3>
+        <p>Another related Promotions parameter can be used in conjunction with the  above to return only items that are on Active promotion applications. This parameter can be found in the <b>(Basic Variant Placeholder Information)</b> section:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Practical Application_4_9.png" style="visibility: visible;width: 498px;height: 431px;" />
+        </p>
+        <p>To use this parameter, set the Condition to <b>Is</b> then check the single check box that appears below the Condition drop down in the Filter Condition dialog.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">If this parameter is NOT used when setting other Promotions related filter criteria, variants included in ALL promotion applications specified by your criteria are returned, regardless of whether those promotion applications are active.</p>
+    </body>
+</html>

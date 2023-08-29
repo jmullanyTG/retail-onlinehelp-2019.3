@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[&quot;General.Printed Manuals&quot;] exclude[&quot;General.Exclude from Print&quot; or &quot;General.Temp Exclude&quot;] "
+  MasterToc="/Project/TOCs/Supersessions.fltoc">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Variables> <Variable Name="Variables/BookVersion">2019.3</Variable> <Variable Name="Variables/BookSubTitle">User Guide</Variable> <Variable Name="Variables/BookVersion">2019.3</Variable> <Variable Name="Variables/BookSubTitle">User Guide</Variable>
+    <Variable
+      Name="Variables/BookTitle">Supersessions</Variable>
+  </Variables>
+  <PDF
+    ConvertBookmarks="true"
+    InitialMagnification="Fit"
+    PageLayout="SinglePage" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF Output.fldes"
+      Publish="true" />
+  </Destinations>
+</CatapultTarget>

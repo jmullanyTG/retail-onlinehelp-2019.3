@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="General.How-To Guides,General.Temp Exclude">
+    <head>
+        <link href="../../Resources/TableStyles/Video Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Example - Defining Item Life-Cycle Dates</h1>
+        <p>This example describes the setting up of a retail channel phase-in date for all style/color variants of a new item.</p>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Example database text.flsnp" />
+        </p>
+        <h2 MadCap:conditions="General.Temp Exclude">Workflow</h2>
+        <p MadCap:conditions="General.Temp Exclude">Click to open the Managing Product Life Cycles workflow. </p>
+        <p MadCap:conditions="General.Temp Exclude"><a href="../../Resources/PDFs/Demand Management Workflows.pdf#page=13" title="Click to open the workflow" alt="Click to open the workflow"><img src="../../Resources/PDFs/Demand Management Workflows.pdf#13" class="workflow" /></a>
+        </p>
+        <MadCap:dropDown MadCap:conditions="General.Exclude from Print">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Related videos</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table class="TableStyle-Video_Table" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Video Table.css');">
+                    <col class="TableStyle-Video_Table-Column-Column1" />
+                    <col class="TableStyle-Video_Table-Column-Column1" />
+                    <tbody>
+                        <tr class="TableStyle-Video_Table-Body-Body1">
+                            <td class="TableStyle-Video_Table-BodyE-Column1-Body1">
+                                <p>
+                                    <p>
+                                        <p>
+                                            <object MadCap:HTML5Video="true" class="video" MadCap:Param_autoplay="false" MadCap:Param_loop="false" MadCap:Param_muted="false" src="../../Resources/Videos/BC-3 CD-12 Life Cycle Managment.mp4" MadCap:Param_controls="true">
+                                            </object>
+                                        </p>
+                                    </p>
+                                </p>
+                            </td>
+                            <td class="TableStyle-Video_Table-BodyD-Column1-Body1">
+                                <p>
+                                    <p>&#160;</p>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Video_Table-Body-Body1">
+                            <td class="TableStyle-Video_Table-BodyB-Column1-Body1">
+                                <p>Managing Item Life Cycles</p>
+                            </td>
+                            <td class="TableStyle-Video_Table-BodyA-Column1-Body1">&#160;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Temp Exclude">Setup</h2>
+        <p MadCap:conditions="General.Temp Exclude">The following objects are used in this example.</p>
+        <ul>
+            <li>
+                <p MadCap:conditions="General.Temp Exclude">A filter that includes the new item and the old item: <b>New Items (Creation &lt;=14 Days)</b>.</p>
+            </li>
+            <li>
+                <p MadCap:conditions="General.Temp Exclude">An Inventory Manager view that includes Site Group 3 Description and phase in/phase out fields: <b>Life Cycle Management</b>.</p>
+            </li>
+        </ul>
+        <p><b>To Define an Item Life-Cycle Date</b> </p>
+        <ol>
+            <li>From the <b>Management</b> tab, click <b>Inventory Manager</b>. The Items window displays.</li>
+            <li>
+                <p>From the Filter drop-down menu, select the filter that contains the items you want to manage, and click <b>OK</b>. The Choose Fields window displays.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> If the Items window does not automatically dispplay, click <b>Inventory Item Management</b> on the toolbar.</p>
+            </li>
+            <li>
+                <p>From the Choose Fields window, select the <b>Life Cycle Management </b>view, and click <b>OK</b>. The Inventory Manager Document displays.</p>
+                <p>
+                    <img src="../../Resources/Images/Inventory Manager/Item Manager_Choose Fields.png" />
+                </p>
+            </li>
+            <li>
+                <p>In the Inventory Manager Document, filter the Product and Channel columns to identify the new item (in all its variants) and the desired channel (retail).</p>
+                <ol MadCap:conditions="General.Temp Exclude">
+                    <li>In the Product Description column filter, enter: <samp>High Collar Angelina Jacket</samp>.</li>
+                    <li>In the Site Group 3 Description column filter, enter <samp>Retail</samp>.</li>
+                </ol>
+            </li>
+            <li>
+                <p>To set the same Phase In Date and/or Phase Out Date for all style/color variants of the new item, do the following:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Right-click in an item row and select <b>Select All</b>.</li>
+                    <li>Right-click in an item's Phase In Date field and select <b>Multiple Changes.</b></li>
+                    <li>
+                        <p>Select a date roughly 30 days in the future, and click <b>Save</b>.</p>
+                        <p>
+                            <img src="../../Resources/Images/Inventory Manager/Item Manager_Change_Multi.png" />
+                        </p>
+                    </li>
+                </ol>
+                <ol style="list-style-type: lower-alpha;" MadCap:continue="true">
+                    <li>Right-click in an item's Phase Out Date field and select <b>Multiple Changes.</b></li>
+                    <li>Select the Phase Out Date, and click <b>Save</b>. The Inventory Manager Document displays the new phase-in and phase-out dates.</li>
+                </ol>
+            </li>
+            <li>Click <b>Save</b> on the toolbar to save the new phase-in and phase-out dates.</li>
+        </ol>
+        <h2>Related topics</h2>
+        <ul>
+            <li><a href="Defining Item Life Cycle Dates.htm">Defining Item Life Cycle Dates</a>
+            </li>
+            <li><a href="Item Manager Overview.htm">Inventory Manager Overview</a>
+            </li>
+        </ul>
+    </body>
+</html>

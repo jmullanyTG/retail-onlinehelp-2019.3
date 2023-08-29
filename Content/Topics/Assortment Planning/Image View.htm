@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="5263" MadCap:lastWidth="1220">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Image View</h1>
+        <p>Use Image view to get a visual summary of your assortment plan, either by cluster or by period. Here, you can get a sense for how your assortment transforms over time. You can also make quick visual edits dynamically to see if the removal or certain items helps or hinders your visual goal.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Image View.png" />
+        </p>
+        <div>
+            <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">&#160;</p>
+            <ul>
+                <li>Image view is not available in Collection mode.</li>
+                <li>The filter parameters in this view are linked with those in the Main Planning view; when parameters change and are executed there, this view will update and refresh accordingly. Note that it is possible to change the filter criteria within Image view to. For example, focus on a smaller window of time.</li>
+                <li>
+                    <p>Due to the large data size associated with image files, selecting too much data to show in the view can cause the system to become sluggish and take a long time to refresh.</p>
+                    <p>The system policy <b>Image View Maximum number of SQL Data Rows</b> (Maintenance &gt; Policies &gt; Module: Assortment) can be used to limit the amount of data that can be brought back in Image View and help mitigate such issues. The view will raise an error if the data selection exceeds the value set in this policy.</p>
+                </li>
+            </ul>
+        </div>
+        <h2>Image mode vs. Image View</h2>
+        <p>Image mode is designed especially for single-monitor users who want a bigger workspace for images than Image View provides. Image View is great for multi-screen users, as the view can be detached from the Demand Management screen and moved to a second monitor. </p>
+        <p>For more information on Image mode, see <MadCap:xref href="Image Mode.htm">Image Mode</MadCap:xref>.</p>
+        <h2>Defining the parameters and refreshing the view</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Button</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Parameters</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Displays or hides the parameters pane at the top of the view. The parameters that display when you click the <b>Parameters</b> button includes:</p>
+                        <p><b>Grid Config</b>: Sets the pivot fields for the Image view grid. Select which fields to use as rows and which to use as columns.</p>
+                        <p>
+                            <img src="../../Resources/Images/Assortment Planning/Grid Config.png" />
+                        </p>
+                        <p>For more information on the available parameters, see <MadCap:xref href="View Parameters.htm">Placeholder and Collection mode parameters</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Execute</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Refreshes the view based on the selected product, site hierarchy, cluster sets, and window of time.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Working in the image cells</h2>
+        <p>Click the <b>View Options</b> button in the top left of the view to displays a drop down menu with options that allow you to configure the information that displays. The following menu options are available:</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Quick Text</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <ul>
+                            <li><b>Show Code</b>: toggles the display of the placeholder code at the bottom of each cell; on by default</li>
+                            <li><b>Attributes</b>: selects an Attribute Family defined in the Attribute Management module to display in the upper-right corner of each cell</li>
+                            <li>AUC, Ticket Price, ROS $, ROS U, Ttl Sls $, Ttl Sls U, Ttl Buy $, Ttl Buy U: selects the metric to display in the upper-right corner of each cell</li>
+                            <li><b>Receipt Status</b>: displays the Receipt Status, Clean or Dirty, in the upper-right corner of each cell as an indicator of if the placeholder requires recalculation of its receipt plan</li>
+                            <li><b>Replen Status</b>: displays the Replen Status, Clean or Dirty, in the upper-right corner of each cell as an indicator of if the placeholder has been updated with the most recent Replenishment forecast data; valid for placeholders of Replen status only</li>
+                            <li><b>Status</b>: displays the placeholder Status, Open, Created, Assigned, Committed, or Replen, in the upper-right corner of each cell</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Placeholder Tracking</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">When enabled, the placeholder selected in the Main Planning view (and any supporting views you have open) automatically changes to the placeholder of the image you select in Image view. This makes it more convenient to edit placeholders while working in Image view, because the placeholder values shown in the other views are always in sync with the image you select. Click this option to toggle enabling/disabling placeholder tracking.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Inactive</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Sets the desired visual behavior when temporarily making items inactive in Image View. By default, inactive images show as a diagonal slash:</p>
+                        <p>
+                            <img src="../../Resources/Images/Assortment Planning/Image View_1.png" />
+                        </p>
+                        <p>This parameter can be set to Dark causing temporarily inactive items to show as covered with a semi-transparent gray overlay:</p>
+                        <p>
+                            <img src="../../Resources/Images/Assortment Planning/Image View_2.png" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Placeholders with no image assigned</h2>
+        <p>Placeholders that don’t currently have images assigned, either through an attached variant, or images that have been assigned to the placeholders themselves, show as question marks in Image view:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Image View_5.png" />
+        </p>
+        <h2>Making Cells Inactive</h2>
+        <p>Users can make placeholders temporarily inactive by double-clicking any cell to make visual assessments, If a placeholder is present in more than one cell, either by cluster or period, then all cells related to the placeholder are made inactive automatically.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Making placeholders temporarily inactive has no effect on the Active status of placeholders in the Main Planning view.</p>
+        <h2>Configuring and maintaining images</h2>
+        <p>To configure and maintain images:</p>
+        <ol>
+            <li>
+                <p>Right click on an image in the grid and select <b>Edit</b> to launch the <b>Image Gallery</b> dialog for the selected placeholder (not available in Collection mode).</p>
+            </li>
+            <li>If required, click <b>New</b> to add a new cell.</li>
+            <li>Select a cell and click <b>Carousel</b>. </li>
+            <li>In the cell, right-click and select <b>Edit</b>.</li>
+            <li>Scroll down the list of images displayed in the <b>Image Maintenance</b> screen and select an image.</li>
+            <li>Click <b>Save</b>.</li>
+            <li>Click <b>Save</b> in the <b>Image Gallery</b>.</li>
+            <li>Click <b>Execute</b> to refresh the view.</li>
+        </ol>
+        <h2>The Image Gallery screen</h2>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Image gallery dialog.PNG">
+            </img>
+        </p>
+        <ul>
+            <li>
+                <p><b>Classification</b>: Displays the classification of each image.</p>
+                <p>The first image assigned to a placeholder is always the primary by default, but more images can be assigned with user defined classifications.</p>
+            </li>
+            <li><b>Primary?</b>: Whether an image is the primary image to display whenever images are shown for the placeholder.</li>
+            <li>
+                <p><b>Multiples?</b>: Whether multiple images are allowed for the given classification.</p>
+                <p>The Primary and Multiples parameters for variant images can be set in Management &gt; Variant Manager &gt; Image Maintenance.</p>
+            </li>
+        </ul>
+        <h3>Image Gallery buttons</h3>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>New</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Adds a blank image space for the placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Delete</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Deletes the selected images from the placeholder.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Carousel</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Allows the user to choose different view configurations for attached images.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cancel</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Closes the <b>Image Gallery</b> without committing any changes.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Save</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Saves changes made to the Image Repository.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>The Image Maintenance screen</h2>
+        <p>Right click within the <b>Image Gallery</b> and click <b>Edit</b> to display the <b>Image Maintenance</b> screen:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Image Maintenance dialog.PNG" />
+        </p>
+        <h3>Options</h3>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Add</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Launches Windows Explorer file browser, allowing the user to navigate to images to add to the Demand Management Image Repository</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Delete</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Deletes the selected images from the Image Repository</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>View</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Displays a larger version of the selected image</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Attributes</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Displays additional information about the selected image</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Filter</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Launches a filter picker that allows the user to select or create a new filter to limit the images from the Repository that are being shown</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Refresh</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Refreshes the Repository view with any new images or information added since it was opened</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

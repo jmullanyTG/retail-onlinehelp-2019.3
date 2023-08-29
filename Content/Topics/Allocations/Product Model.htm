@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+         
+    </head>
+    <body>
+        <h1>Product Model</h1>
+        <p>Product models support the ability to create indexing of stores to support allocations. By selecting specific products for modeling, the index will be created not as in indication of overall store performance, but instead representative of how a product or set of products will perform across the stores. </p>
+        <p>
+            <img src="../../Resources/Images/Allocations/Allocations Product Model screen.PNG" />
+        </p>
+        <p>Within the product modeling screen, users will create product models for use in the allocation strategy screen. These product models are built using historical data from groups or levels of similar products over a specified time period.&#160; </p>
+        <p>There are two methods for model rule selection: fixed and set period rolling. A fixed period will supply a start and end date which creates the fixed period. The set and rolling period rule will specify a set distance in the past (365 days in the past from today) plus a defined rolling period (+90 days). This would create the period as the next 90 days from exactly one year ago. </p>
+        <h2>Product model calculation</h2>
+        <p>By default (system policy Allocate.ProductModel.UseAdvanced is set to False), the product model calculation uses the MEDIAN to produce the average values. If system policy Allocate.ProductModel.UseAdvanced is set to True, then the calculation will use the MEAN.</p>
+        <h2>Maintaining product models</h2>
+        <p>Users may create, edit, and delete product models. </p>
+        <p>
+            <img src="../../Resources/Images/Allocations/Product Models_1.png" />
+        </p>
+        <h2>Defining a product model</h2>
+        <p>To define a product model:</p>
+        <ol>
+            <li>On the <b>Product Model</b> screen, click <b>New</b>.</li>
+            <li>Enter a unique product model name in the <b>Product Model</b> field.</li>
+            <li>Provide a description in the <b>Product Model Description</b> field.</li>
+            <li>Click the <b>Model Time Frame Selection</b> field and choose a <b>Time Frame</b>.</li>
+            <li>Select the appropriate field and choose the model metric and model type.</li>
+            <li>Optionally, select the appropriate check box to include inner zeros and lost sales.</li>
+            <li>Click on the <b>Sales Type</b> field to select sales types.</li>
+            <li>Click on the <b>Product Selection</b> field to choose the <b>Item Master</b> filter that specifies the items to use during the calculation.</li>
+            <li>Optionally, click on the <b>Default Product Selection</b> field to choose an <b>Item Master Filter</b> to be used if the first item master filter does not produce values.</li>
+            <li>If you selected a location plan related model metric, then select a location plan in the <b>Location Plan</b> field.</li>
+            <li>
+                <p>Click <b>Save</b>.</p>
+                <p>The contributions are automatically calculated and display in the bottom detail grid.</p>
+            </li>
+        </ol>
+        <h3>Additional information</h3>
+        <p>For more information on the individual fields, see <MadCap:xref href="Product Model Grid Reference.htm">Product Model Grid Reference</MadCap:xref>.</p>
+    </body>
+</html>

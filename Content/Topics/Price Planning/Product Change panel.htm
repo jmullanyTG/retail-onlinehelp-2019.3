@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Product Changes panel</h1>
+        <p>Suppressed as per DMDEV-62028. This functionality may be revived in future if any customer shows interest.</p>
+        <p>The <b>Price Manager</b> screen has a panel labeled <b>Product Changes</b> that displays a list of imported product changes that could not be applied to active Price Actions. The list is filtered by a user’s product permissions and will restrict selection, to take action upon, by month. Dismissing a product change will remove it from the list, but the updated information will be used the next time the product is used in a Pricing Action.</p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Product Change panel.png" />
+        </p>
+        <h2>Displaying the Product Changes panel</h2>
+        <p>The <b>Product Changes</b> panel is controlled by the system policy <b>Suppress Price Change Log Panel</b>. The default setting for this system policy is True (the <b>Product Changes</b> panel is hidden).</p>
+        <p>To display the <b>Product Changes</b> panel, a user with the appropriate permissions can:</p>
+        <ol>
+            <li>Navigate to <b>Maintenance &gt; Policies</b>.</li>
+            <li>Double-click on <b>Module: Price Planning</b>.</li>
+            <li>Select <b>Suppress Price Change Log Panel</b>.</li>
+            <li>Click the drop down arrow in the <b>New Setting</b> field and choose <b>False</b>.</li>
+            <li>Click <b>Apply Changes</b>.</li>
+            <li>Click <b>Yes</b>.</li>
+            <li>Restart <b>Demand Management</b>.</li>
+        </ol>
+    </body>
+</html>

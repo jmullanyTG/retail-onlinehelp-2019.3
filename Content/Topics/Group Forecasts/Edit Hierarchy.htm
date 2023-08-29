@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="935" MadCap:lastWidth="1116">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Edit Hierarchy</h1>
+        <p>The edit hierarchy function will allow users to select the available levels for the model. The available levels will have targeted accuracy levels and a tolerance threshold value. Each level included will be a forecasted series, based on the supplied filter.</p>
+        <ul>
+            <li><b>All Aggregated Together</b> – This will allow users to establish a single rooted node. This level, if included, must always be the highest level of the group. </li>
+            <li><b>Inventory Level</b> – The item/site combination. </li>
+            <li><b>Site Level</b> – Lowest level of site hierarchy. <ul><li><b>Site Region</b> – Optional named site hierarchy level.</li><li><b>Site Division</b> – Optional named site hierarchy level. </li></ul></li>
+        </ul>
+        <ul>
+            <li><b>Item Level</b> – Lowest level of product hierarchy (independent of site).</li>
+            <li><b>Site Groups</b> – Configured site groups. May be hierarchal if desired. </li>
+            <li><b>Item Groups</b> – Configured inventory groups (groups). These are distinctly different from item master groups. </li>
+        </ul>
+        <p>Once selected, the available levels will appear in the “maintain hierarchy” wizard. Their individual target percentages and target threshold tolerances may be set. </p>
+        <ul>
+            <li><b>Description</b> – The name of the level.</li>
+            <li><b>Period Over Period Target Percentage</b> – Used to grade the forecast based on MAPE. In the report, any value over the period-over-period target will appear green, indicating an acceptable forecast. </li>
+            <li><b>Period Over Period Target Threshold Percentage</b> – The tolerance for the grading system as relates to the period-over-period target (e.g. a 5% tolerance on a target value of 70% must be at least 65% in MAPE accuracy). Any value between the period-over-period target and the low end of the threshold will appear yellow, indicating a mildly acceptable forecast. Any value below the threshold will appear red, indicating a poor forecast.</li>
+            <li><b>Year Over Year Target Percentage</b> – The year-over-year target will aggregate the values and is expected to have a much higher tolerance percentage (as the forecast is expected to be more accurate, but less precise).</li>
+            <li><b>Year Over Year Target Threshold Percentage</b> – The tolerance for the grading system as relates to the year-over-year target (e.g. a 5% tolerance on a target value of 70% must be at least 65% in MAPE accuracy). Any value between the year-over-year target and the low end of the threshold will appear yellow, indicating a mildly acceptable forecast. Any value below the threshold will appear red, indicating a poor forecast.</li>
+            <li><b>Level Order</b> – The order in which the levels are applied. </li>
+        </ul>
+    </body>
+</html>

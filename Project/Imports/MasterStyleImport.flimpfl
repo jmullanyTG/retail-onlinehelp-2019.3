@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProjectImport
+  AutoSync="true"
+  DeleteStale="true"
+  DeleteUnreferenced="true"
+  IncludeLinkedFiles="true"
+  IncludePattern="standard.css;simple.css;HeaderColumn.css;mi9styles.css;*.flpgl;*.flskn"
+  LastImport="2019-09-03T10:00:49.1597120-04:00">
+  <Files>
+    <Url
+      Source="../../../FlareSource/Mi9.flprj"
+      AbsoluteSource="../../../FlareSource/Mi9.flprj" />
+  </Files>
+  <ExcludedFiles>
+    <Url
+      Source="../../Content/Resources/Stylesheets/StylesForHomePage.css"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/Demand Management/Content/Resources/Stylesheets/StylesForHomePage.css" />
+  </ExcludedFiles>
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../FlareSource/Content/Resources/Stylesheets/mi9styles.css"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Stylesheets/mi9styles.css" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_example_large.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_example_large.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_caution.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_caution.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_basic.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_basic.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_definition.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_definition.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_hint.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_hint.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_important.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_important.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_result.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_result.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_seealso.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_seealso.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_technote.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_technote.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_example.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_example.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/MasterPages/HomePage.flmsp"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/MasterPages/HomePage.flmsp" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Stylesheets/StylesForHomePage.css"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Stylesheets/StylesForHomePage.css" />
+    <Url
+      Source="../../../FlareSource/Content/home-page/images/19114325.jpg"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/home-page/images/19114325.jpg" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/icons/icons_for_online_help_site-200px-848484.svg"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/icons/icons_for_online_help_site-200px-848484.svg" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/icons/icons_for_online_help_site-200px-d22000.svg"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/icons/icons_for_online_help_site-200px-d22000.svg" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Snippets/html-page-footer.flsnp"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Snippets/html-page-footer.flsnp" />
+    <Url
+      Source="../../../FlareSource/Project/VariableSets/Variables.flvar"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Project/VariableSets/Variables.flvar" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/Appendix.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/Appendix.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/Appendix_landscape.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/Appendix_landscape.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/Default.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/Default.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/Default_draft.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/Default_draft.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/Default_landscape.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/Default_landscape.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/FrontMatter.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/FrontMatter.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/FrontMatter_draft.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/FrontMatter_draft.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/Index.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/Index.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/PageLayouts/Release Notes.flpgl"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/PageLayouts/Release Notes.flpgl" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Snippets/pdf-page-footer.flsnp"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Snippets/pdf-page-footer.flsnp" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/brand/Mi9-logo(RGB).svg"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/brand/Mi9-logo(RGB).svg" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Snippets/pdf-page-header.flsnp"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Snippets/pdf-page-header.flsnp" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/draft_watermark.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/draft_watermark.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/brand/PageLayoutTitlePageSideBar.jpg"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/brand/PageLayoutTitlePageSideBar.jpg" />
+    <Url
+      Source="../../../FlareSource/Project/Skins/Default.flskn"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Project/Skins/Default.flskn" />
+    <Url
+      Source="../../../FlareSource/Project/Skins/HomePageSearchBar.flskn"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Project/Skins/HomePageSearchBar.flskn" />
+    <Url
+      Source="../../../FlareSource/Project/Skins/HTML5 - Top Navigation.flskn"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Project/Skins/HTML5 - Top Navigation.flskn" />
+    <Url
+      Source="../../../FlareSource/Project/Skins/NavigationMenu (TC Test).flskn"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Project/Skins/NavigationMenu (TC Test).flskn" />
+    <Url
+      Source="../../../FlareSource/Project/Skins/NavigationMenu.flskn"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Project/Skins/NavigationMenu.flskn" />
+    <Url
+      Source="../../../FlareSource/Project/Skins/StandardPageSearchBar.flskn"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Project/Skins/StandardPageSearchBar.flskn" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/TableStyles/HeaderColumn.css"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/TableStyles/HeaderColumn.css" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/TableStyles/simple.css"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/TableStyles/simple.css" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/TableStyles/standard.css"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/TableStyles/standard.css" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_caution_16px.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_caution_16px.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_basic_16px.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_basic_16px.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_technote_16px.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_technote_16px.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_definition_16px.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_definition_16px.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_hint_16px.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_hint_16px.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_important_16px.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_important_16px.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_result_16px.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_result_16px.png" />
+    <Url
+      Source="../../../FlareSource/Content/Resources/Images/notes_seealso_16px.png"
+      AbsoluteSource="file:///C:/Flare Projects/Mi9/FlareSource/Content/Resources/Images/notes_seealso_16px.png" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Stylesheets/mi9styles.css"
+      TimeStamp="7/8/2019 11:40:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_example_large.png"
+      TimeStamp="7/8/2019 11:40:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_caution.png"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_basic.png"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_definition.png"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_hint.png"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_important.png"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_result.png"
+      TimeStamp="7/8/2019 11:28:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_seealso.png"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_technote.png"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_example.png"
+      TimeStamp="7/8/2019 11:40:46 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/HomePage.flmsp"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/StylesForHomePage.css"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/home-page/images/19114325.jpg"
+      TimeStamp="7/8/2019 11:26:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/icons/icons_for_online_help_site-200px-848484.svg"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/icons/icons_for_online_help_site-200px-d22000.svg"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Snippets/html-page-footer.flsnp"
+      TimeStamp="7/8/2019 11:40:46 PM" />
+    <Url
+      Source="../VariableSets/Variables.flvar"
+      TimeStamp="7/8/2019 11:40:50 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Appendix.flpgl"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Appendix_landscape.flpgl"
+      TimeStamp="7/8/2019 11:28:43 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Default.flpgl"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Default_draft.flpgl"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Default_landscape.flpgl"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/FrontMatter.flpgl"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/FrontMatter_draft.flpgl"
+      TimeStamp="7/8/2019 11:28:43 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Index.flpgl"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Release Notes.flpgl"
+      TimeStamp="7/8/2019 11:40:46 PM" />
+    <Url
+      Source="../../Content/Resources/Snippets/pdf-page-footer.flsnp"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/brand/Mi9-logo(RGB).svg"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Snippets/pdf-page-header.flsnp"
+      TimeStamp="7/8/2019 11:28:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/draft_watermark.png"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/brand/PageLayoutTitlePageSideBar.jpg"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../Skins/Default.flskn"
+      TimeStamp="7/8/2019 11:26:36 PM" />
+    <Url
+      Source="../Skins/HomePageSearchBar.flskn"
+      TimeStamp="7/8/2019 11:26:36 PM" />
+    <Url
+      Source="../Skins/HTML5 - Top Navigation.flskn"
+      TimeStamp="7/8/2019 11:26:36 PM" />
+    <Url
+      Source="../Skins/NavigationMenu (TC Test).flskn"
+      TimeStamp="7/8/2019 11:26:36 PM" />
+    <Url
+      Source="../Skins/NavigationMenu.flskn"
+      TimeStamp="7/8/2019 11:26:36 PM" />
+    <Url
+      Source="../Skins/StandardPageSearchBar.flskn"
+      TimeStamp="7/8/2019 11:26:36 PM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/HeaderColumn.css"
+      TimeStamp="7/8/2019 11:26:22 PM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/simple.css"
+      TimeStamp="7/8/2019 11:40:46 PM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/standard.css"
+      TimeStamp="7/8/2019 11:40:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_caution_16px.png"
+      TimeStamp="7/29/2019 1:50:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_basic_16px.png"
+      TimeStamp="7/29/2019 1:50:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_technote_16px.png"
+      TimeStamp="7/29/2019 1:50:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_definition_16px.png"
+      TimeStamp="7/29/2019 1:50:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_hint_16px.png"
+      TimeStamp="7/29/2019 1:50:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_important_16px.png"
+      TimeStamp="7/29/2019 1:50:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_result_16px.png"
+      TimeStamp="7/29/2019 1:50:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/notes_seealso_16px.png"
+      TimeStamp="7/29/2019 1:50:15 PM" />
+  </GeneratedFiles>
+</CatapultProjectImport>

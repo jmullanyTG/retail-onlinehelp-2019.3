@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2052" MadCap:lastWidth="1203">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1><a name="_Toc505803942"></a>Practical Application</h1>
+        <p>The integration of Assortment Planning with Order Manager and Workflow creates a great deal of flexibility in fleshing out order details and communicating those both within your organization and externally to ERP/POM systems and suppliers. Here are a few use cases to help you get the most out of the system:</p>
+        <h2>Workflow and Order Document Approvals </h2>
+        <p>A common practice in the retail/wholesale industry is to have approvals at multiple stages in the ordering process, potentially submitting order information to suppliers several times throughout, with increased detail in each submission</p>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">I have an order for Men’s Tops with a 6 month lead time from order submission to delivery in the DC. The supplier for all items on the order only requires initial unit commitments up front, with sizing and prepacking details being provided 4 months and 2 months prior to delivery, respectively. Internally, my organization requires review by the planning manager before submission of order details to suppliers</p>
+        <p>Using the integration of the Workflow module with the functionality inherent to Order Manager Commitment orders, the process can be set to work in document status cycles as follows:</p>
+        <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th colspan="3" class="TableStyle-standard-HeadD-Column2-Header1">
+                        <p>Workflow Status</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Initial Commitment</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Break By Size</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Prepack</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td rowspan="4" class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Document Status</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Workspace (Analysis)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Workspace (Analysis)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Workspace (Analysis)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Forwarded</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Forwarded</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Forwarded</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Authorized</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Authorized</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Authorized</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column2-Body1">
+                        <p>Upload Verified</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p>Upload Verified</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Upload Verified</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>When defining the workflow that will govern this order, the three main nodes to be created are Initial Commitment, Break By Size, and Prepack. For each node, you have the ability to determine what rights a given user has, thus, you would set it up so that your regular planner users only have rights to do the required analysis step (Break By Size or Prepack in this example) and to Forward the document to their manager for review. In the same node, you would then assign rights to the manager to Authorize if the order is ready to upload and to Reject to send it back to the person who forwarded it if changes are required (see the Demand Management Workflow Manager Standard Documentation for more information)</p>
+        <p>As each node is completed, the cycle of analysis, forward, authorize, and upload starts over until all nodes in the workflow have been completed. By setting Completion Days Out for each node (in the example above, this would equate to roughly 180 days for Initial Commitment, 120 days for Break By Size, and 60 days for Prepack) you can track your progress and upcoming submission due dates for the order and ensure you provide the added order details in enough time to meet the requirements of your supplier. These due dates can be reviewed and actioned against in the Assortment Upcoming Commitments Dashboard within Assortment Planning (See Assortment Planning Dashboard - Assortment Upcoming Commitments Dashboard above for details).</p>
+        <h2>Expedited Workflow</h2>
+        <p>Another common use case in the industry is an opportunity, or at-once, buy, where you must work on a condensed time scale that does not allow for the standard approval process normally used in your organization</p>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">I have a rush order for Men’s Tops that I need to receive in 3 months from order submission to delivery in the DC. I have spoken with the product supplier and they have agreed to an accelerated timeline, but asked that I provide all order details, including sizing and prepack information, up front</p>
+        <p>To accommodate the condensed timeline, an alternate workflow with adjusted document status cycles should be employed:</p>
+        <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th colspan="3" class="TableStyle-standard-HeadD-Column2-Header1">
+                        <p>Workflow Status</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Initial Commitment</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Break By Size</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Prepack</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td rowspan="3" class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Document Status</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Workspace (Analysis)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Workspace (Analysis)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Workspace (Analysis)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Authorized</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column2-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Upload Verified</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Notice that the three main nodes, Initial Commitment, Break By Size, and Prepack, still remain. Because of the condensed timeline, however, a single individual will be responsible for both Analysis and Authorization of order documents and only one Authorization will occur after all order details have been defined.</p>
+        <p>It is possible to set rights so that a manager is still required to Authorize the order or extend Authorize rights to regular planners at your discretion. You can also manage access to the accelerated workflow itself by user so, for example, only managers are allowed to use condensed timeline workflows (see the Demand Management Workflow Manager Standard Documentation for more information)</p>
+        <p>Because all three nodes within the workflow must be completed prior to Authorization and upload to the supplier, the workflow should be configured to allow transition between each node without requiring Authorization or Upload Verification for the first two. Only in the Prepack Node should rights to Authorize be made available, as Authorization will initiate upload of the order.</p>
+        <h2>Rainbow Packs</h2>
+        <p>Prepacks containing more than one variant, whether different colors of the same item or different items entirely that are somehow related, can be achieved easily enough through the integration of Variant Manager and the use of an Order Manager field called Grouping Identifier</p>
+        <ul>
+            <li>In <b>Variant Manager &gt; Prepack</b> tab, create a new prepack configuration containing the variants you want to prepack together and Save</li>
+            <li>In <b>Grid</b> view for the order document, enter identical values in the Grouping Identifier field for the order lines containing the variants you want to prepack together and Save</li>
+            <li>In the <b>Prepack</b> tab of the <b>Details</b> view, you will see the Grouping Identifier you entered for the desired order lines listed in the Prepack Groups area – select it, make sure the Calculate field for prepack configuration you created in Variant Manager is checked, and Calculate; the system will use the rainbow pack you created as it would any normal prepack</li>
+        </ul>
+    </body>
+</html>

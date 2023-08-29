@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2083" MadCap:lastWidth="1288">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Creating view collections using an SQL script</h1>
+        <p>View collection data are stored in the database in the “<span class="code_sample">tbl_VW</span>” namespace. While it is typical to create a view collection in the user interface using the method described in the practical application section, they can created with a SQL script as follows (example is for merchandise financial planning):</p>
+        <div class="code_block">
+            <p>
+                <p>&#160;&#160;&#160;&#160; -- Create View Collection</p>
+                <p>IF NOT EXISTS ( SELECT 1</p>
+                <p>FROM dbo.tbl_VW_ViewCollection</p>
+                <p>WHERE Name = 'Merchandise Financial Planning' )</p>
+                <p>BEGIN</p>
+                <p>&#160;</p>
+                <p>DECLARE @iViewCollectionID INT</p>
+                <p>INSERT INTO dbo.tbl_VW_ViewCollection</p>
+                <p>( Name</p>
+                <p>, Description</p>
+                <p>, ImageIndex</p>
+                <p>, [Order]</p>
+                <p>&#160;&#160; </p>
+                <p>)</p>
+                <p>VALUES</p>
+                <p>( N'Merchandise Financial Planning'</p>
+                <p>, N'Merchandise Financial Planning Collection.'</p>
+                <p>, 123</p>
+                <p>, 0</p>
+                <p>&#160;&#160; </p>
+                <p>)</p>
+                <p>&#160;</p>
+                <p>SET @iViewCollectionID = SCOPE_IDENTITY()</p>
+                <p>&#160;</p>
+                <p>END</p>
+                <p>ELSE</p>
+                <p>BEGIN</p>
+                <p>SELECT @iViewCollectionID = ViewCollectionID</p>
+                <p>FROM dbo.tbl_VW_ViewCollection</p>
+                <p>WHERE Name = 'Merchandise Financial Planning'</p>
+                <p>END</p>
+                <p>&#160;</p>
+            </p>
+        </div>
+        <p>Linking the view collection to the parented view collection set may be done using the following script:</p>
+        <div class="code_block">
+            <p>
+                <p>&#160;&#160;&#160;&#160; -- Link View Collection Set to View Collection</p>
+                <p>IF NOT EXISTS ( SELECT 1</p>
+                <p>FROM dbo.tbl_VW_ViewCollectionSetLink</p>
+                <p>WHERE ViewCollectionID = @iViewCollectionID</p>
+                <p>AND ViewCollectionSetID = @iViewCollectionSetID )</p>
+                <p>AND @iViewCollectionID IS NOT NULL</p>
+                <p>AND @iViewCollectionSetID IS NOT NULL</p>
+                <p>BEGIN</p>
+                <p>INSERT INTO dbo.tbl_VW_ViewCollectionSetLink</p>
+                <p>( ViewCollectionSetID</p>
+                <p>, ViewCollectionID</p>
+                <p>, [Order]</p>
+                <p>)</p>
+                <p>VALUES</p>
+                <p>( @iViewCollectionSetID</p>
+                <p>, @iViewCollectionID</p>
+                <p>, 0</p>
+                <p>)</p>
+                <p>END</p>
+                <p>&#160;</p>
+            </p>
+        </div>
+    </body>
+</html>

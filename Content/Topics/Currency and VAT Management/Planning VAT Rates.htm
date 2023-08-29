@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="10" MadCap:lastHeight="2688" MadCap:lastWidth="1317">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Planning VAT Rates</h1>
+        <p>Some countries include tax in the actual ticket prices of products sold, rather than calculating it as a percent of the selling price during sales transactions. This is known as value added tax or VAT. In this view, users can manage VAT rates at any level of any defined product hierarchy and for Site Groups 1-20, as defined during implementation.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">All ticket prices (AUT) within Assortment Planning are assumed to be VAT Inclusive unless otherwise noted by an <b>ex VAT</b> descriptor in the metric name.</p>
+        <p class="important" MadCap:autonum="&lt;b&gt;IMPORTANT: &lt;/b&gt;">Even if VAT does not apply to your business, you must assign a VAT Rate of zero to the highest level of all product hierarchies to be used in assortment plans. Because Site Groups are not explicitly tied to site hierarchies, you may need to enter this zero rate for more than the highest level Site Group, depending on how your groups are defined.</p>
+        <p>This screen can be accessed by navigating to <b>System Utilities &gt; Views &gt; Maintenance &gt; Planning VAT Rate</b>.</p>
+        <p>
+            <img src="../../Resources/Images/Currency and VAT Management/Planning VAT Rates.png" style="visibility: visible;width: 634px;height: 266px;" />
+        </p>
+        <h2>Header fields</h2>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Product Hierarchy</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The product hierarchy for which you want to manage VAT Rates</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Hierarchy Level</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The specific level of the selected Product Hierarchy for which you want to manage VAT Rates</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Changes entered for higher levels of the product hierarchy will be pushed down to the levels beneath.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">For higher hierarchy levels with multiple VAT Rates assigned to the levels beneath, VAT Rate will display a straight average of the rates for those levels; bold italic formatting as shown below will be applied to make cases where this is true easily identifiable to the user:</p>
+                        <p>
+                            <img src="../../Resources/Images/Currency and VAT Management/Planning VAT Rates_1.png" style="visibility: visible;width: 634px;height: 145px;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Group</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The Site Group level (1-20) for which to display and work with VAT rates in the view</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Changes entered for site groups corresponding to higher levels of the site hierarchy will be pushed down to lower level site groups.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">For higher level site groups with multiple VAT Rates assigned to the levels beneath, VAT Rate will display a straight average of the rates for those levels; bold italic formatting as shown below will be applied to make cases where this is true easily identifiable to the user:</p>
+                        <p>
+                            <img src="../../Resources/Images/Currency and VAT Management/Planning VAT Rates_1.png" style="visibility: visible;width: 634px;height: 145px;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Start Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The start of the time frame for which to display VAT rates in the view</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>End Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">The end of the time frame for which to display VAT rates in the view</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Toolbar buttons</h2>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Button</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Parameters</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Toggles between displaying and hiding the <b>Parameters</b> area of the view</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Execute</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Updates the view with all defined VAT rate entries for the intersection of the selected Hierarchy Level, Site Group, and time frame</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">With regard to time, any entries that overlap any portion of the time frame specified by the selected Start and End Dates will be shown.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Planning VAT Rates tab</h2>
+        <h3>Toolbar buttons</h3>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Button</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>New</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Adds a new VAT Rate line to the current view</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Delete</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Removes the selected VAT Rate lines from the current view</p>
+                        <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">You will not be asked to confirm deletion of VAT Rate lines, so be certain you want to remove them before clicking Delete.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Fields</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Opens the <b>Customization</b> dialog in which users can drag fields to or from the tab’s header area and the dialog to customize the view</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Save</b> <![CDATA[ ]]></td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Saves all new VAT Rate lines and deletions of existing VAT Rate lines made since the last save</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Cancel</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Removes all new VAT Rate lines and undoes the deletion of existing VAT Rate lines made since the last save</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Saving or restoring custom layouts</h3>
+        <p>Custom layouts can be saved or restored by right-clicking in the Pivot Grid and selecting Save Layout or Restore Layout, respectively.</p>
+        <h3>Start dates and end dates</h3>
+        <p>The latest VAT rate line for a given product level will always default to the end of the system time line (currently Dec 31, 2999) to always provide an active VAT rate for system calculations. When setting VAT rate changes beyond the latest entry, the previous latest entry will change its End Date automatically to just before the new entry time frame begins.</p>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">If the latest VAT entry for Mens Short Sleeve Tops is currently from January 1, 2018 to Dec 31, 2999 (the system default) and I enter a new line with a start date of June 1, 2018 and an end date of Dec 31, 2018, the previous latest entry’s End Date will change to May 31, 2018. The new entry will begin on June 1, 2018 as entered but the End Date will change to Dec 31, 2999 to provide VAT rates through the future.</p>
+        <h3>Site group columns</h3>
+        <p>The columns shown depends on the levels that exist within the selected Site Group.</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Column</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>VAT Rate</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">User editable decimal (0.0001) (non-editable for saved lines); sets the VAT Rate for the specified product level and time frame</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Site Count</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Non-editable integer; displays the number of sites to which the VAT Rate will be applied; updates after Apply for new lines</p>
+                        <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">VAT rates cannot be set for newly entered lines until they have first been saved via saving. This is a current system limitation rather than an error.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

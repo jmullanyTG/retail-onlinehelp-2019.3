@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <a name="Planning">
+            </a>VAT Configuration</h1>
+        <p>If your organization includes VAT (value added tax) in its planning process, there are a few required configuration steps that must be completed prior to beginning to plan:</p>
+        <ol>
+            <li>
+                <p>
+                    <b>Create a verbose product hierarchy</b>: in order for VAT calculation functionality to work properly, a verbose product hierarchy is needed. This basically just means that data is able to be stored at all levels of the hierarchy rather than just the lowest leaf levels. <br />For example, if my hierarchy consists of the levels Company &gt; Gender &gt; Class, a verbose hierarchy allows data to also be stored against the Company and Gender levels, whereas a regular hierarchy would only allow data at the Class level. Because VAT rates can be set at any level of a product hierarchy, a verbose hierarchy is needed to allow the system to read the correct rates when calculating VAT related metrics.<br />To do this:<br />Click <b>System Utilities &gt; Views</b> then locate and open the Hierarchy Filtering view:<br /><img src="../../Resources/Images/MFP 523/Essential Business Concepts.png" /><br />Next, select the Variant entity type and click Execute:<br /><img src="../../Resources/Images/MFP 523/Essential Business Concepts_1.png" /><br />If you need to create a new hierarchy, click New, enter a Hierarchy Name and Description, check the Allow Data Storage at All Levels check box, then Save:<br /><img src="../../Resources/Images/MFP 523/Essential Business Concepts_2.png" /><br />Lastly, set the Order Number and Enabled check box for the desired Item Master Groups and Save:<br /><img src="../../Resources/Images/MFP 523/Essential Business Concepts_3.png" /></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">If a hierarchy already exists that you would like to use for this purpose, you can simply select the hierarchy, check the Allow Data Storage at All Levels check box and Save<br /></p>
+                <p class="important" MadCap:autonum="&lt;b&gt;IMPORTANT: &lt;/b&gt;">check with your Demand Management technical representative before making this change to hierarchies that are used in modules other than Assortment Planning and MFP. Other modules, such as Allocation and Group Forecasting are not designed to work with verbose hierarchies.<br /></p>
+            </li>
+        </ol>
+        <ul>
+            <li>Set the MFP product hierarchy VAT rates will be assigned to: the next step in setting up MFP for planning with VAT is telling the system which hierarchy to use for getting the VAT rates to be applied to your plans. <br />To do this:<br />While still in the <b>Hierarchy Filtering</b> view, click <b>Fields</b> in the Hierarchy Configuration section and drag the Hierarchy ID field into the grid:<br /><img src="../../Resources/Images/MFP 523/Essential Business Concepts_4.png" /><br />Note the <b>Hierarchy ID</b> for use in the next step:<br /><img src="../../Resources/Images/MFP 523/Essential Business Concepts_5.png" /><br />Next, click <b>Maintenance &gt; Policies</b>, select the Planning VAT Rate Product Hierarchy ID from the <b>Module: Financial Planning</b> folder at the left, enter the Hierarchy ID you noted in the last step in the New Setting field, and click <b>Apply Changes</b>:<br /><img src="../../Resources/Images/MFP 523/Essential Business Concepts_6.png" /><br /></li>
+        </ul>
+        <ul>
+            <li>
+                <p>
+                    <b>Enable VAT in MFP</b>: the final step is to enable the use of VAT in MFP. To do this, while still in the Policies module, select the Enable VAT in MFP policy from the Module: Financial Planning folder at the left, select True in the New Setting field, and click Apply Changes:<br /><img src="../../Resources/Images/MFP 523/Essential Business Concepts_7.png" /><br /></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">like all system policies, the Enable VAT in MFP policy is a global setting, meaning all MFP plans will have VAT enabled once this policy is set to True. That said, if you have a VAT rate of zero set for the product/site levels included in a given plan, ex VAT metric values will be identical to their regular counterparts and there will be no mathematical effect on the plan.</p>
+            </li>
+        </ul>
+        <p>Assuming you have also set up VAT rates in the Planning VAT Rates view, after the above steps are complete, you will be able to plan with VAT included in MFP. For more information on setting VAT rates,  refer to <b>Currency and VAT Management &gt; Essential Business Concepts &gt; <a href="../Currency and VAT Management/Planning VAT Rates.htm">Planning VAT Rates</a></b>.</p>
+    </body>
+</html>

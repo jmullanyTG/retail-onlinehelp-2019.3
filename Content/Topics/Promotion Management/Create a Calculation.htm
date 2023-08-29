@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Create a Calculation</h1>
+        <p>Within the Promotion Calculations tab, click <b>New</b> above the Calculation Repository grid in the bottom half of the screen to create a new Promotion Calculation. Enter the required fields and click <b>Save</b>.</p>
+        <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Name (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter a descriptive label to summarize the purpose of the Calculation. This will be used to identify the Calculation when creating Calculation Sets.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Description (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>A summary of the Calculation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Type (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Identify when the Calculation will be run in relation to the retrieval of any dynamic item, retail, or cost updates to the Promotion. Select the ‘Post’ option from the drop down menu.</p>
+                        <ul>
+                            <li>Pre - To be developed as future functionality.</li>
+                            <li>Post - This should be selected in all cases and will run the Calculation after price and cost retrieval.</li>
+                            <li>Both - To be developed as future functionality.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Method (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The drop down is populated by the available methods (i.e. advanced processes applied at the database level) configured for use. &#160;Select a method the system will apply for the Calculation. This will supersede any value entered in the Aggregation, Formula and Rounding fields.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Level (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select a level from the populated drop down. All levels act on the Site Cluster level.</p>
+                        <ul>
+                            <li>Promotion Level – To be developed as future functionality. For now, selecting this option means that Calculations will be performed at the Promotion Group level.</li>
+                            <li>Promotion Aggregate Level – Calculations will be performed at the Promotion Group level.</li>
+                            <li>Group Level – Calculations will be performed at the Product Group level.</li>
+                            <li>Product Level</li>
+                        </ul>
+                        <ul>
+                            <li>Item Level – Calculations will be performed at the Item Master Level.</li>
+                            <li>Variant Level – Calculations will be performed at the Variant Level.</li>
+                        </ul>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">The Promotion Manager system defines Product Levels as follows:</p>
+                        <ul>
+                            <li>Inventory – A product at a particular Site so it has a single price.</li>
+                            <li>Item Master – A product across all Sites that may have different prices at different Sites. An Item Master may have a max price for example.</li>
+                            <li>Variant – A variant of Item Masters based on a shared attribute i.e. size, color, style, etc. An example of a Variant is Men’s Polo Shirts. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Group Type (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>From the drop down options, select one to identify which Group Association Type this Calculation will be run on:</p>
+                        <ul>
+                            <li>Buy Group - The Calculation will only be run on the Buy Group.</li>
+                            <li>Get Group - The Calculation will only be run on the Get Group.</li>
+                            <li>Buy Get Group - The Calculation will only be run on both the Buy and Get Groups. This option should also be selected for all Promotion Types that are not of the Buy Get type.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Calculation Field (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The drop down is populated with database fields where the resulting value of the Calculation will be stored.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Aggregation (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select an aggregation Calculation from the populated drop down. This will override the Formula if specified.</p>
+                        <ul>
+                            <li>AVG - Average all results.</li>
+                            <li>Calculate - Will run what is specified in the Formula column.</li>
+                            <li>MAX - The maximum value of all results.</li>
+                            <li>MIN - The minimum value of all results.</li>
+                            <li>SUM - Total all results.</li>
+                            <li>MIN no 0 - The minimum value of all results, not including zero values.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Formula (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter a mathematical formula for the Calculation. Any Valid SQL statement can be used if all fields exists in the Promotion Price Output standard or custom table structure. This formula will be used only if the Method and Aggregation columns are blank or if Aggregation is set to ‘Calculate’.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>
+                            <a href="Delete a Calculation.htm">Delete</a> (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Leave this check box unselected. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p>
+                            <a href="Rounding Rules.htm">Rounding Set</a> (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Select from the configured list of Standard or Price Ending Rounding Rules to apply to the Calculation. Rounding Sets can always be assigned but are only applied when the Calculation Field is of a valid numeric data type (Float, Numeric, and Decimal) and when the Method is blank. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="4734" MadCap:lastWidth="1302">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Segment Cluster Details </h1>
+        <p>This tab features  standard Pivot Grid functionality allowing the user to manipulate the field layout by dragging and dropping fields in the Filter, Row, Column, and Data areas of the grid.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Segment Cluster Details.png" />
+        </p>
+        <h2>Toolbar functionality</h2>
+        <ul>
+            <li><b>Graph</b>: activates the standard Pivot Grid graph, which graphs any data series selected by the user</li>
+            <li>
+                <p><b>Fields</b>: launches the Pivot Grid <b>Fields Customization</b> dialog. Each tab contains a search bar to more quickly locate fields. The fields shown in the view are limited to only those containing the text entered. </p>
+                <ul>
+                    <li>
+                        <p><b>Simple tab</b>: Fields can be dragged and dropped between Filter, Row, Column, and Data areas of the Pivot Grid to manipulate the current layout. Dragging fields to the None area hides them in the layout.</p>
+                    </li>
+                    <li><b>Advanced tab</b>: manipulate the layout here by selecting the desired location of each field from the Pivot Area drop downs next to each; within each area, an Index can be specified to define the order in which the fields display</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Custom Layouts: Changes made to the Assortment Plan Defaults By Time layout can be saved for future use. After making changes and clicking <b>Ok</b> in the <b>Fields Customization</b> dialog, right click anywhere in the Pivot Grid and choose <b>Save Layout</b>. Restore a custom layout by right-clicking anywhere in the Pivot Grid, choosing Restore Layout, and selecting the layout to restore.</p>
+        <h2>Pivot Fields:</h2>
+        <ul>
+            <li><b>Segment</b>: The corresponding segment Name; one section per segment defined in Target Segment Definitions.</li>
+            <li><b>Cluster Set</b>: The corresponding Cluster Set name; one section per cluster set assigned to each segment; removing Segment from the row area aggregates Cluster Set sections where possible.</li>
+            <li><b>Cluster</b>: One row per Cluster contained within each Cluster Set assigned to each Segment. Removing Cluster Set from the row area aggregates Cluster rows where possible.</li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Metrics in light blue are user editable; metrics in light gray are hidden helper fields</p>
+        <h2>Metric Descriptions </h2>
+        <p>The table below lists all of the metrics available in the Segment Cluster Details Pivot Grid, how they are populated, how they aggregate when manipulating the grid, and other information about them.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field Name</th>
+                    <th class="TableStyle-standard-HeadE-Column2-Header1">Source/Calculation</th>
+                    <th class="TableStyle-standard-HeadD-Column1-Header1">Aggregation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Channel Percent Contribution</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Comparison Active Sales ($ or U) / total channel Comparison Active Sales ($ or U), where “channel” is the lowest level of the assortment plan Site Hierarchy</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>N/A</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Target Percent Contribution</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>If Plan Basis is NOT set and/or segments are manually created: Comparison Active Sales ($ or U depending on Sales Basis) / total scenario Comparison Active Sales ($ or U).</p>
+                        <p>If Plan Basis IS set and segments are NOT manually created: Plan Sales ($ or U) / total scenario Plan Sales ($ or U)</p>
+                        <p>Note that the sum of the values in this column do not have to equal 100%</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>cluster sales $ for the products in the Target Filter and selected Comparison Time Frame</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>cluster sales units for the products in the Target Filter and selected Comparison Time Frame</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>LY Sales $ / LY Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Total Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Count of number of variants registering sales for the products in the Target Filter and selected Comparison Time Frame within the cluster</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Total Choices Minimum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MIN (Comparison Total Choices for all clusters D within the segment or cluster set, depending on level of aggregation); at cluster level, equals Comparison Total Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Total Choices Maximum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MAX (Comparison Total Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals Comparison Total Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Productivity</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>LY Sales $ / LY Total Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison&#160; Active Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>cluster sales $ for the products in the Target Filter and selected Comparison Time Frame after data cleansing</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Active Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>cluster sales units for the products in the Target Filter and selected Comparison Time Frame after data cleansing</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Active AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>LY Active Sales $ / LY Active Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Active Choices Minimum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MIN (Comparison Active Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals Comparison Active Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Active Choices Maximum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MAX (Comparison Active Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals Comparison Active Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Active Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Count of number of variants registering sales for the products in the Target Filter and selected Comparison Time Frame within the cluster after data cleansing</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison Active Productivity</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>LY Active Sales $ / LY Active Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison % Active Choice Sales</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>LY Sales $ / LY Active Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Comparison % Active Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>LY Active Choices / LY Total Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Plan Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>If Plan Basis is NOT set: Scenario Target ($) * Cluster % Contribution </p>
+                        <p>If Plan Basis IS set: Channel Percent Contribution * channel Scenario Target ($) (channel level sales volume from Plan Basis plan), where “channel” is the lowest level of the assortment plan Site Hierarchy</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Plan Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>If Plan Basis is NOT set: Scenario Target (U) * Cluster % Contribution </p>
+                        <p>If Plan Basis IS set: Channel Percent Contribution * channel Scenario Target (U) (channel level sales volume from Plan Basis plan), where “channel” is the lowest level of the assortment plan Site Hierarchy</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Plan AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY Plan Sales $ / TY Plan Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY C/O Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>cluster planned sales $ for ongoing (carryover) products in the Target Filter and scenario Window of Time; Note that placeholder items in Created, Assigned, and Committed status count as carryover</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY C/O Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>cluster planned sales U for ongoing (carryover) products in the Target Filter and scenario Window of Time; Note that placeholder items in Created, Assigned, and Committed status count as carryover</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY C/O AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY C/O &#160;Sales $ / TY C/O Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY C/O Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Count of number of ongoing (carryover) variants with planned sales for the products in the Target Filter and scenario Window of Time within the cluster; Note that placeholder items in Created, Assigned, and Committed status count as carryover</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY C/O Choices Minimum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MIN (TY C/O Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals TY C/O Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY C/O Choices Maximum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MAX (TY C/O Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals TY C/O Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY C/O Productivity</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY C/O Sales $ / TY C/O Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY New Item Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY Plan Sales $ - TY C/O Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY New Item Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY Plan Sales U - TY C/O Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY New Item AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY New Item Sales $ / TY New Item Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Rec New Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Output from Rationalization (see below)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Rec New Choices Minimum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MIN (TY Rec New Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals TY Rec New Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Rec New Choices Maximum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MAX (TY Rec New Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals TY Rec New Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Rec New Productivity</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY New Item Sales $ / TY Rec New Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Average Active Periods Per Variant</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>AVERAGE (selling periods per active choice for all active choices after data cleansing)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Defaults to TY New Item Sales $;</p>
+                        <p>TY Act New Sales * TY Act New AUR; Note that this value does not have to tie back to 100% of the Scenario Target or TY Plan Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Defaults to TY New Item Sales U;</p>
+                        <p>TY Act New Sales $ / TY Act New AUR; Note that this value does not have to tie back to 100% of the Scenario Target or TY Plan Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Defaults to TY New Item AUR;</p>
+                        <p>TY Act New Sales $ / TY Act New Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Defaults to TY Rec New Choices; does not recalc based on changes to other metrics</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>SUM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Choices Minimum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MIN (TY Act New Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals TY Act New Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Choices Maximum</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>MAX (TY Act New Choices for all clusters within the segment or cluster set, depending on level of aggregation); at cluster level, equals TY Act New Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Productivity</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Defaults to TY New Item Sales $;</p>
+                        <p>TY Act New Sales $ / TY Act New Choices</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Variance to Budget</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY Act New Sales $ - TY New Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Sales Var to Comparison ($)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY Act New Sales $ - Comparison Total Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Sales Var to Comparison (U)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY Act New Sales U - Comparison Total Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>TY Act New Sales Var to Comparison Active ($)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>TY Act New Sales $ - Comparison Active Sales $</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p>TY Act New Sales Var to Comparison Active (U)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyB-Column2-Body1">
+                        <p>TY Act New Sales $ - Comparison Active Sales U</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column1-Body1">
+                        <p>Calculation</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>One Directional Locking Calcs</h2>
+        <p>The following table shows the locking calculations used by the TY Act New metrics in Target Creation:</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Adjust</th>
+                    <th class="TableStyle-standard-HeadE-Column2-Header1">Lock</th>
+                    <th class="TableStyle-standard-HeadD-Column1-Header1">Re-Calculate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Sales</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Sales Units, productivity</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Sales Units</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Sales, productivity</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyE-Column2-Body1">
+                        <p>Sales Units</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column1-Body1">
+                        <p>Sales, productivity</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p>Choice Count</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyB-Column2-Body1">
+                        <p>Sales $, Sales U, AUR</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column1-Body1">
+                        <p>productivity</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">To manually key sales plans for new areas of business, where the TY Act New metrics have defaulted to zero due to lack of sales history, you must enter them in order based on your Sales Basis:</p>
+        <ul>
+            <li><b>Revenue</b>: enter Sales first then AUR to calculate Sales Units</li>
+            <li><b>Units</b>: enter Sales units first then AUR to calculate Sales</li>
+        </ul>
+    </body>
+</html>

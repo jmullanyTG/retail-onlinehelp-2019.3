@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Functionality Notes</h1>
+        <p>When working with the Size Similarity Manager, there are some basic constructs and conventions the user should be aware of to get the most out of the available functionality:</p>
+        <ul>
+            <li>
+                <b>Destructive Nature of Size Similarity Sets</b>: The most important point to understand about this functionality is that, to prevent the need for live reads and conversions based on saved similarity sets, migrated data is permanently changed within Demand Management and cannot be restored by simply deleting a similarity set for which migration has occurred. Similarly, newly imported data is converted to the selected Display Size for the corresponding similarity set. We do maintain reference to original external identifiers for the purpose of syncing exported data with external systems, but within Demand Management, Similar Sizes other than the Display Size of migrated similarity sets do not exist. For this reason, it is essential that access to the Size Similarity Manager be limited to only users trusted to make such system changes and that those changes be well-thought out and agreed upon by all interested parties prior to being saved and queued for migration.</li>
+            <li>
+                <b>Related Import and System Changes</b>: Multiple imports were updated to account for sizes that are migrated. The checks ONLY consider sizes that are active and were previously migrated (not “Queue For Migration”). The import changed are Prepack, Item Master, Size Curve, Size Range, and Supplier Order Line Variant</li>
+            <p>In addition to import scripts, the UI Size Range scripts were updated and auditing was applied to the Size Similarity Tables. Lastly, a new column “ImportSizeID” was added to <span class="code_sample">tbl_ItemMaster</span></p>
+            <ul>
+                <li>
+                    <p>
+                        <b>Size Type and Similarity Sets</b>: the intent of similarity sets is to identify data that should be homogenized within single defined size types, thus, you won’t be able to choose sizes outside of the chosen size type for the rule Display Size or for the Similar Sizes to be grouped</p>
+                    <p>For example, You want to create a new size curve for Men’s Short Sleeve Tees. The newest items in that category have the size range S, M, L, XL, and XXL, but some pre-existing items were sized with a slightly different but equivalent range – S, M, L, XL, and 2XL. Currently, your Men’s Short Sleeve Tees size type does not contain the new XXL size but I want to use XXL as my go-forward Display Size. In order to do this, you first need to add XXL to the Men’s Short Sleeve Tees size type, then you will be able to both choose it as the Display Size for your similarity set and choose both XXL and 2XL as the Similar Sizes to group</p>
+                </li>
+            </ul>
+            <li>
+                <p>
+                    <b>Data Migration</b>: a migration script (usp_Size_SizeSimilarity_Data_Migration) was created to homogenize data for the Similar Sizes defined in a similarity rule,.</p>
+                <ul>
+                    <li>
+                        <p>
+                            <b>Rights</b>: In order to run the script, a user must have the required Configuration Rights</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+                            <thead>
+                                <tr class="TableStyle-standard-Head-Header1">
+                                    <th class="TableStyle-standard-HeadE-Column1-Header1">Parameter Name</th>
+                                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-standard-Body-Body1">
+                                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                                        <p>@iUserID</p>
+                                    </td>
+                                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                                        <p>&#160;</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-standard-Body-Body1">
+                                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                                        <p>@bOkayToMigrate</p>
+                                    </td>
+                                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                                        <p>An explicit opt in variable to tell the procedure when it is okay to migrate</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-standard-Body-Body1">
+                                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                                        <p>@bLogInformation</p>
+                                    </td>
+                                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                                        <p>An optional parameter to suppress logging to <span class="code_sample">tbl_Size_SizeSimilarity_LogData</span>; if migrating will force logging on</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-standard-Body-Body1">
+                                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                                        <p>@bTurnONTransaction</p>
+                                    </td>
+                                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                                        <p>BEWARE: This is to allow turning off our transactions for testing purposes</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-standard-Body-Body1">
+                                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                                        <p>@bDebug</p>
+                                    </td>
+                                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                                        <p>&#160;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Running the Script</b>: The ideal place is during the weekly scripts since imports were updated as well to help align the sizes to the display size. The process will gather all of the sizes that are “Queue For Migration”. Any of the canned tables that are detected will be backed up if the user decides to migrate. The backed up tables will be listed in the temp schema which means they can be destroyed at any time.</li>
+            <li>
+                <b>Data Log</b>: A user can decide to not migrate but can consult the log table (<span class="code_sample">tbl_Size_SizeSimilarity_LogData</span>) to see which tables were flagged as having migration work</li>
+            <p>
+                <img src="../../Resources/Images/Allocation Size/Functionality Notes.png" />
+                <ul>
+                    <li>Garbage Collection: Because of the extensive logs created by the Size Similarity Manager, a garbage collection script (usp_Size_GarbageCollection_Manager) was created to help minimize storage of log data that is no longer needed</li>
+                </ul>
+            </p>
+            <li>
+                <b>System Policy</b>: data log entries created by the Size Similarity Manager use the system policy <b>Size.SizeSimilarity.WaitMinutesBeforeLogTableGarbageCollection</b> to determine how long they should be kept prior to deletion. This policy is set in minutes and has a default value of 43,200 – the equivalent of 30 days</li>
+            <li>
+                <p>Saving/Restoring Layouts: changes made to the screen layout through use of the Fields button and/or PivotGrid manipulation can be saved and quickly recalled later:</p>
+                <ul>
+                    <li>Saving: right clicking anywhere in the data grid area will bring up a context menu:</li>
+                </ul>
+            </li>
+            <p>
+                <img src="../../Resources/Images/Allocation Size/Functionality Notes_1.png" />
+            </p>
+            <p>Click <b>Save Layout</b> to launch the Save Layout dialog:</p>
+            <p>
+                <img src="../../Resources/Images/Allocation Size/Functionality Notes_2.png" />
+            </p>
+            <p>Enter a Name for the layout, an optional Description, and a privacy option – Private, Public, or Shared (if Shared, click <img src="../../Resources/Images/Allocation Size/Functionality Notes_3.png" /> to define the users with which to share the layout). If you wish to make the layout you are saving the Default system layout for the current view, check Default. Click OK and then the layout will be saved for future recall</p>
+            <li>
+                <b>Restoring</b>: right click as shown in Saving, above, to bring up the context menu:</li>
+            <p>
+                <img src="../../Resources/Images/Allocation Size/Functionality Notes_4.png" />
+            </p>
+            <p>Click Restore Layout then choose the layout you wish to recall to switch the view to the chosen layout<ul><li><b>Open/Export</b>: right clicking anywhere in the data grid area will bring up a context menu:</li></ul></p>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/Allocation Size/Functionality Notes_5.png" />
+        </p>
+        <p>Click Open/Export and then click the desired format; note that Open will open the data from the view directly in the application associated with the chosen format whereas Export requires the user to name and save the file and DOES NOT immediately open the data in the associated application.</p>
+    </body>
+</html>

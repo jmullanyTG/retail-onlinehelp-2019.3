@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="1560" MadCap:lastWidth="1205">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Create a Pricing Plan</h1>
+        <p>You create Pricing Plans on the Home screen of the Price Manager module. Additional products and sites may be configured at a later time. </p>
+        <p MadCap:conditions="General.Temp Exclude">The level at which Price Actions will be created for a new Pricing Plan is dictated by the system policy <b>Product Pricing Level</b> and is indicated on the Pricing Plan Information tab as follows:</p>
+        <p MadCap:conditions="General.Temp Exclude">
+            <img src="../../Resources/Images/Price Planning/Price Action levels in Pricing Plans.PNG" />
+        </p>
+        <p MadCap:conditions="General.Temp Exclude">The possible values are:</p>
+        <ul MadCap:conditions="General.Temp Exclude">
+            <li>Variant by Site</li>
+            <li>Item by Site</li>
+        </ul>
+        <h2>The Create New Plan dialog </h2>
+        <p>Within the Price Manager Home screen, click <b>New</b> to create a new pricing plan, enter the required fields and click <b>OK</b>. </p>
+        <p MadCap:conditions="General.Temp Exclude">
+            <img src="../../Resources/Images/Price Planning/Create Pricing Plans.png" />
+        </p>
+        <h2>Field Descriptions</h2>
+        <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">
+                        <p style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">
+                        <p style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Plan Name </p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The display name of the pricing plan.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Plan Description </p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>An optional description of the pricing plan.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Start Date </p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>
+                         Select a future date that associated pricing actions will be defaulted to. The system will default the start date and restrict selection of an earlier date, by a ‘globally’ configured number of days forward from today. Special permissions (i.e. Emergency Pricing) will allow you to override this restriction and allow selection of tomorrow at the earliest. </p>
+                        <p>When modifying the Plan Start Date, the system will restrict moving the date forward any further than by any Pricing Action Start Date.</p>
+                        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">: <br />Original Plan Start Date = 01/01/2016<br />Earliest Price Action Start Date (already exported) = 02/01/2016<br />Result: System will not allow a new Plan Start Date greater than 02/01/2016 
+                    </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Variant Filter </p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                         Select a preconfigured filter form the drop down or alternatively click <b>Maintain Filter</b> to configure a new one to designate the products to be used within the pricing plan's action(s). This will be the initial set of products to be added to the price action. Additional products may be added or removed at a later time. 
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p> Site Cluster Set </p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Site Cluster Sets are available based on Site Clustering configuration.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1" MadCap:conditions="General.Temp Exclude">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Product Pricing Level</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>A drop down menu with the following options:</p>
+                        <ul>
+                            <li>Variant Site Plan</li>
+                            <li>Item Site Plan</li>
+                        </ul>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">This field only displays when system policy <b>Product Pricing Level</b> is set to <b>Variant\Site and Item\Site Pricing</b>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2859" MadCap:lastWidth="1244">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Assortment Planning </h1>
+        <p>The following enhancements are now available in the Assortment Planning solution. </p>
+        <h2>Managing Assortments from the top down <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">EPIC 59422</MadCap:conditionalText></h2>
+        <p>Demand Management v2019.3 introduces the ability to manage Assortments top down via a new view labeled <b>Top Down Sales Plan</b>. The <b>Top Down Sales Plan</b> view has been added to the Visualize section on the top toolbar. This new view allows users to:</p>
+        <ul>
+            <li>change one or many items at a time in one place</li>
+            <li>modify values at a total level which then spreads proportionate to sales</li>
+            <li>see how sales changes affect stock/receipts</li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Changes that are saved are then updated to the individual item plan.</p>
+        <h2>Setting default time periods between a markdown date and a phase out date <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-61862</MadCap:conditionalText></h2>
+        <p>A new column labeled <b>Number of Markdown Periods</b> has been added to the <b>Manage Assortment Defaults</b> screen. Setting a value in <b>Number of Markdown Periods</b> sets a standard default time period between markdown and phase out dates meaning pre-season plans are more consistent and more accurately account for markdown sales during planning. The default is used to determine what the phase out date should be from the markdown date, once a user enters a markdown date during Placeholder creation.</p>
+        <p>For example, if the default is 4 and the markdown date is 4/29, then the phase out date will be 5/27 which is four weeks post markdown.</p>
+        <h3>Linking markdown and phase out dates <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62359</MadCap:conditionalText></h3>
+        <p>Markdown and phase out dates can be linked together by selecting a new column labeled <b>Markdown Offset Lock</b>. Selecting <b>Markdown Offset Lock</b> ensures the two dates work dependently on each other ensuring users can accurately plan the entire life of the item including markdowns.</p>
+        <ul>
+            <li>If the user changes <b>Markdown Date</b>, then the value in <b>Phase Out</b> automatically changes to keep the specified number of periods between them.
+</li>
+            <li>If the user changes <b>Phase Out</b>, then the value in <b>Markdown Date</b> automatically changes to keep the specified number of periods between them.</li>
+        </ul>
+        <p><b>Markdown Offset Lock</b> can be selected on the <b>Hindsight</b> and <b>Manage Assortment Defaults</b> screens.</p>
+        <h2>New and revised Sell Through metrics in to the Main Planning View <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-61865</MadCap:conditionalText></h2>
+        <p>To assist in the planning of the Sell Through % prior to markdown and markdown to phase out, three new Sell Through metrics have been added to the Main Planning View for both Placeholder and Collection modes and one existing Sell Through metric has been revised. The metrics are:</p>
+        <ul>
+            <li>Target S/T %</li>
+            <li>S/T %</li>
+            <li>Reg S/T %</li>
+            <li>S/T % Delta</li>
+        </ul>
+        <h2>Using default ratios to automatically plan post-markdown sales units amounts <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62651</MadCap:conditionalText></h2>
+        <p>Default ratios can now be set using a new column labeled <b>Markdown Sales Plan Factor</b> that has been added to the <b>Manage Assortment Defaults</b> screen. This new column lets users automatically plan post-markdown sales units amounts to more efficiently plan Assortments.</p>
+        <h2>Preventing the system from ordering additional stock past the planned markdown date <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-60239</MadCap:conditionalText></h2>
+        <p>When set to <b>False</b>, a new system policy labeled <b>Allow Receipts After Markdown</b> (Maintain &gt; Policies &gt; Engine: Commitments) prevents the system from ordering additional stock past the planned markdown date. The default is <b>False</b>. Set the system policy to <b>True</b> if additional stock should be ordered beyond the planned markdown date.</p>
+        <h2>Reviewing pre-markdown and post-markdown metrics in Placeholder mode<MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-61501</MadCap:conditionalText></h2>
+        <p>The following columns have been added to the grid in the Placeholder mode allowing users to review pre-markdown and post-markdown metrics:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Metrics added for 2019.3.PNG" />
+        </p>
+        <h2>Reviewing markdown planning changes in the <b>Hindsight Placeholder Management</b> screen <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-61706</MadCap:conditionalText></h2>
+        <p>A new column labeled <b>Markdown</b> has been added to the <b>Hindsight Placeholder Management</b> screen. The new column is located between the phase dates.</p>
+        <h2>Reviewing placeholders with a markdown date <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62458</MadCap:conditionalText></h2>
+        <p>If you select a Placeholder with a markdown date, then the Cluster Sets view refreshes to display a View Style drop down at the top of the view. </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Cluster Set View View Style option.PNG" />
+        </p>
+        <p>The View Style drop down has the following:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Default</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Displays the Totals</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Markdown</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Allows you to view regular and markdown values separately</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">All</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Displays all values for an overall view</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Setting the maximum date for a Target <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62717</MadCap:conditionalText></h2>
+        <p>A new mandatory field has been added to the Target Creation module. The drop down menu for the new field has two options: <b>Phase Out Date</b> and <b>Markdown Date</b>. The default is <b>Phase Out Date</b>.</p>
+        <ul>
+            <li>If a user selects Phase Out Date, then the maximum date will be the phase out date.</li>
+            <li>If a user selects Markdown Date, then the maximum date will be the Markdown Date, and Phase Out will be calculated based on the default markdown logic.</li>
+        </ul>
+        <h2>New visibility to the difference between internal commitments and external orders <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62314</MadCap:conditionalText></h2>
+        <p>A new metric labeled <b>On Order Exception</b> has been added to the <b>Assortment Receipt Plan</b> view. This new metric displays the discrepancy when the internal and external order quantities and dates do not match exactly.</p>
+        <h2>Hold Sales function revised for markdown items <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62374</MadCap:conditionalText></h2>
+        <p>Hold Sales functionality has been revised to not redistribute sales during a markdown period to ensure that the Total Sales for a plan is preserved while applying a promotion.</p>
+        <h2>Supplemental Commitments <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-64483</MadCap:conditionalText></h2>
+        <p>You can make supplemental commitments during a period within which an existing commitment order already exists. These additional commitment orders are supplemental and are neither an update nor a replacement. The ability to create a supplemental commitment is controlled by the Allow supplemental commitments system policy.</p>
+        <h2>Placeholder description field <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62526</MadCap:conditionalText></h2>
+        <p>A new field labeled <b>Placeholder Desc</b> has been added to the Sales Plan view and the Receipt Plan view.</p>
+    </body>
+</html>

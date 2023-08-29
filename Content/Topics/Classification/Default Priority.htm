@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Default Priority</h1>
+        <p>Setting the default priority is an important step to establish a baseline for the task. There are several options for doing so:</p>
+        <ul>
+            <li>Do Not Set Priority – The task will not change the default priority. </li>
+            <li>Set Priority To Specified Value – This will assign the priority of all items to a single priority. </li>
+            <li>Calculate Priority Based On Input Values – This will use selected parameters to define the priority.<ul><li>Prioritize Based On ___ Days – This will set the number of days of historic demand or projected demand the calculation is done. It is common to set this to 365.</li><li>Entity – Allows users to choose the entity type for classification (inventory, item master, or site).</li><li>Contribution – Contribution may be set to historic demand or forecasted demand.</li><li>Classify Based on – Determines the inventory metric by which the classification is made. May be one of the following:<ul><li>Classify Based On Unit Contribution – This will be based on gross volume of units. Expressed as (Value * 1).</li></ul><ul><li>Classify Based On Cost On Cost Of Sales Contribution – Based on the cost of the volume of units. Expressed as (Value * DefaultCostPrice).</li></ul><ul><li>Classify Based On Sales Revenue Contribution – Based on the sales revenue of the volume of units. Expressed as (Value * DefaultSellingPrice).</li></ul><ul><li>Classify Based On Margin/Profit Contribution – Based on the profit margin of the volume of units. Expressed as (Value * (DefaultSellingPrice – DefaultCostPrice))</li></ul></li></ul><ul><li>Group By – Will determine the entity by which the classification is grouped. </li><li>Include Site Transfers – Site transfers will be included if checked. This is important to consider if the site is a distribution center. As stated in the tooltip, “If prioritizing based on sales, previous receipted site transfers will be included in the calculation. If prioritizing based on forecast, projected site transfers and existing outstanding orders will be included. </li></ul></li>
+        </ul>
+        <p>The percent contributions for each priority may be adjusted and a running total will be displayed at the bottom of the table. Immediate changed are also reflected in the pie graph. </p>
+    </body>
+</html>

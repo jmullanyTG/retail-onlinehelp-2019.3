@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Substituting size curves</h1>
+        <p>To substitute one site’s curve for another:</p>
+        <ol>
+            <li>Select the size curve header you want to make substitutions in from the list in the top area of the Size Curves Screen.
+				<p><img src="../../../Resources/Images/Allocation Size/Making Size Curve Substitutions.png" /></p></li>
+            <li>Ensure the Override Allowed? field is checked.
+				<p><img src="../../../Resources/Images/Allocation Size/Making Size Curve Substitutions_1.png" /></p></li>
+            <li>In the lower area of the Size Curves screen, select the desired site from the drop-down menu in the Override Site field of the site whose curve you want to override then click Save.
+			<p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">sites that have an Override Site assigned and Saved will not appear for selection in the Override Site drop-down menu</p><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">to clear the Override Site prior to Saving, simply select the drop-down entry with a blank Site ID and No Substitution in the Description</p></li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Allocation Size/Making Size Curve Substitutions_2.png" />
+        </p>
+        <p>The Contribution values of the overriden site’s size curve will now match those of the Override Site. The Clear Override field will be conditionally formatted <span style="font-weight: bold;color: #E36C0A;">orange</span>, indicating an override has been made.</p>
+        <p>
+            <img src="../../../Resources/Images/Allocation Size/Making Size Curve Substitutions_3.png" />
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Is Eligible? settings for the Override Site will also be copied</p>
+        <p class="error" MadCap:autonum="&lt;b&gt;ERROR: &lt;/b&gt;">if you try to assign an Override Site to a site that is already being used as an Override Site, the following error displays:</p>
+        <p>
+            <img src="../../../Resources/Images/Allocation Size/Making Size Curve Substitutions_4.png" />
+        </p>
+        <p>This is done to prevent circular or difficult to follow logic with the curves being substituted</p>
+    </body>
+</html>

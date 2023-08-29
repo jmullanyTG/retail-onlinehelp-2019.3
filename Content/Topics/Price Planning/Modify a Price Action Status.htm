@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Modify Price Action Statuses</h1>
+        <p>The Price Action Status provides the ability to drive corporate configured processes and associated permissions by roles and users, for each Status, as well as provide communication between Statuses that can be reviewed to understand the lifecycle of the Pricing Action. </p>
+        <h2>Changing Price Action statuses</h2>
+        <p>You can change Price Action statuses by clicking the <b>Change Status(es)</b> button to display a drop-down menu that allows you to change the status of a single Price Action or change the status of multiple Price Action at one time. The ability to change multiple Price Action Statuses at the same time so that the Price Action may proceed in their life-cycle, whether for approval or to send to downstream systems, greatly reduces  the repetition associated with opening and changing the Status for each and every Price Action.</p>
+        <p>The menu options are:</p>
+        <ul>
+            <li>Change Status</li>
+            <li>Change Multiple Statuses</li>
+        </ul>
+        <h3>Change Status</h3>
+        <p>The <b>Change Status</b> menu option is based on the Price Actions selected in the List grid. Selecting this option opens the <b>Change Status</b> dialog. </p>
+        <p>
+            <img src="../../Resources/Images/Promotion Management/Change Promotion Status_1.png" />
+        </p>
+        <p>This menu option is enabled when:</p>
+        <ul>
+            <li>The Price Action Start Date is today or in the future.</li>
+            <li>The Price Action State is not <b>Calculation Required</b>.</li>
+            <li>The user has User Rights to modify the Price Action status in its current Workflow Status State.</li>
+            <li>The User has permissions to the next Workflow Transition.</li>
+        </ul>
+        <h3>Change Multiple Statuses</h3>
+        <p>The <b>Change Multiple Statuses</b> menu option is based on ALL the Price Actions displayed in the List grid. Selecting this option opens the <b>Change Statuses</b> dialog. </p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Change Multiple Price Action Statuses.PNG" />
+        </p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Price Action ID (Read Only)</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The Price Action unique identifier</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Price Action (Read Only)</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The Price Action name</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Workflow Name (Read Only)</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The Price Action Workflow</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Price Action Status</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Selecting this field displays a drop-down with the next available Status for the assigned Price Action's Workflow that the user has been provided access.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Owner</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Selecting this field displays a drop-down populated with all Users and Roles that are not disabled and not deleted. The list is filtered by Users that have the right to edit Price Actions.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> The purpose of changing the Price Action Owner is to assign the Price Action to another user for additional work or review and approval.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Message</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">An editable text field used for capturing the reason for the Status change or a message to the newly selected owner.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>This menu option is enabled unless any one of the following criteria is true: </p>
+        <ul>
+            <li>All Price Actions have a Start Date that is in the past.</li>
+            <li>All  Price Actions have a State of <b>Calculation Required</b>.</li>
+            <li>The User does not have permissions to modify Price Action status during the current Status State for all Price Actions.</li>
+            <li>The User does not have permissions to the next Workflow Transition, for all Price Action.</li>
+        </ul>
+    </body>
+</html>

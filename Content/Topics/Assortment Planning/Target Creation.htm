@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="3776" MadCap:lastWidth="1354">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Creating Scenarios with Target Creation</h1>
+        <p>Selecting the Target Creation button in the Assortment Planning module opens the Scenario Manager. Within Scenario Manager, users can access scenarios relevant to an intersection of the plan product and site hierarchies and a window of time. Users can create as many scenarios as they wish, but only one can be in active use within a plan for a given intersection of product, site, and time. This screen helps users quickly identify scenarios currently in use through scenario status and conditional formatting, and also provides details about selected scenarios without having to edit them.</p>
+        <h2>Target details screen</h2>
+        <p>Selecting New, Copy, or Edit displays a Target Creation screen which includes the following sections: Target Data Selection, Target Segment Definitions, and Target Worksheet.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Target Creation Worksheet screen.PNG" />
+        </p>
+        <p>For more information on this screen, see:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Target Data Selection.htm">Target Data Selection pane field descriptions</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Target Segment Definitions.htm">Target Segment Definitions field descriptions</MadCap:xref>
+            </li>
+        </ul>
+        <h2>Creating new targets</h2>
+        <p>To create a new target:</p>
+        <ol>
+            <li>
+                <p>Click <b>New</b> to launch the <b>Target Creation (new)</b> window.</p>
+                <p>
+                    <img src="../../Resources/Images/Assortment Planning/Target Creation New screen.png" />
+                </p>
+            </li>
+            <li>
+                <p>Complete the fields in the <b>Target Data Selection</b> pane as required.</p>
+                <p>For information on the fields, refer to <MadCap:xref href="Target Data Selection.htm">Target Data Selection pane</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>Click <b>Save</b>.</p>
+                <p>The <b>Target Creation</b> screen displays.</p>
+                <p>
+                    <img src="../../Resources/Images/Assortment Planning/Essential Business Concepts_2.png" />
+                </p>
+            </li>
+            <li>
+                <p>If desired, Click <b>New</b> in the <b>Target Segment Definitions</b> section to create a new Target Segment.</p>
+                <p>For more information on the fields, refer to <MadCap:xref href="Target Segment Definitions.htm">Target Segment Definitions </MadCap:xref>.</p>
+            </li>
+        </ol>
+        <h2>Creating Target Segments</h2>
+        <p>To create a Target Segment:</p>
+        <ol>
+            <li>Display the <b>Target Creation</b> screen by creating a new Target or selecting the <b>Copy</b> or <b>Edit</b> buttons on the toolbar.</li>
+            <li>
+                <p>Complete the fields as required.</p>
+                <p>For more information on the fields, refer to <MadCap:xref href="Target Segment Definitions.htm">Target Segment Definitions </MadCap:xref>.</p>
+            </li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+        <h2>Parameters</h2>
+        <p>The following parameters are available:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Parameter</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Product Hierarchy</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Sets the product hierarchy levels a Target Creation scenario must contain to be shown in the Target Creation Scenarios section. Selectable levels are based on the intersection of the product hierarchy assigned to the current assortment plan and the product hierarchy permissions of the active user.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Site Hierarchy</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Sets the site hierarchy levels a Target Creation scenario must contain to be shown in the Target Creation Scenarios section. Selectable levels are based on the intersection of the site hierarchy assigned to the current assortment plan and the site hierarchy permissions of the active user.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Window of Time</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Sets the window of time a scenario must intersect with to be shown in the Target Creation Scenarios section. Selectable periods are based on those configured in the system down to the Period set for the current assortment plan.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Display Currency</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Sets the currency to display for all revenue based fields in the view; defaults to the Home Currency for the active Assortment Plan.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Toolbar buttons</h2>
+        <ul>
+            <li><b>New</b>: Launches the Target Creation (new) window to create a new scenario.</li>
+            <li>
+                <p><b>Copy</b>: Launches the Target Creation window, populated with the Target Data Selection parameters, Target Segment Definitions, and Segment Cluster Details from the selected scenario in the Target Creation Scenarios section.</p>
+                <ul>
+                    <li>All Target Data Selection and Target Segment Definitions are editable in copied scenarios.</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">To unlock target segment definitions and cluster details for editing, copied scenarios must first be saved. To do this without changing the scenario’s core data structure, simply change the scenario name to a unique name then click <b>Save</b>.</p>
+        <ul>
+            <li>
+                <p><b>Edit</b>: Launches the Target Creation window, populated with all data from the selected scenario in the Target Creation Scenarios section.</p>
+                <ul>
+                    <li>All parameters are editable in scenarios of status Created, Calculated, or Rationalized.</li>
+                    <li>For scenarios of status Smart Started, Target Segment Definitions and Segment Cluster Details can be edited, but doing so will require recalculation, re-Rationalization, and re-Smart Starting for changes to take effect in the active assortment plan.</li>
+                </ul>
+            </li>
+            <li><b>Delete</b>: Deletes the selected Target Creation scenario.</li>
+            <li>
+                <p><b>Compare</b>: Launches the Scenario Comparison window, in which users can compare two Target Creation scenarios.</p>
+                <p>
+                    <img src="../../Resources/Images/Assortment Planning/Parameters_4.png" />
+                </p>
+                <ul>
+                    <li>Standard  Pivot Grid functionality, including ability to graph selected data elements and Export or Open analysis in a variety of popular formats, including Microsoft Excel and Adobe PDF.</li>
+                    <li>Only prerequisite for scenario comparison is that scenarios be in Calculated, Rationalized, or Smart Started status.</li>
+                    <li>Comparisons of scenarios representing disparate parts of the product/site hierarchies and/or windows of time are possible - they are just of limited usefulness.</li>
+                </ul>
+            </li>
+            <li><b>Smart Start</b>: Initiates the Smart Start process for the selected scenario, generating the number of placeholder items required, and seeding with beginning sales plan data elements.</li>
+            <li>
+                <p><b>Fields</b>: Launches the customization dialog.</p>
+                <p>
+                    <img src="../../Resources/Images/Assortment Planning/Parameters_5.png" />
+                </p>
+            </li>
+            <li><b>Save</b>: Commits changes  to the database.</li>
+            <li><b>Cancel</b> : Cancels any changes.</li>
+        </ul>
+    </body>
+</html>

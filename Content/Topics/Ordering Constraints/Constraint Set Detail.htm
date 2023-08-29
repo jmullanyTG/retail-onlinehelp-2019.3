@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Constraint Set Detail</h1>
+        <p>Values will change as users highlight different constraint sets within the header. When building a new constraint it is easy to think of the constraint as the following template sentence:</p>
+        <p style="text-align: left;"><span style="font-style: italic;">Constrain so that “</span><span style="font-weight: bold;font-style: italic;">Constraint Type”</span><span style="font-style: italic;"> is </span><span style="font-weight: bold;font-style: italic;">“Operator”</span><span style="font-style: italic;"> the value </span><span style="font-weight: bold;font-style: italic;">“Constraint Value”</span><span style="font-style: italic;">.</span>
+        </p>
+        <ul>
+            <li><b>Priority</b> – Constraints are applied in order of priority within context of the constraint set. Priority 1 will applied last and may override lower prioritized constraints.</li>
+            <li><b>Constraint Type</b> – The inventory property which is to be constrained. All monetary constraint values apply to the system default currency. One of the following attributes:<ul><li><b>Default Cost Value</b> – A standard cost value. </li><li><b>Default Sell Value</b> – A standard value based on retail price. </li><li><b>Quantity</b> – The quantity of units.</li><li><b>Volume</b> – A volumetric measurement. Volumetric data must be present. </li><li><b>Weight</b> – A weight measurement. Weight data must be present. </li><li><b>Secondary Cost Price</b> – A specific cost type labeled as “secondary cost price”.</li><li><b>Secondary Sell Price</b> – A specific cost type labeled as “secondary sell price”.</li><li><b>Freight Cost</b> – Associated shipping cost for the item or items. </li><li><b>Cost</b> – Overall cost of the order. </li></ul></li>
+        </ul>
+        <ul>
+            <li><b>Operator</b> – The mathematical operator for the constraint. May be one of the following:<ul><li><b>Greater Than</b></li><li><b>Less Than</b></li><li><b>Equal To</b></li><li><b>Equal to Multiple of</b> – Used for basic case pack logic.</li></ul></li>
+        </ul>
+        <ul>
+            <li><b>Constraint Value</b> – Numerical value of the constraint.</li>
+            <li><b>Tolerance Above</b> – Should the system be unable to constrain the value exactly to the correct amount, the tolerance above the value which is considered acceptable. This may be expressed as a percentage, or quantity of units.</li>
+            <li><b>Tolerance Below</b> – Should the system be unable to constrain the value exactly to the correct amount, the tolerance below the value which is considered acceptable. This may be expressed as a percentage, or quantity of units.</li>
+            <li><b>Rounding</b> – For instances when the operator is “equal to multiple of”, acceptable rounding rules must be selected. <ul><li><b>Round Up</b></li><li><b>Round Down</b></li><li><b>Round to Nearest</b></li></ul></li>
+        </ul>
+        <p>Additional fields may be added by including groups of items within the selection. </p>
+    </body>
+</html>

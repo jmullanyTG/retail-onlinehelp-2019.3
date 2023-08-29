@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+         
+    </head>
+    <body>
+        <h1>Lock &amp; Spread</h1>
+        <p>Lock &amp; Spread functionality provides users with the ability to lock Sales and dependent metrics at multiple levels of the product/site hierarchies and time concurrently. Locks at both aggregate and lower levels can be combined to allow for precise fine tuning of the plan without ending up in an endless circle of changes, trying to reach a desired outcome.</p>
+        <h2>Changing product and channel selections</h2>
+        <p>A lock on a product or channel will persist if you change your product and channel selections as long as the aggregate level remains the same. If you change the aggregate level, then the locks are removed. Returning to the original product or channel selection and aggregate level displays the original locks.</p>
+        <h2>Cell Locks</h2>
+        <p>A cell is the intersection at the most granular level the product, channel, and time dimensions. Locking a cell creates a cell lock. The locked cell is highlighted in the grid with a different color from the blue unlocked cells.  </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> If all levels beneath an aggregate level are locked, the aggregate level is locked by default.</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Locked Cell.PNG" />
+        </p>
+        <h2>Aggregate Locks</h2>
+        <p>Aggregate locks are locks engaged at levels above the lowest level in the current view. Depending on the configuration of your view, it is possible to have multiple aggregate level locks engaged beneath a higher aggregate level, such as multiple month level locks beneath a grand total for all time shown in the view. Aggregate locks are indicated in a different color. </p>
+        <p>
+            <img src="../../Resources/Images/MFP/Locked Aggregate.PNG" />
+        </p>
+        <h2> Locks on Selected Data section</h2>
+        <p>Whenever a cell lock or aggregate lock is created, an entry appears in the Locks on Selected Data section detailing the product, channel, and time levels where the lock exists. The Lock Name field also indicates whether the lock is a cell lock or aggregate lock.</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Locks on Selected Data.PNG" />
+        </p>
+        <h2>Converted aggregate locks</h2>
+        <p>In the Product and Channel dimensions, it is quite possible to have an aggregate lock which is not in the hierarchy. If you add another Product or Channel metric, then the aggregate lock becomes a converted aggregate lock. The conversion occurs because the aggregate lock cannot be represented on the screen anymore. As the selection has changed so the Pivot Grid cannot determine a sum total line to put the aggregate lock on and thus redefines the lock as a converted aggregate lock. In the grid, the aggregate lock now displays as separate cell locks over the cells that made up the original aggregate lock and the word Converted is prepended to the lock name in the Locks on Selected Data section.</p>
+        <p>You can unlock individual cells that form part of the converted aggregate lock. If one of the cell locks in the grid that comprise the converted aggregate lock is unlocked, then the converted aggregate lock is deleted and the remaining cells become regular cell locks.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Removing the new metric reverses the conversion and the three cell locks are replaced by the aggregate lock.</p>
+        <h3>Example</h3>
+        <p>The total for the products in week 42 is locked. </p>
+        <p>
+            <img src="../../Resources/Images/MFP/Locked Aggregate weekly total.PNG" />
+        </p>
+        <p>If you add another product metric the aggregate lock is redefined as a converted aggregate lock. </p>
+        <p>
+            <img src="../../Resources/Images/MFP/Lock converted.png" />
+        </p>
+    </body>
+</html>

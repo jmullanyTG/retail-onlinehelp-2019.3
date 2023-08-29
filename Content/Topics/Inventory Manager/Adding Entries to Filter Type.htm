@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Adding Entries to Filter Type</h1>
+        <p>Once views are created (or data tables have been populated), entries must be made to <span class="code_sample">tbl_FilterType</span>. This will determine how the data contained within the view is organized and accessed within the user interface and by the filtering machinery. </p>
+        <ul>
+            <li><b>FilterTypeID</b> – Unique identifier. Will be referenced as the primary key by <span class="code_sample">tbl_Common_Filter_MetaViewData</span>.</li>
+            <li><b>FilterTypeDescription</b> – The grouping for the filter data. </li>
+            <li><b>FilterViewName</b> – Name of the view (or table) which has been created and contains the reference data. </li>
+            <li><b>MetaDataViewName</b> – The reference table containing the metadata. Best practice – set this value to <span class="code_sample">tbl_Common_Filter_MetaViewData</span>.</li>
+            <li><b>PrimaryKeyFieldName</b> – The primary key referenced within the view. </li>
+            <li><b>DuplicateFlag</b> – not used.</li>
+            <li><b>DefaultFlag</b> – If set to “1”, data from this view will be returned within the grid at launch of all document types for the filter entity. </li>
+            <li><b>FilterEntityTypeID</b> – The ID of the filter entity type.<ul><li><b>0</b> – Inventory</li><li><b>1</b> – ItemMaster</li><li><b>2</b> – Site </li><li><b>3</b> – Supplier</li><li><b>4</b> – Customer</li><li><b>5</b> – Promotion</li><li><b>6</b> – KeyItem </li><li><b>7</b> – Event</li><li><b>8</b> – KeyItemVariant</li><li><b>9</b> – File </li><li><b>10</b> – ItemMasterGroup</li><li><b>11</b> – CustomerInventory</li><li><b>12</b> – Variant</li><li><b>13</b> – VariantGroup</li></ul></li>
+        </ul>
+    </body>
+</html>

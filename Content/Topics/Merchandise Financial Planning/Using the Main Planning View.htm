@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4649" MadCap:lastWidth="1117">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Using the Main Planning View</h1>
+        <p>Below are some tips and examples to help the user get the most out of the available functionality in the Main Planning View:</p>
+        <ul>
+            <li>Using Custom Layouts to Your Advantage: with the wide array of metrics available in Merchandise Financial Planning, having the full set visible while working on a plan can be a little overwhelming. Though every planner is different in his/her individual preferences, we have provided a number of standard layouts to serve as starting points to meet each user’s needs.</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2.png" />
+        </p>
+        <p>The example above, the TY Receipt Flow – Detailed layout, focuses the metric selection solely on unit flow from period to period, allowing the user to ensure their receipt strategy adequately accounts for sales and other inventory movements in each period without having to worry about the revenue component until they are ready.</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2_1.png" />
+        </p>
+        <p>Once the user is happy with their unit receipt strategy, they can switch to the TY Receipt Planning view, shown above, to work on their receipt cost, retail and IMU %. This view could easily be modified to include Sales, and BOP/EOP Retail to ensure the receipt revenue strategy yields a positive result through each period.</p>
+        <ul>
+            <li>Aggregation Levels and Tops-Down Planning: when working with large volumes of data, whether it consists of many months, channels, product categories, or a combination of all these, the system can experience slowdown despite our best efforts to prevent it. That said, we have provided aggregation levels to limit the number of data rows the system must work with and display by pre-aggregating data below the selected level. In a tops-down planning environment, these can be utilized to great advantage by taking a tiered approach to working on your plan:</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2_2.png" />
+        </p>
+        <p>In the above example, notice that, with the Product Agg Level set to Category, the Product Level Description pivot field shows Polo (5/5), indicating there are 5 Brands beneath the Polo product category and the view is currently aggregating data from all of them</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2_3.png" />
+        </p>
+        <p>By unchecking one of the Brands in the Product Parameter drop down and re-executing the view, we see the Product Level Description now reads Polo (4/5), indicating data for only 4 of the 5 total levels is aggregated in the view</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2_4.png" />
+        </p>
+        <p>By adopting a systematic approach, we can maintain optimal system performance as we work on progressively more granular levels of the plan by simply changing the aggregation level once we are satisfied with our plan at each level of the hierarchy. In the above example, we’ve changed the aggregation level to Brand, thus allowing us to work on the details of each Brand beneath the Polo category</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2_5.png" />
+        </p>
+        <p>To constrain changes made at the Brand level to the values planned at the Category level, we can employ locking functionality (in this example, done at the total period level for 2017_wk27) as we delve into deeper levels of the plan (see Lock &amp; Spread later in this manual for more info)</p>
+        <ul>
+            <li>Balancing to High-Level Targets Using Weighted Splits: another approach to planning within MFP is working to get all of our lowest level values properly tiered and then entering high-level targets at the end, effectively rebalancing the entire plan while maintaining the overall structure of the work we’ve done below</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2_6.png" />
+        </p>
+        <p>Suppose we’ve spent a great deal of time structuring our sales across the US and the UK, across multiple channels and brands, and then our manager says we need to hit a sales target of $100,000 across the board for 2017_m07</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2_7.png" />
+        </p>
+        <p>By simply entering the desired target value of $120,000 in the Grand Total row for 2017_m07, we can maintain the sales ratios we’ve established at every level from Country to Brand with a minimum of effort</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Practical Application_2_8.png" />
+        </p>
+        <p>If we have certain period level or aggregate level values beneath that we must keep intact, we can use this method in tandem with Lock &amp; Spread functionality to change only unlocked cells to achieve our $120,000 target (see Lock &amp; Spread later in this manual for more info)</p>
+        <ul>
+            <li>
+                <p>Period To-Date/To-Goal Aggregation</p>
+                <p>The following  metrics are available in the Main Planning, Sales by Type, and Comp/Non-Comp views:</p>
+                <ul>
+                    <li>Month TD/TG </li>
+                    <li>Quarter TD/TG</li>
+                    <li>Year TD/TG </li>
+                </ul>
+                <p> Each of these metrics has two components: the to-date (TD) piece is an aggregation of the actualized portion of the period (Month To Date Sales, for example), while the to-go (TG) piece aggregates the remaining planned (but not actualized) portion of the period. </p>
+                <p>For example, assume a planned monthly sales goal of $100,000. If after 3 weeks there have been $65,000 in actualized sales, the Month TD value would be $65,000 and the Month TG value would be $35,000.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">TD/TG metrics for non-standard periods (Half, Season, etc.) require additional configuration.</p>
+                <p>To add period to-date/to-goal aggregations to your view:</p>
+                <ol>
+                    <li>
+                        <p>Click Fields in the view toolbar.</p>
+                        <p>
+                            <img src="../../Resources/Images/MFP/Fields.png" />
+                        </p>
+                    </li>
+                    <li>
+                        <p> Drag the desired period TD/TG metrics to the Column Area of the layout.</p>
+                        <p>
+                            <img src="../../Resources/Images/MFP/column layout.png" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Click OK. The aggregate TD/TG columns are now available in your view.</p>
+                        <p>
+                            <img src="../../Resources/Images/MFP/MTD.png" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Create a new Promotion</h1>
+        <p>If there is no Promotion available that is appropriate for a particular Slot, a new Promotion can be created from both the List and Layout views. This can be done by navigating to an open Slot and clicking Promotion New. Selecting this button will open the New Promotion Wizard window. Enter the required fields and click Save and Close.</p>
+        <p>
+            <img src="../../Resources/Images/Campaigns and Events/Create a new Promotion.png" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">
+                        <p style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">
+                        <p style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Promotion Name (<span style="color: #FF0000;">Required</span>)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter the Promotion Name following your corporate standard naming, if applicable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Start Date (Read Only)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Will default to the Event Ad Start Date or the Event Sale Start Date depending on the Global Policy setting ‘Default new Promotion with Event date range’.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>End Date (Read Only)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Will default to the Event Ad End Date or the Event Sale End Date depending on the Global Policy setting ‘Default new Promotion with Event date range’.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Workflow (<span style="color: #FF0000;">Required</span>)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Modify the default Workflow if desired for the Promotion.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Price Cluster Set (<span style="color: #FF0000;">Required</span>)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select the appropriate Site Cluster Set for the Promotion. The Site Cluster Set loaded to the Promotion will be determined based on the Site Cluster Set start date and Promotion Start Date. This user may customize the Promotion for each Site Cluster in the Promotion Detail screen.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Promotion Strategy (<span style="color: #0070C0;">Optional</span>)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select a default Promotion Strategy for the Promotion from the drop down list. Populated with available Promotion Strategies defined in the Promotion Configuration Promotion Strategy area. When modifying the Promotion, the Promotion Strategy can changed for one or more Site Clusters.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Private, Public, Shared </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The default privacy option is Public. You can change the default if you wish to designate certain promotions as sensitive and restrict the ability for other users to view the promotion. Selecting Shared restricts viewing the promotion to certain users/roles.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Display Grid Fields (<span style="color: #0070C0;">Optional</span>)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The display grid on the left pane will show pricing fields that have been configured for the selected Promotion Strategy. If an editable field is available, this will allow the user to input a Promotion level value to apply across all Site Clusters. This can be customized at the Site Cluster level in the Promotion Detail screen.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p>Products (<span style="color: #0070C0;">Optional</span>)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>If a Promotion Strategy has been specified, products may be added to the Promotion. These Products will apply to all Site Clusters in the Promotion. They may be customized per Site Cluster in the Promotion Detail screen. Depending on the type of strategy selected the manner in which products are added differs.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Once all of the required information has been entered in the Promotion, click <b>Save and Close</b>. After the Wizard closes, the user will either return to the Event Slot Set or will be directed to the Promotions solution Promotion Detail screen depending on the Global Policy ‘Go to Promotion Module after Promotion creation’. </p>
+        <p>If the Promotion Detail screen is displayed, further modifications to the Promotion can be made here. If the Events solution is displayed, the user can navigate to the Promotion in the Event and click on <b>View</b> to make changes. Content may be entered specifically for the Event by clicking on <b>Content</b>. For more information, See <a href="Content Editor.htm">Content Editor</a>.</p>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Site Status</h1>
+        <p>Site status refers to when a site will be open (such as a new store opening) or closed (such as for remodeling or permanent closure). The system uses site status to generate accurate forecasts and order recommendations, so it is important to keep sites updated with status changes as they are planned.</p>
+        <p>The Site Status tab contains a grid listing when the status of a selected site is scheduled to change. Each upcoming status change is listed as a row in the grid. </p>
+        <p>
+            <img src="../../Resources/Images/Inventory Manager/Adding a site status -save.png" />
+        </p>
+        <h2>Site Status Fields</h2>
+        <p>To add fields to the grid, click <b>Fields</b> in the Entry toolbar. </p>
+        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" style="width: 271px;" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Code</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The numeric site code of the selected site.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site ID</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The site identification number.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Status</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Identify if the site is open or closed during this period.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Status Attribute</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Describes the reason for the status change and specifies if the orders are accepted at the site during this period.</p>
+                        <p>Examples:</p>
+                        <ul>
+                            <li>Remodel (accepting orders)</li>
+                            <li>Expansion (no orders)</li>
+                            <li>Permanently closed</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Notes</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Optional user-entered notes.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Status Temporal ID</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The site status temporal identification number.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Status Start Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The date on which this status is to go into effect.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Status End Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">The date on which this status is to end.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>To Add a New Status Entry for a Site</b>
+        </p>
+        <ol>
+            <li>Open a Site Manager document containing the desired site.</li>
+            <li>Select the site in the document grid. Make sure that the Details pane is displayed.</li>
+            <li>
+                <p>From the Site Status tab, locate the Entry toolbar, and click <b>New</b>. A new row is added to the grid below.</p>
+                <ul>
+                    <li>From the Site Status and Site Status Attribute fields, select the desired values. </li>
+                    <li>From the Status Start Date and Status End Date fields, select the desired start date and (if there is one) end date for the status .</li>
+                    <li>In the Notes fields, enter any notes for the status change (optional).</li>
+                </ul>
+            </li>
+            <li>Click <b>Save</b> to save the change and populate the entry's ID values.</li>
+        </ol>
+        <p><b>To Modify a Status Entry for a Site</b>
+        </p>
+        <ol>
+            <li>Open a Site Manager Document that contains the  site you wish to modify.</li>
+            <li>Select the site in the document grid. The Details pane displays.</li>
+            <li>Click the <b>Site Status</b> tab, and modify the entry as desired.</li>
+            <li>In the Entry toolbar, click <b>Save</b>.</li>
+        </ol>
+        <p><b>To Delete a Status Entry from a Site</b>
+        </p>
+        <ol>
+            <li>Open a Site Manager Document that contains the  site you wish to modify.</li>
+            <li>Select the site in the document grid. The Details pane displays.</li>
+            <li>Click the <b>Site Status</b> tab, and select the status you want to delete.</li>
+            <li>In the Entry toolbar, click <b>Delete </b>to remove the entry from the grid.</li>
+            <li>In the Entry toolbar, click <b>Save</b>.</li>
+        </ol>
+        <h2>Example</h2>
+        <ul>
+            <li>
+                <MadCap:xref href="Example - Confirming Open Dates for New Sites.htm">Example - Confirming Open Dates for New Sites</MadCap:xref>
+            </li>
+        </ul>
+    </body>
+</html>

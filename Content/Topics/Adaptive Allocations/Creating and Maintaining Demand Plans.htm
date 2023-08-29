@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2011" MadCap:lastWidth="1259">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Creating and Maintaining Demand Plans</h1>
+        <p>Demand Plans are created and maintained within the Demand Plan screen within Adaptive Allocations. Within the detail configuration section, users are able to configure the demand source, and the relevant parameters associated with the source. </p>
+        <p>
+            <img src="../../Resources/Images/Adaptive Allocations/Demand Plan screen.PNG" />
+        </p>
+        <h2>Fields</h2>
+        <ul>
+            <li><b>Demand Plan Name</b> – The unique name for the demand plan. Will be used to look-up demand plans within the scenario plan configuration screen. </li>
+            <li><b>Demand Plan Description</b> – Optional description for the demand plan. </li>
+            <li><b>Demand Source</b> – Displayed value for the demand source selected. </li>
+            <li><b>Product Hierarchy</b> – The system policy selected product hierarchy for use within the module. This product hierarchy should be configured to cover the product dimension from top to bottom. It should be consistent with hierarchies in use within any financial planning functions. </li>
+            <li><b>Product Hierarchy Selection</b> – The sampled level within the product hierarchy. </li>
+            <li><b>Time Frame</b> – Defines the desired periods of history (Rolling WOC only) to be used when creating the demand plan target values. </li>
+            <li><b>Access Level</b> – Used to define user access to the demand plan. This will control its visibility in this screen as well as restrict its selection for use within a scenario plan. <ul><li><b>Public</b> – Available to all users within the application. </li><li><b>Private</b> – Available only to the creator.</li><li><b>Shared</b> – Available to only specific users. </li></ul></li>
+            <li><b>User Select</b> – If set to a shared access level, the list of shared users. </li>
+        </ul>
+        <h2>Detail Configuration section</h2>
+        <p>For information on the <b>Detail Configuration</b> section, see the relevant demand source:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Financial Plan.htm">Financial Plan</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Location Plan.htm">Location Plan </MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Rolling WOC.htm">Rolling WOC</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="User Target Value.htm">User Target Value</MadCap:xref>
+            </li>
+        </ul>
+        <h2>Demand Plan Results section</h2>
+        <p>Once a demand plan has been associated to a scenario plan (and thus associating values within the site dimension via a location strategy) and calculating the results, users are able to view the by store need target values in the <b>Demand Plan Results</b> section.</p>
+        <p>Users may view different linked scenario plans by selecting them in the scenario plan drop-down menu. </p>
+        <p>
+            <img src="../../Resources/Images/Adaptive Allocations/Demand Plan Results_1.png" />
+        </p>
+        <ul>
+            <li><b>Scenario Plan</b> – A drop down list of all scenario plans associated with the highlighted demand plan. </li>
+            <li><b>Site Code</b> – The unique code for the site. </li>
+            <li><b>Site Description</b> – Description for the site. </li>
+            <li><b>Need Target</b> – The total need target for the site based on the demand plan. </li>
+            <li><b>Site Groups 1-20</b> – Optional groupings used within the location dimension may be returned (e.g. channel, etc.) to further assist with need target validations. These values will appear based on names specified as part of the common table definition process during the solution design. </li>
+        </ul>
+        <p>Demand plan results are calculated in a common “base currency” instead of unit targets to better represent coverage across a category with a diversity of AUR/AUC values. </p>
+    </body>
+</html>

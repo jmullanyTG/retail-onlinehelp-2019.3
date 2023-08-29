@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Field Definitions</h1>
+        <ul>
+            <li>
+                <b>View Name</b> – The name for the selected view. View names do not need to be unique within the view group, but it is highly suggested to add some manner of unique identifier to the view name for ease of navigation in the future. View groups may be created and maintained in the view groups pane to the left of the view creation/edit window.</li>
+            <li>
+                <b>View Description</b> – A simple description of the view. May include author or date if desired.</li>
+            <li>
+                <b>View Type</b> – Will determine the layout possibilities for the widgets contained within the view. Requirements will vary depending on the number of widgets. <ul><li><b>Vertical Widget Layout</b> – Will stack the widgets vertically based on the order provided in the widgets pane below. If the view contains only one widget, it is common to see this view type selected.</li><li><b>Tabbed Widget Layout</b> – Will create a tab style layout similar to those provided by the view collections. </li><li><b>Layout Controlled Widget Layout</b> – The most customizable layout, allowing for much greater customization and configuration of the view. If selected, the widget order will become irrelevant and the user will be able to “drag and drop” elements within the views to manipulate the widgets, scroll bars and separators to best frame the workflow process. </li></ul></li>
+            <li>
+                <b>Hide Parameters</b> – If there are required parameters for the view to pass to the database to retrieve data, they will be displayed near the top of the view. If it is preferred to hide the parameter section to accommodate more screen space, this box may be checked.</li>
+            <li>
+                <b>Auto Refresh on Parameter Change</b> – In cases where it is intended for the users to toggle between several parameters within the same view, the “auto refresh on parameter change” may be selected to make the entire view refresh without the need to click the “execute” button. </li>
+            <li>
+                <b>Auto Refresh on Widget Parameter Change</b> – Will refresh data when a parameter within a widget changes. </li>
+            <li>
+                <b>Allow Update Method Parameter Value</b> – In situations where there are more than one parameter and they are dependent upon one another, selection of this box will allow the parameters to update if there is a change to one or the other. </li>
+            <li>
+                <b>Allow Use and Save User View Parameter Values</b> – If selected, will save the parameters when the view is closed and reopened. </li>
+            <li>
+                <b>Widgets</b> – The widget pane will display the widgets selected for inclusion in the view. <ul><li><b>Widget Name</b> – The assigned name as defined in the “maintain widgets” configuration sub-menu.</li><li><b>Widget Description</b> – The assigned description as defined in the “maintain widgets” configuration sub-menu.</li><li><b>Order</b> – For vertical widget layouts and tabbed widget layouts, this will determine the order in which the widgets appear in the view. The lowest number will be stacked near the top in a vertical layout and near the left in a tabbed layout. </li></ul></li>
+            <li>
+                <b>Assign Access Rights</b> – This button will bring up the included and excluded roles and users wizard commonly used throughout Demand Management. Roles or specific users may be granted access to this view or restricted as required. If users are having trouble finding a needed view, this is a common troubleshooting spot to check. </li>
+            <li>
+                <b>Parameter Sequence</b> – The parameter sequence pane will display the parameters required for each of the widgets listed in the above widgets pane. <ul><li><b>Parameter Name</b> – The assigned name as defined in the “maintain parameters” configuration sub-menu.</li><li><b>Widget Name</b> – The name of the widget for which the parameter is a requirement. </li><li><b>Sequence</b> – The order in which the parameters are displayed (left to right) across the top of the screen.</li></ul></li>
+            <li>
+                <b>Refresh</b> – Will refresh the changes made to reflect the new preferences for the view. </li>
+        </ul>
+    </body>
+</html>

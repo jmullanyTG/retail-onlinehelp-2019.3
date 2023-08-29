@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4669" MadCap:lastWidth="1193">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Allocation Strategy grid field reference</h1>
+        <p>The following fields are available in the Allocation Strategy grid:</p>
+        <ul>
+            <li><b>Calculate Allocation</b> – button will be orange if there are changes made to the allocation strategy. </li>
+            <li><b>Create Save Point</b> – Gives users the ability to create a Save Point. If a user selects Create Save Point for a particular strategy and then clicks Save, the system takes all the information relating to the strategy including location exceptions and saves the setings for the strategy. Users can then go to the Allocate Strategy Save Point screen and mass apply a Save Point to all the variants in the Item Filter.</li>
+            <li><b>Rollup</b> – The rollup view button embedded within the allocation strategy screen will launch a context sensitive rollup view containing information on the highlighted strategy. This rollup view will present a more narrow focus when compared to the allocation rollup screen.</li>
+            <li><b>Active Flag</b> – Checked if the strategy is currently active.</li>
+            <li><b>Allocate Strategy ID</b> – A unique identifier for the strategy line. Any active product groups will also be assigned a unique allocate strategy ID. </li>
+            <li>
+                <p><b>Code</b> – The identifying code for the level ID associated with the strategy. This code will be the item master group code of the hierarchal level defined in the allocation hierarchy. </p>
+            </li>
+            <li><b>Description</b> – A description accompanying the code. This description will be the item master group description of the hierarchal level defined in the allocation hierarchy.</li>
+            <li>
+                <p><b>Allocation Strategy Selection</b> – This will define the strategy bucket used to classify the strategy. Typically, these strategy selections will be determined by product lifecycle status. This field will drive which exceptions are triggered, how some of the settings are applied, and which process (Allocations or Replenishment) manages the item. </p>
+                <ul>
+                    <li><b>New Item</b> – An item without sales history, or with a minimal volume of sales history data which has been deemed insufficient to drive allocation measures. The “new item” strategy selection may be used to drive initial load supply chains (e.g. circumventing regional distribution centers). The individual supply chain mapping configuration for the different strategy selection values is maintained in the Supply Chain Map Configuration maintenance view). New Items are managed by the Allocations engine.</li>
+                    <li><b>Ongoing Item</b> – An item which has multiple points of sales history data. This item may have a re-trending method applied to the sales projection. Ongoing items are managed by the Allocations engine.</li>
+                    <li><b>Replenishment</b> – An item which no longer needs to be managed at the strategy level and may be put on an automated replenishment strategy. Replenishment items are managed by the Replenishment engine, which takes over responsibility from the Allocations engine for executing processes and providing item-related information. When this option is selected and saved, the strategy line becomes read-only. </li>
+                </ul>
+            </li>
+            <li><b>Item Exceptions</b> – Any and all item level exceptions which have been triggered will appear in this field. Multiple exceptions may be viewed in the exception detail view. </li>
+            <li><b>Product Models</b> – The product models field will display the selected model or models. These may be adjusted by clicking on the ellipses to launch the product model selection wizard. </li>
+            <li><b>Supply Chain</b> – Shows the supply chain used in the allocation strategy line. Allocation Strategy Selection determines the supply chain used, and each Strategy can have its default supply chain configured in the Configure Engine Chain view.</li>
+            <li><b>Size Curve Assignment – </b>The size curve assignment filed will display the selected size curve for the strategy. A listing of available size curves is presented as part of a drop down menu.  </li>
+            <li>
+                <p><b>Presentation Priority – </b>Presentation priority allows users to define how presentation quantities are treated within an allocation strategy. </p>
+                <ul>
+                    <li><b>Demand / Presentation</b> – Will prioritize the planned demand for all locations over presentation minimums. </li>
+                    <li><b>Presentation / Demand</b> – Will fulfill minimum presentation requirements for all locations before addressing demand. </li>
+                    <li><b>Order Multiple / Presentation / Demand</b> – Will prioritize coverage to ensure all locations receive units, then will fulfill minimum presentation requirements for all locations, then will address demand. If there is not enough stock available to cover all stores, then global site priority is used to determine which stores get coverage.</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Demand Type</b> – Demand type will determine the driver for the demand signal. This setting will also determine which fields within the allocation strategy are and are not relevant to shaping the demand signal. </p>
+                <ul>
+                    <li><b>Total Sales Quantity</b> – Will set a total quantity of projected sales based on the sales plan (Total Sales Demand).</li>
+                    <li><b>Rate of Sale</b> – For use with rate of sale type plans. </li>
+                    <li><b>Total Available Quantity</b> – Allocation based on total available quantity</li>
+                    <li><b>Total Push</b> – Will allocate all available inventory in the selected inventory sources at one time.  A specific quantity to push can be designated by entering a value in the “Push Qty” field. Total push demand type will prioritize the movement of stock from the DC and will violate store level constraints or ideal stock quantities such as phase in, phase out, and max stock. </li>
+                    <li><b>Rate of Sale by Grade</b> – For users with access to the Demand Management Rate of Sale Calculator module, a rate of sale value by cluster grade may be applied to individual locations. A location strategy of “cluster based” must be specified, and site clusters must be selected to define the location strategy for this demand type. Included grades by cluster set must be configured within the allocate cluster rate of sale view.</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Re-Trend Method</b> - The method to use for obtaining a retrend forecast for the allocation strategy.</p>
+                <ul>
+                    <li><b>Default</b> - Uses the option set in the Default Forecast Retrend Method To Use system policy.</li>
+                    <li><b>PID</b> - Use the standard retrend calculation to create a retrend forecast.</li>
+                    <li><b>Monte Carlo</b> - Use the <a href="Monte Carlo/Monte Carlo Re Trend Overview.htm">Monte Carlo</a> retrend method to create a retrend forecast.</li>
+                    <li><b>Demand Forecast</b> - Use a generated inventory-level demand forecast as the retrend forecast. Requires the <a href="../Demand Forecasting/Demand Forecasting Overview.htm">Demand Forecasting</a> module and an existing demand forecast. (Demand forecasts are not generated as part of Allocation execution.)</li>
+                </ul>
+            </li>
+            <li><b>Use Re-Trend</b> – If selected, the allocation strategy will recalculate the allocation strategy quantities using the Demand Management re-trend calculator. </li>
+            <li><b>Rate of Sale Override</b> – A user override value for the strategy rate of sale.  </li>
+            <li><b>Demand Rate of Sale</b> – The rate of sale currently being applied to the phase period (defined as the period between the phase-in date or current date, and the phase-out date). </li>
+            <li><b>Total Sales Demand</b> – Quantity of sales units defined as demand for strategies utilizing total sales quantity as the demand type.</li>
+            <li><b>Actual Rate of Sale</b> – Actualized rate of sale based on sales history. </li>
+            <li><b>Rate of Sale Variance</b> – Percentage difference between the demand rate of sale and the actual rate of sale. </li>
+            <li><b>Push Qty</b> – A specific quantity of stock with which to execute a “total push” demand type allocation. </li>
+            <li><b>Location Strategy</b> – The location strategy will contain a group of sites which are the intended destination for the allocated stock. This field will display the selected location strategy for the allocation. If the location strategy column is bolded, that means an override has been applied to that allocation strategy’s location strategy.</li>
+            <li><b>Cluster Sets</b> – For users with the Demand Management Cluster Site Manager module, location strategies may be defined by selecting specific site grades within cluster sets (cluster sets must be <a href="../Cluster Site Manager/Cluster Set Configuration Screen.htm">configured</a> for use with Allocations). A location strategy value of “Cluster based all sites” must be set to use cluster sets to define the effective location strategy. Location exceptions are still applicable. </li>
+            <li><b>Eligible Channel</b> – A configurable named site group, or the explicit channel attribute. Additional site groups may be returned as required. Informational only. </li>
+            <li><b>Site Count</b> – Site count lists the number of sites (stores) contained within the location strategy.  </li>
+            <li><b>Safety Stock</b> – The minimum required quantity of stock to allocate. Sometimes referred to as presentation stock. </li>
+            <li><b>Max Stock</b> – A maximum stock constraint for each site contained within the location strategy. Set for the allocation strategy level (typically style-color).  </li>
+            <li><b>Min Stock per Size</b> – Item master level safety stock.  </li>
+            <li><b>Phase In Date</b> – The date on which the items will be set or placed on sale within the stores. The phase-in date is the starting anchor point for the demand signal.</li>
+            <li><b>Markdown Date</b> – The planned date on which the product is to be marked down.  </li>
+            <li><b>Phase Out Date</b> – The end-of-life or clearance date of the product. Strategy will no longer be considered/calculated if it is outside of Phase Out Date. </li>
+            <li><b>Weeks of Cover</b> – The number of weeks of demand for which stock will be allocated. </li>
+            <li><b>Weeks of Supply</b>– The effective replenishment cycle for this product. Overrides the <span class="code_sample">Allocation:Replenish Cycle</span> system policy value.</li>
+            <li><b>Allow Reservation</b> – Selecting <b>Allow Reservation</b> ensures that all stores that were set up to have reservation quantities will receive their reserved stock quantities.</li>
+            <li>
+                <p><b>Inventory Source Rule</b> – Defines the priority for the sourcing of stock.  </p>
+                <ul>
+                    <li><b>No Priority</b> – No source priority should be applied. This applies to selected DC and PO stock restrictions as well (i.e. absolutely no restrictions are placed). </li>
+                    <li><b>PO Only</b> – Only use purchase orders.</li>
+                    <li><b>PO then WH</b> – Source from purchase orders first, then warehouse stock.</li>
+                    <li><b>Warehouse Only</b> – Only use warehouse stock.</li>
+                    <li><b>WH then PO</b> – Source from warehouse stock first, then purchase orders. </li>
+                    <li><b>PH Only</b> – Use only placeholder stock.</li>
+                    <li><b>PH + Available</b> – Use placeholder stock, then any available stock. </li>
+                </ul>
+            </li>
+            <li><b>Primary WH Only</b> – The primary warehouse only flag will restrict the sourcing to the only the primary warehouse as defined by the supply chain. </li>
+            <li><b>Strategy Stock</b> – Will display the available stock count given the strategy parameters. Uses the available to allocate calculation and is inclusive of any stock availability restrictions which have been applied and saved. </li>
+            <li>
+                <p><b>Placeholder Stock</b> – Placeholder stock is an editable field that allows for allocators to specify a stock quantity that is expected to be ordered for allocation. This will allow allocators to determine the result of an allocation based on a mock quantity to ensure the sizing and quantity is sufficient to meet the allocation constraints of a given strategy.</p>
+                <ul>
+                    <li><b>Direct Ship Functionality</b> – Users wishing to execute orders based on opportunity buys may create direct supplier orders by using placeholder stock. When placeholder stock is selected as an inventory source and users have keyed in a placeholder quantity, orders will be generated as direct supplier orders to the sites contained in the location strategy. These order recommendations may be approved and actioned upon within Order Manager when selecting a “from strategy” allocation order.</li>
+                </ul>
+            </li>
+            <li><b>Sellthrough Target</b> – Sellthrough target is an input which designates a planned sellthrough percentage.  </li>
+            <li><b>Holdback %</b> - Holdback percentage will define a quantity of stock to reserve in the warehouse or distribution center.  </li>
+            <li><b>Holdback Quantity</b> – Users may specify a holdback quantity instead of a holdback percentage if desired. The holdback quantity is applied at a variant level allowing allocators to reserve a fixed quantity of stock in reserve for new store openings or other related purposes. Holdback quantity is not applicable to product groups.</li>
+            <li>
+                <p><b>Strategy State</b> – Determines how the strategy is managed and if it is visible to users. </p>
+                <ul>
+                    <li><b>Active</b> – Default state. The strategy may be actively managed and allocations may be created using the strategy. Type 1.</li>
+                    <li><b>Hidden</b> – Strategies with no actionable stock may be set to hidden to ease navigation. Type 2. </li>
+                    <li><b>Inactive</b> – User driven status to deactivate a strategy. Type 3.</li>
+                    <li><b>Deleted</b> – System setting for inactive strategies which may be removed from Demand Management. Type 4.</li>
+                </ul>
+            </li>
+            <li><b>Exception Status</b> – Lists any strategy level exceptions which may prevent calculation or execution. If there are no blocking exceptions, then <b>Ready to Allocate</b> displays. To view exceptions, click within the <b>Exception Status</b> field and then click <b>View</b> to launch the <b>Allocations Strategy Exceptions</b> dialog.</li>
+            <li>
+                <p><b>Strategy State Management</b> – Determines if users are able to action on the strategy state field. </p>
+                <ul>
+                    <li><b>Open</b> – No restrictions (may be updated based on system policies and execution).</li>
+                    <li><b>Manual</b> – Only users are able to change the field.  </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Sales Curve Basis</b> – Determines the type of sales curve which will be used to shape the demand signal of the allocation strategy.  </p>
+                <ul>
+                    <li><b>Last Year</b> – Curve based on last year’s historical sales. This information will come from the Demand Management curves module. </li>
+                    <li><b>Imported</b> – Use an imported sales curve. </li>
+                    <li><b>Imported Plan</b> – Use an imported temporal plan. </li>
+                    <li><b>Manual Selection</b> – Allows for the manual selection of a sales curve as generated in the Demand Management Curves Module. If selected, the curve must be specified within the sales curve selection field. </li>
+                </ul>
+            </li>
+            <li><b>Sales Curve Selection</b> – Displays the curves available for manual selection. The selected curve will only be applied to the demand forecast if the sales plan basis is set to “manual selection”.</li>
+            <li><b>Sales Plan Name</b> – A plan with a time period based strategy which is used to define the sales curve. Effective if “Imported Plan” is selected in the sales curve type field. </li>
+            <li><b>Setting Source</b> – Whether Allocations or Assortment Planning is setting the source.</li>
+            <li><b>Setting Source Description</b> – A description of the origin of where the data came from.</li>
+            <li>
+                <p><b>Maximum Prepack Overage Allowed</b> – An editable number between 1 and 100 as a percentage. Implements a ceiling for incomplete prepacks that the system will recommend.</p>
+                <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">Consider the following scenarios of varying prepack demands for a prepack of 5 units and a threshold of 41%:</p>
+                <ul>
+                    <li>1 single unit of demand = 1/5 prepack = 20% &lt; 41%, therefore we will round up and send the full prepack</li>
+                    <li>2 units = 2/5 = 40%, we will send a full prepack</li>
+                    <li>3 units = 60% which is greater than 41% therefore we will NOT send a prepack</li>
+                </ul>
+            </li>
+            <li>
+                <p MadCap:conditions="General.Temp Exclude"><b>Prepack Run Mode</b> – Default is NULL. A drop down menu that allows for the selection by strategy line of the mode for a prepack Assignment. The default is set by the system policy <b>Allocate Prepack Run Mode</b>.The three possible modes are:</p>
+                <ul>
+                    <li MadCap:conditions="General.Temp Exclude"><b>Match Process By Match Process</b>:</li>
+                    <li MadCap:conditions="General.Temp Exclude"><b>Period by Period</b>:</li>
+                    <li>
+                        <p MadCap:conditions="General.Temp Exclude"><b>Skip Perfect Fit</b>: Similar to Period by Period mode, but ignores the perfect fit step.</p>
+                        <p class="note" MadCap:conditions="General.Temp Exclude" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Thresholds need to be set to 51% or higher to get desirable results.</p>
+                    </li>
+                </ul>
+            </li>
+            <li><b>Engine Run Date</b> – A date field showing the last time the allocation strategy was calculated.</li>
+        </ul>
+    </body>
+</html>

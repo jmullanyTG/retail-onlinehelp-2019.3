@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="6366" MadCap:lastWidth="1038">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Sales Plan View</h1>
+        <p>The <b>Sales Plan</b> view allows users to make period level edits to the sales plan of the selected placeholder/collection, either in total or by average store and compare them to the high level plan created in the Main Planning view of Line Visualization. Users can also track inventory and plan shrink and adjustments for more detailed control both pre and in-season.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Sales Plan View.png" />
+        </p>
+        <h2>Toolbar buttons</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Button</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Clear Sales Plan Overrides</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Reverts all user metrics back to the values of their System counterparts; this also reinstates all periods as valid Selling Periods (see Selling Period description below).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Metrics without system counterparts (the Shrink and Adjustments metrics, for example) cannot be reverted using this function. To revert a single cell to the value of its system counterpart,select the desired cell, press the Delete key, then click Apply.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Parameters</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Shows or hides the parameters pane at the top of the view.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Execute</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Refreshes the view.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">This is not typically necessary, as the view refreshes on its own when a new placeholder/collection is selected in the main planning view, when changes are applied, and when the Comparison Snapshot or View Mode are changed</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Save</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Saves all changes made since the last save.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cancel</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Cancels all changes and reverts them to their previously saved values.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Export</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Exports and saves the Pivot Grid in many common formats including Microsoft Excel and Adobe PDF.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Open</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Opens the Pivot Grid in many common formats including Microsoft Excel and Adobe PDF. Does not require save prior to viewing in the desired format.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Graph</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Graphs the selected data in the view.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Fields</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Allows users to customize the field layout for the view. Custom layouts can be saved and restored by right-clicking in the Pivot Grid and selecting <b>Save Layout</b> or <b>Restore Layout</b>, respectively.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fields</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Comparison Snapshot</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">A snapshot all saved snapshots within the current plan that are relevant to the current Product and Site Hierarchy selections in the Main Planning view parameters</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>View Mode</b>:</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>The view mode for sales plan view: Total Company or Average Store.</p>
+                        <ul>
+                            <li><b>Total Company</b>: allows the user to view/plan revenue and unit metrics as total company values – meaning the total volume for all sites contained in whatever level the Pivot Grid is aggregated to.</li>
+                            <li><b>Average Store</b>: allows the user to view/plan revenue and unit metrics as average store values – meaning the per site volume for the number of sites contained in whatever level the Pivot Grid is aggregated to.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Metrics Notes</h2>
+        <ul>
+            <li><b>System</b>: Denoted by the word <b>System</b> at the beginning (for example: System Sales) and green row coloration. System metrics are those based on the values shown in the Main Planning and Cluster Set views of Line Visualization.</li>
+            <li><b>User</b>: user metrics default to the System metrics of like name, but these are based on edits made in Sales Plan view to the editable metrics, thus, the user plan can diverge from the system plan in Sales Plan view</li>
+            <li>
+                <p><b>Ex VAT Metrics</b>: Denoted by <b>ex VAT</b> appended to the end of the metric name (for example, System Sales ex VAT). Where VAT (value added tax) is in play, <b>ex VAT</b> metrics provide accurate profit calculations (margin) after taxes have been removed.</p>
+                <p>Where VAT is not in play, no customization of calculations is necessary. Simply go to <b>System Utilties &gt; Views &gt; Maintenance &gt; Planning VAT Rate</b> and set the VAT rates for all levels of the product hierarchy assigned to your assortment plan to 0. This sets the <b>ex VAT</b> metrics equal to the non ex VAT metrics.</p>
+            </li>
+            <li><b>Comparison Metrics</b>: Denoted by purple row coloration and <b>(Comparison)</b> appended to the end of the metric (for example, Sales (Comparison). These metrics are direct data reads from the selected Comparison Snapshot and default to zero if no snapshot is selected or no data is present in the snapshot.</li>
+            <li><b>Editable Metrics</b>: Denoted by light blue row coloration. These are the only metrics that are editable by the user in <b>Sales Plan</b> view. All others are calculations or reads from other sources:				<ul><li>* System, ex VAT, and Comparison metrics are never editable in Sales Plan view</li></ul><ul><li><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">with the exception of Selling Period, edits made in Sales Plan view DO NOT change the plan values in the Main Planning and Cluster Set views of Line Visualization – this is by design to allow for comparison of original plans with period level changes. You can, however, bring the SPV Sls $ and Sls U metrics into your Main Planning view layout to view these edits at placeholder/collection or cluster set/cluster level</p></li></ul></li>
+            <li>
+                <p><b>Calculations</b>: Calculations in <b>Sales Plan</b> view all work based on one-directional locking calculations, depending on the metrics changed. </p>
+                <p>For more information on the calculation model used in this view, see the supplemental <b>Microsoft Excel file Assortment Planning – Sales Plan View</b>.</p>
+            </li>
+            <li><b>Plan Horizon vs. Receipt Planning Engine Horizon</b>: If the Plan Horizon, set at the time of plan creation, extends beyond the receipt planning engine horizon for a given item, data that extends past the receipt engine horizon appears in blue italics with zero values ($0.00, for example). See example in Plan Horizon vs. Replen Forecast Horizon below).
+			</li>
+            <li>
+                <p><b>Replen Placeholders/Collections</b>: When a placeholder/collection is of the Status Replen, the system pulls all relevant data to form its sales plan from the Forecasts module. </p>
+                <p>Users should be aware of the following differences in this view when dealing with Replen items:
+			
+				<b>Read Only</b>: all normally editable metrics in Sales Plan view become read only, being populated directly from aggregated replenishment forecast data, with the exception of all Shrink and Inventory Adjustments related metrics, which remain editable and can still be planned normally.
+					</p>
+            </li>
+            <li><b>Plan Horizon vs. Replen Forecast Horizon</b>: If the Plan Horizon, set at the time of plan creation, extends beyond the replenishment forecast horizon for a given item, the system will conditionally format the periods that go beyond the replenishment forecast as shown below to draw the user’s attention to this. These periods will also display zeros for the metrics being read from replenishment data, as no forecast exists:
+				</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Sales Plan View_1.png" />
+        </p>
+        <h2>Selling Period check box</h2>
+        <p>The <b>Selling Period</b> check box allows the user to specify periods where sales are not planned for the selected placeholder/collection but is still in phase. If unchecked, then zeros out System Sales, System Sales Units, Sales, and Sales Units for the period. Thus, metrics in the Main Planning and Cluster Set views are updated by this change. Users cannot enter sales for unchecked periods. When unchecked:</p>
+        <ul>
+            <li>inventory (BOP, EOP) still calculates normally for the period</li>
+            <li>receipts can still be realized for the period</li>
+            <li>all Inventory Adjustments metrics (see below) can still be planned normally</li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Common uses for this feature might be items that repeat seasonally, such as holiday themed goods, where inventory in the items is retained between selling periods.</p>
+        <h2>Metric definitions</h2>
+        <h3>Seasonality</h3>
+        <ul>
+            <li><b>Seasonal Index</b>: Decimal (1.01); seasonal index for the period based on the assigned seasonality curve</li>
+            <li><b>Promotion Index</b>: Decimal (1.01); combined promotional index for all applied promotions in the period</li>
+            <li><b>System Effective Index</b>:Decimal (1.01); index applied to period rate of sale to calculate period sales</li>
+            <li><b>Sellthrough</b>: Sales / BOP&#160;as a percentage.</li>
+        </ul>
+        <h3>Sales</h3>
+        <ul>
+            <li><b>Sales</b>: Currency ($100); planned/actual sales revenue for the period.
+				<p><b>Calculation</b>: (Sales Units * AUR)</p></li>
+            <li><b>Sales Build Ratio</b>: Decimal (1.01); Ratio indicating the relationship of Sales of the current period to the previous period.</li>
+            <li><b>Sales Units</b>: Planned/actual sales units for the period. 
+			<p><b>Calculation</b>: (Sales / AUR)</p></li>
+            <li><b>Sales Units Build Ratio</b>: Decimal (1.01); Ratio indicating the relationship of Sales Units of the current period to the previous period
+		<p><b>Calculation</b>: (Sales Units / Previous Period Sales Units)</p></li>
+            <li><b>AUT</b>: Currency ($1.01); average unit ticket price for the period.
+		<p><b>Calculation</b>: N/A</p></li>
+            <li><b>AUR</b>: Currency ($1.01); average unit retail price for the period.
+		<p><b>Calculation</b>: (Sales / Sales Units)</p></li>
+            <li><b>Sellthrough</b>: Percentage (1.01%); percentage of inventory sold for the period.
+			<p><b>Calculation</b>: (Sales Units / BOP Units)</p></li>
+        </ul>
+        <h3>Cost of Sales</h3>
+        <ul>
+            <li><b>COGS</b>: Currency ($100); cost of goods sold for the period<ul><li><b>Calculation</b>: (Sales Units * AUC)</li></ul></li>
+            <li><b>AUC</b>: Currency ($1.01); average unit cost price for the period<ul><li><b>Calculation</b>: (Avg BOP Unit Cost)</li></ul></li>
+        </ul>
+        <h3>Margin</h3>
+        <ul>
+            <li><b>Margin</b>: Currency ($100); planned/actual margin revenue (profit) for the period<ul><li><b>Calculation</b>: (Sales ex VAT - COGS)</li></ul></li>
+            <li><b>Margin %</b> Percentage (1.01%); planned/actual margin percentage for the period<ul><li><b>Calculation</b>: (Margin / Sales ex VAT)</li></ul></li>
+        </ul>
+        <h3>BOP Inventory</h3>
+        <ul>
+            <li><b>BOP Units</b>: Integer; planned/actual beginning of period inventory units<ul><li>Calculation: (Previous Period EOP)</li></ul></li>
+            <li><b>BOP Cost</b>: Currency ($100); planned/actual beginning of period inventory cost <ul><li>Calculation: (Previous Period EOP Cost)</li></ul></li>
+            <li><b>Avg BOP Unit Cost</b>: Currency ($1.01); average beginning of period cost per inventory unit<ul><li><b>Calculation</b>: (BOP Cost / BOP Units)</li></ul></li>
+        </ul>
+        <p><b>Receipts</b>
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">: Receipt metrics are not editable in Sales Plan view because they are managed in greater detail in <b>Receipt Pla</b>n view.</p>
+        <ul>
+            <li><b>Receipt Units</b>: Integer; planned/actual receipt units for the period<ul><li><b>Calculation</b>: From Receipt Plan</li></ul></li>
+            <li><b>Receipt AUC</b>: Currency ($1.01); average cost per unit for receipts in the period<ul><li>Calculation: From Receipt Plan</li></ul></li>
+            <li><b>Receipt Cost</b>: Currency ($100); planned/actual cost of receipts for the period<ul><li><b>Calculation</b>: (Receipt Units * Receipt AUC)</li></ul></li>
+            <li><b>Minimum Presentation</b>: Integer; Minimum units required to maintain floor presentation for each site selling the item<ul><li><b>Calculation</b>: From Receipt Plan</li></ul></li>
+        </ul>
+        <h3>On Order</h3>
+        <ul>
+            <li><b>On Order Units</b>: Integer; confirmed units on order for the period<ul><li><b>Calculation</b>: (purchase order units not yet received but scheduled for the period)</li></ul></li>
+            <li><b>On Order Units var to Receipt Units</b>: Integer; Difference of On Order Units to the planned/actual Receipt Units<ul><li><b>Calculation</b>: (On Order Units – Receipt Units)</li></ul></li>
+            <li><b>On Order AUC</b>: Currency ($1.01); average cost per unit of inbound orders for the period<ul><li><b>Calculation</b>: (On Order Cost / On Order Units)</li></ul></li>
+            <li><b>On Order Cost</b>: Currency ($100); cost of inbound orders for the period<ul><li><b>Calculation</b>: N/A</li></ul></li>
+            <li><b>On Order Cost % +/- Receipt Cost</b>: Percentage (1.01%); percentage of On Order Cost to planned/actual Receipt Cost<ul><li><b>Calculation</b>: (On Order Cost / Receipt Cost)</li></ul></li>
+        </ul>
+        <h3>Stock To Sales</h3>
+        <ul>
+            <li><b>Stock Cost to COGS</b>: non-editable decimal (1.01); ratio expressing the relationship of BOP Cost to COGS
+         
+                <ul><li><b>Calculation</b>: (BOP Cost / COGS)</li></ul></li>
+            <li><b>Stock Units to Sales Units</b>: non-editable decimal (1.01) ; ratio expressing the relationship of BOP Units to Sales Units<ul><li><b>Calculation</b>: (BOP Units / Sales Units)</li></ul></li>
+        </ul>
+        <h3>Inventory Adjustments</h3>
+        <ul>
+            <li><b>Shrink Units</b>: Integer; planned/actual shrink units for the period<ul><li><b>Calculation</b>: (Shrink Units % of Sales Units * Sales Units)</li></ul></li>
+            <li><b>Shrink Units % of Sales Units</b>: Percentage (1.01%); percentage of sales units represented by shrink units for the period<ul><li><b>Calculation</b>: (Shrink Units / Sales Units)</li></ul></li>
+            <li><b>Shrink Cost</b>: Currency ($100); cost value of planned/actual shrink units for the period<ul><li><b>Calculation</b>: (Shrink Cost % of COGS * COGS)</li></ul></li>
+            <li><b>Shrink Cost % of COGS</b>: Percentage (1.01%); percentage of COGS represented by Shrink Cost for the period<ul><li><b>Calculation</b>: (Shrink Cost / COGS)</li></ul></li>
+            <li><b>Inventory Adjustment Units</b>: Integer; planned/actual inventory adjustment units for the period<ul><li><b>Calculation</b>: N/A</li></ul></li>
+            <li><b>Inventory Adjustment Cost</b>: Currency; planned/actual cost of inventory adjustments for the period<ul><li><b>Calculation</b>: N/A</li></ul></li>
+        </ul>
+        <h3>EOP Inventory</h3>
+        <ul>
+            <li><b>EOP Units</b>: Integer; planned/actual end of period inventory units<ul><li><b>Calculation</b>: (BOP Units – Sales Units + Receipt Units – Shrink Units + Inventory Adjustment Units)</li></ul></li>
+            <li><b>EOP Cost</b>: Currency ($100); planned/actual end of period inventory cost<ul><li><b>Calculation</b>: (BOP Cost – Sales Cost + Receipt Cost – Shrink Cost + Inventory Adjustment Cost)</li></ul></li>
+            <li><b>Avg EOP Unit Cost</b>: Currency ($1.01); average end of period cost per inventory unit<ul><li><b>Calculation</b>: (EOP Cost / EOP Units)</li></ul></li>
+        </ul>
+        <h3>VAT</h3>
+        <ul>
+            <li><b>VAT</b>: Currency ($100) value added tax value of planned/actual Sales for the period<ul><li><b>Calculation</b>: (Sales - (Sales / (1 + VAT %)))</li></ul></li>
+            <li><b>VAT %</b> Percentage (1.01%) value added tax rate of the planned/actual Sales for the period<ul><li><b>Calculation</b>: (VAT / Sales ex VAT)</li></ul></li>
+        </ul>
+    </body>
+</html>

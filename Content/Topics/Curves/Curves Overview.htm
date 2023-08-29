@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2839" MadCap:lastWidth="1213">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Curves Overview</h1>
+        <p>The Curves module is a management screen for data used in other modules of Demand Management, such as the Profiles Module and Assortment Planning Module. </p>
+        <p>Curves are generated within Demand Management using data which has been imported into the system. They may also be imported as-is using the standard import mechanism. </p>
+        <p>The important concept to understand when using the curves module is that it is a representation of the available data, and not the interface though which the data is applied. </p>
+        <ul>
+            <li>
+                <b>Name</b> – The name for the individual curve. May be concatenated out of several associated tags. </li>
+            <li>
+                <b>Generation Type</b> – The method by which the curve was generated. <ul><li><b>Manual Curve</b> – When creating a manual curve, the values must be entered by hand. A default value may be specified to set the scale. </li><li><b>Specified Conditions</b> – A programmatically generated curve using a selected data sample.</li></ul></li>
+        </ul>
+        <ul>
+            <li>
+                <b>Bucket Type</b> – The type of time period used for the x-axis. Bucket types may be daily, weekly, or monthly, but should be selected to support the data. </li>
+            <li>
+                <b>Start Date</b> – The effective start date for the sample. </li>
+            <li>
+                <b>End Data</b> – The effective end date for the sample. </li>
+            <li>
+                <b>Number of Periods</b> – The number of periods contained in the curve. </li>
+        </ul>
+        <h4>Tags</h4>
+        <p>Tags are used within the curves module as an attribute to help sort and categorize curves. They are distinctly different from the other forms of tags within the system. When selecting curves to view, they may be filtered based on available tags. </p>
+        <h3>Filter Configuration</h3>
+        <p>The filter configuration section will display all available groups (item master, inventory, and site) for inclusion. The order setting will allow users to effectively construct their hierarchy (product, site, etc.) and include the appropriate values for the curve filters. </p>
+        <h3>Tag Configuration</h3>
+        <p>Curve tags are used to give the individual curves searchable attributes. Curve tags may be added or removed within the “Maintain Curve Tags” wizard. </p>
+        <h2>Creating and maintaining curves</h2>
+        <p>Creating and maintaining the curves is largely managed through the curves wizard. </p>
+        <p>
+            <img src="../../Resources/Images/Curves/Curves Overview.png" />
+        </p>
+        <p>The curve may be named and security rights added at the time of creation. If desired, tags may be applied by clicking the <b>Tag Links</b> button and adding tags using the <b>Maintain Curve Tag Links</b> dialog. </p>
+        <p>
+            <img src="../../Resources/Images/Curves/Maintain Curve Tag Links.png" />
+        </p>
+        <p>Remaining details will be added in the second wizard screen. Filter values must be entered.</p>
+        <p>
+            <img src="../../Resources/Images/Curves/Create new curve dialog.png" />
+        </p>
+        <p>Once built, click the <b>Preview Curve</b> button to preview the curve.</p>
+        <p>
+            <img src="../../Resources/Images/Curves/Preview Curve screen.png" />
+        </p>
+        <h2>Notes</h2>
+        <p>Curve data is stored in the database under the <span class="code_sample">tbl_curve namespace</span>. </p>
+    </body>
+</html>

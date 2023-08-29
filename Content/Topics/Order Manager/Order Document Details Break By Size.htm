@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="2407" MadCap:lastWidth="966">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Order Document Details – Break By Size </h1>
+        <p>The Break By Size tab allows users to split order line quantities across assigned size curves, or specific sizes selected from curves, based on planned sales and anticipated size inventory across clusters. Sizing analysis is done for all order lines on a document simultaneously.</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Order Document Details Break By Size.png" style="visibility: visible;width: 634px;height: 209px;" />
+        </p>
+        <h2>Toolbar buttons</h2>
+        <ul>
+            <li>Save: saves all changes made to the Break By Size information for the order document since the last time it was saved</li>
+            <li>Undo: undoes all the changes made to the Break By Size information for the order document since the last time it was saved</li>
+            <li>Calculate: calculates the ideal units per size to order by variant and cluster, based on the Size Curve and Selected Sizes for each order line on the order document</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Order Document Details Break By Size_1.png" />
+        </p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Order Document Details Break By Size_2.png" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Order Document Details Break By Size_3.png" />
+        </p>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Order Document Details Break By Size_4.png" />
+        </p>
+        <ul>
+            <li>Approve: approves the Break By Size information for the order document and transitions the Workflow Status of the document to Break By Size</li>
+            <li>Approve &amp; Route: approved the Break By Size information for the order and launches the Commitment Status dialog, allowing the user to select the Workflow Status the document will be transitioned to from available states, based on the active workflow</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/Order Manager/Order Document Details Break By Size_5.png" />
+        </p>
+        <ul>
+            <li>Variant Detail Grid (left side)<ul><li>Variant: The variant code for the corresponding order line</li><li>Cluster Set:  If applicable, displays the cluster set for the corresponding order line</li><li>Cluster:If applicable, displays the cluster for the corresponding order line</li><li>Receipt Date: The effective delivery date for the corresponding order line</li><li>Size Curve: Displays/ sets the size curve to be applied to the corresponding order line; defaults to the size curve set for the variant in the assortment plan from which the order line was created</li><li>Selected Sizes: Displays/sets the sizes to include in the corresponding order line; defaults to all sizes included in the selected Size Curve</li><li>Site Count: The number of sites the corresponding order line is for</li></ul></li>
+        </ul>
+        <ul>
+            <li>Sizing Pivot Grid (right side)<ul><li>Avg U/Site: Sets the desired average units per site for the corresponding size as a constraint for calculation of sizing needs::<br /><p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">Entering Avg U/Site can cause an increase in the original order quantity for the order line</p></li></ul></li>
+        </ul>
+        <ul>
+            <li>Act Avg U/Site: The calculated average units per site for the corresponding size by simply dividing the corresponding Order Units by the Site Count for the cluster</li>
+            <li>Quantity: The raw system suggested units to be ordered for the corresponding variant/cluster/size<br /><p>This quantity does not include changes for the corresponding user specified Avg U/Site constraint, if any.</p><ul><li><b>Constrained Qty</b>: Displays the constrained system suggested units to be ordered for the corresponding variant/cluster/size<p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">This quantity includes changes for the corresponding user specified Avg U/Site constraint, if any.</p></li></ul><ul><li><b>Final Qty</b>: Displays/sets the units to be ordered for the corresponding variant/cluster/size. Defaults to Constrained Qty value, but can be overridden by the user. User overrides are conditionally formatted in orange:<p><img src="../../Resources/Images/Order Manager/Order Document Details Break By Size_6.png" /></p><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Final Qty can also be entered in the subtotal/total rows of the Pivot Grid; doing so will proportionally split the number entered down to the lower levels based on their current values</p></li></ul></li>
+        </ul>
+    </body>
+</html>

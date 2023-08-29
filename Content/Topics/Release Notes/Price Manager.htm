@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1433" MadCap:lastWidth="1277">
+    <head>
+    </head>
+    <body>
+        <h1>Price Manager</h1>
+        <p>The following enhancements are now available in the Price Manager solution. </p>
+        <h2>Price &amp; Markdown <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-63634</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62714</MadCap:conditionalText></h2>
+        <p>Within a Pricing Plan, two new menu options have been added to the toolbar of the Sites grid. The options are labeled <b>New Cluster</b> and <b>Add Site</b>. Users now have the ability to create new Site Clusters (that must contain at least one Site) and to include additional Sites in existing Site Clusters. The new Site Clusters and additional sites can be applied to future Price Actions not already exported or in the process of being exported. </p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Add a cluster to a Pricing Plan.PNG" />
+        </p>
+        <h2 MadCap:conditions="General.Temp Exclude">Restricting how users are able to generate new prices across a product portfolio <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-61916</MadCap:conditionalText> <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">SEE DMDEV-65119</MadCap:conditionalText></h2>
+        <p MadCap:conditions="General.Temp Exclude">The system can now be configured using a new system policy labeled <b>Product Pricing Level</b> to restrict how users are able to generate new prices across a product portfolio to ensure down stream systems are sent data accurately.</p>
+        <p MadCap:conditions="General.Temp Exclude">There are three possible settings:</p>
+        <ul>
+            <li MadCap:conditions="General.Temp Exclude">Variant\Site Pricing (Default)</li>
+            <li MadCap:conditions="General.Temp Exclude">Item\Site Pricing</li>
+            <li MadCap:conditions="General.Temp Exclude">Variant\Site and Item\Site Pricing</li>
+        </ul>
+        <p class="note" MadCap:conditions="General.Temp Exclude" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Setting the value to <b>Variant\Site and Item\Site Pricing</b> allows users to manipulate the generation of pricing at a high level (Variant\Site) as well as have greater control and degree of manipulation of pricing at a lower level (Item\Site). All Price Actions within a Pricing Plan will be limited to either Variant\Site or Item\Site pricing.</p>
+        <h3 MadCap:conditions="General.Temp Exclude">Setting and identifying the level at which Price Actions will be created for a new Pricing Plan <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62709</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62712</MadCap:conditionalText></h3>
+        <p MadCap:conditions="General.Temp Exclude">As of v2019.3, the level at which Price Actions will be created for a new Pricing Plan is dictated by the new system policy <b>Product Pricing Level</b> and is indicated on the Pricing Plan Information tab as follows:</p>
+        <p MadCap:conditions="General.Temp Exclude">
+            <img src="../../Resources/Images/Price Planning/Price Action levels in Pricing Plans.PNG" />
+        </p>
+        <p MadCap:conditions="General.Temp Exclude">If system policy <b>Product Pricing Level</b> is set to <b>Variant\Site and Item\Site Pricing</b>, then a field labeled <b>Product Pricing Level</b> with a drop down menu displays on the <b>Create New Plan</b> dialog:</p>
+        <p MadCap:conditions="General.Temp Exclude">
+            <img src="../../Resources/Images/Price Planning/Create Pricing Plans.png" />
+        </p>
+        <p MadCap:conditions="General.Temp Exclude">The <b>Product Pricing Level</b> field does not display when the system policy is set to either <b>Variant Site Plan</b> or <b>Item Site Plan</b>.</p>
+    </body>
+</html>

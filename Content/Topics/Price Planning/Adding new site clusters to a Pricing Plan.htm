@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1920" MadCap:lastWidth="1215">
+    <head>
+    </head>
+    <body>
+        <h1>Adding new Clusters to a Pricing Plan</h1>
+        <p>You can create a Site Cluster and add the new Cluster to a Pricing Plan. The new Cluster must include at least one Site.</p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Add a cluster to a Pricing Plan.PNG" />
+        </p>
+        <p>For new Site Clusters:</p>
+        <ul>
+            <li>the currency is derived from the Sites selected in the filter</li>
+            <li>if multiple currencies exist, the system re-uses the Site Cluster name by currency (for example, EMEA(GBP) and EMEA(EUR)).</li>
+            <li>the system only applies Sites to the new Site Cluster not already associated to the Pricing Plan’s Clusters.</li>
+        </ul>
+        <p>To add a new cluster:</p>
+        <ol>
+            <li>Select <b>New Cluster</b> in the toolbar of the <b>Sites</b> grid.</li>
+            <li>Enter a name that is unique to the Pricing Plan in the <b>Site Cluster Name</b> field.</li>
+            <li>
+                <p>Click the drop down arrow in the Site Filter field to choose a set of Sites.</p>
+            </li>
+            <li>Optionally, to return a subset of Sites from the Site filter select the check box labeled <b>Select only some Sites from the current filter</b>.<ol><li><p>On the <b>Site Selection</b> dialog, select the check boxes for the Sites to be added to the new Site Cluster.</p><p><b>NOTE:</b> Only those Sites meeting the filter criteria and not already associated to the Pricing Plan’s pre-configured Site Clusters display.</p></li><li>Click <b>Ok</b>.</li></ol></li>
+            <li>Click <b>Ok</b> on the <b>New Pricing Site Cluster</b> dialog.</li>
+            <li>
+                <p>Click <b>Ok</b> on the following confirmation popup window.</p>
+                <p>
+                    <img src="../../Resources/Images/Price Planning/Site Cluster Creation Confirmation popup window.PNG" />
+                </p>
+                <p>The Pricing Plan’s Site Cluster grid refreshes with the new Site Cluster.</p>
+            </li>
+            <li>
+                <p>If the <b>Activate the New Site Cluster(s) to Existing Action(s)</b> window displays, then select the Price Actions, not already exported, to include the new Site Cluster.</p>
+                <p><b>NOTE:</b> The <b>Activate the New Site Cluster(s) to Existing Action(s)</b> window does not display if:</p>
+                <ul>
+                    <li>there are no future Price Actions</li>
+                    <li>
+                        <p>all future Price Actions are in a core status</p>
+                        <p>A core Status is a Status that is owned by the system and is not user configurable. Core statuses do not display in Workflow. The following are core statuses:</p>
+                        <ul>
+                            <li>Preparing Data for Export</li>
+                            <li>Ready For Export</li>
+                            <li>Exported</li>
+                            <li>Export Confirmed</li>
+                            <li>Exported With Errors</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>If required, click Save on the <b>Activate the New Site Cluster(s) to Existing Action(s)</b> window.</p>
+                <p>Upon clicking <b>Save</b>, the Site Cluster and associated Sites are added to Price Actions as Included and the Pricing Strategy Variable default values are applied to the new Site Cluster and pushed down to Variants\Sites. Also, the system marks the following as Calculation Required:</p>
+                <ul>
+                    <li>
+                        <p>Site Cluster Variant Sites</p>
+                    </li>
+                    <li>
+                        <p>Site Cluster Variants </p>
+                    </li>
+                    <li>
+                        <p>Site Cluster</p>
+                    </li>
+                    <li>
+                        <p>Price Action</p>
+                    </li>
+                    <li>Price Action's Plan</li>
+                </ul>
+                <p>If a Price Action has gone into a calculating state, the system will add the Site Cluster and associated Sites as Excluded and display a dialog indicating that not all Price Actions were updated.</p>
+                <p>For Price Actions that were not selected, the Site Cluster and associated Sites are Excluded. Also, the system will not apply any default values nor mark any associated Plan, Price Action, Product, or Site objects as Calculation Required.</p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1216" MadCap:lastWidth="1142">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Supplier Manager Overview</h1>
+        <p>The Supplier Manager module gives users the opportunity to view their imported supplier information and maintain supplier schedules. Supplier Manager allows users to view and manage their supplier specific data. </p>
+        <p>Supplier ordering and receiving schedules may be managed by selecting the “Supplier Schedules” group and retuning the columns to the top grid of the Supplier Manager. </p>
+        <p>
+            <img src="../../Resources/Images/Supplier/Supplier Manager Overview.png" />
+        </p>
+        <p>Once the columns have been returned to the grid, receiving schedules and ordering schedules may be selected through the drop-down menu of available schedule sets as configured within the Schedules Module. </p>
+        <p>
+            <img src="../../Resources/Images/Supplier/Supplier Manager Overview_1.png" />
+        </p>
+        <p>Two separate schedule sets may be applied to a supplier for the purposes of controlling ordering behavior: Ordering Schedule and Receiving Schedule. </p>
+        <ul>
+            <li><b>Ordering Schedule</b> – Controls the dates on which and order may be placed with a supplier. </li>
+            <li><b>Receiving Schedule</b> – Controls the dates on which a supplier is allowed to deliver to any site. </li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">&#160;As Demand Management has no control/exposure related to how long the internal lead-time is for a supplier between the date on which they receive an order and the date on which they ship it, the concept of shipping schedules does not exist within Demand Management. An effective shipping schedule may be created through a combination of lead-time (supplier processing) factors and ordering schedules if desired, but it is important to understand the distinction between the two available schedule types and a specific shipping schedule. </p>
+        <h2>Practical Application</h2>
+        <p>Supplier Manager documents follow many of the same conventions and mechanisms as management documents within Inventory Manager, Site Manager, and Variant Manager. Once created, reporting documents may be un-docked, managed through tabs, or moved to support custom layouts. </p>
+        <h2>Technical Execution</h2>
+        <p>Supplier information, including ordering and receiving schedule data, is stored in <span class="code_sample">tbl_Supplier</span>.</p>
+    </body>
+</html>

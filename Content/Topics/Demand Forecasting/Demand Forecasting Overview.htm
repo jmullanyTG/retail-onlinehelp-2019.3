@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Inventory Forecasting Overview</h1>
+        <p>Demand forecasting is the driving force behind inventory planning. It uncovers the true amounts that you must replenish while taking into account holidays, seasons, promotions and all those things that make it impossible to just order a flat quantity of products each month.</p>
+        <p>With smarter forecasts that represent true demand, you will avoid poor forecasting outcomes like overstocks, product obsolescence and lost sales.</p>
+        <h2>Forecast Features</h2>
+        <p>To help provide the most accurate forecasting possible, Demand Management demand forecasts can account for trends and seasonality, lost sales, promotions, and more.</p>
+        <h3>Trends and Seasonality</h3>
+        <p>Demand Management’s demand forecasting logic separates trends from seasonality to provide a clear picture of the selling curve for a specific time period, product and location.</p>
+        <p>Seasonality is identified by uncovering year-over-year recurring patterns in demand history that are visible in either weekly or monthly periods. This helps Demand Management correctly forecast future demand for products depending on whether they are in or out of season. This also makes it easy for you to phase inventory in and out for holidays or seasons without losing substantial margins.</p>
+        <p>After these seasonal variations are accounted for, Demand Management removes them to uncover actual demand trends to prevent you from misinterpret seasonal increases or decreases as growth or decay.</p>
+        <h3>Lost Sales</h3>
+        <p>For the most effective demand forecasting you need true demand history, not just sales history. Demand Management provides this critical piece by identifying periods of insufficient stock, which are then used to calculate lost sales. You get the full picture of what sales might have been and if had there been enough of the products in stock that your customers wanted.</p>
+        <h3>Promotions</h3>
+        <p>You can flag historical periods where promotions occurred. Demand Management then calculates the lift impact caused by the promotion and automatically adjust the forecast for those future periods where you plan to run the promotion again.</p>
+        <h3>Manual Adjustments</h3>
+        <p>There are occasions where you may  have to make manual adjustments to your forecasts, such as an upcoming price change or a future business expansion. With Demand Management, you can make manual history and forecast adjustments for situations like this. You can also override information, even to follow a hunch. </p>
+        <h3>Shape Forecasting</h3>
+        <p>With <a href="Shape Forecasting.htm">shape forecasting</a>, you can select a pre-selected curve to apply to an item's moving-average sales history. The forecasting engine then generates a moving-average based, season-affected demand forecast for that item.</p>
+        <h2>Forecast Methodology</h2>
+        <p>Demand Management uses sophisticated and proprietary modeling algorithms to generate a forecast that’s based on true demand history. You do not have to decide which forecasting algorithm will be the most accurate – Demand Management does that for you by automatically running a Tournament of Best Fit.</p>
+        <p>In the forecast tournament, 14 world-class forecasting methods compete against each other to determine which method must be used for a particular product. Each model is back-casted and compared against actual demand, which is computed by the Forecast Method Fit – a measure of forecast accuracy using Mean Absolute Percent Error (MAPE). The model with the best method fit wins and is used to forecast.</p>
+        <h2>Forecast Levels</h2>
+        <p>You can choose the level at which Demand Management generates a demand forecast.</p>
+        <h3>Inventory Level Forecasting</h3>
+        <p>An inventory forecast creates a demand forecast at the inventory level (item at site, or SKU/location).</p>
+        <h3>Level Forecasting</h3>
+        <p>A level forecast creates a demand forecast for a specified level in the product or location hierarchy.</p>
+        <h3>Aggregate Level Forecasting</h3>
+        <p>Aggregate level forecasts creates a demand forecast across all sites in the company. There are many advantages for aggregate level forecasting of certain items. Aggregate forecasts can be used to give a better forecast for items with intermittent sales, or gain a more holistic view of the item’s impact across the entirety of the organization.</p>
+        <p>In order to generate an appropriate replenishment quantity at the inventory level, the aggregate forecast is pushed down to the inventory level based on specific split factors. These split factors are produced based on the inventory level forecast quantities, or, in certain situations, custom specified split factors.</p>
+        <h3>Group Forecasting</h3>
+        <p>With group forecasting, you can build groups of hierarchically-related items and create demand forecasts for those groups.</p>
+        <h2>Automated and Ad-Hoc Forecasting</h2>
+        <p>Demand Management updates demand forecasts automatically as part of its scheduled tasks, so your inventory planning is always up-to-date with the latest forecasts. For convenience, you can also generate and update forecasts manually from within the application.</p>
+        <h2>Forecast Visibility</h2>
+        <p>Because they play such a large role in your company’s success, it is important to ensure demand forecasts are visible to all parts of your organization. Demand Management helps by making forecasts visible from multiple locations within the application, including:</p>
+        <ul>
+            <li><b>Forecasts and Group Forecast:</b> you can create, view, and edit forecasts here.</li>
+            <li><b>Inventory Manager:</b> you can view an item’s demand forecast alongside other relevant parameters.</li>
+            <li><b>Order Manager:</b>  you can view the demand forecast that drove a specific order.</li>
+        </ul>
+        <h2 MadCap:conditions="General.How-To Guides">Related Topics</h2>
+        <ul MadCap:conditions="General.How-To Guides">
+            <li><a href="Example - Generating a Demand Forecast.htm">Example - Demand Forecast</a>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+         
+    </head>
+    <body>
+        <h1>Metric Definitions</h1>
+        <ul>
+            <li><b>Receipts</b> -  Sum of OutstandingQuantity from <span class="code_sample">tbl_SupplierOrderLine</span> for orders that have been delivered -- spans for all time selected</li>
+            <li><b>In-Transit Stock</b> -&#160; Sum of OutstandingQuantity from <span class="code_sample">tbl_SupplierOrderLine</span> for orders that have been placed or are pending -- spans for all time selected</li>
+            <li><b>Unit Sales</b> -&#160; Sum of SalesQuantity minus returned SalesQuantity from <span class="code_sample">tbl_SalesHistoryByType</span> -- spans for historical data</li>
+            <li><b>Allocated Units</b> - Sum of Quantity <span class="code_sample">from tbl_AllocateOrder</span> for valid engine run, non-deleted entries -- spans for all time selected</li>
+            <li><b>Reserved Stock</b> - Sum of StockReserved + StockPending from <span class="code_sample">tbl_InventoryLevel</span> -- spans for all time selected</li>
+            <li><b>Stock on Hand (past values)</b> - Sum of StockOnHand from <span class="code_sample">tbl_ArchiveInventory</span></li>
+            <li><b>Stock on Hand (projected values)</b> - Sum of BOPSOH from <span class="code_sample">tbl_Allocate_Engine_Projection</span></li>
+            <li><b>Actionable Stock (past values)</b> - Sum of StockOnHand from <span class="code_sample">tbl_ArchiveInventory</span></li>
+            <li><b>Actionable Stock (current period values)</b> -&#160;usp_Allocate_Common_AvailableToAllocate</li>
+            <li><b>Actionable Stock (projected values)</b> - Sum of BOPSOH from&#160;<span class="code_sample">tbl_Allocate_Engine_Projection</span></li>
+        </ul>
+    </body>
+</html>

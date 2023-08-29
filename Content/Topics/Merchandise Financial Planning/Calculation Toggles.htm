@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+         
+    </head>
+    <body>
+        <h1>Calculation Toggles</h1>
+        <p>The Calculation Toggles pane defines which dependent metrics recalculate and which ones hold when changes are made.</p>
+        <p>
+            <img src="../../Resources/Images/MFP 529/Essential Business Concepts_22.png" />
+        </p>
+        <p>If a user changes a week's Markdown, then that week's COGS will hold (but the following weeks to do not). If the user changes a month's Markdown, it spreads the change across the weeks. The first week in the month's COGS stays the same, but because the Markdowns changed, the first week's Sales Units and Total Original Retail change, which in turn changes EOP Units, EOP Cost, EOP Retail, and Markdown Cost. Because the first week's EOPs changed, the second week's BOPs changed. </p>
+        <p>COGS is based on the ratio between BOP Cost and BOP Retail, so it necessarily changes in the second week. Similarly in the third through nth weeks. Thus, the total COGS for the month changes.</p>
+        <ul>
+            <li>Calculation toggles do not require saving to be in effect. The change is immediate once the selection is made.</li>
+            <li>
+                <p>When alternate (non-default) calculation toggles are selected, they appear in darker gray for easy identification at a glance</p>
+                <p>
+                    <img src="../../Resources/Images/MFP/Essential Business Concepts_3_4.png" />
+                </p>
+            </li>
+            <li>The Calc Toggles view can be collapsed by clicking the arrow at the top left adjacent the view title:</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP 529/Essential Business Concepts_23.png" />
+        </p>
+        <p>Once collapsed, the view will be visible only as a tab at the right hand side of the screen and can be restored by clicking the arrow near the view title again:</p>
+        <p>
+            <img src="../../Resources/Images/MFP 529/Essential Business Concepts_24.png" />
+            <br />
+        </p>
+        <ul>
+            <li>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Not all plannable metrics have multiple calculation directions, thus not all plannable metrics are shown in this view</p>
+            </li>
+            <li>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Based on the planning method – Retail or Cost – some calculation toggles may not be available. This is due to the differences in how the calculation model must function together as a whole to properly balance within each method</p>
+            </li>
+        </ul>
+    </body>
+</html>

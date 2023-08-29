@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  ConditionTagExpression="include[&quot;General.Printed Manuals&quot;] exclude[&quot;General.Exclude from Print&quot; or &quot;General.Temp Exclude&quot;] "
+  MasterToc="/Project/TOCs/Filters.fltoc"
+  PatchHeadingLevels="true"
+  InjectBookHeadings="true"
+  RemoveImagesFromHeadings="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF Output.fldes"
+      Publish="true" />
+  </Destinations>
+  <Variables> <Variable Name="Variables/BookVersion">2019.3</Variable> <Variable Name="Variables/BookSubTitle">User Guide</Variable> <Variable Name="Variables/BookVersion">2019.3</Variable> <Variable Name="Variables/BookSubTitle">User Guide</Variable>
+    <Variable
+      Name="Variables/BookTitle">Filters</Variable>
+  </Variables>
+  <PDF
+    ConvertBookmarks="true"
+    InitialMagnification="Fit"
+    PageLayout="OneColumn" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="10" MadCap:lastHeight="2015" MadCap:lastWidth="1230">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Smart Start </h1>
+        <p>Once a scenario has been rationalized, a user has the option of Smart Starting. On Smart Start, the system generates placeholder items for each segment/cluster based on the following:</p>
+        <ul>
+            <li>TY Act New Choices &amp; TY Act New AUR</li>
+            <li>The results of the Inter and Intra-style marginal return curves</li>
+            <li>The Collection Option of each segment</li>
+            <li>The configuration of choices to clusters within each segment</li>
+            <li>The default minimum presentation, seasonality curve, curve mode, periods of supply, rec var min, rec size min, size curve, periods before phase in, flow cadence, min stk/sales, and shrink % of sales </li>
+        </ul>
+        <p>Given these factors, the system generates a fully defined sales plan for each placeholder item, including rates of sale, total sales, sales by period, receipt units and flow strategy. Users can proceed straight to the assignment of actual variants and placing buys or use Line Visualization and its supporting modules to perform additional analysis and fine tune plans before proceeding.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">If multiple users attempt to Smart Start scenarios at the same time, the system holds the second process until the first one finishes. This is transparent to the user aside from an apparent lag in processing time compared to normal for the user initiating the second Smart Start.</p>
+        <h2>Overlapping scenarios </h2>
+        <p MadCap:autonum="">If the intersection of product and site hierarchies and time of a scenario being Smart Started overlaps any part of another scenario that has already been Smart Started, then the following warning displays:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Smart Start.png" />
+        </p>
+        <p>Proceeding deletes any placeholders in <b>Open</b> status. This is because the sales volume those areas account for within the business have already been accounted for in the overall assortment plan and the system is attempting to prevent over-buying.</p>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">A Smart Start exists for <b>Mens Tops, US Retail, 4th Quarter 2017</b> and all generated placeholders are in Open status. </p>
+        <p>If a new scenario is created, <b>Mens Short Sleeved Tees, for US Retail – Southeast District, for December 2017 only</b>, then all placeholders for the first scenario are deleted and replaced by those generated for the new scenario. This is because the new scenario contains portions of the sales volume that was accounted for in the first scenario. </p>
+        <h2>Placeholder to Cluster Assortment</h2>
+        <p>Because all placeholders created for a given segment are assumed to be shared among all clusters assigned to that segment, the system is able to create a desirable tiering strategy based on the descending number of new choices set in the Smart Started scenario for each cluster.</p>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">A segment with 3 clusters and new choice counts of 4, 3, and 2, respectively. The system generates 4 placeholder items for the segment and assort them to the clusters as follows:</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Placeholder Rank</th>
+                    <th class="TableStyle-standard-HeadE-Column2-Header1">Cluster A</th>
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Cluster B</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Cluster C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Mens Top # 1</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyE-Column2-Body1">X</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyE-Column1-Body1">X</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyD-Column2-Body1">X</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Mens Top # 2</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyE-Column2-Body1">X</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyE-Column1-Body1">X</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyD-Column2-Body1">X</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Mens Top # 3</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyE-Column2-Body1">X</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyE-Column1-Body1">X</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p style="margin-bottom: 0pt;text-align: center;">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Mens Top # 4</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyB-Column2-Body1">X</td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p style="margin-bottom: 0pt;text-align: center;">&#160;</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p style="margin-bottom: 0pt;text-align: center;">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Initial Receipt Plans</h2>
+        <p>The system calculates an optimized receipt flow strategy by cluster using:</p>
+        <ul>
+            <li> the rates of sale assigned to each placeholder from the Marginal Return Curve Matrix, and</li>
+            <li>the default seasonality curve, minimum presentation, and other receipt planning parameters set for the relevant level of the product hierarchy. </li>
+        </ul>
+        <h3>Saving time by setting up default parameters</h3>
+        <p>Setting up default parameters before Smart Starting a scenario saves time and the effort of manually setting parameters later for each placeholder/cluster combination.</p>
+        <h2>Reconciling Smart Start Output Back to Scenarios</h2>
+        <p>The sum of the Ttl Sls $ and Ttl Sls U in Line Visualization for the placeholders generated by Smart Starting a scenario should be equal to the sum of TY Act New Sales $ or U for the scenario. These sums may also tie back to the Scenario Target minus the TY C/O Sales $ or U, but because TY Act New Sales $ and U can be edited by the user and do not have to tie back to 100% of the Scenario Target, if overrides are made to these metrics, they will not likely tie to the output of Smart Start.</p>
+        <h2>Markdown dates</h2>
+        <p>When a user Smart Starts a scenario and phase dates are automatically created from the scenario's plan dates, the Markdown Date is automatically created by backing the Number of Markdown Periods out from the phase out date. </p>
+        <p>For example, if the scenario is dated from Wk1 - Wk10, and the default is 5 weeks, then Markdown is automatically be set to Wk6.</p>
+    </body>
+</html>

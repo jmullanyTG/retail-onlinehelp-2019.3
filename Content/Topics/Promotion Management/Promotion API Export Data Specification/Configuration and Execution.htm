@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Configuration and Execution</h1>
+        <p>All configurable exports will read data from export.Promotion_xxxx tables. Prior to sending any data via API processes, procedure export. Promotion_Export_Promotions_API must be executed for a specific ExportID and ExportBatchID.</p>
+        <p>This procedure loads table export.Promotion_Staging_API creating a BatchPartitionID (page) for each batch of detail records. The exact number of detail records that make up a batch is specified in the Export configuration. Each BatchPartition will include a Header and detail records. </p>
+        <p>For very simple example…</p>
+        <ul>
+            <li>An Export is defined to output 200 records per BatchPartition.</li>
+            <li>Promotion ‘A’ contains 1000 price records</li>
+            <li>Procedure export. Promotion_Export_Promotions_API is executed</li>
+            <li>Resulting in five (5) Batch Partitions for Promotion’A’ written to table export.Promotion_Staging_API. Each Batch Partition will contain a header record (PromotionID, etc.) and 200 detail records.</li>
+        </ul>
+        <h2>Execution</h2>
+        <p>While configured exports can be run individually, it is suggested that these exports be controlled by executing procedure <span style="font-style: italic;">export.</span><span style="font-style: italic;">Promotion_Extract_Wrapper. </span></p>
+        <p>EXEC export.Promotion_Extract_Wrapper</p>
+        <p> @iUserid =1</p>
+        <p>,@iExportID&#160; =&#160; --&lt;configurable Export ID&gt; </p>
+        <p>,@iExportBatchID = --&lt;ExportBatchID to pull data from&gt;</p>
+        <p>,@bDebug&#160; = 0  --&lt;Setting to 1 will output all data to SSMS results pane. Helpful for confirming.troubleshooting</p>
+    </body>
+</html>

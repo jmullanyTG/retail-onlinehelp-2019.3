@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1212" MadCap:lastWidth="1147">
+    <head>
+    </head>
+    <body>
+        <h1>New Features and Enhancements</h1>
+        <p>The Demand Management 2019.3.2.0 Service Pack includes the following new features and enhancements:</p>
+        <h2>Assortment Planning</h2>
+        <p>With the new system policy <b>Reference Sales Override Values for Carryover Sales in Target Creation</b>, users now have the ability to choose whether to use the system-generated sales plan or the user revised sales plan within Target Creation. For more information, see <b>System Policies</b>.</p>
+        <p>To improve consistency, the <b>Stock To Sales</b> metrics in the <b>Sales Plan</b> view have been updated to calculate in the same way as the <b>Stock To Sales</b> metrics in the <b>Top Down Sales Plan</b> view.</p>
+        <p>The calculation is:</p>
+        <p>Leaf level Stock Units to Sales Units = BOP Units / Sales Units</p>
+        <p>Aggregating stock to sales over time = (First period BOP + all periods' incremental incoming stock) / Sum of Sales Units</p>
+        <p>Aggregating metrics within a period = Sum of BOP / Sum of Sales Units = Geography / Product Total STS</p>
+        <h2>Replenishment Engine</h2>
+        <p>The Replenishment Engine has been updated for <b>Constraint Service Optimization</b>. A new system policy was created: <b>Run Supply Chain Constrained Process</b>. This allows the engine to run in unconstrained and then run our new constraint service.</p>
+        <p class="important" MadCap:autonum="&lt;b&gt;IMPORTANT: &lt;/b&gt;">This only works for supply chains with <i>NO ALTERNATES</i>.</p>
+        <h2>System Policies
+</h2>
+        <p>The following system policies have been added:
+
+</p>
+        <h3><b>Module: Assortment</b>
+        </h3>
+        <p><b>System Policy Name:</b>
+        </p>
+        <p>Reference Sales Override Values for Carryover Sales in Target Creation</p>
+        <p><b>System Name:</b>
+        </p>
+        <p>Assortment.Target.ShowSalesOverrideValues</p>
+        <p><b>Description:</b>
+        </p>
+        <p>Reference sales override values for Carryover Sales in Target Creation for future periods</p>
+        <h3><b>Module: Replenish Engine</b>
+        </h3>
+        <p><b>System Policy Name:</b>
+        </p>
+        <p>Run Supply Chain Constrained Process</p>
+        <p><b>System Name</b>:</p>
+        <p>Replenish.RunSupplyChainConstrainedProcess</p>
+        <p><b>Description:</b>
+        </p>
+        <p>Defined whether the execution path by which the replenish engine operates relative to supply chain constraints is used or not.</p>
+    </body>
+</html>

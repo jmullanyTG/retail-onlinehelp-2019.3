@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2048" MadCap:lastWidth="1288">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Creating Views using an SQL script</h1>
+        <p>View data are stored in the database in the “<span class="code_sample">tbl_VW</span>” namespace. While it is typical to create a view in the user interface using the method described in the practical application section, they may also be created with a SQL script as follows (example is for merchandise financial planning):</p>
+        <div class="code_block">
+            <p>
+                <p>&#160;&#160;&#160;&#160; -- Create View</p>
+                <p>IF NOT EXISTS ( SELECT 1</p>
+                <p>FROM dbo.tbl_VW_View</p>
+                <p>WHERE ViewName = 'Merchandise Financial Planning' )</p>
+                <p>BEGIN</p>
+                <p>&#160;</p>
+                <p>DECLARE @iViewID INT</p>
+                <p>INSERT INTO dbo.tbl_VW_View</p>
+                <p>( ViewName</p>
+                <p>, ViewDescription</p>
+                <p>, ViewTypeID</p>
+                <p>, HideParameters</p>
+                <p>, AutoRefreshOnParameterChange</p>
+                <p>, AutoRefreshOnWidgetParameterChange</p>
+                <p>, AllowUpdateMethodParameterValue</p>
+                <p>, AllowUseAndSaveUserViewParameterValue</p>
+                <p>, ViewLayoutXml</p>
+                <p>&#160;&#160;&#160; )</p>
+                <p>VALUES</p>
+                <p>( N'Merchandise Financial Planning'</p>
+                <p>, N'Merchandise Financial Planning widgets.'</p>
+                <p>, 2</p>
+                <p>, 0</p>
+                <p>, 0</p>
+                <p>, 1</p>
+                <p>, 1</p>
+                <p>, 1</p>
+                <p>, NULL</p>
+                <p>&#160;&#160;&#160; )</p>
+                <p>&#160;</p>
+                <p>SET @iViewID = SCOPE_IDENTITY()</p>
+                <p>&#160;</p>
+                <p>END</p>
+                <p>ELSE</p>
+                <p>BEGIN</p>
+                <p>SET @iViewID = ( SELECT ViewID FROM dbo.tbl_VW_View WHERE ViewName = 'Merchandise Financial Planning' )</p>
+                <p>END</p>
+                <p>&#160;</p>
+            </p>
+        </div>
+        <p>Views must also be linked to a view group.</p>
+        <div class="code_block">
+            <p>
+                <p>-- Link View and View Group</p>
+                <p>IF @iViewGroupID IS NOT NULL</p>
+                <p>AND @iViewID IS NOT NULL</p>
+                <p>AND NOT EXISTS ( SELECT 1</p>
+                <p>FROM dbo.tbl_VW_ViewRelationshipToViewGroup</p>
+                <p>WHERE ViewGroupID = @iViewGroupID</p>
+                <p>AND ViewID = @iViewID )</p>
+                <p>BEGIN</p>
+                <p>INSERT INTO dbo.tbl_VW_ViewRelationshipToViewGroup</p>
+                <p>( ViewID, ViewGroupID )</p>
+                <p>VALUES ( @iViewID, @iViewGroupID )</p>
+                <p>END</p>
+                <p>&#160;</p>
+            </p>
+        </div>
+    </body>
+</html>

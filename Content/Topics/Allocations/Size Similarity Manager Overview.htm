@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Size Similarity Manager Overview</h1>
+        <p>It is not uncommon for the same real size to be present in a database under multiple names (for example, size small could be represented as S, SM, SML, etc.). This could be due to issues with the way data imports are set up or even problems with the master data being fed into Demand Management, but whatever the cause, these additional data points can cause unintended dilution when calculating and working with size curves. The Size Similarity Manager was designed to allow users to identify sizes that should be treated together as one, specify a single name under which to unify and display them, and ultimately work with them as a single entity without the need to manually unify the relevant data points.</p>
+        <p>The Size Similarity Manager can be accessed through the Views module – <b>System Utilities &gt; Views</b>. Select Size Similarity Manager from the Navigation Menu.</p>
+        <p>
+            <img src="../../Resources/Images/Allocation Size/Allocation Size.png" />
+        </p>
+        <h2>Functionality and fields</h2>
+        <h3>Toolbar</h3>
+        <p>
+            <img src="../../Resources/Images/Allocation Size/Header Area Controls.png" />: adds a new similarity set</p>
+        <p>
+            <img src="../../Resources/Images/Allocation Size/Header Area Controls_1.png" />:deletes the selected similarity set</p>
+        <p class="important" MadCap:autonum="&lt;b&gt;IMPORTANT: &lt;/b&gt;">this is only a soft delete, thus, deleting a set will not reverse any data migrations that have already been completed – it will, however, prevent the set from being used for any future migrations or data imports. Deleting the set will also make any Similar Sizes that were displayed under the Display Size visible throughout Demand Management once more</p>
+        <p>
+            <img src="../../Resources/Images/Allocation Size/Header Area Controls_2.png" />:launches the Fields Customization dialog; used for customizing the fields shown and layout of the current view</p>
+        <p>
+            <img src="../../Resources/Images/Allocation Size/Header Area Controls_3.png" />:commits all changes made in the current view since the last Save to the database</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">changes cannot be automatically undone with Cancel once Saved</p>
+        <p>
+            <img src="../../Resources/Images/Allocation Size/Header Area Controls_4.png" />:undoes all changes made in the current view since the last Save and does not commit them to the database; this will also restore deleted similarity sets, provided the deletion has not been Saved</p>
+        <h3>Field Descriptions</h3>
+        <ul>
+            <li>
+                <b>Size Similarity ID</b>: non-editable integer; displays the unique system ID number associated with the similarity set</li>
+            <li>
+                <b>Size Similarity Set Name</b>: user editable alpha numeric; displays/sets the name for the similarity set</li>
+            <li>
+                <b>Size Type</b>: user editable single-select drop down; displays/sets the size type to define the similarity set for; populated with Size Types defined in the Allocation module</li>
+            <li>
+                <b>Display Size</b>: user editable single-select drop down; displays/sets the size name under which all similar sizes in the similarity set will be displayed in Demand Management after migration has occurred; populated with sizes contained in the selected Size Type</li>
+            <li>
+                <b>Similar Size</b>: user editable multi-select drop down; displays/sets the sizes to be grouped together in the similarity set; populated with sizes contained in the selected Size Type</li>
+            <li>
+                <b>Queue For Migration</b>: non-editable check box; indicates that changes made to the similarity set have been saved and queued for migration in the next migration script run<ul><li><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">similarity sets that have been queued for migration but which contain sizes that have yet to be migrated will have this cell conditionally formatted red</p></li></ul></li>
+        </ul>
+        <ul>
+            <li>
+                <b>Has Migrated</b>: non-editable check box; indicates whether or not migration has been completed for the similarity set</li>
+            <li>
+                <b>Last Migrated Date</b>: non-editable calendar control; displays the date the similarity set was last migrated</li>
+            <li>
+                <b>Last Migrated</b> User: non-editable single-select drop down; displays the user who last ran the migration script for the similarity set</li>
+            <li>
+                <b>Create Date</b>: non-editable calendar control; displays the date the similarity set was created</li>
+            <li>
+                <b>Create User</b>: non-editable single-select drop down; displays the user who created the similarity set</li>
+            <li>
+                <b>Last Modified Date</b>: non-editable calendar control; displays the date the similarity set was last modified</li>
+            <li>
+                <b>Last Modified User</b>: non-editable single-select drop down; displays the user who last ran the modified the similarity set</li>
+        </ul>
+    </body>
+</html>

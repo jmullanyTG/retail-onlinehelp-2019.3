@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+         
+    </head>
+    <body>
+        <h1>Calc Toggle Details – Hybrid Cost Dual Markdown Plan Type</h1>
+        <p>Though many similarities exist between the calc toggles for the Hybrid Cost &amp; Retail plan types and those for the Hybrid Cost Dual Markdown type, there are some major differences that warrant the examples in this section. There are also a few behaviors specific to this plan type worth noting that will help you better understand the way this plan type functions:</p>
+        <ul>
+            <li>Markdowns (Promo) and Promo Sales are linked: the nature of a promotional (or temporary) markdown is such that it is only realized when an accompanying sale of a unit on promotion is sold, thus promotional sales must be present in order for there to be promotional markdowns and vice-versa. That said, any time a change to either promo markdowns or promo sales occurs, there must also be an accompanying change to the other metric<ul><li><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Markdowns (Promo) values can always be validated via (AUT – Promo AUR) * Promo Sales Units, however, not all significant digits stored in the database are displayed on screen, thus small variances may occur when manually calculating based on on-screen values. Exact values can be calculated by exporting to Excel and using formulas including the relevant metric cells</p></li></ul></li>
+        </ul>
+        <ul>
+            <li>Markdowns (Perm) are only calculated as a percent of Sales: contrary to promotional markdowns, permanent markdowns are realized at the time the price of goods is decreased, regardless of when the marked down units actually sell. That said, Markdown Sales planned could potentially include units that were marked down in the past, and thus, cannot be directly linked to permanent markdowns. They are calculated as a percentage of sales and subtracted from MMU in the period they are realized to assist in gauging true profitability for that period</li>
+            <li>AUT holds unless changed directly or via IMU %: while AUT is directly related to the amount of promotional markdowns in a given period, we never recalculate AUT to achieve changes in markdowns, opting instead to recalculate Promo AUR or Promo Sales Units. This being true, AUT for a period (or other periods beneath an aggregate level lock) will not change unless it is changed directly by the user or indirectly through a change to IMU %<ul><li><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">AUT at aggregate levels (ie. Month, etc.) may fluctuate without being changed via these methods due to the mix of inventory represented in the levels beneath</p></li></ul></li>
+        </ul>
+        <p>Keeping in mind the points above, you will now more readily understand the calc toggle examples that follow:</p>
+        <ul>
+            <li>Sales<ul><li>HOLD Markdown % of Sales, AUR, IMU % | Calc Sales Units, COGS, IMU Retail, MMU, Markdowns<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the default Sales calc toggle, this is employed when the user wishes to change sales revenue and units while maintaining the planned average selling price (AUR) per unit; this toggle is also allows the user to maintain Markdowns % of Sales (Promo)</p></li></ul></li></ul></li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type.png" />
+        </p>
+        <p>In the example above, Sales has been changed to $150,000 for 2018_wk10</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_1.png" />
+        </p>
+        <p>Note that Sales Units has increased to 8,309 while AUR has remained at $18.05 to balance the change in Sales. Additionally, Markdowns (Promo) and Markdowns (Perm) have increased to $22,500, and $15,000, respectively, to balance their corresponding Markdowns % to Sales metrics, which have held</p>
+        <ul>
+            <li>HOLD Sales Units, COGS, IMU, Markdowns % of Sales (Perm) | Calc AUR, MMU, Markdowns, Markdowns % of Sales (Promo)<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the alternate calc toggle for Sales allows for a slightly different approach in which the user wishes to maintain Sales Units while adjusting the average selling price (AUR) per unit; note that Markdowns % of Sales (Perm) still holds but Markdowns % of Sales (Promo) cannot</p></li></ul></li>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_2.png" />
+            </p>
+            <p>In the example above, Sales has now been decreased to $75,000  for 2018_wk10</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM  Plan Type_3.png" style="visibility: visible;width: 634px;height: 218px;" />
+            </p>
+            <p>This time, Sales Units holds at 5,540 while AUR decreases to $13.54 to balance the change in Sales. Markdowns % of Sales (Perm) has held at 10%, just like in the first toggle’s example, but this time, Markdowns % of Sales (Promo) must recalculate along with Markdowns (Promo) and Markdowns (Perm) because the change in AUR widens the gap between AUT and the underlying Promo AUR, forcing an increase in Markdowns (Promo)</p>
+        </ul>
+        <ul>
+            <li>Sales Units<ul><li>HOLD AUR, IMU %, Markdowns % of Sales | Calc Sales, COGS, IMU Retail, MMU, Markdowns<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the default Sales Units calc toggle, this is employed when the user wishes to change sales units with a resulting change to sales revenue, while maintaining the planned average selling price (AUR) per unit; this toggle is also allows the user to maintain Markdowns % of Sales (Promo)</p></li></ul></li><p><img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_4.png" /></p><p>In the example above, Sales Units has been changed to 6,000 for 2018_wk10</p></ul></li>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_5.png" />
+            </p>
+            <p>Note that Sales has increased to $108,311 while AUR has remained at $18.05 to balance the change in Sales Units. Additionally, Markdowns (Promo) and Markdowns (Perm) have increased to $16,247, and $10,831, respectively, to balance their corresponding Markdowns % to Sales metrics, which have held<ul><li>HOLD Sales, IMU %, Markdowns (Perm), Markdowns % of Sales (Perm) | Calc AUR, COGS, IMU Retail, MMU, Markdowns (Promo), Markdown % of Sales (Promo)<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the alternate calc toggle for Sales Units allows for a slightly different approach in which the user wishes to maintain Sales while adjusting the average selling price (AUR) per unit; note that Markdowns % of Sales (Perm) still holds but Markdowns % of Sales (Promo) cannot</p></li></ul></li></ul></p>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_6.png" />
+        </p>
+        <p>In the example above, Sales Units has now been decreased to 5,000&#160; for 2018_wk10</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_7.png" style="visibility: visible;width: 634px;height: 218px;" />
+        </p>
+        <p>This time, Sales holds at $100,000 while AUR increases to $20.00 to balance the change in Sales Units. Markdowns % of Sales (Perm) has held at 10%, just like in the first toggle’s example, but Markdowns (Perm) also holds because Sales has not changed. Additionally, Markdowns (Promo) and Markdowns % of Sales (Promo) must recalculate because the change in AUR shrinks the gap between AUT and the underlying Promo AUR, forcing a decrease in Markdowns (Promo)</p>
+        <ul>
+            <li>AUR<ul><li>HOLD Sales Units, COGS, IMU, Markdown % of Sales (Perm) | Calc Sales, MMU, Markdowns, Markdown % of Sales (Promo)<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the default AUR calc toggle, this is employed when the user wishes to change average unit selling price with a resulting change to sales revenue, while maintaining sales units for the period</p></li></ul></li></ul></li>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_8.png" />
+            </p>
+            <p>In the example above, AUR has been increased to $19.00 for 2018_wk10</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_9.png" />
+            </p>
+            <p>Note that Sales has increased to $105,252 while Sales Units has held at 5,540 to balance the change in AUR. Additionally, Markdowns % of Sales (Perm) has held at 10%, but Markdowns % of Sales (Promo) must recalculate along with Markdowns (Promo) and Markdowns (Perm) because the change in AUR shrinks the gap between AUT and the underlying Promo AUR, forcing a decrease in Markdowns (Promo)<ul><li>HOLD Sales, IMU %, Markdowns (Perm), Markdown % of Sales (Perm) | Calc Sales Units, COGS, IMU Retail, MMU, Markdowns (Promo), Markdown % of Sales (Promo)<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the alternate calc toggle for AUR allows for a slightly different approach in which the user wishes to maintain sales revenue while adjusting sales units for the period; as with the standard AUR toggle, Markdowns % of Sales (Perm) still holds but Markdowns % of Sales (Promo) cannot</p></li></ul></li></ul></p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_10.png" />
+            </p>
+            <p>In the example above, AUR has now been decreased to $17.00 for 2018_wk10</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_11.png" />
+            </p>
+            <p>This time, Sales holds at $100,000 while Sales Units increases to 5,882 to balance the change in AUR. Markdowns % of Sales (Perm) has held at 10%, just like in the first toggle’s example, but Markdowns (Perm) also holds because Sales has not changed. Additionally, Markdowns (Promo) and Markdowns % of Sales (Promo) must recalculate because the change in AUR widens the gap between AUT and the underlying Promo AUR, forcing an increase in Markdowns (Promo)</p>
+        </ul>
+        <ul>
+            <li>IMU % (and AUT)<ul><li>HOLD Sales, Sales Units, AUR, Markdowns (Perm), Markdowns % of Sales (Perm) | CALC AUT, IMU Retail, Markdowns (Promo), Markdowns % of Sales (Promo)<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the single IMU % calc toggle in this plan type allows users to adjust ticket price and promotional markdowns by setting target initial profitability percent</p></li></ul></li></ul></li>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_12.png" />
+            </p>
+            <p>In the example above, IMU % has been increased to 80% for 2018_wk10</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_13.png" />
+            </p>
+            <p>Note that AUT has increased to $26.46 to balance the increase in initial profit potential, however, because AUR has held, this also widens the gap between AUT and the underlying Promo AUR, thus forcing an increase in Markdowns (Promo). Because Sales has held, Markdowns % of Sales (Promo) must increase to balance the rise in Markdowns (Promo), however, Markdowns (Perm), being defined solely as a % of Sales maintains at $10,000<ul><li><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">because changing AUT directly always yields a single behavior in each plan type, AUT is not listed explicitly in the Calculation Toggles tab, however, changing AUT essentially functions the same as changing IMU % but reciprocal – so changing AUT calculates IMU %. All other behavior described in the above example is the same.</p></li></ul></p>
+        </ul>
+        <ul>
+            <li>Markdowns (Perm)<ul><li>HOLD Sales, Sales Units, AUR, COGS, IMU | Calc MMU, Markdowns, Markdown % of Sales<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the single Markdowns (Perm) calc toggle in this plan type allows users to plan permanent markdowns via direct value entry or as a % of sales and see the impact on profitability without adjusting sales</p></li></ul></li></ul></li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_14.png" />
+        </p>
+        <p>In the example above, Markdowns % to Sales (Perm) has been increased to 20% for 2018_wk10</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Calc Toggle Details HDCM Plan Type_15.png" style="visibility: visible;width: 634px;height: 300px;" />
+        </p>
+        <p>Note that Markdowns (Perm) has increased to $20,000, balancing the newly entered % to sales, while the entire sales plan structure has been maintained. This increase directly impacts MMU (Product), decreasing it to $48,868 and forcing a recalculation of MMU % (Product). Also notice the increases in Markdowns (Total) and Markdowns % of Sales (Total)</p>
+        <ul>
+            <li>Markdowns (Promo)<ul><li>Hold Sales, IMU %, Reg Sales Plan, Promo Sales, Markdown Sales Plan | Calc Sales Units, AUR, COGS, IMU Retail, MMU, Promo Sales Units &amp; AUR<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the standard Markdowns (Promo) calc toggle allows users to plan promotional markdowns, either by directly entering a value or as a target % of sales, while holding period sales revenue and only impacting the promo sales component beneath</p></li></ul></li></ul></li>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HDCM Type_16.png" />
+            </p>
+            <p>In the example above, Markdowns % to Sales (Promo) has been increased to 10% for 2018_wk10</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HDCM Plan Type_17.png" />
+            </p>
+            <p>Note that Markdowns (Promo) has increased to $10,000, balancing the newly entered % to sales while sales revenue and IMU % have held. Sales Units and AUR change, reflecting the underlying change to the corresponding Promo metrics. This indirectly impacts MMU and MMU % (Product) through an increase in COGS. Markdowns (Perm), being a function of the target % of sales, remains fixed, but Markdowns (Total) and Markdowns % of Sales (Total) increase, showing the underlying increase in promotional markdowns. The real key to this behavior lies in what happens to the Sales by Type mix:</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HDCM Plan Type_18.png" />
+            </p>
+            <p>Prior to the change, the Sales by Type mix looks like the above…</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HDCM Plan Type_19.png" style="visibility: visible;width: 634px;height: 356px;" />
+            </p>
+            <p>…after the change, notice how only Promo Sales Units and AUR have changed while the sales plans for Reg and Markdown have held, making this toggle perfect for specific edits to promotional activity<ul><li>HOLD Sales, IMU %, Reg AUR, Promo AUR, Markdown AUR | Calc Sales Units, AUR, COGS, IMU Retail, MMU, Reg Sales, Promo Sales, Markdown Sales<ul><li><p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the alternate Markdowns (Promo) calc toggle takes a slightly different approach, still allowing users to plan promotional markdowns as either a value or a % of sales, but this method holds period sales revenue while remixing the underlying sales component’s revenue and units, holding component AUR, and changing period sales units and AUR as a result of the remix</p></li></ul></li></ul></p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HDCM Type_16.png" />
+            </p>
+            <p>In the example above, Markdowns % to Sales (Promo) has, again, been increased to 10% for 2018_wk10</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_20.png" style="visibility: visible;width: 634px;height: 314px;" />
+            </p>
+            <p>At first glance, this toggle appears to function almost identically to the standard Markdowns (Promo) toggle, but again, it is what happens to the Sales by Type mix that makes this toggle unique:</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HDCM Plan Type_18.png" />
+            </p>
+            <p>Prior to the change, the Sales by Type mix looks like the above…</p>
+            <p>
+                <img src="../../Resources/Images/MFP/Calc Toggle Details HCDM Plan Type_21.png" style="visibility: visible;width: 634px;height: 355px;" />
+            </p>
+            <p>…after the change, notice that the entire sales mix has recalculated, yielding an increase in Promo Sales and Sales Units to correspond with the increase in promotional markdowns, while Sales and Sales Units for the Reg and Markdown components have decreased to hold period Sales. AUR’s hold for all sales components, but Total Sales AUR recalculates as a result of changed Total Sales Units</p>
+        </ul>
+    </body>
+</html>

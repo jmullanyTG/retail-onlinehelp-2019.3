@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Column Properties</h1>
+        <p>The column properties section allows for users to add, modify, and delete columns as needed within the grid. </p>
+        <ul>
+            <li><b>Column</b> – The column name.</li>
+            <li><b>Column Friendly Name</b> – An optional user readable name.</li>
+            <li><b>b</b> – Will supply text for a mouse-over tool tip on the column. </li>
+            <li><b>Visible</b> – If checked, the column will be visible within the widget. </li>
+            <li><b>Order</b> – The stacked numerical order for the columns in the widget. Any column without the “visible” flag checked will have an order of “0”.</li>
+            <li>
+                <p><b>Format String</b> – The format string settings will affect how data is displayed. Format string entries will vary depending on the data type. Examples include:</p>
+                <ul>
+                    <li><b>P2</b> – A percentage with two decimal places.</li>
+                    <li><b>F3</b> – A fixed point decimal with three decimal places.</li>
+                    <li><b>C</b> – A currency.</li>
+                    <li><b>D6</b> – A decimal with six decimal places.</li>
+                </ul>
+            </li>
+            <li><b>Pivot Area</b> – The default area of the pivot grid for the column (may be moved). </li>
+            <li><b>Allowed Pivot Areas</b> – If the column is allowed to be moved from its default pivot area, the available areas will be listed, or a value of “All” will be present. </li>
+            <li><b>Show Column Totals</b> – If checked, will show a total for the column. </li>
+            <li><b>Show Column Grand Totals</b> – If checked, will show a grand total for the column. </li>
+            <li><b>Fore Color</b> – The text color for the column. </li>
+            <li><b>Back Color</b> – The background color for the column. </li>
+            <li><b>Aggregate Type</b> – Will determine how the data within the column is aggregated. </li>
+            <p>
+                <img src="../../Resources/Images/Views/Column Properties.png" />
+            </p>
+            <li><b>Aggregate Display Type</b> – Will determine how the aggregated data is displayed. </li>
+            <p>
+                <img src="../../Resources/Images/Views/Column Properties_1.png" />
+            </p>
+            <li>
+                <p><b>Total Aggregate Type</b> – Total aggregate will refer to the level above the lowest level. The aggregate type selected will determine how that data is aggregated (e.g. week level data would be “aggregate type” and month level data would be “total aggregate type”).</p>
+                <p>
+                    <img src="../../Resources/Images/Views/Column Properties_2.png" />
+                </p>
+            </li>
+            <li><b>Show in Customization Form</b> – Will present the “fields” button within the user interface. </li>
+            <li><b>Show Values</b> – Will present the value to the users. This is different from the “visible” field in that the data is still available for calculations, but not presented to the end users.</li>
+            <li><b>Allow Drag</b> – Allows the column to be moved to another pivot area.</li>
+            <li><b>Allow Drag in Customization Form</b> – Allows the column to be moved to another pivot area within the customization form (fields view).</li>
+            <li><b>Running Total</b> – If selected, certain aggregation types (SUM, COUNT, etc.) will display the running total, which is calculated for values in the&#160;<a href="https://documentation.devexpress.com/WindowsForms/CustomDocument1693.aspx">data area</a>&#160;and corresponds to the current&#160;<a href="https://documentation.devexpress.com/WindowsForms/CustomDocument1710.aspx">column</a>&#160;or&#160;<a href="https://documentation.devexpress.com/WindowsForms/CustomDocument1709.aspx">row field</a>. </li>
+            <li><b>Min Width</b> – The minimum number of pixel for width on the column. </li>
+            <li><b>Width</b> – The standard number of pixels for width on the column.</li>
+            <li><b>Write Enabled</b> – Allows the field to be edited within the user interface.</li>
+            <li>
+                <p><b>Writeback Split Type</b> – Determines how the value is split when written back.</p>
+                <ul>
+                    <li><b>Direct</b> – Will write the value exactly as defined by the user.</li>
+                    <li><b>Equal Split</b> – Will equally divide the value by the number of dependents at the lower level (i.e. month value would be split into four weeks equally).</li>
+                    <li><b>Weighted Split</b> – Will require the user to specify how the split is distributed. If selected, will require users to set the writeback weight based on column. </li>
+                </ul>
+            </li>
+            <li><b>Writeback Weight Based on Column</b> – Defines the weighted split value.</li>
+            <li><b>Writeback to Column Name</b> – If selected, will allow a data writeback within the column to affect the value of another column.</li>
+            <li><b>Row Level Write Enabled Check Field</b> – At row level, will determine if the value is write enabled.  </li>
+            <li><b>Pivot Level Write Enabled Check Field</b> – At the pivot level, will determine if the value is write enabled. If enabled at pivot level, the row level write back will also be enabled.  </li>
+            <li><b>Row Level Locked Check Field</b> – If selected, will lock the data at the row level.  </li>
+            <li><b>Aux Write Enabled</b> – If selected, will allow a data writeback within the column to affect the value of multiple columns, (which must be specified).  </li>
+            <li>
+                <p><b>Aux Writeback Value Calculation</b> – Allows for an expression to calculate the value which will be written back. Any column within the pivot grid may be referenced by using the true column name within square brackets (case sensitive). Available parameters include:</p>
+                <ul>
+                    <li><b>@Value</b> – Whatever the user supplied value is will become the “@Value” (e.g. @Value/SalesUnits would be used to derive AUR).</li>
+                    <li><b>@OldValue</b> – Will use the value before the user changed it to make the calculation (i.e. for holding calculations).</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Aux Writeback Split Type</b> – Determines how the value is split when written back.</p>
+                <ul>
+                    <li><b>Direct</b> – Will write the value exactly as defined by the user.</li>
+                    <li><b>Equal Split</b> – Will equally divide the value by the number of dependents at the lower level (i.e. month value would be split into four weeks equally).</li>
+                    <li><b>Weighted Split</b> – Will require the user to specify how the split is distributed. If selected, will require users to set the writeback weight based on column. </li>
+                </ul>
+            </li>
+            <li><b>Aux Writeback Weight Based on Column</b> – Defines the weighted split value for the aux writeback.</li>
+            <li><b>Aux Writeback to Column Name</b> – If selected, will allow a data writeback within the column to affect the value of another column.</li>
+            <li><b>Aux Row Level Write Enabled Check Field</b> – At row level, will determine if the value is write enabled.&#160; </li>
+            <li><b>Aux Pivot Level Write Enabled Check Field</b> – At the pivot level, will determine if the value is write enabled. If enabled at pivot level, the row level write back will also be enabled.</li>
+            <li><b>Sort Order</b> – Determines the sort order for the data within the column.  </li>
+            <li><b>Sort by Column</b> – Enables the reference column used for sorting. </li>
+            <li><b>Column Used to Sort</b> – Specifies the reference column used for sorting. </li>
+            <li><b>Expression Column</b> – If checked, the column is an expression column used to make a calculation. </li>
+            <li><b>Expression</b> – If the column is an expression column, this will display the value of the expression. </li>
+            <li>
+                <p><b>Expression Column Type</b> – Will describe the level at which the expression calculation is done.</p>
+                <p>
+                    <img src="../../Resources/Images/Views/Column Properties_3.png" />
+                </p>
+            </li>
+            <li><b>Data Type</b> – Defines the output data type of the expression.  </li>
+            <li><b>Derived Column Type</b> – Derived columns are legacy functionality and all features have been replaced by functionality in expression columns.  </li>
+            <li><b>Derived From Column</b> – Derived columns are legacy functionality and all features have been replaced by functionality in expression columns.&#160; </li>
+            <li><b>Lookup Column</b> – Checked if column is a lookup column. </li>
+        </ul>
+    </body>
+</html>

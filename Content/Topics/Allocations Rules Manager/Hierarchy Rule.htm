@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+         
+    </head>
+    <body>
+        <h1>Hierarchy Rule</h1>
+        <p>The hierarchy rule chooses the data to aggregate based on the items selected. Users will select the level to which they wish to aggregate (i.e. you do not specify the specific class such as men’s knits, in this case we specify that it runs at class).  </p>
+        <p>Users would first select the items which they intend to allocate.</p>
+        <p>
+            <img src="../../Resources/Images/Allocations Rules Manager/Hierarchy Rule.png" />
+        </p>
+        <p>Stores are selected at the time of allocation. I.e. when you actually execute the allocation, it uses the stores that you select in the wizard.</p>
+        <p>
+            <img src="../../Resources/Images/Allocations Rules Manager/Hierarchy Rule_1.png" />
+        </p>
+        <p>In this example if there is no size component, i.e. we chose to aggregate only to the class level and not to the class size level.</p>
+        <p>
+            <img src="../../Resources/Images/Allocations Rules Manager/Hierarchy Rule_2.png" />
+        </p>
+        <p>If, in this example, we were to change the rule to aggregate to class and size, the tool will now aggregate the sales to a class (women’s denim) and size (25, 26, 27, 28).</p>
+        <p>
+            <img src="../../Resources/Images/Allocations Rules Manager/Hierarchy Rule_3.png" />
+        </p>
+        <p>You will notice that the allocation is done per individual item and therefore the contributions of each store could be different by size.</p>
+        <p>
+            <img src="../../Resources/Images/Allocations Rules Manager/Hierarchy Rule_4.png" />
+        </p>
+        <h2>Advantages</h2>
+        <ul>
+            <li>Hierarchy Rules can be used to allocate multiple sizes of products with the same rule allowing for different contributions by store</li>
+            <li>Hierarchy rules can be used regardless of the sizes to allocate different products to stores based in the different products classes contribution</li>
+            <li>This all means that you only use a single rule to allocate instead of having to create multiple fixed rules</li>
+        </ul>
+        <h2>Disadvantages</h2>
+        <ul>
+            <li>Because the allocation has to run for every item individually, it is slower than a fixed rule</li>
+        </ul>
+    </body>
+</html>

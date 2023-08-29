@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Site Modeling</h1>
+        <p>When opening a new store or Distribution Center (DC), you can choose an existing store or DC to model forecasts after. This creates a store supersession, which uses the product-level sales history from the model site to forecast demand for the new site. Orders for the new site can then be generated based on the modeled forecasts. </p>
+        <h2>Site Model Options</h2>
+        <p>Site model options functions as the header for the supersession/model. You can select the start and end dates of the model and its active status. </p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Superssesion Start Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The start date for the model. This is the first period of historical sales that is considered. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Superssesion Start Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The end date for the model. This is the final period of historical sales that is considered. If this date is beyond the date on which the new store has accumulated actualized sales, the model continues to be used to represent sales history.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Active</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">A flag used to determine the active status of the supersession. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Opening Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The date on which a site is set to open. To be used for new store openings. This is not a user-editable field.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Created Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Date of creation for the supersession. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Created By</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">User who created the supersession.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Last Updated</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Date of the most recent update to the supersession. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Last Updated By</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">User who last updated the supersession record.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Model Last Process</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        The supersession model must be reprocessed periodically. This task must be done as part of a job that coincides with sales history updates, such as nightly jobs.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Site Model Details</h2>
+        <p>Site model details allows you to determine the product levels that will contribute to the creation of the model and their relative contributions. </p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Product Level</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The level in the product hierarchy that can be modeled. The available hierarchy levels are controlled through a system policy setting. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Model Site</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The site  used to create the model. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Model Site Opening Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The opening date for the modeled site. This is not a user-editable field.  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Factor</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The ratio  applied to the sales history of the modeled site. A value of <b>1</b> applies 100% of the sales to the model. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Active</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>A flag used to determine the active status of the product level in the model.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Created Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Date of creation for the model line. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Created By</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">User who created the model line.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Last Updated</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Date of the most recent update to the model line. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Last Updated By</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">User who last updated the model line record.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>You can use the Site Model Options widget to create site model headers and then determine the effect of the models through the Site Model Details widget. </p>
+        <h2>Site Model Options</h2>
+        <p>The Site Model Options widget is used to create site level supersessions by determining a start date, an end date, and an active status. Any supersession without a start date  goes to the beginning of the history in the system; any supersession without an end date continues in perpetuity. </p>
+        <p>
+            <img src="../../Resources/Images/Site Manager/Site Modeling_1.png" />
+        </p>
+        <h2>Site Model Details</h2>
+        <p>After the product level hierarchy has been set for the system (through use of a system policy), the applicable product levels display as rows in the Site Model Details grid. </p>
+        <p>
+            <img src="../../Resources/Images/Site Manager/Site Modeling_1_1.png" />
+        </p>
+        <p>For each line, you must select a model site to determine the set of historical sales to be copied and a factor. The factor determines the percentage of sales to be applied in the model. A factor of <b>1</b> copies 100% of the sales quantity; a factor of <b>0.5</b> copies 50% of the sales quantity. </p>
+        <h2>Example</h2>
+        <p><a href="../How-To Guides/Store Management/Planning Demand for a New Store.htm">See example</a>
+        </p>
+    </body>
+</html>

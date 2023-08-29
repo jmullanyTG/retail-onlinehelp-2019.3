@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Create a Validation Rule</h1>
+        <p>Within the Promotion Validations tab, click New above the Validation Rules grid in the bottom half of the screen to create a new Validation Rule. Enter the required fields and click Save.</p>
+        <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Action</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Name (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter a descriptive label to summarize the purpose of the Validation. This will be used to identify the Validation when creating Validation Sets.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Description (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter a summary of the Validation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Validation Type (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Identify when the Validation will be run in relation to the Calculation. Select the Post option from the drop down menu.</p>
+                        <ul>
+                            <li>Pre - To be developed as future functionality.</li>
+                            <li>Post - This should be selected in all cases and will run the Validation after price and cost retrieval and Calculations have been run.</li>
+                            <li>Both - To be developed as future functionality.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Validation Level (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select a level from the populated drop down. All levels act on the Site Cluster level.</p>
+                        <ul>
+                            <li>Promotion Level – To be developed as future functionality. For now, selecting this option means that Calculations will be performed at the Promotion Group level.</li>
+                            <li>Promotion Aggregate Level – Calculations will be performed at the Promotion Group level.</li>
+                            <li>Group Level – Calculations will be performed at the Product Group level.</li>
+                            <li>Product Level</li>
+                        </ul>
+                        <ul>
+                            <li>Item Level – Calculations will be performed at the Item Master Level.</li>
+                            <li>Variant Level – Calculations will be performed at the Variant Level.</li>
+                        </ul>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">The Promotion Manager system defines Product Levels as follows:</p>
+                        <ul>
+                            <li>Inventory – A product at a particular Site so it has a single price.</li>
+                            <li>Item Master – A product across all Sites that may have different prices at different Sites. An Item Master may have a max price for example.</li>
+                            <li>Variant – A variant of Item Masters based on a shared attribute i.e. size, color, style, etc. An example of a Variant is Men’s Polo Shirts.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Apply to Group Type (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>From the drop down options, select one to identify which Group Association Type this Validation will be run on:</p>
+                        <ul>
+                            <li>Buy Group - The Validation will only be run on the Buy Group.</li>
+                            <li>Get Group - The Validation will only be run on the Get Group.</li>
+                            <li>Buy Get Group - The Validation will only be run on both the Buy and Get Groups. This option should also be selected for all Promotions that are not of the Buy Get type.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Method (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The drop down is populated by the available methods (i.e. advanced processes applied at the database level) configured for use. &#160;Select a method the system will apply for the Validation. This will supersede any Formula entered.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Formula (Required/Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter a mathematical expression for the system to evaluate. Configured variables can be found in the right panel. This formula will be used if the Method column is blank.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Severity (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Select a severity from the populated drop down:</p>
+                        <ul>
+                            <li>Information - After displaying the Error Message, you will be allowed to continue.</li>
+                            <li>Warning - After displaying the Error Message, you will be allowed to continue.</li>
+                            <li>Error - After displaying the Error Message, you will not be allowed to continue. Corrections must be made.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <p>Error Message (Required)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Enter a message that will be displayed if the Validation fails. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <p>Deleted (Optional)</p>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>See <a href="Delete a Validation Rule.htm">Delete a Validation Rule</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

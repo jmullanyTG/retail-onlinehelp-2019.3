@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="3623" MadCap:lastWidth="994">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Target Segment Definitions field descriptions</h1>
+        <p>Target segments can be defined to subdivide the product and site hierarchy levels selected for your scenario in a variety of ways, from the most common scenario of creating segments by lower hierarchy levels to the more complex scenarios where segments are created based on criteria, such as product attributes, that may cross traditional hierarchy levels. </p>
+        <p>When creating segments as needed with Target Filters, or when using a Plan Basis plan whose hierarchies don’t directly align with those in the active assortment plan, it is advised to use the View Exclusions function found on the top toolbar after defining your segments to identify any products that are part of the scenario hierarchy selections but that were inadvertently excluded. </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Target Segment Definitions.png" />
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">The flexibility of target segment definitions allows for scenarios in which the resulting segment cluster details may not add up to 100% of the hierarchies selected for the scenario – instead equaling more or less than 100% depending on how your segments are defined.</p>
+        <ul>
+            <li><b>Target Segment</b>: User or system defined name for the target segment. <b>Segment By Hierarchy</b> defaults segment names to the corresponding product hierarchy level description.</li>
+        </ul>
+        <ul>
+            <li><b>Target Filter</b>: Product filter selection to define the items included in the segment. The filters used here are Placeholder Filters. If you define a new Placeholder Filter while already working in a scenario, you must click Execute on the Target Creation dialog again to update the values in the drop down.</li>
+        </ul>
+        <ul>
+            <li><b>Supplemental Filter</b>: Product filter selection to define the items used in Rationalization only. Setting a Supplemental Filter does not supersede the list of items used to return historical data for the segment in the Segment Cluster Details section. It is used only in the calculation of the marginal return curve used for choice count recommendations. See Rationalization section below for more information.</li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Target Filter Generated?</b>: Using <b>Segment By Hierarchy</b> to define segments checks this box, which indicates that the system will use a temporary filter based on the product hierarchy level corresponding to the segment in place of a standard Target Filter. </p>
+                <p>Subsequently selecting a Target Filter after using <b>Segment By Hierarchy</b> will uncheck this box and the system will revert to using the Target Filter selected for calculation of segment data. The only way to re-check it is to click <b>Segment By Hierarchy</b> again, thus recreating the segment.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Cluster Sets</b>: Selects the cluster sets to define the site groupings for the segment in the Segment Cluster Details section. Cluster sets selected will also be those initially eligible to be assorted placeholders generated for the segment through the Smart Start process. </p>
+                <p>Using <b>Segment By Hierarchy</b> or Applying Target Segment Definitions with no cluster sets selected will default this to the cluster set(s) defined in Assortment Plan Defaults (see Assortment Plan Defaults above) for the assigned segment Product Hierarchy, provided they have been defined. </p>
+                <p>Because cluster set configurations can change over time in  Assortment Planning, the system uses the current Cluster Set Snapshot to determine site cluster assignments when calculating historical data used in the Segment Cluster Details section. </p>
+                <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">If the cluster sets selected don’t encompass all sites within the scenario Site Hierarchy selection, the data returned will only represent sales volume which occurred in the selected cluster sets. </p>
+                <p class="error" MadCap:autonum="&lt;b&gt;ERROR: &lt;/b&gt;">Because it is possible to have multiple cluster sets with valid configurations that include some or all of the same sites, when assigning cluster sets to segments, the system checks to make sure overlapping cluster sets have not been assigned. If you attempt to assign overlapping cluster sets (for example, a cluster set for United States Retail and another for North America Retail which includes both US and Canada overlapping with United States Retail), then when you click <b>Save</b> the following error displays and the cluster set selection reverts to what it was previously:</p>
+                <p>
+                    <img src="../../Resources/Images/Assortment Planning/Target Segment Definitions_1.png" />
+                </p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Comparison Time Frame</b>: Sets the comparison time frame from which to gather historical data for the segment. </p>
+                <p>Using <b>Segment By Hierarchy</b> for segment creation or Applying Target Segment Definitions without setting a Comparison Time Frame defaults this to LY, an un-selectable system identifier indicating the last year periods directly correlating to the scenario Window of Time will be used.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Product Hierarchy</b>: Sets the product hierarchy level to which placeholders generated from the segment through Smart Start will be assigned. <b>Segment By Hierarchy</b> defaults this to the same product level as indicated by the segment Name. </p>
+                <p>For manually defined segments, when a user clicks <b>Save</b> this setting defaults to the lowest common level of items returned in the Target Filter. For example, if a filter defined to return all apparel products that are part of the color group Red, assuming there are items belonging to this color group in each of the lowest product levels below Apparel, Product Hierarchy will be set to Apparel, the lowest common level. </p>
+                <p>This setting does not have to be set to a leaf of the lowest level of the assortment plan Product Hierarchy; if you aren’t sure at the time of scenario creation where all the placeholders will be ultimately assigned, you can choose a higher level and change by placeholder later in the assortment planning process.</p>
+            </li>
+        </ul>
+        <ul>
+            <li><b>Collection Option</b>: Defines the configuration of placeholders generated for the segment through Smart Start within collections. <ul><li><b>Multiple Variants per Collection (default)</b>: allows the system to optimally assign placeholders to collections based on the results of Rationalization. This yields the most common “Style-to-Style-Color” configuration (ie. A Crew Neck Tee in 5 colors).</li><li><b>All Variants in One Collection</b>: All placeholders generated for the segment through Smart Start will be assigned to a single collection, using the results of only the Intra-Style Marginal Return Curve (see Rationalization below) to determine rates of sale for each placeholder. </li><li><b>One Collection per Variant</b>: Placeholders generated for the segment through Smart Start will each be assigned to their own collection, using the results of only the Inter-Style Marginal Return Curve (see Rationalization below) to determine rates of sale for each placeholder.</li></ul></li>
+        </ul>
+        <ul>
+            <li><b>Refresh</b>: Refreshes the items associated with the Target and Supplemental Filters based on their criteria.</li>
+            <li><b>Last Filter Process Date</b>: Displays the date of the last filter Refresh for the segment. Using <b>Segment By Hierarchy</b> or on Apply of newly created segments, defaults to the current date.</li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>New Variants</b>: Sum of the Max Act TY New Choices for all segments within the scenario. Defaults to blank. Updates after scenario has been Rationalized or TY Act New Choices has been updated, Applied, and the scenario has been refreshed. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">All new choices within a single segment are assumed to be shared among all assigned clusters. </p>
+                <p>For example, for a scenario with 2 segments, both with a single cluster set with 3 clusters assigned, the first segment has TY Act New Choice counts of 5, 3, and 2, and the second segment has TY Act New Choice counts of 4, 2, and 1, New Variants will equal 9 (max of 5 from segment one and 4 from segment two). This means that the clusters receiving fewer choices will still share from the max new choices by segment, they just won’t receive all of them.</p>
+            </li>
+        </ul>
+        <ul>
+            <li><b>Total Variants</b>: Sum of the Max Act TY New Choices and the Max TY C/O Choices for all segments within the scenario. Defaults to blank; updates after scenario has been Rationalized or TY Act New Choices has been updated, Applied, and the scenario has been refreshed.</li>
+        </ul>
+        <ul>
+            <li><b>Active Variant Threshold</b>: Percentage (10.00%). Defaults to the value of the Active Variant Threshold Factor system policy. Sets the percent of deseasonalized average to be used in step 3 of the data cleansing process for the segment. Changes to this value are valid within the active scenario only and will not alter the system policy value.</li>
+        </ul>
+        <ul>
+            <li><b>Product Hierarchy Path</b>: Displays the full product hierarchy path of the Product Hierarchy selection for the segment. Used for specific identification of product levels in hierarchies where multiple levels may share the same description.</li>
+            <li><b>Clear Supplemental Filter?</b>: If checked, then when the user clicks <b>Save</b> this clears the Supplemental Filter set for the segment.</li>
+        </ul>
+        <h2>Toolbar buttons</h2>
+        <ul style="font-weight: bold;">New: Creates a new target segment line in the Target Segment Definitions section</ul>
+        <ul>
+            <li>Supplemental Filter defaults to (none) and Collection Option defaults to Multiple Variants Per Collection; all other fields are blank by default</li>
+        </ul>
+        <ul>
+            <li><b>Delete</b>: Deletes the selected target segment(s)</li>
+            <li><b>Fields</b>: Launches the customization dialog.</li>
+            <p>
+                <img src="../../Resources/Images/Assortment Planning/Target Segment Definitions_2.png" />
+            </p>
+        </ul>
+        <ul>
+            <li><b>Save</b>: saves changes made to Target Segment Definitions parameters</li>
+            <li><b>Cancel</b>: reverts changes made to the Target Segment Definitions parameters since the last Apply to their previous values</li>
+        </ul>
+    </body>
+</html>

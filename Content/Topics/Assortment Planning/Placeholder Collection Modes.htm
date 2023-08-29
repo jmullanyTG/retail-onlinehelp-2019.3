@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="4049" MadCap:lastWidth="1442">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Placeholder &amp; Collection Modes</h1>
+        <p>Line Visualization is where you will do the majority of your work in Demand Management Assortment Planning. The Assortment Planning module provides access to core functionalities through expandable side and bottom pane views that can be quickly configured on one screen or multiple and then saved as workspaces for quick recall later. This allows users to always maintain visibility to the core of their plan, including product images and see the effect of changes at different levels of the plan as they are made.</p>
+        <p>The Placeholder mode and the Collection mode can be accessed via the Assortment Planning toolbar.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes.png" />
+        </p>
+        <h2>Toolbar options</h2>
+        <p>The following options are available on the toolbar:</p>
+        <p><b>New</b>: launches the Add Placeholders dialog (not available in Collection mode). See, <MadCap:xref href="Adding Placeholders.htm">Add Placeholders dialog</MadCap:xref>.</p>
+        <p><b>Hindsight</b>: (not available in Collection mode) For more information on the Hindsight functionality, see <MadCap:xref href="Hindsight Placeholder Management.htm">Hindsight Placeholder Management</MadCap:xref>..</p>
+        <p><b>Split</b>: (not available in Collection mode) launches the Split Placeholders dialog. For more information, see <MadCap:xref href="Split Placeholders dialog.htm">Split Placeholders dialog</MadCap:xref>.</p>
+        <p><b>Delete</b>: deletes all selected placeholder/collection rows. To undo, use Undo &gt; Deletions rather than Cancel. Deletions are permanent when you click Save. Committed placeholders and collections cannot be deleted.</p>
+        <p><b>Undo</b>:</p>
+        <ul>
+            <li><b>Selected Row Changes</b>: undoes changes made prior to Apply for the selected rows only. Use this when you have made changes to multiple rows but only want to undo certain rows – using Cancel will undo all changes made since the last Apply</li>
+            <li><b>Deletions</b>: undoes all deletions of placeholder/collection rows made since the last Apply. Use this method instead of clicking Cancel to undo row deletions</li>
+            <li>
+                <p><b>Unassign Selected</b>: unassigns variants attached to the selected placeholder rows</p>
+                <ul>
+                    <li>Not available at header level in Collection mode – use in Placeholder mode or Variant view of Collection mode</li>
+                    <li>If any product attributes were attached to the variants being unassigned, system will revert the overwritten attribute values back to their pre-variant assignment states</li>
+                    <li>You cannot unassign variants from placeholders in Committed status</li>
+                </ul>
+            </li>
+        </ul>
+        <p><b>Locations</b>: launches the Manage Locations window (not available in Collection mode). use this dialog to exclude specific sites from clusters to which a placeholder is assorted and adjust their sales plans accordingly. For more information, see <MadCap:xref href="Manage Locations dialog.htm">Manage Locations dialog</MadCap:xref>.</p>
+        <h2>View Options</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Column Chooser</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Opens the Customization dialog. Users can drag fields to or from the main planning area and this dialog to customize the view. Custom layouts can be saved and restored by right-clicking in the Snapshot Templates area and selecting Save Layout or Restore Layout, respectively. </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Side Pane</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Choose which side pane you want to view. (You cannot have both open at the same time.)</p>
+                        <ul>
+                            <li>Cluster Details: shows the <a href="Cluster Details Side Pane.htm">Cluster Details</a> pane at the right of the screen</li>
+                            <li>Lifespan: shows the <a href="Lifespan Side Pane.htm">Lifespan</a> pane at the right of the screen</li>
+                            <li>None: Hides the side pane</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Image Tooltip</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">This option toggles whether image tooltips appear when the user hovers the mouse over a thumbnail image in the main view (not available in Collection mode).</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>Receipts</b>
+        </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes_10.png" />
+        </p>
+        <ul>
+            <li>
+                <p><b>Recalc Req. %:</b> displays the % of placeholders/collections in the current view that require receipt plan recalculation based on changes that have been made. This value is directly tied to the Receipt Status field in the main view; placeholders/collections with a Receipt Status of “Dirty” require recalculation.</p>
+            </li>
+            <li>
+                <p><b>Recalculate</b>: recalculates receipt plans for all placeholders/collections with a “Dirty” status in the Receipt Status field. Receipt plan default constraints can be set via Manage Assortment Plans &gt; Defaults. System policies affecting the Assortment Engine output can be set via <b>Maintenance &gt; Policies &gt; Engine: Commitments</b>. For more information see, <MadCap:xref href="Supporting Views.htm">Line Visualization Supporting Views</MadCap:xref>. </p>
+            </li>
+        </ul>
+        <p>Receipt recalculations require complex calculations and, thus, are sent to the Workload Queue module for scheduling and processing. Though, often, receipts are recalculated immediately, they may be deferred for later calculation based on the number of placeholders requiring recalculation and other jobs currently in the queue. Placeholders awaiting recalculation will become locked and conditionally formatted to indicate this.</p>
+        <p>Receipts for placeholders/collections in Replen status are calculated in the Forecasts module and read in, thus they will never appear “Dirty” and will not be recalculated when this button is clicked.</p>
+        <p>All changes to your plan, including changes made to constraints in the Receipt Plan supporting view, must be saved prior to recalculating receipts or they will not be taken into account by the Receipt Engine.</p>
+        <p><b>Replen</b><![CDATA[   ]]></p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Placeholder Collection Modes_11.png" />
+        </p>
+        <p><b>Recalculate</b>: recalculates sales plans for placeholders/collections of Status “Replen” with a “Dirty” status in the Replen Status field. The date Replen placeholders/collections were last recalculated is shown in the Last Replen field.</p>
+        <p>Replenishment recalculations require complex calculations and, thus, are sent to the Workload Queue module for scheduling and processing. Though replenishment placeholders are frequently recalculated immediately, they may be deferred for later calculation based on the number of placeholders requiring recalculation and other jobs currently in the queue. Placeholders awaiting recalculation are locked and conditionally formatted to indicate this.</p>
+        <p><b>Health %:</b> Indicates what % of an assortment has issues that need to be addressed. More details are provided in the <b>Health Error</b> and <b>Health Error Details</b> columns in the Main Planning View. </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View Health Error Details Column.PNG" />
+        </p>
+        <h2>Managing Workspaces</h2>
+        <p>Use the <b>Workspaces</b> field to manage your Workspaces.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">multi-screen workspace configurations can be saved as well as single screen ones</p>
+        <p><b>Reset</b>:<img src="../../Resources/Images/Assortment Planning/View Parameters_5.png" />reverts the workspace configuration to the system default for the view</p>
+        <p><b>Save</b>:<img src="../../Resources/Images/Assortment Planning/View Parameters_6.png" />&#160; launches the Manage Workspaces dialog, allowing users to save the current workspace configuration for later recall</p>
+        <p>Requires a workspace name to be entered in the Workspaces drop down</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/View Parameters_7.png" />
+        </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field or option</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Name</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">sets the name for the workspace</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Description</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">sets a description for the workspace; not required</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Family</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">selects a workspace family in which to save the workspace</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Protection Type</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                       sets the permissions for the workspace – Public (all users can access) or Private (only the user who created the workspace can access)
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cancel</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">closes the Manage Workspaces dialog without saving the workspace</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Apply</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">saves the current workspace with the specified parameters</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>Edit</b>:<img src="../../Resources/Images/Assortment Planning/View Parameters_8.png" />&#160; launches the Manage Workspaces dialog as with Save but locks the workspace name</p>
+        <p><b>Delete</b>: deletes the current workspace</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">The system does not ask the user to confirm deletion of workspaces, so be sure you want to do so before clicking this</p>
+        <p><b>Execute</b>: refreshes everything in the current view, including all supporting views, based on the selected Product, Site Hierarchy, Cluster Sets, and Window of Time</p>
+    </body>
+</html>

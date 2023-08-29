@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1709" MadCap:lastWidth="1185">
+    <head>
+    </head>
+    <body>
+        <h1>Breaking Changes</h1>
+        <h2>Assortment <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62360</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-62433</MadCap:conditionalText></h2>
+        <h3>Changes to the way markdowns are treated in Assortment Planning</h3>
+        <p>The way markdowns are treated in Assortment Planning is fundamentally different now. It used to be just a date - nothing in the sales plan or receipt plan would change in response to setting a markdown.</p>
+        <p>Old functionality</p>
+        <ul>
+            <li>assume you have a 10 week plan, with 100 sales, and a flat seasonality curve. The sales curve generated would then be: 10 / 10 / 10 / 10 / 10 / 10 / 10 / 10 / 10 / 10.</li>
+            <li>If you added a markdown date of Week 6, the sales plan would stay identical. If you added the markdown at Week 8, the sales plan would be identical.</li>
+        </ul>
+        <p>As of Demand Management v2019.3:</p>
+        <p>New functionality:</p>
+        <ul>
+            <li>If you have no markdown date, the sales curve is the same as before: 10 units per week across the 10 weeks.</li>
+            <li>If you add a markdown date at Week 6, then the sales curve trends to 0 starting from week 6. The sales plan would be: 10 / 10 / 10 / 10 / 10 / 10 / 8 / 6 / 4 / 2, for a total sales value of 80.</li>
+            <li>If you add a markdown date at Week 8, then the sales plan would be: 10 / 10 / 10 / 10 / 10 / 10 / 10 / 10 / 6.7 / 3.3, for a total sales value of 90.</li>
+        </ul>
+        <p>Thus, because the Markdown Date now influences the generated sales plan (which, in turn, influences the generated receipt plan), then all the other existing ways to change a sales plan now interact with this new feature. Changing phase dates affects the sales plan - the way in which it affects the sales plan depends on whether a markdown dates is set, and where in the plan it is set. Changing total sales will split proportionately across the pre-markdown and post-markdown halves of the sales plan. Adding and removing a markdown date will change your sales total. Adding a markdown date to a new placeholder before adding a sales total will behave differently than adding a sales total before adding a markdown date.</p>
+        <h3>The system no longer taking the markdown portion of a plan into account <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-60239</MadCap:conditionalText></h3>
+        <p>Historically, the system took the demand from the markdown portion of a plan into account and recommended a total matching the Sales plan which not is desired from a stock holding position. As of v2019.3, when the new system policy labeled <b>Allow Receipts After Markdown</b> (Maintain &gt; Policies &gt; Engine: Commitments) is set to <b>False</b> (default), the Receipt plan only considers the regular portion of the Sales plan and ignores the markdown phase of the plan. Set the system policy to <b>True</b> if additional stock should be ordered beyond the planned markdown date.</p>
+        <h3>Revisions to the Sell Through metric<MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-61865</MadCap:conditionalText></h3>
+        <p>The metric, Sell Through, was user-editable and changes affect the metric Additional Buy. The Sell Through metric is now read-only. Additionally, Sell Through used to represent the ratio between total sales and total buy. Now this metric represents total sales/total orders.</p>
+        <h3>On Order now included in all EOP/BOP&#160;values <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-63957</MadCap:conditionalText></h3>
+        <p>Previously, On Order (the sum of Committed, On Order, and On Order (Unknown) was not included in Reconcile and Rollup reports. As of v2019.3, On Order is included in all EOP/BOP values. Therefore, customers who customized the formula to include On Order should verify that On Order is not double counted.</p>
+        <h2>Financial Planning <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-60168</MadCap:conditionalText></h2>
+        <p>New parameters have been added to the following procedures, either as input parameters to the procedures, or the procedure calls a procedure with a new parameter. This means any CUSPs for the following procedures need to be updated:</p>
+        <ul>
+            <li>dbo.usp_FinancialPlan_Maintenance_Hybrid - calls procs with new parameters</li>
+            <li>dbo.usp_FinancialPlan_Maintenance_Hybrid_OnOrder - new parameter, calls proc with new parameter</li>
+            <li>dbo.usp_FinancialPlan_Calculate_OnOrder - new parameter</li>
+            <li>dbo.usp_FinancialPlan_Maintenance_Hybrid_Forecast - new parameter, calls proc with new parameter</li>
+            <li>dbo.usp_FinancialPlan_Calculate_Forecast - new parameter</li>
+            <li>dbo.usp_FinancialPlan_Maintenance_Hybrid_Sales - calls proc with new parameter</li>
+            <li>dbo.usp_FinancialPlan_Calculate_SalesHistory - new parameter</li>
+            <li>dbo.usp_FinancialPlan_Maintenance_Hybrid_Inventory - calls proc with new parameter</li>
+            <li>dbo.usp_FinancialPlan_Calculate_BOP_EOP_Inventory - new parameter</li>
+            <li>dbo.usp_FinancialPlan_Calculate_Receipts - new parameter</li>
+        </ul>
+        <h2>Shell <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-64675</MadCap:conditionalText></h2>
+        <p>The default mode for the navigation ribbon is now the new slim mode. This is a potential breaking change for any UI automated tests. It is suggested to utilize the existing "fat" ribbon for the default value for the automated test user account.</p>
+    </body>
+</html>

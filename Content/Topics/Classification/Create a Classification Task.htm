@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Creating a Classification Task</h1>
+        <p>New classification tasks can be created from scratch, or cloned from an existing task.</p>
+        <p> Use the industry best practice settings to set up the base task, which may then be cloned and modified, or disabled if another task replaces it. </p>
+        <p>
+            <img src="../../Resources/Images/Classification/Create a Classification Task.png" />
+        </p>
+        <p><b><a name="To_Create_a_Classification_Task"></a>To Create a Classification Task</b>
+        </p>
+        <ol>
+            <li>From the Execute tab, click <b>Classification</b>. The Classification Task screen displays.</li>
+            <li>Click <b>New</b>. The Add Classification Task screen displays.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/Classification/Add Classification Task.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>On the General tab, enter a unique name and description for the new task.</li>
+            <li>Click <b>OK</b>. The new task is created.</li>
+        </ol>
+        <p><b>To Create a Default Task</b>
+        </p>
+        <ol>
+            <li>From the Classification Task screen, create a new Base task. For details, see <MadCap:xref href="#To_Create_a_Classification_Task">To Create a Classification Task</MadCap:xref>.</li>
+            <li>Select the <b>Default Task</b> checkbox.</li>
+            <li>Click the <b>Default Priority</b> tab. The Default Priority tab displays.</li>
+        </ol>
+        <img src="../../Resources/Images/Classification/Default Task.png" />
+        <ol MadCap:continue="true">
+            <li>Click the <b>Priority 1</b> tab and do the following:</li>
+            <li>Select the <b>Calculate Priority Based On Input Values</b> checkbox, and do the following:</li>
+        </ol>
+        <ul>
+            <li>In the Prioritize Based On field, enter <b>365</b>.</li>
+            <li>From the first drop-down menu, select <b>Inventory</b>.</li>
+            <li>From the third drop-down menu, select <b>Contribution of Forecasted Demand</b>.</li>
+        </ul>
+        <ol start="6">
+            <li>In the <b>Percentage %</b> column, enter the priority order as follows:</li>
+            <ul>
+                <li>A - <b>80%</b></li>
+                <li>B - <b>15%</b></li>
+                <li>C - <b>5%</b></li>
+                <li>D - <b>0%</b></li>
+                <li>E - <b>0%</b></li>
+                <li>F - <b>0%</b></li>
+            </ul>
+        </ol>
+        <ol start="7">
+            <li>Click the <b>Relative Deviation 1</b> tab, and do the following:</li>
+        </ol>
+        <ol style="list-style-type: lower-alpha;">
+            <li>In the Determine Relative Deviation Based On field, enter <b>365</b>.</li>
+            <li>From the drop-down menu, select <b>Contribution of Historic Demand</b>.</li>
+            <li>In the Upper Range Value and Lower Range Value columns, enter the range as follows:</li>
+        </ol>
+        <ul>
+            <li>
+                <p>X = <b>0.5</b> upper range, <b>infinity </b>lower range</p>
+            </li>
+            <li>
+                <p>Y = <b>1</b> upper range, <b>0.5</b> lower range</p>
+            </li>
+            <li>
+                <p>Z = <b>infinity</b> upper range, <b>1</b> lower range</p>
+            </li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/Classification/Relative Deviation 1.png" />
+        </p>
+        <ol start="8">
+            <li>Click <b>OK</b>. The Default task is created.</li>
+        </ol>
+    </body>
+</html>

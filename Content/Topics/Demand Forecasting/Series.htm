@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Series</h1>
+        <p>Seeing the graphical representation of the different series related to the forecast gives users  insight into the meaning of the data.</p>
+        <p>
+            <img src="../../Resources/Images/Demand Forecasting/Series.png" />
+        </p>
+        <ul>
+            <li>
+                <b>Manual Forecast</b> – Will be dark red if a forecast has been manually changed.</li>
+            <li>
+                <b>Effective Forecast</b> – Will be the values passed along to the replenishment engine via the Inventory Manager. Should align with the system forecast (blue series) before any changes are made.</li>
+            <li>
+                <b>System Forecast</b> – The system generated forecast produced by the Demand Management forecasting engine. The values past the current date will represent the values produced by the winning forecast model. Any series values preceding the current date may be viewed as the “model fit”, a combination of the simulation and backtrack.<ul><li><b>Backtrack</b> – The backtrack series is considered to be “optimistic” in that it will correct itself to be closer to the historical series for each history period.</li><li><b>Simulation</b> – The simulation is considered to be “pessimistic” in that it will not correct itself in any way over the historical periods. </li></ul></li>
+            <li>
+                <b>Original Forecast</b> – The yellow bars (not the yellow dotted-line) will represent the original system generated forecast. As changes are made, they will remain for comparison.</li>
+        </ul>
+    </body>
+</html>

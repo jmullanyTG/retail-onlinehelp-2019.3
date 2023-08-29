@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Release Notes"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Release Notes.fltoc"
+  Medium="print"
+  EquationsOutputType="PNG"
+  PatchHeadingLevels="true"
+  InjectBookHeadings="true"
+  EmbedImages="true"
+  RemoveImagesFromHeadings="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/mi9styles.css"
+  ConditionTagExpression="exclude[&quot;General.Exclude from Print&quot; or &quot;General.Online Help&quot; or &quot;General.Temp Exclude&quot;] ">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    ExpandingTextConversion="expand"
+    PopupConversion="expand"
+    DisableMasterPageUsage="true"
+    EnableTrackedChanges="true" />
+  <Variables> <Variable
+      Name="Variables/BookVersion">2019.3</Variable> <Variable
+      Name="Variables/BookSubTitle">Release Notes</Variable> <Variable
+      Name="Variables/BookVersion">2019.3</Variable> <Variable
+      Name="Variables/BookSubTitle">User Guide</Variable><Variable
+      Name="JustEnough Variables/JE Version">2019.2</Variable><Variable
+      Name="JustEnough Variables/Printed Manual Title">Demand Management</Variable><Variable
+      Name="Variables/BookTitle">Demand  Management</Variable><Variable
+      Name="Variables/BookVersion">2019.3</Variable><Variable
+      Name="Variables/BookSubTitle">Release Notes</Variable></Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF Output.fldes"
+      Publish="true" />
+  </Destinations>
+  <PDF
+    ShowUsedBookmarks="false" />
+  <DocumentProperties
+    Author="" />
+</CatapultTarget>

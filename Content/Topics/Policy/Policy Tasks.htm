@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Policy Tasks</h1>
+        <p>Policy tasks are individual tasks that may be assigned both at start and end dates, if required. Policy tasks are sorted by their respective execution orders in the policy task grid. The details of each task display below the task grid.</p>
+        <p>It is important to select the correct filters when you build a new policy to determine the application of the task to the intended items. If an appropriate filter does not exists, you can create a filter through the Filters solution. </p>
+        <p>The main screen on the Inventory Policy solution displays the current policy tasks and their respective details. </p>
+        <p>
+            <img src="../../Resources/Images/Policy/Practical Application.png">
+            </img>
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">All changes to the policy tasks must be made from the Add or Edit screens.</p>
+        <ul>
+            <li><b>Task Name:</b> the name given to the task. Any cloned tasks begin with Cloned From before they are changed.</li>
+            <li><b>Task Description:</b> a basic description of the task.</li>
+            <li><b>Default Task:</b> the default task is the fallback inventory policy for any inventories not covered by other tasks. There may be only one default task.</li>
+            <li><b>Task Enabled:</b> if the task is currently enabled (active) this field is checked. </li>
+            <li><b>Task Execution Order:</b> the order in which the task rules will be applied. This is important because some task rules may supersede others, depending on their order. </li>
+            <li><b>Task Start Date Defined:</b> if the task is intended to begin  on a certain date, this check box must be selected, and the start date specified in the next column. </li>
+            <li><b>Task Start Date:</b> if the task is intended to begin  on a certain date, the start date must be specified and the check box must be selected in the preceding column.</li>
+            <li><b>Task End Date Defined:</b> if the task is intended to end on a certain date, this check box must be selected, and the end date specified in the next column. </li>
+            <li><b>Task End Date:</b> if the task is intended to end  on a certain date, the end date must be specified and the check box must be selected in the preceding column.</li>
+            <li><b>Task Allowed To Execute:</b> an informational check box that displays the effective status of the task. If the task is enabled and falls within the specified date range, the Task Allowed to Execute box must be selected. </li>
+        </ul>
+        <p><b>To Reorder Tasks</b>
+        </p>
+        <ol>
+            <li>From the Policy Task screen, click <b>Reorder</b>. The Reorder Policy Tasks screen displays. </li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/Policy/Practical Application_1.png">
+            </img>
+        </p>
+        <ol MadCap:continue="true">
+            <li>Do one of the following:</li>
+        </ol>
+        <ul>
+            <li>Select the specific task and click the up or down arrows on the right.  </li>
+            <li>Change the task execution order in the Task Execution Order field. </li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li>When finished, click <b>OK</b>.</li>
+        </ol>
+        <p>If you made changes to enabled policy tasks, you may have to execute the tasks outside of the daily job manager.</p>
+        <h2>General Tab</h2>
+        <p>
+            <img src="../../Resources/Images/Policy/General Policy Information.png" />
+        </p>
+        <p>This tab display general policy information and the filter associated with the policy task.</p>
+        <p><b>To Display the Items Contained in the Filter</b>
+        </p>
+        <ul>
+            <li>Next to the Filter drop-down list, click <b>View Items</b> . The Inventory Manager displays the details for the selected filter.</li>
+        </ul>
+        <h2>Policy Tab</h2>
+        <p>
+            <img src="../../Resources/Images/Policy/Policy Tab.png" />
+        </p>
+        <p>From the Logistics section of the Policy tab, you can add a lead time day to a policy task to indicate outbound handling lead time value to account for the need of some distribution centers to prepare stock on hand for shipment. In instances where a distribution center may not be able to accommodate an order request the day it was placed, outbound handling lead time may be applied to better represent the realistic ship date from the distribution center.</p>
+        <p>The <b>Reset to Default</b> checkbox resets the value in the Outbound Handling Lead Time field to null on the Inventory Policy Task screen.</p>
+    </body>
+</html>

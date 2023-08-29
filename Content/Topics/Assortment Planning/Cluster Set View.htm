@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="10" MadCap:lastHeight="4147" MadCap:lastWidth="1202">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Cluster Set View </h1>
+        <p>The <b>Cluster Sets</b> view is displayed or hidden in Placeholder mode using the <b>View Selection</b> drop down menu. The <b>Cluster Sets</b> view contains all the essential metrics for building a sales plan and allows users to make Cluster Set or Cluster level changes to the single placeholder or collection selected in the Main Planning view.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Cluster Set View.png" />
+        </p>
+        <h2>Placeholders with a markdown date</h2>
+        <p>If you select a Placeholder with a markdown date, then the Cluster Sets view refreshes to display a View Style drop down at the top of the view. </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Cluster Set View View Style option.PNG" />
+        </p>
+        <p>The View Style drop down has the following:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Default</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Displays the Totals</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Markdown</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Allows you to view regular and markdown values separately</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">All</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Displays all values for an overall view</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Data field descriptions</h2>
+        <ul>
+            <li><b>Site Count (Active)</b>: non-editable decimal (10.1) The average total site count and the average active site count (in parenthesis) of the cluster set/cluster between Phase In and Phase Out. Typically, this metric is a static whole number that equates to the sum of the sites in the cluster set or cluster. However, when multiple cluster set snapshots are present during a placeholder or collection’s life, it is possible for site count by cluster to vary over time which necessitates the need for an average count.</li>
+            <p>
+                <img src="../../Resources/Images/Assortment Planning/Cluster Set View_1.png" />
+            </p>
+            <li>
+                <p><b>AUC (Average Unit Cost)</b>: user editable currency ($10.01) The average unit cost price for the cluster set/cluster. Displays the weighted average of AUC values for all periods, both actualized and future, beneath.  </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">AUC is not be directly editable once a placeholder has begun to actualize (current date is greater than Phase In date).</p>
+            </li>
+            <li><b>AUT (Average Unit Ticket)</b>: user editable currency ($10.01). The average unit ticket price for the cluster set/cluster. Displays the weighted average of AUT values for all periods, both actualized and future, beneath. AUT is assumed to be VAT inclusive and is treated as such for all dependent calculations. <p>Because of the potential for multiple currencies, VAT (value added tax) rates, and promotional participation to vary by site within a single cluster, changes to AUT require an Apply to properly calculate the effects on the rest of the plan for a given placeholder/collection. Details for this calculation are available in a supplemental Excel model.</p><p>Period level changes to AUT can be made in the AUT right pane view. See <a href="AUT View.htm">AUT&#160;View</a> for more information.</p><ul><li>AUT is no longer directly editable once a placeholder has begun to actualize (current date is greater than Phase In date). </li><li><p>AUR (average unit retail) being an outcome of the calculation mentioned above is not directly editable.</p></li></ul></li>
+            <li>
+                <p><b>Gross Margin %</b>: non-editable percentage (10.01%); gross margin percentage for the cluster set/cluster</p>
+                <ul>
+                    <li><b>Calculation</b>: (AUR ex VAT – AUC) / AUR ex VAT</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Phase In Date</b>: The phase in date for the cluster set/cluster. If set, selections limit to periods prior to Phase Out.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">defaults to the earliest non-actualized period within the Window of Time in the data selection parameters.</p>
+            </li>
+            <li>
+                <p><b>Markdown Date</b>: The markdown date for the cluster set/cluster. Selections are limited to periods from Phase In through Phase Out. A markdown date tells the system which period to stop respecting the various constraints utilized in the Receipt Plan supporting view including Min Pres. </p>
+                <p>Min Pres drops to zero in the period specified by <b>Markdown Date</b> when viewing the by-period plan for the cluster set/cluster in Sales Plan or Receipt Plan view. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">The markdown date can be pushed by changing Phase In or Phase Out. </p>
+            </li>
+            <li>
+                <p><b>Phase Out Date</b>: The phase out date for the cluster set/cluster. If set, the selections limit to periods after Phase In. For placeholders/collections of Replen Status, Phase Out dates are derived from the maximum Phase Out date set in the Forecasting module for all relevant inventories. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Defaults to the last period within the Window of Time in the data selection parameters.</p>
+            </li>
+            <li>
+                <p><b>Curve Mode</b>: The mode of the selected Seasonality Curve. </p>
+                <ul>
+                    <li><b>Static</b>: The selected curve is applied exactly as it exists at the time of application and the cluster set/cluster’s curve will not change if changes are made to the curve, whether manually in the Curves module or through dynamic recalculation. Think of this as making a copy of the applied curve.</li>
+                    <li><b>Dynamic</b>: Changes made to the curve will be pushed down to the cluster set/cluster via automated system processes and the dependent sales plans will recalculate when those changes are pushed.</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Seasonality Curve</b>: The seasonality curve applied to the cluster set/cluster. Used to break down Ttl Sls $ and Ttl Sls U by period in Sales Plan View. Curves must be generated with the Enhanced Filter type to be eligible for use within Assortment Planning and selectable here. For more information, see <MadCap:xref href="Sales Plan View.htm">Sales Plan View</MadCap:xref>. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Click the ellipsis (<img src="../../Resources/Images/Assortment Planning/Main Planning View_9.png" />) within the cell to launch the <b>Curve Selection</b> screen. For more information, see <MadCap:xref href="Curve Selection Screen.htm">Curve Selection Screen</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p><b>ROS $ (Rate of Sale Revenue)</b>: user editable currency ($10.01). The rate of sale (average sales per site per period) in revenue for the cluster set/cluster.</p>
+                <ul>
+                    <li><b>Calculation</b>: (Ttl Sls $ / No. Periods / Site Count)</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>ROS U (Rate of Sale Units)</b>: The rate of sale (average sales per site per period) in units for the cluster set/cluster.</p>
+                <ul>
+                    <li><b>Calculation</b>: (Ttl Sls U / No. Periods / Site Count)</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Ttl Sls $ (Total Sales Revenue)</b>: user editable currency ($10.01). The total sales revenue for the cluster set/cluster from Phase In through Phase Out.</p>
+                <ul>
+                    <li><b>Calculation</b>: (ROS $ * No. Periods * Site Count)</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Ttl Sls U (Total Sales Units)</b>: The total sales units for the cluster set/cluster from Phase In through Phase Out.</p>
+                <ul>
+                    <li><b>Calculation</b>: (ROS U * No. Periods * Site Count)</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>AUR (Average Unit Retail)</b>: non-editable currency ($10.01). The average unit retail price for the cluster set/cluster.</p>
+                <p>Because of the potential for multiple currencies, VAT (value added tax) rates, and promotional participation to vary by site within a single cluster, AUR is not directly editable and is only changed as a result of changes to AUT, Phase In, Phase Out, and promotion applications. Details for this calculation are available in a supplemental MS Excel model.</p>
+                <ul>
+                    <li><b>Calculation</b>: (Ttl Sls $ / Ttl Sls U)</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>AUR ex VAT</b>: Non-editable currency ($1.01). Average retail (selling) price excluding VAT per unit for the placeholder item.</p>
+                <ul>
+                    <li><b>Calculation</b>: AUR / (1 + VAT %)</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Min Pres (Minimum Presentation)</b>: The desired minimum presentation stock per site for the cluster set/cluster. This represents additional non-sales units to be purchased for the cluster set/cluster to maintain adequate stock for presentation within each store.</p>
+                <ul>
+                    <li><b>Calculation</b>: SUM (cluster site count * cluster min pres – for all clusters within a set) / cluster set Site Count (yields a weighted average) or (cluster site count * cluster min pres) for single clusters</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Ttl Buy $ (Total Buy Cost Value)</b>: user editable currency ($10.01). The total buy in revenue for the cluster set/cluster. Changes to this metric directly affect the cluster set/cluster sales plan.</p>
+                <ul>
+                    <li><b>Calculation</b>: (Ttl Sls U + (Min Pres * Site Count) + Additional Buy) * AUC</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Ttl Buy U (Total Buy Units)</b>: The total buy in revenue for the cluster set/cluster. Changes to this metric directly affect the cluster set/cluster sales plan.</p>
+                <ul>
+                    <li><b>Calculation</b>: (Ttl Sls U + (Min Pres * Site Count) + Additional Buy)</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Additional Buy (Additional Buy Units)</b>: The quantity of additional non-sales and non-min pres units to buy for the cluster set/cluster. The primary function of this field is to show discrepancies between the sum of Ttl Sls U and (Min Pres * Site Count) and Ttl Buy U that can occur because of the ability to directly edit S/T %. To remove unwanted excess units and rebalance a cluster set/cluster’s sales plan, simply zero this field out and click <b>Save</b>.</p>
+                <ul>
+                    <li><b>Calculation</b>: (Ttl Buy U – Ttl Sls U – (Min Pres * Site Count))</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>S/T % (Sell-Through Percentage)</b>: user editable percentage (10.1%); sets the target sell-through percentage for the cluster set/cluster. Changes to this metric alter Ttl Sls U in relation to Ttl Buy U to achieve the entered S/T %.</p>
+                <ul>
+                    <li><b>Calculation</b>: (Ttl Sls U / Ttl Buy U)</li>
+                </ul>
+            </li>
+            <li><b>Receipt ($)</b>: non-editable currency ($10.01). The Sum of Receipt Cost from Receipt Plan view for the placeholder/collection at cluster level. This is included as a comparison of the actual receipt plan to the estimated Ttl Buy $ in Cluster Set View.</li>
+            <li><b>Receipt (U)</b>: The sum of Receipt Units from Receipt Plan view for the placeholder/collection at cluster level. This is included as a comparison of the actual receipt plan to the estimated Ttl Buy U in Cluster Set View.</li>
+            <li>
+                <p><b>Units Per Location</b>: The average units per location for a cluster set/cluster based on Ttl Buy U and Site Count.</p>
+                <ul>
+                    <li><b>Calculation</b>: (Ttl Buy U / Site Count)</li>
+                </ul>
+            </li>
+            <li><b>Target S/T %</b>: Defaults to S/T % and has no calculation effect or relationship.</li>
+            <li><b>S/T %</b>: Percentage (10.1%). The target sell-through percentage for the placeholder/collection. Changes to this metric alter Ttl Buy U to achieve the entered S/T %.</li>
+            <li><b>Calculation</b>: (Ttl Sls U / Ttl Orders U).</li>
+            <li><b>Reg S/T %</b>: The calculation is Reg Sales U / Total Orders U.</li>
+            <li><b>S/T % Delta</b>: The calculation is ( Target S/T % - S/T % ) / ( S/T % ).</li>
+        </ul>
+    </body>
+</html>

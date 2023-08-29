@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h1>Lock &amp; Spread in Comp/Non-Comp and Sales By Type Views</h1>
+        <p>Just like in the Main Planning View, Lock &amp; Spread functionality is also available on the Comp/Non-Comp and Sales By Type tabs, allowing users to lock total and component sales while still making changes. A few simple examples in the Sales By Type tab are shown below, however, the more complex use cases shown above, such as aggregate level locks and locks at multiple intersecting levels, are also valid. The same is true for Lock &amp; Spread within the Comp/Non-Comp tab</p>
+        <ul>
+            <li>
+                <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">one common use case for this functionality is when a user needs to hold Markdown Sales in a period while making changes to the total period sales and having the difference spread across Regular and Promo Sales only</p>
+            </li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Lock Spread in Comp Non Comp and Sales By Type Views.png" />
+        </p>
+        <p>In the above example, Markdown Sales has been locked for 2017_wk44, also locking Markdown Sales Units and Markdown AUR. Notice that Reg Sales, Promo Sales, and Total Sales are left unlocked by this change</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Lock Spread in Comp Non Comp and Sales By Type Views_1.png" />
+        </p>
+        <p>When 2017_wk44 Total Sales is changed to $300,000, the system subtracts the locked Markdown Sales of $35,000 from the entered amount and spreads the remaining $265,000 among Reg and Promo Sales based on their prior percent contributions to the unlocked total sales ($220,156). Reg sales accounted for roughly 88.5%, becoming $234,587 of the new total ($265,000 * ($194,890 / $220,156) = $234,587), while Promo Sales were only about 11.5% and become $30,413 of the new total ($265,000 * ($25,266 / $220,156) = $30,413). Markdown Sales remain locked at $35,000, thus we constrain to our newly entered total of $300,000</p>
+        <ul>
+            <li>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">In this example, sales metrics at the level the change was made adhere to the active calculation toggle (in this case, recalculating Total Sales Units while holding Total Sales AUR), but the unlocked Reg and Promo Sales see changes in Sales, Sales Units, and AUR to properly balance the change at the Total Sales level</p>
+            </li>
+            <li>
+                <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">another common use case is where the user desires to lock Total Sales for a period and alter the sales mix beneath, with changes spreading across the unchanged sales components</p>
+            </li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/MFP/Lock Spread in Comp Non Comp and Sales By Type Views_2.png" />
+        </p>
+        <p>In the above example, Total Sales has been locked for 2017_wk44, also locking Total Sales Units and Total Sales AUR. Notice that Reg Sales, Promo Sales, and Markdown Sales are left unlocked by this change</p>
+        <p>
+            <img src="../../Resources/Images/MFP/Lock Spread in Comp Non Comp and Sales By Type Views_3.png" />
+        </p>
+        <p>When 2017_wk44 Promo Sales is changed to $50,000, the system subtracts that amount from the locked Total Sales of $300,000 and spreads the balance among Reg and Markdown Sales based on their prior percent contributions to the unchanged portion of total sales ($269,587). Reg sales accounted for roughly 87%, becoming $217,543 of the unchanged portion ($250,000 * ($234,587 / $269,587) = $217,543), while Markdown Sales were only about 13% and become $32,457 of the unchanged amount ($250,000 * ($35,000 / $268,587) = $32,457)</p>
+        <ul>
+            <li>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">In this example, sales metrics at the level the change was made adhere to the active calculation toggle (in this case, recalculating Promo Sales Units while holding Promo AUR), but the unlocked Reg and Markdown Sales see changes in Sales, Sales Units, and AUR to properly balance the change at the Total Sales level. Total Sales Units and Total Sales AUR have also changed because the Aggregate Locked Metrics Always Hold check box was unchecked at the time of the change (for more information on this setting, see Calculation Toggles &gt; Lock &amp; Spread Related Toggles &gt; Aggregate Locked Metrics Always Hold)</p>
+            </li>
+        </ul>
+    </body>
+</html>

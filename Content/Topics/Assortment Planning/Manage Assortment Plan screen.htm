@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="5696" MadCap:lastWidth="1413">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Managing Assortment Plans and setting plan defaults</h1>
+        <p>The <b>Manage Assortment Plans</b> screen is accessed by clicking the <b>Manage</b> button in the <b>Assortment Planning</b> module.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Manage Assortment Plans screen.PNG" />
+        </p>
+        <p>The following functionality is available in the <b>Manage Assortment Plans</b> screen:</p>
+        <h2>New</h2>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/New Assortment button.png" />
+        </p>
+        <p>For information describing the buttons and fields, see <MadCap:xref href="General Tab.htm">General Tab </MadCap:xref>.</p>
+        <h2>Edit</h2>
+        <p>Launches the <b>Update Assortment</b> dialog for the selected assortment plan.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Edit Assortment button.png" />
+        </p>
+        <p>Note that most of the plan parameters are now locked. </p>
+        <p><b>User Access tab</b>: User and role permissions for the assortment plan are edited in the same manner as described in the <b>User Access</b> section below.</p>
+        <h2>Delete</h2>
+        <p>Deletes the selected assortment plan. Users are presented with a dialog requesting confirmation.</p>
+        <h2>User Access</h2>
+        <p>Launches the <b>Manage Access</b> dialog for the selected plan. Access can be set at the User level or by Role with roles being assigned as users are added to the system.</p>
+        <p>The Product and Site Hierarchy access levels available is dependent on the corresponding parameter selections for the assortment plan (see Product Hierarchy and Site Hierarchy in the Fields section below).</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Header Area Controls_4.png" />
+        </p>
+        <p>The <b>Select All</b> and <b>Select None</b> buttons in the <b>Product</b> and <b>Site</b> fields in the upper portion of the dialog can be used to quickly apply or remove complete access to all available Product or Site hierarchy levels within the plan without having to interact with the bottom portion of the dialog.</p>
+        <h3>Buttons</h3>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Button</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Save</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Saves permissions changes made to the assortment plan without closing the dialog.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cancel</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Closes the <b>Manage Access</b> dialog without saving changes made to the assortment plan.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Save and Close</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Saves permissions changes made to the assortment plan and closes the <b>Manage Access</b> dialog.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">User permissions for assortment plans can also be edited via the <b>User Access</b> tab of the Update Assortment dialog (see <b>Edit</b> section above). Additional permissions can also be setup in the user manager.</p>
+        <h2>Refresh</h2>
+        <p>Refreshes the <b>Manage Assortment Plans</b> dialog.</p>
+        <h2>Snapshot</h2>
+        <p>Launches the <b>Manage Snapshots</b> dialog in which users can plan snapshots which occur on a regular schedule and to create and delete snapshots manually. Snapshots are captures of the state of the current plan at the time they are generated for the purpose of future comparisons as users work with the plan. Snapshots can be used within the Sales Plan, Assortment Rollup, and Reconciliation views within Assortment planning.</p>
+        <p>For details on the metrics included in snapshots, see Comparison metrics listed in under the respective sections for these supporting views.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Snapshot dialog.png" alt="https://lh6.googleusercontent.com/XYMkqkoOihI7W-bizh20xfFhesJsx0vkNwnR8o1RK-ZCc6EKlBThk0K58F3zl9WoJAmyIkuPxQeeqo7J_lwSxxOUNKszLfxu_62rON6vFGrX-1ypyIHfUu2UlJwFprH-aDHlicQr" />
+        </p>
+        <p>For descriptions of buttons and fields, see <MadCap:xref href="Snapshot Tab.htm">Snapshot Tab </MadCap:xref>.</p>
+        <h2>Defaults </h2>
+        <p>Launches the <b>Manage Assortment Defaults</b> dialog for the current plan. Users can set default parameters for plan elements and functions used frequently within Assortment Planning so they don’t have to be manually set each time. Default parameters can generally still be changed later by the user if needed.</p>
+        <p>Defaults set here are applied to placeholders assigned to the specified level of the product hierarchy at the time of generation, whether manually within Line Visualization or through the Smart Start function.</p>
+        <p>Defaults are set in an inheritance scheme, meaning defaults set at higher levels of the product hierarchy persist down through the levels beneath unless different defaults are set at those lower levels as exceptions.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Changing defaults in this screen will not alter these settings for placeholders that already exist.</p>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">A hierarchy has a department called Men’s Tops. Beneath Men’s Tops there are the sub-departments Men’s Tees, Men’s Wovens, and Men’s Knits. A user sets a default at the Men’s Tops level and then sets a different default at the Men’s Knits level. Men’s Tees and Wovens inherit the same default that was set at the Men’s Tops level, but Men’s Knits uses the default set at its own level. All default settings are not required.</p>
+        <p>For more information on the tabs in the default screen, refer to the following:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Assortment Plan Defaults tab.htm">Assortment Plan Defaults tab</MadCap:xref><![CDATA[
+]]></li>
+            <li>
+                <MadCap:xref href="Assortment Plan Defaults By Time.htm">Assortment Plan Defaults By Time tab</MadCap:xref><![CDATA[        ]]></li>
+        </ul>
+        <h2><a name="Seed"></a>Seed</h2>
+        <p>Launches the <b>Seed Placeholders</b> dialog. Because of the way placeholder entities are used within Assortment Planning, a necessary step in creating new plans is generating equivalent placeholder entities for existing items for which you want to utilize historical selling information.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Ideally, this process is performed once per plan as all new items created in Assortment Planning are generated as placeholder entities. However, the process can be re-run to pick up new items that weren’t present at the time of seeding without adversely affecting anything that has already been seeded. The process simply looks for variants that don’t have placeholder entities created and creates them.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Header Area Controls_14.png" />
+        </p>
+        <h3>Seeding and Attribute Inheritance</h3>
+        <p>When seeding placeholders from historical variants, any attributes attached to those variants will also be attached to the resultant placeholders, provided the following are true:</p>
+        <ul>
+            <li>A valid attribute set is associated with the product level to which the variants belong; association can be by directly choosing an attribute set for that level of the product hierarchy or through inheritance of a set from a level above</li>
+            <li>That attribute set is assigned to both the Variant and Variant Placeholder entity types</li>
+            <li>That attribute set includes all attribute families containing the attribute values associated with the variants placeholders are being created for</li>
+            <li>All applicable attribute families are assigned to both the Variant and Variant Placeholder entity types</li>
+            <li>All attribute values associated with the variants placeholders are being created for are marked as Allowed for the corresponding attribute set</li>
+        </ul>
+        <p MadCap:conditions="General.Online Help">For more information on creating and assigning attribute sets, families, and values, see <MadCap:xref href="../Attribute Management/Attribute Management Overview.htm">Attribute Management and Assignment Overview</MadCap:xref>.</p>
+        <p MadCap:conditions="General.Printed Manuals">For more information, refer to the Attribute Management online help.</p>
+        <h3>Seed Placeholders parameters</h3>
+        <p><b>Start Date</b>: Sets the historical date you want the system to begin at when generating placeholders for existing items. This should be set to the farthest date back for which you want to utilize historical sales in Assortment Planning. A general best practice is at least 2 years as most businesses typically view data this far back as being relevant to current plans.</p>
+        <p class="important" MadCap:autonum="&lt;b&gt;IMPORTANT: &lt;/b&gt;">Start date cannot fall before the date designated by the current date minus the number of days specified in the <b>Assortment days history to maintain</b> system policy (accessed via <b>Maintenance &gt; Policies &gt; Module: Assortment</b>).</p>
+        <h3>Seed Placeholders grid</h3>
+        <p><b>Use Default Cluster Set(s) per product level</b>: This option appears at the top of the cluster set list and allows users to easily seed historical placeholders for the default cluster sets assigned by product level. For this option to work properly, at least one default cluster set must be assigned either directly or through inheritance from a level above for all product levels present in the plan being seeded. An error message displays indicating the need to do this if it has not been done at the time seeding is initiated.</p>
+        <p>This option cannot be used in tandem with the selection of other cluster sets within the list. An error displays if you attempt to do so.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Due to the dynamic nature of cluster configurations, all that is needed here is to select the cluster sets that contain the sites where the items sold historically. Sales assignments are made at site level and returned based on the active cluster set snapshot for a given period.</p>
+        <h3>Grid columns</h3>
+        <p><b>Cluster Set</b>: A read-only description for each validated cluster set within the current plan.</p>
+        <p><b>Overlapping Cluster Sets</b>: A read-only description for any validated cluster sets that overlap with a given cluster set (it contains some or all of the same sites as another set). While it is possible to have overlapping cluster sets within a single plan, it is not possible to assort placeholder items to multiple overlapping cluster sets. You must choose one cluster set per group of sites in which to plan.</p>
+        <p><b>Current Placeholder Count</b>: A read-only count of all placeholder items currently generated that registered sales in a given cluster set from the Start Date forward.  </p>
+        <h3>Buttons</h3>
+        <p><b>Execute</b>: Selects the cluster sets in which the historical items you wish to generate placeholders for were present.</p>
+        <p><b>Fields</b>: Opens the fields <b>Customization</b> dialog. Users can drag fields to/from the Assortment Seed Placeholders column header area and this dialog to customize the view. Custom layouts can be saved/restored by right-clicking in the Assortment Seed Placeholders area and selecting Save Layout or Restore Layout, respectively.</p>
+        <p><b>Save</b>: Initiates the placeholder generation procedure for the selected cluster sets from the Start Date forward.</p>
+        <p><b>Cancel</b>: Unchecks selected cluster sets in the Assortment Seed Placeholders section or Closes the Manage Assortment Plans dialog without opening an assortment plan.          </p>
+        <p><b>OK</b>: Opens the selected assortment plan and launches the Smart Start screen.</p>
+    </body>
+</html>

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Cluster Set Configuration Screen</h1>
+        <p style="font-size: 12pt;">In the Cluster Set Configuration screen, you can set up the actual parameters used in the creation of cluster templates and sets, including the cluster type, the sites to be included, the number and descriptions of the actual clusters, the range of data to be used, the specific criteria to be considered in the clustering algorithm, and any partitioning to be used in the generation of multiple cluster sets.</p>
+        <h2>Cluster Set Properties</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Property</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Name</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The name of the cluster set/template.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Description</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">An optional description of the cluster set/template.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Group</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The group that the cluster set/template belongs to. Click the <b>Change</b> button to select a different group.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Security</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Indicates if this cluster set/template is available to all users (Public), some users (Shared), or just you (Private).</p>
+                        <p>If you select <b>Shared</b>, click the <b>Change</b> button to select the users and/or roles to share with.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Module</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The Demand Management solution (s) that this cluster set/template is available to.</p>
+                        <p><b>Notes:</b>
+                        </p>
+                        <ul>
+                            <li>The cluster set/template is automatically filtered out of solutions that are not selected in this property. This prevents you from having to sort through the clutter of cluster sets that are not intended for use in a particular solution. </li>
+                            <li>Allocation and Assortment include support for their respective scenarios in the Rate of Sale module.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Type</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The cluster set/template <a href="#Cluster">type</a>.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Partition Site Filter By Field</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>When the Cluster Type property is a Site Item Partition or Site Partition, this property sets the site property used to partition cluster sets.</p>
+                        <p>All site properties defined in <a href="../Site Manager/Site Manager Overview.htm">Site Manager</a> are available for selection, including basic store information, site attributes, hierarchy levels, site group, capacity, schedules and type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Filter Type</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The method used to determine the total group of stores to be clustered:</p>
+                        <ul>
+                            <li>Site Hierarchy Level</li>
+                            <li>Site Filter</li>
+                            <li>Intersection Site Hierarchy Level And Site Filter</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Hierarchy</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The site hierarchy to use to define the stores to be clustered.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Level</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The level of the selected Site Hierarchy to define the stores to be clustered. (Property not visible when Site Filter is selected as the Site Filter Type.)</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Site Filter</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The site filter to use for defining the stores to be clustered.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Partition ItemMaster Hierarchy</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">When the Cluster Type property is an Item Partition or Site Item Partition, this sets the product hierarchy to use for clustering data selection and cluster set partitioning.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Partition ItemMaster Level</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">When the Cluster Type property is an Item Partition or Item Site Partition, this property defines the product hierarchy level of the selected Cluster Partition ItemMaster Hierarchy to be used in clustering data selection and cluster set partitioning.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Items</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The clusters to assign stores to when the cluster set/template is calculated. </p>
+                        <p>Click <b>Maintain</b> to create, delete, and edit clusters.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Settings</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The priority ranking of each cluster selected in the Cluster Items property. Adjust ranking up and down using the arrows on the right side of the cluster list. The cluster with the lowest number has the highest ranking and contains the stores with the highest relative value.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Attribute Settings</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The priority ranking of each attribute used to calculate cluster sets. Adjust ranking up and down using the arrows on the right-hand side of the attribute list. The attribute with the lowest number has the highest ranking and will contain the stores with the highest relative value.</p>
+                        <p>For more information about attributes, see <a href="Attribute Settings.htm">Attribute Settings</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Distance Function</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The distance function to use when calculating cluster sets. </p>
+                        <ul>
+                            <li>Euclidean Distance calculates distance in a straight line (as the crow files).</li>
+                            <li>Manhattan Distance calculates distance between two points as a sum of horizontal and vertical lines on a grid (no diagonals).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Allow Cluster Count to be Resized </b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p>Indicates if all clusters in the cluster set must have sites assigned to them. When selected, <b>Demand Management</b> ranks stores naturally according to the results of the selected Cluster Type algorithm. This may leave some clusters without any stores assigned to them.</p>
+                        <p>If this option is not selected, <b>Demand Management</b> at least one store to is assigned to each cluster in the cluster set.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Cluster"></a>Cluster Types</h2>
+        <p>Cluster types are based on K-Means and K-Medoids statistical clustering algorithms.</p>
+        <p><b>K-Means</b> estimates and plots a number of data centers (centroids) equal to the number of desired clusters specified by the user amidst a field of store-specific data points and then tests the distance of each data point to each data center to determine which cluster each point belongs to.</p>
+        <p><b>K-Medoids</b> is similar to K-Means, but identifies actual data points in the data field as data centers (medoids) and uses an alternate distance calculation which is more robust to the presence of noise and outliers in the data set than K-Means; consequently, it also takes much longer to resolve than K-Means.</p>
+        <table class="TableStyle-standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/standard.css');">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Type</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>K-Means</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Creates a single K-Means style cluster set.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>K-Means Collection Item Partition</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Creates a K-Means style cluster set template and multiple cluster sets based on the lowest level of the cluster partition item master hierarchy.</p>
+                        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the lowest level of the cluster partition item master hierarchy is Subclass and contains the subclasses Tees, Woven Tops, Knit Tops, and Sweaters. Set up a sale attribute to consider all sales from the last year to create separate cluster sets for Tees, Woven Tops, Knit Tops, and Sweaters using the last years’ worth of sales for each product area.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>K-Means Collection Site Item Partition</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Creates a K-Means style cluster set template and multiple cluster sets based on the intersection of the lowest level of the cluster partition item master hierarchy and the values in the selected Cluster Partition Site Filter By Field.<p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the lowest level of the cluster partition item master hierarchy is Subclass and contains the subclasses Tees, Woven Tops, Knit Tops, and Sweaters. The Cluster Partition Site Filter By Field is set to Store Capacity, which contains the values High, Medium, and Low. Set up a sale attribute to consider all sales from the last year to create the following cluster sets using the last years’ worth of sales for the intersection of the product areas and stores that meet the store capacity criteria:</p><ul><li>Tees – High, Tees – Medium, Tees: Low</li><li>Woven Tops – High, Woven Tops – Medium, Woven Tops: Low</li><li>Knit Tops – High, Knit Tops – Medium, Knit Tops: Low</li><li>Sweaters – High, Sweaters – Medium, Sweaters: Low</li></ul></td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>K-Means Collection Site Partition</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Creates a K-Means style cluster set template and multiple cluster sets based on the values in the selected Cluster Partition Site Filter By Field.</p>
+                        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">the Cluster Partition Site Filter By Field is set to Store Capacity, which contains the values High, Medium, and Low. Set up a sale attribute to consider all sales from the last year to create separate cluster sets for High, Medium, and Low capacity stores using the last years’ worth of sales for stores that meet the store capacity criteria.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>K-Medoids</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Creates a single K-Medoids style cluster set.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>K-Medoids Collection Item Partition</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Creates a K-Medoids style cluster set template and multiple cluster sets based on the lowest level of the cluster partition item master hierarchy.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>K-Medoids Collection Site Item Partition</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Creates a K-Medoids style cluster set template and multiple cluster sets based on the intersection of the lowest level of the cluster partition item master hierarchy and the values in the selected Cluster Partition Site Filter By Field.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>K-Medoids* Collection Site Partition</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Creates a K-Medoids style cluster set template and multiple cluster sets based on the values in the selected Cluster Partition Site Filter By Field.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Manual K-Cluster</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Creates a single manually defined cluster set.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

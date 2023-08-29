@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="949" MadCap:lastWidth="1327">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Scenario Manager Scenario Details section field descriptions</h1>
+        <p>This section of the Scenario Manager screen displays details about the segments users have defined for the scenarios selected in the Target Creation Scenarios section. If multiple scenarios are selected, segment data for each are stacked in the view.</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Scenario</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Scenario name</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Target Segment</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Names of target segments defined for the selected scenarios</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Target Filter</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Product filter used to define historical data for the segment</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Target Filter Generated</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p> Using Segment By Hierarchy to define segments checks this box indicating a temporary filter is used based on the product hierarchy level corresponding to the segment in place of a standard Target Filter.</p>
+                        <p>For more information, see <MadCap:xref href="Target Segment Definitions.htm">Target Segment Definitions field descriptions</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Model Filter</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> (Optional) Product filter used in place of the Target Filter for the purpose of recommended choice count generation for the segment</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Product Hierarchy</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Level of the plan’s product hierarchy to which placeholders generated for the segment will be assigned to</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Cluster Sets</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Cluster sets used to define the site component of the segment. Limits the historical data returned when calculating scenarios in Target Creation.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Comparison Time Frame</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> The time frame used to gather historical data for the segment. <b>LY</b> indicates the system uses the direct last year equivalent periods for the Window of Time defined for the scenario.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Collection Option</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p> The configuration of collections to which placeholders generated for the segment will belong to.</p>
+                        <p>For more information, see <MadCap:xref href="Target Creation.htm">Creating Scenarios with Target Creation</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>New Variants</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Maximum number of new choices defined for the clusters assigned to the segment</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Total Variants</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1"> Maximum number of new choices and carryover choices defined for the clusters assigned to the segment</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Active Variant Threshold</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">
+                        <p> Percentage (10.00%). The % of deseasonalized average sales removed during step 3 of data cleansing. </p>
+                        <p>For information on data cleansing, see <MadCap:xref href="Rationalization.htm">Rationalization </MadCap:xref>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

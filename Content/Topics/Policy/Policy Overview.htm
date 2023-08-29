@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Policy Overview</h1>
+        <p>Inventory policies determine the rules by which the replenishment mechanism operates. Inventory policies are designed to create the default settings for all inventories in Demand Management, but may be further manipulated for specific inventories in the Inventory Manager (workbench).</p>
+        <h1>Policy Tasks</h1>
+        <p>Policy tasks are individual tasks that can be assigned both at start and end dates, if required. Policy tasks are sorted by their respective execution orders in the Policy Task grid. The details of each task display below the Task grid.</p>
+        <p>It is important to select the correct filters when you build a new policy to determine the application of the task to the intended items. If an appropriate filter does not exists, you can create a filter through the Filters solution. </p>
+        <p>The main screen on the Inventory Policy solution displays the current policy tasks and their respective details. </p>
+        <p>
+            <img src="../../Resources/Images/Policy/Practical Application.png">
+            </img>
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">All changes to the policy tasks must be made from the Add or Edit screens.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Task Name</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The name given to the task. Any cloned tasks begin with "Cloned From" before they are changed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Task Description</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">A basic description of the task.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Default Task</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The default task is the fallback inventory policy for any inventories not covered by other tasks. There may be only one default task.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Task Enabled</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>Indicates if the task is currently enabled (active). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Task Execution Order</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The order in which the task rules will be applied. This is important because some task rules may supersede others, depending on their order. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Task Start Date Defined</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">If the task is intended to begin  on a certain date, this check box must be selected, and the start date specified in the next column.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Task Start Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>If the task is intended to begin  on a certain date, the start date must be specified and the check box must be selected in the preceding column.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Task End Date Defined</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>If the task is intended to end on a certain date, this check box must be selected, and the end date specified in the next column. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Task End Date</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>If the task is intended to end  on a certain date, the end date must be specified and the check box must be selected in the preceding column.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Task Allowed To Execute</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">An informational check box that displays the effective status of the task. If the task is enabled and falls within the specified date range, the Task Allowed to Execute box must be selected. </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>To Reorder Tasks</b>
+        </p>
+        <ol>
+            <li>From the Policy Task screen, click <b>Reorder</b>. The Reorder Policy Tasks screen displays. </li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/Policy/Practical Application_1.png">
+            </img>
+        </p>
+        <ol MadCap:continue="true">
+            <li>From the Reorder Policy Tasks screen, do one of the following:</li>
+        </ol>
+        <ul>
+            <li>Select the specific task.  </li>
+            <li>In the Task Execution Order field, change the task execution order. </li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li>When finished, click <b>OK</b>.</li>
+        </ol>
+        <p>If you made changes to enabled policy tasks, you may have to execute the tasks outside of the Daily Job Manager.</p>
+        <h2>General Tab</h2>
+        <p>
+            <img src="../../Resources/Images/Policy/General Policy Information.png" />
+        </p>
+        <p>The General tab displays general policy information and the filter associated with the policy task.</p>
+        <p><b>To Display the Items Contained in the Filter</b>
+        </p>
+        <ul>
+            <li>Next to the Filter drop-down menu, click <b>View Items</b>. The Inventory Manager displays the details for the selected filter.</li>
+        </ul>
+        <h2>Policy Tab</h2>
+        <p>
+            <img src="../../Resources/Images/Policy/Policy Tab.png" />
+        </p>
+        <p>From the Logistics section of the Policy tab, you can add a lead time day to a policy task to indicate outbound handling lead time value to account for the need of some distribution centers to prepare stock on hand for shipment. In instances where a distribution center may not be able to accommodate an order request the day it was placed, outbound handling lead time may be applied to better represent the realistic ship date from the distribution center.</p>
+        <p>The <b>Reset to Default</b> checkbox resets the value in the Outbound Handling Lead Time field to Null on the Inventory Policy Task screen.</p>
+    </body>
+</html>

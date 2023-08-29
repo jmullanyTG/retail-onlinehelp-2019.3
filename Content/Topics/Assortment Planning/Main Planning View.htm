@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="11873" MadCap:lastWidth="1301">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Main Planning View </h1>
+        <h2>Grouping by columns</h2>
+        <p>Users can group placeholders and collections by clicking and dragging any column header to the grouping section at the top of this view.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View.png" />
+        </p>
+        <p>Expand or collapse groups by right-clicking on the arrow.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_1.png" />
+        </p>
+        <h2>Placeholder/Collection Locks</h2>
+        <p> As many of the metrics within Line Visualization are inter-dependent, it is necessary to lock metrics for one or more placeholders within a collection or for the entire collection depending on what was changed until changes are saved.</p>
+        <p>In this example, Phase In was changed locking most metrics for the placeholder.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_2.png" />
+        </p>
+        <h2>Calculations</h2>
+        <p>All calculations listed in this section are generic calculations only provided for the purposes of checking the general accuracy. However, the actual calculations used may vary depending on what metric was changed to cause a recalculation. Details can be found in the supplemental <b>Line Visualization Calculation Behaviors</b> MS Excel document.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">When checking values using the generic calculations, it should be understood that values are presented in a rounded state  for ease of display. Small differences in the actual calculated results may be present. In the database, all calculations are done with maximum precision to avoid unnecessary rounding.</p>
+        <h2>Collection Level Check boxes</h2>
+        <p>Check boxes in <b>Collection</b> mode such as those in the <b>Active</b> and <b>Carryover</b> fields display a solid gold state <img src="../../Resources/Images/Assortment Planning/Main Planning View_3.png" /> to indicate that only some placeholders within the collection are checked.</p>
+        <h2>Reviewing pre-markdown and post-markdown metrics in Placeholder mode</h2>
+        <p>The following columns have been added to the grid in the Placeholder mode allowing users to review pre-markdown and post-markdown metrics:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Metrics added for 2019.3.PNG" />
+        </p>
+        <h2>Grid columns</h2>
+        <p><b>Active</b>: Whether the current placeholder/collection is active in the assortment plan or not. Defaults to checked. Unchecking strikes through the placeholder/collection line and zeros out its Collection % Cont.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_4.png" />
+        </p>
+        <p>All aspects of the placeholder/collection sales plan are retained for seamless switching between active and inactive states. Inactive placeholders/collections are not included in any reporting within Assortment Planning: Target Creation, Assortment Rollup, Reconciliation, and Dashboards. </p>
+        <p>Placeholders/collections can also be made active or inactive by right clicking &gt; Set Active / Set Inactive. Placeholders/collections of Replen Status cannot be made Inactive.</p>
+        <p><b>Locked</b>: Locks or unlocks the collection the placeholder belongs to (or the collection in Collection mode) for editing. When checked, all placeholders attached to the collection are locked and read-only in the view and highlighted in pink/red depending on the row band. </p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_5.png" />
+        </p>
+        <p>Actualization of sales in a period can still affect locked placeholders/collections. Creation of new cluster set snapshots for cluster sets to which locked collections are assorted can also change locked placeholders/collections. This is done to maintain synchronicity with ROS metrics and the site count associated with clusters to which locked placeholders/collections are assorted.</p>
+        <p><b>Notes:</b>
+        </p>
+        <ul>
+            <li>Recalculation of linked Seasonality Curves does not affect locked placeholders/collections.</li>
+            <li>Already active promotions remain active on locked placeholders/collections. </li>
+            <li>New promotions cannot be applied to locked placeholders</li>
+            <li>Placeholders/collections can also be locked by right clicking and selecting <b>Lock Selecte</b>d or <b>Unlock Selected</b>.</li>
+        </ul>
+        <p><b>Product Level</b>: The level of the product hierarchy to which the placeholder/collection is assigned. Recalculation of linked Seasonality Curves does not affect locked placeholders/collections. This selection does not have to be made at the lowest level of the product hierarchy, though it is recommended users do so to avoid ambiguity in reporting.</p>
+        <p><b>PH Collection Code</b>: The collection to which the placeholder is assigned (read-only in Collection mode).</p>
+        <p>Filter the list by typing in the <b>Code</b> or <b>Des</b> fields. Use % to do a “Contains” filter condition rather than “Starts With”. For example, ”%Tops” returns everything containing the word “Tops”.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_6.png" />
+        </p>
+        <ul>
+            <li>Double-click a collection in the list to change the placeholder’s assignment.</li>
+            <li>Enter a new collection description and click <b>New</b> to create a new collection and assign the selected placeholder to it.</li>
+            <li>Changing a placeholder’s collection assignment recalculates both its prior collection’s % and its newly assigned collection’s % contribution for all placeholders that belong to either.</li>
+        </ul>
+        <p><b>PH Coll Desc</b>: A description for the collection. Changing this for one placeholder changes it for all other placeholders currently assigned to that collection.</p>
+        <p><b>PH Code</b>: (not present in Collection mode) A unique system generated code for the placeholder.</p>
+        <p><b>PH Desc</b>: (not present in Collection mode) A description for the placeholder. Placeholders generated through the Smart Start process default to <b>Smart Started from Segment</b> and (segment name) for easy identification.</p>
+        <p><b>Cluster Sets</b>: The cluster sets the placeholder or collection assorts to as set in the <a href="Cluster Details Side Pane.htm">Cluster Details side pane</a>.</p>
+        <p><b>Status</b>: The status for the placeholder collection (read-only in Collection mode):</p>
+        <ul>
+            <li><b>Open</b>: Default for all new placeholders. Denotes placeholders that can be deleted by Smart Starting an overlapping Target Creation scenario. For more information, see <MadCap:xref href="Target Creation Scenario Manager.htm">Target Creation.</MadCap:xref></li>
+            <li><b>Created</b>: Denotes placeholders that cannot be deleted by Smart Starting and overlapping Target Creation scenario.</li>
+            <li>
+                <p><b>Committed</b>: Auto-assigned upon confirmation of units on-order for the placeholder.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> As actual units on-order is always against a variant (real style-color), once a placeholder enters <b>Committed</b> status, the assigned variant cannot be removed nor can the status be changed unless the on-order units are canceled.</p>
+            </li>
+            <li>
+                <p><b>Assigned</b>: Auto-assigned upon assignment of a variant to the placeholder. Assigned placeholders inherit the Variant ID, PLM Code, PLM Description, Color Code, Color Description, and Attributes of the assigned variant. For more information, see <MadCap:xref href="Attributes View.htm">Attributes View</MadCap:xref>. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Placeholders whose variants are unassigned via <b>Undo &gt; Unassign Selected</b> are automatically returned to <b>Created</b> status.</p>
+            </li>
+        </ul>
+        <p><b>Replen</b>: A selectable for placeholders that are either in <b>Assigned</b> or <b>Committed</b> Status. This shifts control of the placeholder/collection sales plan to replenishment forecasts in the Forecasts module making the plan read-only within Assortment Planning.</p>
+        <h3>Changing placeholder/collection Status of placeholders with replenishment data present</h3>
+        <p>Changing placeholder/collection Status of placeholders with replenishment data present (see <b>Available for Replen</b>) to Replen displays the following:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_7.png" />
+        </p>
+        <p>Clicking <b>Yes</b> irreversibly overwrites the sales plan for the changed item with available replenishment forecast data. While you can change the item Status back, the system is not able to maintain the previous sales plan data. The state of the sales plan at the time of the change, including metric values, cluster assignments, and location exceptions, will become the go-forward sales plan, though the plan elements will become editable once more.</p>
+        <h3>Changing placeholder/collection Status of placeholders without replenishment data present</h3>
+        <p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">Changing placeholder/collection Status of placeholders without replenishment data present (see <b>Available for Replen</b>) to Replen displays the following:</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_8.png">
+            </img>
+        </p>
+        <p>Clicking <b>Yes</b> irreversibly zeros out the sales plan for the changed item. While you can change the item Status back, the system is not able to maintain the previous sales plan data. Plan metrics stay at zero though the plan elements are editable once more.</p>
+        <h3>Notes on Replen items:</h3>
+        <ul>
+            <li>Sales plans for Replen items are updated nightly to coincide with updates to replenishment forecasts.</li>
+            <li>
+                <p>Replen item sales plans can also be updated on demand by clicking the <b>Recalculate</b> button in the <b>Replen</b> section of the toolbar. However, this utilizes the settings of the most recent replenishment run. </p>
+                <p>It is advisable to verify the output of the last replenishment run created using the same parameters as are used in the nightly run or the data brought into AP may be inconsistent or incomplete .</p>
+            </li>
+            <li>As only future data is ever written in a replen run and data is written daily, this requires the system to specially handle inter-period sales and on-hand inventory. BOP on-hand is created from actuals and not changed throughout the period. Sales and receipts are combined as "future periods from replenishment" and "past periods from actuals" to maintain a total period number throughout the period until it is fully actualized. EOP on-hand values always come from replenishment data.</li>
+            <li>Certain plan elements still remain editable. Most are informational fields (PH Description and Code, Tags, Notes) but all Shrink/Inventory Adjustments metrics in Sales Plan View are editable.</li>
+            <li>Replen items cannot be locked, made inactive, or deleted.</li>
+            <li>Seasonality Curve, Size Curve, and Min Pres are cleared as these elements are controlled within the Forecasts module. If the status changes from <b>Replen</b> to something else, the item inherits the defaults set on the plan for the product level to which it belongs.</li>
+            <li>Any Sales Plan and Receipt Plan overrides are irrevocably cleared.</li>
+            <li>
+                <p>Receipt Plan constraints are cleared as these elements are controlled within the Forecasts module. If the status changes from <b>Replen</b> to something else the item inherits the defaults set on the plan for the product level to which it belongs.</p>
+                <p class="important" MadCap:autonum="&lt;b&gt;IMPORTANT: &lt;/b&gt;">Currently, Forecasts uses buckets and Assortment Planning uses periods. These are two different time entity types that do not have to align in order for Assortment Planning to read in replenishment forecast data. </p>
+                <p MadCap:autonum="">The system attempts to match the calendars in each module by cross referencing Forecast bucket start dates with the Assortment Planning periods beginning and ending dates. However, if the buckets and periods do not coincide, this may lead to sub-optimal data within Assortment Planning. </p>
+                <p>For example, if the buckets in Forecasts are set to monthly and the periods in AP are weekly, AP puts the sales for the entire monthly bucket into the first weekly period available during that month, etc.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">In Collection mode, displays the most advanced status of any placeholders within the collection (with Open being least and Replen being most advanced).</p>
+            </li>
+        </ul>
+        <p><b>Receipt Status</b>: The calculation status of the receipt plan for the placeholder/collection (Clean or Dirty).</p>
+        <ul>
+            <li>In the main planning and Cluster Set views, changes to Seasonality Curve, Collection % Contribution, Phase In, Mkdn Date, Phase Out, AUT, Ttl Sls $, Ttl Sls U, ROS $, ROS U, Min Pres, Ttl Buy $, Ttl Buy U, Additional Buy, or S/T will set this to Dirty.</li>
+            <li>In <b>Sales Plan</b> view, changes to Selling Period, Sales, Sales Units, Shrink Units, Shrink Units % of Sales Units, Shrink Cost, Shrink Cost % of COGS, Inventory Adjustment Units and Inventory Adjustment Cost will set this to Dirty.</li>
+            <li>In <b>Receipt Plan</b> view, changes to Periods of Supply, Periods Before Phase In, Min Stock to Sales, Shrink % of Sales, Minimum Presentation, Receipt Period, and Receipt Units will set this to Dirty.</li>
+        </ul>
+        <p><b>Available for Replen</b>: read-only check box; indicates if replenishment forecast data is available for the placeholder/collection</p>
+        <p>Check this field before changing the status of a placeholder/collection to <b>Replen</b>. The system warns if no data is present, however, checking first saves time. This is also useful for verifying that the replenishment forecast matches up with the assigned variants.</p>
+        <p class="important" MadCap:autonum="&lt;b&gt;IMPORTANT: &lt;/b&gt;">This field is checked if ANY portion of the combination assigned variants, cluster sets, and product lifespan has a replenishment forecast against it. For example, the field is checked if a single item master related to the assigned variant has a forecast for a single site contained within the clusters that variant is assorted to during the lifespan of the variant. </p>
+        <p>Forecasts must be set for all intended item masters and sites to ensure completeness of replenishment data in Assortment Planning.</p>
+        <p><b>Replen Status</b>: The Replen Status, Clean or Dirty, as an indicator of if the placeholder/collection has been updated with the most recent Replenishment forecast data (valid for placeholders/collections of Replen status only).</p>
+        <p><b>Last Replen</b>: The date replenishment data was last updated for the placeholder/collection (valid for placeholders/collections of <b>Replen</b> status).</p>
+        <p><b>PH Count</b>: (not present in Placeholder mode) The count of the placeholders assigned to a collection.</p>
+        <p><b>Variant ID</b>: (not present in Collection mode) A unique system identifier for the assigned variant; blank if no variant is assigned.</p>
+        <p><b>PLM Code</b>:  (not present in Collection mode) If integrated with a product lifecycle management (PLM) system, then this field displays the PLM code associated with the assigned variant.</p>
+        <p><b>Color Code</b>: (not present in Collection mode) The color code for the placeholder. When a variant is assigned it overwrites any user-entered value and displays the variant color code. On unassigning a variant, reverts back to the user-entered value, if any.</p>
+        <p><b>Color</b>: (not present in Collection mode) The color description for the placeholder. When a variant is assigned it overwrites any user-entered value and displays the variant color description. On unassigning a variant, it reverts back to any user-entered value.</p>
+        <p><b>Supplier Code</b>: The unique system supplier code of the supplier associated with the variant assigned to the placeholder, if any.</p>
+        <p><b>Supplier Name</b>: The supplier name associated with the variant assigned to the placeholder, if any.</p>
+        <p><b>Default Lead Days</b>: Either the Default Lead Time Days set for the Product Level the placeholder is assigned to or the Default Lead Time of the supplier associated with the variant assigned to the placeholder.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">If a variant is assigned to the placeholder but that variant has no associated supplier, the system uses the Default Lead Time Days set in the plan defaults. For more information on setting default lead days, see <MadCap:xref href="Line Visualization concepts.htm#Tracking">Tracking Against Ordering Deadlines</MadCap:xref>.</p>
+        <p><b>Next Order Date</b>: The earliest order deadline for receipts planned for the corresponding placeholder based on assigned default lead times. Essentially, this is the earliest receipt date for any cluster level receipt planned for the placeholder minus Default Lead Days.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">This should also correspond with the earliest Order By Date shown in Receipt Plan view for the placeholder.</p>
+        <p><b>Size Curve</b>: The size curve to apply to the placeholder/collection. Displays all defined size curves. Filter by typing in the Size Curve Option or Description fields; use % to do a “Contains” filter condition rather than “Starts With” (ex. %Tops returns everything containing the word “Tops”).</p>
+        <p>Applying at the collection level pushes a size curve down to all placeholders in a collection The system has no way to validate the relevance of sizes contained in the applied curve to new placeholders.</p>
+        <p><b>Curve Mode</b>: The mode of the selected Seasonality Curve:</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');margin-left: auto;margin-right: auto;" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Mode</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Static</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The selected curve is applied exactly as it exists at the time of application and the placeholder/collection’s curve will not change if changes are made to the curve, whether manually in the Curves module or through dynamic recalculation. Think of this as making a copy of the applied curve.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Dynamic</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Changes made to the curve are pushed down to the placeholder/collection and the dependent sales plans recalculate when those changes are pushed.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>Seasonality Curve</b>: The seasonality curve applied to the placeholder/collection. Used to break down Ttl Sls $ and Ttl Sls U by period in Sales Plan View. For more information, see <MadCap:xref href="Sales Plan View.htm">Sales Plan View</MadCap:xref>.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Only curves of the Manual or Specified Conditions Using Enhanced Filtering types are available for selection within Assortment Planning.</p>
+        <p>Click the ellipsis (<img src="../../Resources/Images/Assortment Planning/Main Planning View_9.png" />) to launch the <b>Curve Selection</b> screen. For more information, see <MadCap:xref href="Curve Selection Screen.htm">Curve Selection Screen</MadCap:xref>.</p>
+        <p><b>Image</b>: (not present in Collection mode) A thumbnail of the primary image for the placeholder or attached variant. If <b>Image Tool</b> tip is enabled in <b>View Options</b>, then hovering over the thumbnail image displays a larger version of the image. </p>
+        <p>Images can be assigned to placeholders prior to variants being attached, but are replaced by the actual variant images once a variant is attached. To retain placeholder images when attaching variants, go to Variant Manager &gt; Image Maintenance for the variant you wish to attach and add the placeholder images there, or add them after the variant has been attached.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Where a PLM (Product Lifecycle Management) system integration is present, the primary image of a placeholder is not editable once a variant has been assigned. This is because the image is dictated via data imported from the PLM. The ability to edit the primary image is controlled by the system policy <b>Variant Primary Image Classification Update</b> (Maintenance &gt; Policies &gt; Module: Assortment).</p>
+        <p>To edit, click the image, right click and choose <b>Edit Primary</b> or <b>Edit All</b>:</p>
+        <ul>
+            <li><b>Edit Primary</b> displays the Image Maintenance dialog (see Header Area Controls &gt; Images earlier in this section) and allows selection of another primary image</li>
+            <li><b>Edit All</b> displays the Image Gallery dialog (see Header Area Controls &gt; Images earlier in this section) and allows editing/deletion of existing images or addition of more images; this can also be launched by double-clicking the image thumbnail</li>
+        </ul>
+        <p><b>Carryover</b>: Whether a placeholder/collection is an already existing item from a previous window of time. This is driven solely off a placeholder status of <b>Committed</b>. Committed placeholders/collections have confirmed on order quantities for actual variants and cannot be edited to the same degree as placeholders/collections that have yet to be ordered.</p>
+        <p><b>Collection % Cont</b>: user editable percentage (10.1%); displays/sets the contribution percentage of a placeholder to the collection to which it belongs (not present in Collection mode). Placeholders in collections by themselves will always have Collection % Cont of 100%. When shifting placeholder collection assignments, percentages for all placeholders in affected collections are recalculated, but sales hold for all. When adjusting Collection % Cont directly, collection level sales hold and placeholder sales recalculate.</p>
+        <p>As changes are made to this metric within a collection, the % Locked field will be checked, so subsequent changes won’t alter your previous entries within the collection. Sum of Collection % Cont for all placeholders in a collection must equal 100%; system will re-normalize entries that would cause the sum to exceed by dividing each by the sum of the percentages. </p>
+        <p>Calculation: Ttl Sls U / (Ttl Sls U for all placeholders in collection).</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Entering values above 100% will raise an Invalid Value error.</p>
+        <p><b>% Locked</b>: Indicates a change has been made to the corresponding % contribution that has not yet been Applied (not present in Collection mode).</p>
+        <p><b>AUT</b>: Currency ($10.01) The average unit ticket price for the placeholder/collection. Displays the weighted average of AUT values for all periods, both actualized and future, beneath.</p>
+        <p>AUT is assumed to be VAT inclusive and is treated as such for all dependent calculations. Because of the potential for multiple currencies, VAT (value added tax) rates, and promotional participation to vary by site within a single cluster, changes to AUT require you to click Apply to properly calculate the effects on the rest of the plan for a given placeholder/collection. Details for this calculation are available in a supplemental Excel model.</p>
+        <p>Period level changes to AUT can be made in the AUT right pane view. See <a href="AUT View.htm">AUT&#160;View</a> for more information.</p>
+        <ul>
+            <li>Once a placeholder has begun to actualize (current date is greater than Phase In date), AUT is not directly editable.</li>
+            <li>
+                <p> AUR (average unit retail), being an outcome of the calculation mentioned above, is not directly editable.</p>
+            </li>
+        </ul>
+        <p><b>Margin %:</b> read-only percentage (10.01%); gross margin percentage for the placeholder/collection</p>
+        <p>Calculation: ((AUR ex VAT / (1 + VAT %)) – AUC) / (AUR ex VAT/ 1 + VAT %)</p>
+        <p><b>Tags</b>: user editable alpha-numeric; allows the ad-hoc creation and assignment of informational descriptors for a given item</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_12.png" />
+        </p>
+        <p>Multiple tags can be entered for a single line with inputs being confirmed by the use of the comma ( , ) key. As users begin to type, any tags already present in the current view that begin with the entered characters appear in an auto-complete selector below the field. These entries can be selected via click or by using the arrow keys to navigate to the desired item and the comma key to select. </p>
+        <p><b>Phase In</b>: The phase in date for the placeholder/collection. If set, selections are limited to periods prior to Phase Out.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Defaults to the earliest non-actualized period within the Window of Time in the data selection parameters</p>
+        <p><b>Mkdn Date</b>: Selects the markdown date for the placeholder/collection. Selections are limited to periods from Phase In through Phase Out. <b>Mkdn Date</b> sets which period to stop respecting the various constraints utilized in the Receipt Plan supporting view including <b>Min Pres</b>. When viewing the by-period plan for the placeholder in Sales Plan or Receipt Plan view, Min Pres will drop to zero in the period specified by Mkdn Date. An existing markdown date splits the plan into pre- and post-markdown data. Promotions can be applied to markdown periods.</p>
+        <ul>
+            <li>If no markdown date has been specified, then the plan exists as standard. </li>
+            <li>
+				If a markdown date is added at time of the Placeholder creation, then indexes for both halves of the plan are normalized together, and total sales is spread across.
+			</li>
+            <li>If  a markdown date is added after the total sales has been entered, then sales plan pre-markdown is locked in as it already exists, and the markdown plan is re-angled to head to zero.</li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Mkdn date can be pushed by changing Phase In or Phase Out. If Phase Out changes, the zero-trend point moves with the phase out and the slope of the mkdn curve changes accordingly.</p>
+        <p><b>Phase Out</b>: The phase out date for the placeholder/collection. If set, selections are limited to periods after Phase In. Defaults to the last period within the Window of Time in the data selection parameters.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">For placeholders/collections of Replen Status, Phase Out dates are derived from the maximum Phase Out date set in the Forecasting module for all relevant inventories. </p>
+        <p><b>SPV Overrides</b>: Indicates if overrides to Sales $ or Sales U have been made to the placeholder/collection in the Sales Plan supporting view</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Changes made in Sales Plan view do not directly affect the metrics in Line Visualization with the exception of removing Selling Periods as these metrics are considered the System Plan when working in Sales Plan view. This allows the user to see differences in the higher level placeholder and cluster plans created in Line Visualization and the results of more granular period level adjustments made in Sales Plan view.</p>
+        <p><b>SPV Sls $:</b>The sum of all Sales for the placeholder/collection in Sales Plan view. Provided for easy comparison to the Line Visualization plan at the placeholder/collection level.</p>
+        <p><b>SPV Sls U</b>: The sum of all Sales Units for the placeholder/collection in Sales Plan view. Provided for easy comparison to the Line Visualization plan at the placeholder/collection level. </p>
+        <p><b>ROS $:</b> user editable currency ($10.01); sets the rate of sale (average sales per site per period) in revenue for the placeholder/collection</p>
+        <p>Calculation: (Ttl Sls $ / No. Periods / Site Count)</p>
+        <p><b>ROS U</b>: The rate of sale (average sales per site per period) in units for the placeholder/collection</p>
+        <p>Calculation: (Ttl Sls U / No. Periods / Site Count)</p>
+        <p><b>Promo</b>: Indicates whether there are any active promotions applied to the placeholder/collection. Checked means at least one promotion is applied to the placeholder/collection. Unchecked means no promotions are applied. Inactive promotions will not cause the box to be checked. </p>
+        <p>Specific promotions applied can be viewed in the Promotions bottom pane view. For more information, see <MadCap:xref href="Promotions View.htm">Promotions View (not available in Collection mode)</MadCap:xref>.</p>
+        <p><b>Ttl Sls $:</b> user editable currency ($10.01); sets the total sales revenue for the placeholder/collection from Phase In through Phase Out</p>
+        <p>Calculation: (ROS $ * No. Periods * Site Count</p>
+        <p><b>Ttl Sls U</b>: user editable integer; sets the total sales units for the placeholder/collection from Phase In through Phase Out</p>
+        <p>Calculation: (ROS U * No. Periods * Site Count)</p>
+        <p><b>AUR</b>: read-only currency ($10.01); displays the average unit retail price for the placeholder/collection. Because of the potential for multiple currencies, VAT (value added tax) rates, and promotional participation to vary by site within a single cluster, AUR is not directly editable and is only changed as a result of changes to AUT, Phase In, Phase Out, and promotion applications. Details for this calculation are available in a supplemental Excel model.</p>
+        <p>Calculation: (Ttl Sls $ / Ttl Sls U)</p>
+        <p><b>AUR ex VAT</b>: Non-editable currency ($1.01); average retail (selling) price excluding VAT per unit for the placeholder item </p>
+        <p>Calculation: AUR / (1 + VAT %)</p>
+        <p><b>AUC</b>: user editable currency ($10.01); sets the average unit cost price for the placeholder/collection. Displays the weighted average of AUC values for all periods, both actualized and future, beneath.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Once a placeholder/collection has begun to actualize (current date is greater than Phase In&#160;date), AUC will not directly editable.</p>
+        <p><b>Min Pres</b>: user editable integer; sets the desired minimum presentation stock per site for the placeholder/collection. Min Pres represents additional non-sales units to be purchased for the placeholder/collection to maintain adequate stock for presentation within each store.</p>
+        <p>Calculation: SUM (cluster site count * cluster min pres – for all clusters) / Site Count (yields a weighted average)</p>
+        <p><b>Ttl Buy $:</b> user editable currency ($10.01); sets the total buy in revenue for the placeholder/collection. Changes to this metric directly affect the placeholder/collection sales plan.</p>
+        <p>Calculation: (Ttl Sls U + (Min Pres * Site Count) + Additional Buy) * AUC</p>
+        <p><b>Ttl Buy U</b>: The total buy in revenue for the placeholder/collection. Changes to this metric directly affect the placeholder/collection sales plan.</p>
+        <p>Calculation: (Ttl Sls U + (Min Pres * Site Count) + Additional Buy)</p>
+        <p><b>Additional Buy</b>: The quantity of additional non-sales and non-min pres units to buy for the placeholder/collection. The primary function of this field is to show discrepancies between the sum of Ttl Sls U and (Min Pres * Site Count) and Ttl Buy U that can occur because of the ability to directly edit S/T %. To remove unwanted excess units and rebalance a placeholder/collection’s sales plan, simply zero this field out and Apply.</p>
+        <p>Calculation: (Ttl Buy U – Ttl Sls U – (Min Pres * Site Count))</p>
+        <p><b>Target S/T %</b>: user editable, has no calculation effect or relationship, defaults to S/T %.</p>
+        <p><b>S/T %</b>: read-only. percentage (10.1%); sets the target sell-through percentage for the placeholder/collection. Changes to this metric alter Ttl Buy U to achieve the entered S/T %. </p>
+        <p>Calculation: (Ttl Sls U / Ttl Orders U)</p>
+        <p><b>Reg S/T %</b>: read-only. The calculation is Reg Sales U / Total Orders U.</p>
+        <p><b>S/T % Delta</b>: The calculation is ( Target S/T % - S/T % ) / ( S/T % ).</p>
+        <p><b>Total Orders ($)</b>: The sum of Total Orders Cost from Receipt Plan view for the placeholder/collection. This is included as a comparison of the actual receipt plan to the estimated Ttl Buy $ in the Main Planning View.</p>
+        <p><b>Total Orders (U)</b>: The sum of Total Orders from Receipt Plan view for the placeholder/collection. This is included as a comparison of the actual receipt plan to the estimated Ttl Buy U in the Main Planning View.</p>
+        <p><b>No. Periods</b>: The MAX period count for the placeholder/collection. Because Phase In and Phase Out at the placeholder/collection level are set to the earliest and latest periods, respectively, of all clusters to which it has been assorted, <b>No. Periods</b> must calculate this way to balance the other calculations in Line Visualization. </p>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">A placeholder is assorted to two clusters: cluster A has Phase In/Phase Out of Wk 1 and Wk 4 and cluster B has a Phase In/Phase Out of Wk 2 and Wk 5. </p>
+        <p>The placeholder Phase In/Phase Out is Wk 1 and Wk 5, yielding a <b>No. Periods</b> of 5.</p>
+        <p><b>Site Count (Active)</b>: The average total site count and the average active site count (in parenthesis) of all clusters a placeholder/collection is assorted to between Phase In and Phase Out.</p>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View_11.png" />
+        </p>
+        <p>Typically, this metric is always a static whole number that equates to the sum of the cluster level site counts to which the placeholder/collection is assorted. However, when multiple cluster set snapshots are present during a placeholder/collection’s life, it is possible for site count by cluster to vary, thus necessitating the need for an average count.</p>
+        <p><b>Location Exceptions</b>: Indicates the presence of location level exceptions for the placeholder/collection. This is checked if any sites contained in clusters the placeholder/collection is assorted to have been excluded via the Manage Locations function.</p>
+        <p>Location exceptions do not alter Site Count. This is because when location exceptions are made the system recalculates the placeholder/collection rates of sale according to each site’s % contribution to the cluster. Also decrementing Site Count would cause the resulting sales plan to drop too low as doing so essentially double-counts the removal of the excluded sites.</p>
+        <p><b>Lock Type</b>: Displays the lock type if any part of a placeholder/collection line is locked.</p>
+        <p><a name="Health"></a><b>Health Error</b>: An error message indicating if a cluster has zero sites in a particular time frame. This column and the <b>Health Error Details</b> column together allow users to better plan their assortments.</p>
+        <p><b>Health Error Details</b>: Click the drop-down arrow to display additional details regarding messages displayed in the <b>Health Error</b> field.</p>
+        <h3>Example of Cluster Sets with zero site counts</h3>
+        <p>
+            <img src="../../Resources/Images/Assortment Planning/Main Planning View Health Error Details Column.PNG" />
+        </p>
+        <p><b>PLM Desc</b>: If integrated with a product lifecycle management (PLM) system, then this displays the PLM description associated with the assigned variant (not present in Collection mode).</p>
+        <p><b>Actual Sales U</b>: The sum of all actualized sales units (from historical periods) for the placeholder/collection. </p>
+        <p>Actualization occurs as part of overnight processing (exact frequency can vary by implementation) in which the sales units that were realized for a given period are fed to the Demand Management database and read into Assortment Planning. Planned sales values are overwritten by these actual sales values.</p>
+        <p><b>Actualized Periods</b>: The number of actualized periods present in the life of the placeholder/collection. </p>
+        <p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">For a placeholder whose Phase In was Wk 1 and it is now Wk 5 and assuming regular overnight processing has occurred, then the actualized periods is 4.</p>
+        <p><b>Actualized</b>: Indicates the presence of any actualized periods during the placeholder/collection’s life.</p>
+    </body>
+</html>

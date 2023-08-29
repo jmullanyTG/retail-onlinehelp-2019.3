@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>From the Navigation pane on the left side of the Order Manager screen, you can view and work with  order documents. The convenient folder system also helps you organize your orders as they move through the various stages of the ordering process.</p>
+        <p>Entering text in the search bar applies a “Begins With” type filter on the orders in the Navigation pane.</p>
+        <p>
+            <img src="../Images/Order Manager/Navigation.png" />
+        </p>
+        <h2>Removing Filters from the Document List</h2>
+        <p>To remove a filter that has been applied to the document list, click the the <img src="../Images/Order Manager/Navigation_11.png" /> button  at the top of the Navigation header. This button is only enabled when a filter is applied.</p>
+        <h2> Filtering the Document List</h2>
+        <p>To apply inventory or variant type filters to search for orders containing specific site/item combinations on the order document list, click the Filter button<img src="../Images/Order Manager/Navigation_1.png" />  at the top of the Navigation pane.</p>
+        <p>
+            <img src="../Images/Order Manager/Filtering the document list.png" />
+        </p>
+        <ul>
+            <li><b>Filter Entity Type</b>: an entity type for the filter to be applied. The options are:<ul><li> <b>Inventory</b> (the combination of site and item master)</li><li> <b>Variant</b></li></ul></li>
+            <li><b>Filter</b>: filters the document list.</li>
+            <li>
+                <img src="../Images/Order Manager/Navigation_3.png" />: displays the Maintain Filter window to create or import a new filter, or update, delete, or export an existing filter.</li>
+            <li><b>Select only some items from the current filter</b>: displays the Item Selection window,</li>
+        </ul>
+        <p>
+            <img src="../Images/Order Manager/Select only some items from the current filter.png" />
+        </p>
+        <p>The window displays all variants returned by the criteria in the selected filter. To select the desired variants to include in the document, click the corresponding check boxes in the <b>Selected</b> column.</p>
+        <ul>
+            <li>Items can also be selected using the buttons at the top :<ul><li><img src="../Images/Assortment Planning/Navigation_5.png" />: selects all rows currently highlighted</li><li><img src="../Images/Assortment Planning/Navigation_6.png" />: de-selects all rows currently highlighted</li><li><img src="../Images/Assortment Planning/Navigation_7.png" />: selects all rows</li><li><img src="../Images/Assortment Planning/Navigation_8.png" />: de-selects all rows</li></ul></li>
+        </ul>
+        <p><b>To Filter the Document List</b> <span style="color: #b22222; font-weight: bold;">REVIEW</span></p>
+        <p>From the Execute tab, click <b>Order Manager</b>. The Order Manager screen displays.</p>
+        <p>Click the Filter button<img src="../Images/Order Manager/Navigation_1.png" />  at the top of the Navigation pane. The Filter window displays.</p>
+        <p>To filter the list, type in the Filter row for any column. The Start With field displays.</p>
+        <p>Enter <b>%</b>  at the start of the value you want to filter. The Contains type filter displays.</p>
+        <p>
+            <img src="../Images/Order Manager/Filtering a list by typing.png" />
+        </p>
+        <p>Click <b>Choose Column(s)</b>. The <b>Choose Fields</b> window displays.</p>
+        <p>Select additional columns to include in the Item Selection view to provide additional context for determining which products are desired. </p>
+        <p>
+            <img src="../Images/Order Manager/Choose Fields dialog.png" />
+        </p>
+        <ul>
+            <li><b>Cancel</b>: closes the Item Selection dialog without selecting any items</li>
+            <li><b>OK</b>: applies the filter with the selected items to the document list<ul><li>Cancel: closes the filter selection dialog and does not filter the document list</li></ul><ul><li>OK:&#160; applies the filter to the document list</li></ul></li>
+        </ul>
+        <h2>Folders</h2>
+        <ul>
+            <li><b>Workspace</b>: contains all order documents that are not currently in one of the other document states<ul><li><b>Public</b>: contains all orders with the security setting of Public for which the user has sufficient permissions to view</li><li><b>Shared</b>: contains all orders with the security setting of Shared for which the current user was included in the approved user list</li><li><b>Private</b>: contains all orders with the security setting of Private that were created by the current user</li></ul></li>
+        </ul>
+        <ul>
+            <li><b>Forwarded</b>: in Order Manager, order documents can be forwarded to other users for review/approval; this folder contains all orders that have been forwarded either by or to the current user<ul><li><b>Inbox</b>: contains all orders forwarded from others to the current user</li></ul><ul><li><b>Outbox</b>: contains all orders forwarded by the current user to others</li></ul></li>
+        </ul>
+        <ul>
+            <li><b>Rejected</b>: orders forwarded to others for approval can be rejected, indicating that changes are required; this folder contains all orders previously forwarded by the current user that were rejected</li>
+            <li><b>Pre-Authorized</b>: given sufficient permissions based on the active workflow for an order document, users have the ability to pre-authorize, locking the order document from further edits; this folder contains all orders pre-authorized by the current user<ul><li><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Pre-Authorization is provided in Order Manager more for the reservation of stock for orders that will ship to sites; pre-authorization in the context of commitment orders does not reserve any inventory because the inventory has not been ordered. If pre-authorization is not desired within a user workflow, the rights to pre-authorization can simply be removed at each node of the relevant workflow for all users in Workflow Manager</p></li></ul></li>
+        </ul>
+        <ul>
+            <li><b>Authorized</b>: given sufficient permissions based on the active workflow for an order document, users have the ability authorize, confirming that no further changes are required to the order and that is it ready for upload to external systems; this folder contains all order documents authorized by the current user</li>
+            <li><b>Uploading</b>: based on the configuration and schedule of order uploads established during software implementation, authorized orders are uploaded to the external systems that handle purchase order management; this folder contains all order documents authorized by the current user that are currently being uploaded</li>
+            <li><b>Upload Failed</b>: this folder contains all order documents authorized by the current user that experienced a failure during the upload process</li>
+            <li><b>Uploaded</b>: this folder contains all order documents authorized by the current user that were successfully uploaded to external systems</li>
+            <li><b>Upload Verified</b>: this folder contains all order documents authorized by the current user for which Demand Management has received confirmation of upload from external systems</li>
+        </ul>
+        <div class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">
+            <p>The system can be configured to transition the order document in one of two ways after an upload is verified: <ul><li>Transition back to Workspace</li><li>Transition to the last folder the order was in prior to being Authorized</li></ul></p>
+            <p>Additionally, the system can be configured to route the order document in one of two ways after an upload is verified:<ul><li>Route to the user who created it</li><li>Route to the user who authorized it</li></ul></p>
+        </div>
+        <h2>Order Document Right-Click Actions</h2>
+        <p> Depending on the folder an order document resides in, a few actions are available by selecting and then right-clicking the order<ul><li><b>Open</b>: opens the order document in a new tab in the order viewing area at the right</li><li><b>Delete</b>: launches a dialog asking the user for confirmation to delete the currently selected order</li></ul></p>
+        <p>
+            <p>
+                <img src="../Images/Order Manager/Question message to confirm deletion.png" />
+            </p>
+            <ul>
+                <li><b>Yes</b>: permanently deletes the selected order document</li>
+            </ul>
+            <ul>
+                <li><b>No</b>: closes the delete confirmation dialog without deleting the selected order document</li>
+            </ul>
+        </p>
+        <h2>Navigation Pane positioning and viewing options</h2>
+        <h3>Auto-Hide</h3>
+        <p>Clicking <img src="../Images/Assortment Planning/Navigation_13.png" /> in the upper right of the Navigation pane toggles the pane to Auto-Hide mode, causing the pane to retract to a tab on the left side of the screen.</p>
+        <p>
+            <img src="../Images/Order Manager/Navigation_14.png" />
+        </p>
+        <p>To restore the pane to its normal position, simply hover over or click the tab then click the pin again to dock the pane.</p>
+        <p>
+            <img src="../Images/Order Manager/Navigation_15.png" />
+        </p>
+        <h3>Manual Docking</h3>
+        <p>The Navigation pane can be docked on the left or right side of the screen by left-clicking and holding and then dragging the Navigation header area. The pane will temporarily become a floating window which can then be dragged to the right or left.</p>
+        <p>
+            <img src="../Images/Order Manager/Navigation_16.png" />
+        </p>
+    </body>
+</html>

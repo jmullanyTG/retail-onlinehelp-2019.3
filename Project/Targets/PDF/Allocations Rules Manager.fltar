@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="For Printed Manuals"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Allocations Rules Manager.fltoc"
+  PatchHeadingLevels="true"
+  InjectBookHeadings="true"
+  RemoveImagesFromHeadings="true"
+  EmbedImages="true"
+  ConditionTagExpression="include[&quot;General.Printed Manuals&quot;] exclude[&quot;General.Exclude from Print&quot; or &quot;General.How-To Guides&quot; or &quot;General.Temp Exclude&quot;] ">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    ExpandingTextConversion="expand"
+    PopupConversion="expand"
+    GeneratePDF="false"
+    DisableMasterPageUsage="true" />
+  <Variables> <Variable Name="Variables/BookVersion">2019.3</Variable> <Variable Name="Variables/BookSubTitle">User Guide</Variable> <Variable Name="Variables/BookVersion">2019.3</Variable> <Variable Name="Variables/BookSubTitle">User Guide</Variable>
+    <Variable
+      Name="JustEnough Variables/Printed Manual Title">Allocations Rules Manager</Variable>
+    <Variable
+      Name="Variables/BookTitle">Allocations Rules Manager</Variable>
+  </Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF Output.fldes"
+      Publish="true" />
+  </Destinations>
+  <PDF
+    ConvertBookmarks="true"
+    InitialMagnification="Fit"
+    PageLayout="OneColumn" />
+</CatapultTarget>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Clone a Price Action</h1>
+        <p>You can clone a Price Action by navigating to the <b>Price Actions</b> screen. Within the Price Manager screen, double-click a row in the <b>Price Actions</b> grid. Click the <b>Actions</b> tab, next to <b>Information</b>, which will load the <b>Price Actions</b> screen. </p>
+        <p>
+            <img src="../../Resources/Images/Price Planning/Clone a Price Action.PNG" />
+        </p>
+        <h2>Cloning a Price Action</h2>
+        <ol>
+            <li>Click <b>Clone</b>.</li>
+            <li>
+                <p>Complete the fields as required.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;"> The system appends <b>(Copy)</b> to the original Price Action Name. Overwrite with a new name as required.</p>
+            </li>
+            <li>
+                <p>Click <b>Ok</b> to create a new Pricing Plan. </p>
+                <p>The Price Action grid refreshes with the newly cloned Price Action selected.</p>
+            </li>
+        </ol>
+        <p>Clicking <b>Cancel</b> discards the creation of the new Price Action and closes the <b>Clone Price Action</b> dialog.</p>
+        <h2>Field Descriptions</h2>
+        <p>All fields are editable.</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Name</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The original Price Action name.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Description</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The original Price Action description.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Start Date</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>The original Price Action Start Date. If the start date is in the past, then:</p>
+                        <ul>
+                            <li>if the User has the Right <b>Emergency Price Action</b> the system will default the Start Date to today.</li>
+                            <li>if the User does not have the Right <b>Emergency Price Action</b> the system will default the Start Date to tomorrow.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Strategy</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">
+                        <p>
+                        The original Price Action Strategy.
+</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">&#160;</p>
+                        <ul>
+                            <li>
+                                <p>If not modified the system will copy over the Strategy Variable values and any lower level exception overrides.</p>
+                            </li>
+                            <li>
+                                <p>If modified, the system will NOT copy over the Strategy Variable values nor any lower level exception overrides.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Workflow</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The original Price Action Workflow. The System will apply the first Status for the selected Workflow.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Variant</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">The system applies the selected Variants from the original Price Action. Additionally, the system applies any product exclusions across all levels.</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Site Clusters</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">The system will display the selected Site Cluster(s) from the original Price Action. If a Cluster is added, that was previously not included, then the system will apply the default Strategy values for the appropriate currency.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

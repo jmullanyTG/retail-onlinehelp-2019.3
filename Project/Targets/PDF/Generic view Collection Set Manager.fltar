@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Generic View Collection Set Manager.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/mi9styles.css">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Variables>
+    <Variable
+      Name="Variables/BookSubTitle">User Guide</Variable>
+    <Variable
+      Name="Variables/BookTitle">Generic view Collection Set Manager</Variable>
+    <Variable
+      Name="Variables/BookVersion">2019.3</Variable>
+  </Variables>
+</CatapultTarget>

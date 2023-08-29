@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+         
+    </head>
+    <body>
+        <h1>Available to Allocate Calculation</h1>
+        <p>The available to allocate calculation is used in many places throughout the module. It is a dynamic calculation with several parameters, the inclusion of which will affect how the calculation is accomplished.</p>
+        <div class="code_block">
+            <p>
+                <ul>
+                    <li>@bIncludeStockOnHand BIT = 1 --Should the StockOnHand column be included? Read from tbl_InventoryLevel</li>
+                    <li>@bIncludeOnOrder BIT = 1 --Should entries from SupplierOrderLine be included? </li>
+                    <li>@bIncludePrepacks BIT = 1 --Should stock in prepacks be included? If there are prepacks defined, it will go to the prepacks, then go to inventory line of the prepacks</li>
+                    <li>@bIncludeReserved BIT = 0 --Should the Reserved column be accounted for? Stock reserved is currently subtracted from StockOnHand in tbl_InventoryLevel</li>
+                    <li>@bIncludePending BIT = 1 --Should the Pending column be accounted for?--subtracted if included</li>
+                    <li>@bIncludeSuperceded BIT = 1 --Should the Superseded column be accounted for? – added if included</li>
+                    <li>@iTodayDays INT = NULL --Number of days from "Today" to be considered as available (uses sys policy allocate.availableorderswindow if null) </li>
+                    <li>@dToday DATETIME = NULL --defines "Today", uses actual today if null</li>
+                    <li>@bPrepackOnly BIT = 0 --Return only prepack stock ignoring all others</li>
+                    <li>@iLateDays INT = NULL --How many days back from today to look at late orders and include them (uses sys policy allocate.lateorderswindow</li>
+                    <li>if null</li>
+                    <li>@bOnOrderOnly BIT = 0 --Return only on order stock ignoring all others</li>
+                    <li>@cDestinationTableName NVARCHAR(128) = NULL -- This will Change the Stored Procedure Data exchange mechanism. Not relevant to the calculation.</li>
+                </ul>
+            </p>
+        </div>
+    </body>
+</html>

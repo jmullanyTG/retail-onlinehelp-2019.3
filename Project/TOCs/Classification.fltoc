@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/PrintCover.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    PageType="title" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false"
+    BreakType="pageLayout" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Global/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    conditions="General.Printed Manuals"
+    StartSection="false" />
+  <TocEntry
+    Title="Classification Overview"
+    Link="/Content/Topics/Classification/Classification Overview.htm"
+    BreakType="pageLayout"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Default.flpgl"></TocEntry>
+  <TocEntry
+    Title="Classification Task">
+    <TocEntry
+      Title="Essential Business Concepts">
+      <TocEntry
+        Title="Classification Task Listing"
+        Link="/Content/Topics/Classification/Classification Task Listing.htm" />
+      <TocEntry
+        Title="Classification Task Details"
+        Link="/Content/Topics/Classification/Classification Task Details.htm">
+        <TocEntry
+          Title="General"
+          Link="/Content/Topics/Classification/General.htm" />
+        <TocEntry
+          Title="Default Priority"
+          Link="/Content/Topics/Classification/Default Priority.htm" />
+        <TocEntry
+          Title="Priority 1-5"
+          Link="/Content/Topics/Classification/Priority 1 5.htm" />
+        <TocEntry
+          Title="Relative Deviation 1-3"
+          Link="/Content/Topics/Classification/Relative Deviation 1 3.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Practical Application">
+      <TocEntry
+        Title="Create a Classification Task"
+        Link="/Content/Topics/Classification/Create a Classification Task.htm">
+        <TocEntry
+          Title="Default Task"
+          Link="/Content/Topics/Classification/Default Task.htm" />
+        <TocEntry
+          Title="Priority 1"
+          Link="/Content/Topics/Classification/Priority 1.htm" />
+        <TocEntry
+          Title="Relative Deviation 1"
+          Link="/Content/Topics/Classification/Relative Deviation 1.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Execute a Classification Task"
+      Link="/Content/Topics/Classification/Execute a Classification Task.htm" />
+    <TocEntry
+      Title="Technical Execution" />
+  </TocEntry>
+</CatapultToc>

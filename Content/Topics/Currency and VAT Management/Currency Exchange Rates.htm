@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="13" MadCap:lastHeight="3811" MadCap:lastWidth="1143">
+    <head>
+        <link href="../../Resources/TableStyles/standard Mi9 table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Currency Exchange Rates</h1>
+        <p>The <b>Currency Exchange Rates</b> view allows users to maintain both global exchange rates and time-based exchange rates from and to all currencies defined within Demand Management. At a minimum, exchange rates should be maintained globally for a single “From” currency, being the home currency used in your assortment plans and as many “To” currencies as you have assigned to the sites within the cluster sets in those plans.</p>
+        <p>
+            <img src="../../Resources/Images/Currency and VAT Management/Currency Exchange Rates.png" />
+        </p>
+        <p>This screen can be accessed by navigating to <b>System Utilities &gt; Views &gt; Currency &gt; Currency Exchange Rates</b>.</p>
+        <h2>Only doing business in one currency</h2>
+        <p>If your company only does business in a single currency, then  set a single conversion entry “From” and “To” your home currency with a Conversion Factor of 1 to indicate no change.</p>
+        <h2>Fields</h2>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Field</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Currency From</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Sets the “From” currencies to be worked with in the view</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Currency To</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Sets the “To” currencies to be worked with in the view</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Toolbar buttons</h2>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/standard Mi9 table.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Button</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1"><b>Parameters</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Shows or hides the <b>Parameters</b> area of the view</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1"><b>Execute</b>
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">updates the view with a conversion factor grid for the Currency From and Currency To selections</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Default Currency Exchange Rates Tab</h2>
+        <p>This tab allows the user to manipulate the field layout by dragging and dropping fields in the Filter, Row, Column, and Data areas of the grid.</p>
+        <p>
+            <img src="../../Resources/Images/Currency and VAT Management/Currency Exchange Rates_1.png" />
+        </p>
+        <h3>Functionality</h3>
+        <ul>
+            <li><b>Export</b>: Exports and saves the Pivot Grid in different formats including Microsoft Excel and Adobe PDF</li>
+            <li><b>Open</b>: Opens the Pivot Grid in different formats including Microsoft Excel and Adobe PDF – does not require a save prior to viewing in the desired format</li>
+            <li><b>Graph</b>: Displays a graph and any data series selected by the user</li>
+            <p> <img src="../../Resources/Images/Currency and VAT Management/Currency Exchange Rates_2.png" /></p>
+            <li><b>Fields</b>: launches the <b>Fields Customization</b> dialog with two tabs. Each tab contains a search bar in which you can enter text to more quickly locate the fields you wish to manipulate. The fields shown in the view will be limited to only those containing the text you have entered.<ul><li><p><b>Simple</b> tab: fields can be dragged and dropped between Filter, Row, Column, and Data areas of the Pivot Grid</p><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Dragging fields to the None area hides them in the layout.</p><p><img src="../../Resources/Images/Currency and VAT Management/Currency Exchange Rates_3.png" style="visibility: visible;width: 634px;height: 339px;" /></p></li><li><p><b>Advanced tab</b>: Manipulate the layout by selecting the desired location of each field from the Pivot Area drop downs next to each. An Index can be specified within each area  to define the order in which the fields display.</p><p><img src="../../Resources/Images/Currency and VAT Management/Currency Exchange Rates_4.png" /><p>Changes made to the Assortment Plan Defaults By Time layout can be saved for future use. After making changes and clicking OK in the Fields Customization dialog, right click anywhere in the Pivot Grid and choose Save Layout.</p></p></li></ul></li>
+        </ul>
+        <h2>Restoring layouts</h2>
+        <p>Restore a custom layout by right-clicking anywhere in the Pivot Grid, choosing <b>Restore Layout</b>, and selecting the layout to restore.</p>
+        <ul>
+            <li><b>Save</b>: save all changes made to conversion factors in the current view since the last save</li>
+            <li><b>Cancel</b>: reverts all changes to conversion factors in the current view since the last apply to their previously saved values</li>
+            <li><b>From Currency Description</b>: text description of the From Currency</li>
+            <li><b>From Currency Code</b>: unique system code for the From Currency</li>
+            <li><b>To Currency Description</b>: text description of the To Currency</li>
+            <li><b>To Currency Code</b>: unique system code for the To Currency</li>
+            <li><b>Conversion Factor</b>: user editable decimal (1.0001); sets the exchange rate from the From Currency to the To Currency
+				<p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">A Conversion Factor of .88 from USD (US Dollars) to GBP (UK Pounds) means a sale of $1,000 USD buys 888 GBP.</p><p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">Setting a Conversion Factor of 1 indicates no change.</p></li>
+        </ul>
+        <h2>Temporal Currency Exchange Rates Tab</h2>
+        <p>This tab allows users to enter exchange rate changes with specific Start and End Dates which is useful for planning for future economic fluctuations ahead of time without having to alter the default exchange rates. Temporal Currency Exchange Rates supersede rates entered on the Default tab for the time frames in which they are active.</p>
+        <p>
+            <img src="../../Resources/Images/Currency and VAT Management/Currency Exchange Rates_6.png" style="visibility: visible;width: 634px;height: 229px;" />
+        </p>
+        <ul>
+            <li><b>New</b>: adds a new line for entering a temporal exchange rate</li>
+            <li><b>Delete</b>: deletes the selected temporal exchange rate lines
+			<p class="warning" MadCap:autonum="&lt;b&gt;WARNING: &lt;/b&gt;">users are not asked to confirm deletion of temporal exchange rates, so be certain you want to remove them before clicking Delete</p></li>
+            <li><b>Fields</b>: opens the <b>Customization</b> dialog in which users can drag fields to or from the tab’s header area and this dialog to customize the view</li>
+            <p>Custom layouts can be saved/restored by right-clicking in the Pivot Grid and selecting Save Layout or Restore Layout, respectively</p>
+            <li><b>Save</b>: saves all new temporal exchange rate lines and changes made to existing lines since the last save</li>
+            <li><b>Cancel</b>: removes all new temporal exchange rate lines and reverts all changes since the last save back to their previously saved values</li>
+            <li><b>Currency From</b>: the currency to convert from for the line</li>
+            <li><b>Currency To</b>: the currency to convert to for the line</li>
+            <li><b>Start Date</b>: the start date for the temporal currency conversion
+			<p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">creating temporal currency conversions in the past WILL NOT have any effect on actualized periods</p></li>
+            <li><b>End Date</b>: the end date for the temporal currency conversion; not required
+			<p class="note" MadCap:autonum="&lt;b&gt;NOTE: &lt;/b&gt;">not setting an End Date for a conversion means it will persist into the future until one is set or another conversion is entered in the future – this effectively makes the End Date for the conversion the day prior to the Start Date of the new conversion</p></li>
+            <li><b>Conversion Factor</b>: user editable decimal (1.0001); sets the exchange rate from the From Currency to the To Currency
+			<p class="example" MadCap:autonum="&lt;b&gt;EXAMPLE: &lt;/b&gt;">I have a Conversion Factor of .88 from USD (US Dollars) to GBP (UK Pounds), thus a sales of $1,000 USD will equal 888£ GBP</p></li>
+        </ul>
+    </body>
+</html>
